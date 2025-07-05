@@ -1,0 +1,2485 @@
+[
+  {
+    "question": "Instructional leadership primarily focuses on:",
+    "options": ["Managing school finances", "Improving teaching and learning practices", "Hiring administrative staff", "Conducting board meetings"],
+    "correctAnswer": 1,
+    "explanation": "Instructional leadership focuses on enhancing teaching and learning practices, a key aspect of educational management."
+  },
+  {
+    "question": "What is the primary role of a registrar in academic administration?",
+    "options": ["Conducting research", "Managing student records", "Teaching courses", "Budget allocation"],
+    "correctAnswer": 1,
+    "explanation": "The registrar manages student records, admissions, and academic policies, as per academic administration ordinances."
+  },
+  {
+    "question": "Which body is responsible for approving academic programs in NITs?",
+    "options": ["Board of Governors", "Finance Committee", "Senate", "BWC"],
+    "correctAnswer": 2,
+    "explanation": "The Senate in NITs approves academic programs and ordinances, as per the NIT Act."
+  },
+  {
+    "question": "What is the reservation percentage for OBC in central government recruitment?",
+    "options": ["15%", "27%", "7.5%", "50%"],
+    "correctAnswer": 1,
+    "explanation": "As per Recruitment & Reservation Rules, 27% of posts are reserved for OBC in central government services."
+  },
+  {
+    "question": "Who chairs the Board of Governors meetings in NITs?",
+    "options": ["Director", "Registrar", "Chairperson", "Senate Head"],
+    "correctAnswer": 2,
+    "explanation": "The Chairperson, appointed by the Visitor, chairs the Board of Governors meetings, as per NIT Act."
+  },
+  {
+    "question": "What is the minimum contribution period for partial withdrawal under NPS?",
+    "options": [
+      "3 years",
+      "5 years",
+      "7 years",
+      "10 years"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Partial withdrawal is permitted after 3 years of contributions under NPS, subject to specified conditions (PFRDA Regulations)."
+  },
+  {
+    "question": "Which section of Income Tax Act governs TDS on salaries?",
+    "options": [
+      "Section 192",
+      "Section 194A",
+      "Section 194C",
+      "Section 194J"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 192 of Income Tax Act 1961 mandates TDS on salaries paid to employees."
+  },
+  {
+    "question": "What is the primary purpose of PFMS?",
+    "options": [
+      "Tax collection",
+      "Pension management",
+      "Public fund tracking",
+      "Budget preparation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Public Financial Management System (PFMS) enables efficient tracking of public fund utilization across government schemes."
+  },
+  {
+    "question": "Under GFR 2017, what is the time limit for settling contractor bills?",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "60 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR 2017 Rule 231 mandates bill settlement within 30 days of receipt to avoid interest liability."
+  },
+  {
+    "question": "What is the maximum loan amount from GPF?",
+    "options": [
+      "6 months' pay",
+      "12 months' pay",
+      "24 months' pay",
+      "36 months' pay"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Maximum GPF advance is 12 months' pay or 3/4th of balance, whichever is less (GPF Rules)."
+  },
+  {
+    "question": "Which Finance Act introduced the new tax regime?",
+    "options": [
+      "Finance Act 2019",
+      "Finance Act 2020",
+      "Finance Act 2021",
+      "Finance Act 2022"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Finance Act 2020 introduced the new optional tax regime with lower rates and no deductions."
+  },
+  {
+    "question": "What type of account must autonomous bodies maintain under GFR?",
+    "options": [
+      "Current Account",
+      "Personal Account",
+      "Public Account",
+      "Consolidated Fund"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Autonomous bodies must operate through Public Accounts under Rule 34 of GFR 2017."
+  },
+  {
+    "question": "Which form is used for NPS withdrawal at retirement?",
+    "options": [
+      "Form 101",
+      "Form 501",
+      "Form 601",
+      "Form 701"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Form 701 is used for final NPS withdrawal settlement upon superannuation."
+  },
+  {
+    "question": "What is the penalty for late ITR filing under Section 234F?",
+    "options": [
+      "₹1,000",
+      "₹5,000",
+      "₹10,000",
+      "1% per month"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 234F imposes ₹5,000 penalty for belated ITR filing (₹1,000 if income < ₹5 lakh)."
+  },
+  {
+    "question": "Under PFMS, what does DBT stand for?",
+    "options": [
+      "Direct Bank Transfer",
+      "Digital Benefit Transfer",
+      "Direct Benefit Transfer",
+      "Digital Banking Transaction"
+    ],
+    "correctAnswer": 2,
+    "explanation": "DBT is Direct Benefit Transfer - PFMS's core function for scheme benefit disbursement."
+  },
+  {
+    "question": "Which GFR rule mandates e-procurement?",
+    "options": [
+      "Rule 141",
+      "Rule 150",
+      "Rule 160",
+      "Rule 178"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GFR 2017 Rule 141 requires mandatory use of GeM (Government e-Marketplace) for procurement."
+  },
+  {
+    "question": "What percentage of salary can be contributed to GPF?",
+    "options": [
+      "6%",
+      "10%",
+      "12%",
+      "No limit"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GPF allows voluntary contributions up to 100% of salary (subject to minimum ₹500/month)."
+  },
+  {
+    "question": "Which section provides tax exemption for HRA?",
+    "options": [
+      "Section 10(13A)",
+      "Section 17(2)",
+      "Section 80C",
+      "Section 89"
+    ],
+    "correctAnswer": 0,
+    "explanation": "HRA exemption is governed by Section 10(13A) of Income Tax Act and Rule 2A."
+  },
+  {
+    "question": "What is the primary budget document for autonomous bodies?",
+    "options": [
+      "Annual Financial Statement",
+      "Demand for Grants",
+      "Detailed Demand Statement",
+      "Budget Estimate Proposal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Autonomous bodies submit Annual Financial Statements as primary budget documents to administrative ministries."
+  },
+  {
+    "question": "Which PFMS component tracks real-time expenditure?",
+    "options": [
+      "e-Kuber",
+      "Plan Monitoring System",
+      "Budget Distribution System",
+      "Payment and Accounting Module"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Payment and Accounting Module provides real-time expenditure tracking in PFMS."
+  },
+  {
+    "question": "Under GFR, what is the threshold for open tender?",
+    "options": [
+      "₹25,000",
+      "₹2.5 Lakh",
+      "₹25 Lakh",
+      "₹1 Crore"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 149 requires open tender for procurement above ₹2.5 Lakh (goods) and ₹5 Lakh (services)."
+  },
+  {
+    "question": "What is the annuity purchase requirement under NPS?",
+    "options": [
+      "20% of corpus",
+      "40% of corpus",
+      "60% of corpus",
+      "80% of corpus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NPS rules mandate using at least 40% of corpus to purchase annuity at retirement."
+  },
+  {
+    "question": "Which ITR form is for salaried individuals?",
+    "options": [
+      "ITR-1",
+      "ITR-2",
+      "ITR-3",
+      "ITR-4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ITR-1 (Sahaj) is for resident individuals with salary income up to ₹50 lakh and no capital gains."
+  },
+  {
+    "question": "What is the accounting standard for autonomous bodies?",
+    "options": [
+      "AS 1",
+      "AS 9",
+      "AS 12",
+      "Indian Government Accounting Standards"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Autonomous bodies follow Indian Government Accounting Standards (IGAS) issued by C&AG."
+  },
+  {
+    "question": "Which agency operates PFMS?",
+    "options": [
+      "RBI",
+      "CGA",
+      "PFRDA",
+      "CBDT"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Controller General of Accounts (CGA) operates PFMS under Ministry of Finance."
+  },
+  {
+    "question": "What is the interest rate on GPF for FY 2024-25?",
+    "options": [
+      "7.1%",
+      "7.5%",
+      "7.9%",
+      "8.2%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GPF interest rate is 7.1% for FY 2024-25 as notified by MoF."
+  },
+  {
+    "question": "Which section allows tax deduction for medical insurance?",
+    "options": [
+      "Section 80C",
+      "Section 80D",
+      "Section 80G",
+      "Section 80TTA"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 80D provides deduction for health insurance premiums up to ₹25,000/₹50,000."
+  },
+  {
+    "question": "What is the time limit for autonomous bodies to submit utilization certificates?",
+    "options": [
+      "1 month",
+      "3 months",
+      "6 months",
+      "12 months"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GFR Rule 237 requires utilization certificates within 6 months of financial year closure."
+  },
+  {
+    "question": "Which PFMS feature prevents duplicate payments?",
+    "options": [
+      "Aadhaar Validation",
+      "Unique Transaction ID",
+      "Central Payment System",
+      "Bill Tracking System"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Unique Transaction ID generation in PFMS prevents duplicate payments."
+  },
+  {
+    "question": "Under GFR, what percentage must be paid as mobilization advance?",
+    "options": [
+      "5-10%",
+      "10-20%",
+      "20-30%",
+      "30-40%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 204 allows mobilization advance of 10-20% of contract value to contractors."
+  },
+  {
+    "question": "What is the minimum annuity purchase amount under NPS?",
+    "options": [
+      "₹1 Lakh",
+      "₹2 Lakh",
+      "₹5 Lakh",
+      "No minimum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Minimum annuity purchase is ₹1 Lakh per annuity scheme (PFRDA Regulations)."
+  },
+  {
+    "question": "Which income is exempt under Section 10?",
+    "options": [
+      "Salary",
+      "Agricultural Income",
+      "Rental Income",
+      "Capital Gains"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 10(1) provides complete exemption for agricultural income."
+  },
+  {
+    "question": "What is the primary revenue source for autonomous bodies?",
+    "options": [
+      "Government Grants",
+      "Service Fees",
+      "Donations",
+      "Investment Income"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Government grants-in-aid constitute primary revenue for most autonomous bodies."
+  },
+  {
+    "question": "Which system integrates with PFMS for direct transfers?",
+    "options": [
+      "GSTN",
+      "NACH",
+      "UPI",
+      "Aadhaar Payment Bridge"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Aadhaar Payment Bridge System enables DBT through PFMS using Aadhaar mapping."
+  },
+  {
+    "question": "Under GFR, who can authorize excess expenditure?",
+    "options": [
+      "Ministry Head",
+      "Finance Minister",
+      "Parliament",
+      "CAG"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Only Parliament can authorize excess expenditure beyond voted grants (GFR Rule 238)."
+  },
+  {
+    "question": "What is the tax treatment of NPS Tier-I contributions?",
+    "options": [
+      "Taxable",
+      "Exempt under Section 10",
+      "Deductible under Section 80CCD",
+      "Deductible under Section 80C"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 80CCD(1) allows deduction for NPS contributions up to 10% of salary."
+  },
+  {
+    "question": "Which form is used for GPF final settlement?",
+    "options": [
+      "Form 1",
+      "Form 2",
+      "Form 3",
+      "Form 4"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GPF Form 3 is used for final withdrawal upon retirement/resignation."
+  },
+  {
+    "question": "What is the threshold for tax audit under Section 44AB?",
+    "options": [
+      "₹10 Lakh turnover",
+      "₹25 Lakh turnover",
+      "₹1 Crore turnover",
+      "₹10 Crore turnover"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tax audit required if turnover exceeds ₹1 Crore (₹10 Crore for 95% digital transactions)."
+  },
+  {
+    "question": "Which committee recommends salaries for autonomous body heads?",
+    "options": [
+      "Finance Committee",
+      "Governing Body",
+      "Ministry of Finance",
+      "Pay Commission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Governing Body/Board of Directors determines salaries based on organizational rules."
+  },
+  {
+    "question": "What is PFMS's role in CSS implementation?",
+    "options": [
+      "Fund Allocation",
+      "Physical Verification",
+      "Real-time Monitoring",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PFMS manages entire lifecycle of Centrally Sponsored Schemes (CSS) from allocation to monitoring."
+  },
+  {
+    "question": "Which GFR rule covers advance payments?",
+    "options": [
+      "Rule 190",
+      "Rule 204",
+      "Rule 212",
+      "Rule 225"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 204 governs advance payments to contractors and suppliers."
+  },
+  {
+    "question": "What is the maximum equity allocation in NPS?",
+    "options": [
+      "50%",
+      "75%",
+      "85%",
+      "100%"
+    ],
+    "explanation": "PFRDA permits up to 75% equity exposure for subscribers below 50 years.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which ITR form is for trusts?",
+    "options": [
+      "ITR-5",
+      "ITR-6",
+      "ITR-7",
+      "ITR-V"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ITR-7 is for trusts, political parties, and charitable institutions under Section 139(4A)."
+  },
+  {
+    "question": "What is the primary accounting method for autonomous bodies?",
+    "options": [
+      "Cash Basis",
+      "Accrual Basis",
+      "Hybrid Basis",
+      "Modified Cash Basis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Autonomous bodies follow accrual accounting as per Indian Government Accounting Standards."
+  },
+  {
+    "question": "Which PFMS report tracks scheme-wise expenditure?",
+    "options": [
+      "Sankalan Report",
+      "NTRP Report",
+      "FMR Report",
+      "DBT Analytics"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Financial Management Report (FMR) provides scheme-wise expenditure tracking."
+  },
+  {
+    "question": "Under GFR, what is the validity period of a tender?",
+    "options": [
+      "30 days",
+      "60 days",
+      "90 days",
+      "120 days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GFR Rule 161 stipulates minimum 90-day validity for bids above ₹10 Crore."
+  },
+  {
+    "question": "What is the tax benefit on NPS annuity income?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt up to ₹1.5 Lakh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NPS annuity income is taxed as ordinary income under 'Income from Other Sources'."
+  },
+  {
+    "question": "Which form is used for GPF subscription changes?",
+    "options": [
+      "Form A",
+      "Form B",
+      "Form C",
+      "Form D"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GPF Form A is used for subscription rate changes by subscribers."
+  },
+  {
+    "question": "What is the penalty for TDS non-deduction?",
+    "options": [
+      "Equal to TDS amount",
+      "1.5% per month",
+      "₹500 per day",
+      "No penalty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 201(1A) imposes penalty equal to TDS amount for non-deduction."
+  },
+  {
+    "question": "Which body audits autonomous bodies?",
+    "options": [
+      "CAG",
+      "Internal Audit",
+      "Statutory Auditor",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Autonomous bodies undergo internal, statutory, and CAG audits as per their rules."
+  },
+  {
+    "question": "What is PFMS's integration with state treasuries called?",
+    "options": [
+      "PFMS-Treasury Interface",
+      "State Treasury Module",
+      "e-Kuber Integration",
+      "Single Nodal Agency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PFMS-Treasury Interface enables real-time fund tracking with state treasuries."
+  },
+  {
+    "question": "Which GFR rule governs asset disposal?",
+    "options": [
+      "Rule 100",
+      "Rule 150",
+      "Rule 200",
+      "Rule 250"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GFR Rules 250-258 cover condemnation and disposal of government assets."
+  },
+  {
+    "question": "What is the exit age for mandatory NPS withdrawal?",
+    "options": [
+      "60 years",
+      "65 years",
+      "70 years",
+      "75 years"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NPS mandates exit by age 70 under PFRDA (Exit and Withdrawal) Regulations 2015."
+  },
+  {
+    "question": "Which section provides tax exemption for gratuity?",
+    "options": [
+      "Section 10(10)",
+      "Section 17(1)",
+      "Section 80D",
+      "Section 89"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 10(10) exempts gratuity payments up to ₹20 lakh for private employees."
+  },
+  {
+    "question": "What is the fund allocation process for autonomous bodies?",
+    "options": [
+      "Budget Call Circular",
+      "Demand for Grants",
+      "Detailed Estimate Submission",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Autonomous bodies follow a structured process: Budget Call → Estimates → Scrutiny → Allocation."
+  },
+  {
+    "question": "Which PFMS module handles state schemes?",
+    "options": [
+      "Central Sector Scheme Module",
+      "State Plan Module",
+      "DBT State Module",
+      "SNA Module"
+    ],
+    "correctAnswer": 1,
+    "explanation": "State Plan Module manages implementation of state government schemes through PFMS."
+  },
+  {
+    "question": "Under GFR, what is the threshold for e-reverse auction?",
+    "options": [
+      "₹10 Lakh",
+      "₹1 Crore",
+      "₹10 Crore",
+      "₹100 Crore"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 178 mandates e-reverse auction for procurement above ₹1 Crore."
+  },
+  {
+    "question": "What is the tax treatment of GPF interest?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt up to ₹50,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GPF interest is fully exempt under Section 10(11) of Income Tax Act."
+  },
+  {
+    "question": "Which form is used for NPS nomination?",
+    "options": [
+      "Form 101",
+      "Form 201",
+      "Form 301",
+      "Form 401"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NPS Form 301 is used for nomination/change of nominee details."
+  },
+  {
+    "question": "What is the TDS threshold for bank interest?",
+    "options": [
+      "₹5,000",
+      "₹10,000",
+      "₹40,000",
+      "₹50,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 194A requires TDS on interest if exceeds ₹40,000 (₹50,000 for seniors)."
+  },
+  {
+    "question": "Which accounting principle governs autonomous body reserves?",
+    "options": [
+      "Matching Principle",
+      "Prudence Principle",
+      "Consistency Principle",
+      "Fund Accounting Principle"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Autonomous bodies maintain reserves through fund accounting (General Fund, Earmarked Funds etc.)."
+  },
+  {
+    "question": "What percentage of CSS funds flow through PFMS?",
+    "options": [
+      "50%",
+      "75%",
+      "90%",
+      "100%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "100% of Centrally Sponsored Scheme funds are routed through PFMS since 2018."
+  },
+  {
+    "question": "Which GFR rule covers contingency funds?",
+    "options": [
+      "Rule 55",
+      "Rule 105",
+      "Rule 222",
+      "Rule 300"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GFR Rules 222-224 govern contingency funds and imprest accounts."
+  },
+  {
+    "question": "What is the minimum NPS contribution for Tier-I?",
+    "options": [
+      "₹500",
+      "₹1,000",
+      "₹2,000",
+      "No minimum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Minimum annual contribution to NPS Tier-I is ₹1,000 (₹500 per contribution)."
+  },
+  {
+    "question": "Which section allows tax deduction for education loan?",
+    "options": [
+      "Section 80C",
+      "Section 80D",
+      "Section 80E",
+      "Section 80G"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 80E provides deduction for education loan interest with no upper limit."
+  },
+  {
+    "question": "What is the primary audit focus for autonomous bodies?",
+    "options": [
+      "Revenue Generation",
+      "Grant Utilization",
+      "Asset Creation",
+      "Compliance with Objectives"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Auditors primarily examine proper utilization of government grants as per sanctioned purposes."
+  },
+  {
+    "question": "Which PFMS feature enables scheme monitoring?",
+    "options": [
+      "API Integration",
+      "PFMS Mobile App",
+      "Scheme-wise Dashboard",
+      "Geotagging"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Scheme-wise dashboards in PFMS provide real-time monitoring of physical and financial progress."
+  },
+  {
+    "question": "Under GFR, what is the time limit for inventory verification?",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annually"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GFR Rule 147 mandates annual physical verification of inventory."
+  },
+  {
+    "question": "What is the tax exemption limit for NPS withdrawal?",
+    "options": [
+      "20% exempt",
+      "40% exempt",
+      "60% exempt",
+      "No exemption"
+    ],
+    "correctAnswer": 1,
+    "explanation": "40% of NPS corpus is exempt under Section 10(12A) at the time of retirement."
+  },
+  {
+    "question": "Which form is used for GPF nomination?",
+    "options": [
+      "Form 1",
+      "Form 2",
+      "Form 3",
+      "Form 4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GPF Form 2 is used for nomination/change of nominee details."
+  },
+  {
+    "question": "What is the penalty for late GST filing?",
+    "options": [
+      "₹50 per day",
+      "₹100 per day",
+      "₹200 per day",
+      "1% per month"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CGST Act imposes ₹100/day (₹50 CGST + ₹50 SGST) for late GSTR filing."
+  },
+  {
+    "question": "Which accounting head is used for autonomous body grants?",
+    "options": [
+      "Major Head 2071",
+      "Major Head 3601",
+      "Major Head 4202",
+      "Major Head 8448"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Grants to autonomous bodies are booked under Major Head 8448 - Capital Grants-in-Aid."
+  },
+  {
+    "question": "What is PFMS's integration with RBI called?",
+    "options": [
+      "PFMS-RBI Interface",
+      "e-Kuber Integration",
+      "Central Payment Bridge",
+      "National Treasury Grid"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PFMS integrates with RBI's e-Kuber system for real-time payment processing."
+  },
+  {
+    "question": "Which GFR rule covers foreign travel?",
+    "options": [
+      "Rule 100",
+      "Rule 125",
+      "Rule 150",
+      "Rule 175"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rules 125-129 govern foreign travel entitlements and approvals."
+  },
+  {
+    "question": "What is the minimum NPS pension?",
+    "options": [
+      "₹1,000/month",
+      "₹3,500/month",
+      "₹5,000/month",
+      "No minimum"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NPS annuity amount depends on corpus and annuity rates, with no fixed minimum."
+  },
+  {
+    "question": "Which section provides tax rebate for low incomes?",
+    "options": [
+      "Section 87A",
+      "Section 80C",
+      "Section 80D",
+      "Section 89"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 87A provides rebate up to ₹12,500 for incomes below ₹5 lakh."
+  },
+  {
+    "question": "What is the budget cycle for autonomous bodies?",
+    "options": [
+      "April-March",
+      "July-June",
+      "January-December",
+      "As per incorporation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Autonomous bodies follow the April-March financial year like government entities."
+  },
+  {
+    "question": "Which PFMS report identifies idle funds?",
+    "options": [
+      "Fund Flow Report",
+      "Unspent Balance Report",
+      "SNA Account Report",
+      "Treasury Balance Report"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Unspent Balance Report identifies idle funds lying with implementing agencies."
+  },
+  {
+    "question": "Under GFR, what percentage can be retained as security deposit?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 205 allows retention of 10% of contract value as security deposit."
+  },
+  {
+    "question": "What is the tax treatment of commuted pension?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt for government employees"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Commuted pension is fully exempt for government employees under Section 10(10A)."
+  },
+  {
+    "question": "Which form is used for NPS Tier-II withdrawal?",
+    "options": [
+      "Form 101",
+      "Form 301",
+      "Form 501",
+      "Form 601"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Form 501 is used for partial/full withdrawal from NPS Tier-II account."
+  },
+  {
+    "question": "What is the TDS rate for contractor payments?",
+    "options": [
+      "1%",
+      "2%",
+      "5%",
+      "10%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 194C mandates 1% TDS for contractor payments (2% for non-individuals)."
+  },
+  {
+    "question": "Which accounting standard governs grants?",
+    "options": [
+      "AS 12",
+      "IGAS 1",
+      "IGAS 2",
+      "IGAS 3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Accounting Standard 12 governs accounting for government grants."
+  },
+  {
+    "question": "What is PFMS's beneficiary registration limit?",
+    "options": [
+      "No limit",
+      "1 Crore beneficiaries",
+      "5 Crore beneficiaries",
+      "10 Crore beneficiaries"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PFMS has unlimited beneficiary registration capacity with Aadhaar validation."
+  },
+  {
+    "question": "Which GFR rule covers consultancies?",
+    "options": [
+      "Rule 170",
+      "Rule 180",
+      "Rule 190",
+      "Rule 200"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rules 180-189 govern selection and engagement of consultants."
+  },
+  {
+    "question": "What is the maximum NPS contribution for tax deduction?",
+    "options": [
+      "₹1.5 Lakh",
+      "₹2 Lakh",
+      "₹5 Lakh",
+      "No limit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 80CCD(1B) allows additional ₹50,000 deduction beyond ₹1.5 lakh under Section 80C."
+  },
+  {
+    "question": "Which section defines 'salary' for tax purposes?",
+    "options": [
+      "Section 15",
+      "Section 16",
+      "Section 17",
+      "Section 18"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 17 provides inclusive definition of 'salary' for income tax purposes."
+  },
+  {
+    "question": "What is the fund surrender deadline for autonomous bodies?",
+    "options": [
+      "31 December",
+      "31 January",
+      "28 February",
+      "31 March"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Unutilized grants must be surrendered by 28 February each year (GFR Rule 237)."
+  },
+  {
+    "question": "Which PFMS module handles central sector schemes?",
+    "options": [
+      "CSS Module",
+      "Central Plan Module",
+      "SNA Module",
+      "Plan Scheme Module"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Central Sector Scheme (CSS) Module manages implementation of CS schemes."
+  },
+  {
+    "question": "Under GFR, what is the retention period for procurement records?",
+    "options": [
+      "3 years",
+      "5 years",
+      "7 years",
+      "10 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rule 175 requires retention of procurement records for 5 years."
+  },
+  {
+    "question": "What is the tax treatment of leave encashment?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt for government employees"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Leave encashment is fully exempt for government employees under Section 10(10AA)."
+  },
+  {
+    "question": "Which form is used for GPF advance?",
+    "options": [
+      "Form 1",
+      "Form 2",
+      "Form 3",
+      "Form 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GPF Form 4 is used for requesting advances from the fund."
+  },
+  {
+    "question": "What is the threshold for GST registration?",
+    "options": [
+      "₹5 Lakh",
+      "₹10 Lakh",
+      "₹20 Lakh",
+      "₹40 Lakh"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GST registration required if aggregate turnover exceeds ₹20 lakh (₹10 lakh for NE states)."
+  },
+  {
+    "question": "Which accounting principle prevents revenue overstatement?",
+    "options": [
+      "Matching Principle",
+      "Prudence Principle",
+      "Consistency Principle",
+      "Materiality Principle"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Prudence Principle requires recognizing expenses immediately but revenues only when realized."
+  },
+  {
+    "question": "What is PFMS's transaction processing capacity?",
+    "options": [
+      "1 Lakh/day",
+      "5 Lakh/day",
+      "10 Lakh/day",
+      "25 Lakh/day"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PFMS can process over 25 lakh transactions daily with 99.9% uptime."
+  },
+  {
+    "question": "Which GFR rule covers works contracts?",
+    "options": [
+      "Rule 150",
+      "Rule 160",
+      "Rule 170",
+      "Rule 180"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GFR Rules 160-179 govern procurement of works and services."
+  },
+  {
+    "question": "What is the tax benefit on NPS employer contribution?",
+    "options": [
+      "Taxable as perquisite",
+      "Exempt up to 10% of salary",
+      "Exempt up to ₹7.5 Lakh",
+      "Fully exempt"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Employer NPS contribution exempt up to 10% of salary under Section 80CCD(2)."
+  },
+  {
+    "question": "Which form is used for NPS account opening?",
+    "options": [
+      "Form 101",
+      "Form 201",
+      "Form 301",
+      "Form 401"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NPS Form 101 is used for new account registration."
+  },
+  {
+    "question": "What is the penalty for incorrect TDS return?",
+    "options": [
+      "₹100 per day",
+      "₹500 per day",
+      "₹1,000 per day",
+      "Equal to TDS amount"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 234E imposes ₹500/day penalty for late TDS return filing."
+  },
+  {
+    "question": "Which audit focuses on autonomous body performance?",
+    "options": [
+      "Statutory Audit",
+      "Internal Audit",
+      "Performance Audit",
+      "Concurrent Audit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Performance Audit evaluates economy, efficiency and effectiveness of operations."
+  },
+  {
+    "question": "What is PFMS's role in state finances?",
+    "options": [
+      "Budget Preparation",
+      "Fund Allocation",
+      "Expenditure Monitoring",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PFMS supports states in entire public financial management cycle."
+  },
+  {
+    "question": "Under GFR, what is the validity of rate contracts?",
+    "options": [
+      "6 months",
+      "1 year",
+      "2 years",
+      "3 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rate contracts are valid for 1 year, extendable to 2 years under special circumstances."
+  },
+  {
+    "question": "What is the tax exemption for LTC?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt for government employees"
+    ],
+    "correctAnswer": 3,
+    "explanation": "LTC reimbursement is fully exempt for government employees under Section 10(5)."
+  },
+  {
+    "question": "Which form is used for GPF annual statement?",
+    "options": [
+      "Form 5",
+      "Form 10",
+      "Form 15",
+      "Form 20"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GPF Form 5 provides annual account statement to subscribers."
+  },
+  {
+    "question": "What is the due date for TDS payment?",
+    "options": [
+      "7th of next month",
+      "15th of next month",
+      "30th of next month",
+      "End of quarter"
+    ],
+    "correctAnswer": 0,
+    "explanation": "TDS must be paid by 7th of following month under Section 200(1)."
+  },
+  {
+    "question": "Which accounting head is for autonomous body salaries?",
+    "options": [
+      "Major Head 2071",
+      "Major Head 2210",
+      "Major Head 3601",
+      "Major Head 4202"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Salaries are booked under Major Head 2210 - Salaries (Sub-head according to organization)."
+  },
+  {
+    "question": "What is PFMS's grievance redressal mechanism?",
+    "options": [
+      "CPGRAMS",
+      "PFMS Helpdesk",
+      "DBT Portal",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PFMS integrates multiple grievance channels including CPGRAMS and dedicated helpdesks."
+  },
+  {
+    "question": "Which GFR rule covers digital payments?",
+    "options": [
+      "Rule 50",
+      "Rule 100",
+      "Rule 150",
+      "Rule 225"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GFR Rule 225 mandates digital payments for all government transactions."
+  },
+  {
+    "question": "What is the tax treatment of maturity proceeds?",
+    "options": [
+      "Fully Taxable",
+      "Partially Taxable",
+      "Fully Exempt",
+      "Exempt for ULIP after 5 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Maturity proceeds are taxable except for specific exemptions like Section 10(10D) for life insurance."
+  },
+  {
+    "question": "Which form is used for NPS exit before 60?",
+    "options": [
+      "Form 101",
+      "Form 301",
+      "Form 601",
+      "Form 701"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Form 601 is used for premature exit from NPS before age 60."
+  },
+  {
+    "question": "What is the TDS rate for professional fees?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Section 194J mandates 10% TDS on professional/technical service fees."
+  },
+  {
+    "question": "Which accounting standard governs fixed assets?",
+    "options": [
+      "AS 10",
+      "IGAS 5",
+      "IGAS 10",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fixed assets accounting follows AS 10 and IGAS 5/10 based on organization type."
+  },
+  {
+    "question": "What is PFMS's integration with banks called?",
+    "options": [
+      "PFMS-Bank Interface",
+      "National Payment Gateway",
+      "Central Payment System",
+      "NACH Integration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PFMS-Bank Interface enables direct payment processing with over 300 banks."
+  },
+  {
+    "question": "What is the maximum age for joining NPS?",
+    "options": [
+      "60 years",
+      "65 years",
+      "70 years",
+      "No age limit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NPS allows subscription until age 65 as per PFRDA regulations."
+  },
+  {
+    "question": "Which PFMS component prevents fraudulent transactions?",
+    "options": [
+      "Aadhaar Validation",
+      "Beneficiary Fingerprint System",
+      "AI-Based Fraud Detection",
+      "Transaction OTP"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PFMS employs AI-based fraud detection algorithms to identify suspicious transaction patterns."
+  },
+  {
+    "question": "Under Section 80TTB, what is the deduction limit for senior citizens' interest income?",
+    "options": [
+      "₹10,000",
+      "₹20,000",
+      "₹50,000",
+      "₹1,00,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Section 80TTB allows ₹50,000 deduction on interest income from deposits for seniors."
+  },
+  {
+    "question": "What type of budget do autonomous bodies prepare?",
+    "options": [
+      "Zero-Based Budget",
+      "Performance Budget",
+      "Incremental Budget",
+      "Gender Budget"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Autonomous bodies prepare performance budgets linking outlays to outcomes."
+  },
+  {
+    "question": "GFR Rule 130 covers:",
+    "options": [
+      "Domestic Travel",
+      "Conference Expenditure",
+      "Hospitality Expenses",
+      "Office Supplies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rule 130 governs expenditure on conferences and seminars."
+  },
+  {
+    "question": "What is the grace period for NPS contribution after retirement?",
+    "options": [
+      "30 days",
+      "60 days",
+      "90 days",
+      "No grace period"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subscribers can make contributions for 90 days post-retirement to maximize benefits."
+  },
+  {
+    "question": "PFMS integrates with which system for pensioner verification?",
+    "options": [
+      "Bhavishya",
+      "Pension Seva",
+      "SPARSH",
+      "e-Samadhan"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bhavishya platform integration enables pensioner life certificate verification."
+  },
+  {
+    "question": "Which section allows tax exemption for hostel allowance?",
+    "options": [
+      "Section 10(14)",
+      "Section 16",
+      "Section 17(2)",
+      "Section 80C"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 10(14) provides exemption for specified allowances including children's education/hostel."
+  },
+  {
+    "question": "Autonomous bodies must maintain what percentage of grants as reserve fund?",
+    "options": [
+      "5%",
+      "10%",
+      "25%",
+      "No mandatory reserve"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Reserve creation depends on individual body's rules; no uniform percentage mandated."
+  },
+  {
+    "question": "GFR Rule 235 mandates reconciliation of accounts every:",
+    "options": [
+      "Week",
+      "Month",
+      "Quarter",
+      "Year"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Monthly reconciliation of accounts is required under Rule 235."
+  },
+  {
+    "question": "What is the penalty for late NPS contributions?",
+    "options": [
+      "₹100 per day",
+      "1% per month",
+      "No penalty",
+      "Disqualification"
+    ],
+    "correctAnswer": 2,
+    "explanation": "No statutory penalty, but delayed contributions affect compounding benefits."
+  },
+  {
+    "question": "Which PFMS module tracks foreign-aided projects?",
+    "options": [
+      "Externally Aided Projects",
+      "International Cooperation",
+      "World Bank Division",
+      "Foreign Grant System"
+    ],
+    "correctAnswer": 0,
+    "explanation": "EAP module monitors implementation of foreign-funded projects."
+  },
+  {
+    "question": "Section 44ADA applies to:",
+    "options": [
+      "Retail Businesses",
+      "Freelance Professionals",
+      "Manufacturing Units",
+      "Agricultural Cooperatives"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Provides presumptive taxation scheme for professionals with ≤₹50 lakh turnover."
+  },
+  {
+    "question": "Autonomous bodies must obtain C&AG approval for:",
+    "options": [
+      "Annual Budget",
+      "Audit Committee Formation",
+      "Asset Disposal >₹1 Crore",
+      "Foreign Collaboration"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Major asset disposals require prior C&AG approval as per government guidelines."
+  },
+  {
+    "question": "GFR Rule 163 prohibits:",
+    "options": [
+      "Single Tender",
+      "Post-Tender Negotiations",
+      "Limited Tender",
+      "E-Auctions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Post-tender negotiations restricted except in special cases with approval."
+  },
+  {
+    "question": "GPF interest is compounded:",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annually"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Interest calculated annually on monthly balances."
+  },
+  {
+    "question": "PFMS's 'PayGov' module handles:",
+    "options": [
+      "Salary Disbursement",
+      "Citizen Payments",
+      "Vendor Payments",
+      "Tax Collections"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Facilitates online payments by citizens for government services."
+  },
+  {
+    "question": "Section 194H mandates TDS for:",
+    "options": [
+      "Brokerage",
+      "Consultancy",
+      "Commission",
+      "Professional Fees"
+    ],
+    "correctAnswer": 2,
+    "explanation": "5% TDS on commission/brokerage exceeding ₹15,000 annually."
+  },
+  {
+    "question": "Autonomous bodies classify expenditures as:",
+    "options": [
+      "Plan and Non-Plan",
+      "Revenue and Capital",
+      "Fixed and Variable",
+      "Direct and Indirect"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Follow government accounting classification of Revenue/Capital expenditure."
+  },
+  {
+    "question": "GFR Rule 145 covers:",
+    "options": [
+      "Vehicle Hiring",
+      "Petty Purchases",
+      "IT Procurement",
+      "Printing Contracts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rules for hiring transport vehicles for official purposes."
+  },
+  {
+    "question": "NPS Tier-II accounts offer:",
+    "options": [
+      "Tax Benefits",
+      "Unlimited Withdrawals",
+      "Guaranteed Returns",
+      "Life Insurance Cover"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Flexible withdrawal facility without exit restrictions."
+  },
+  {
+    "question": "PFMS's 'Vendor Management System' handles:",
+    "options": [
+      "Contractor Registration",
+      "Supplier Performance",
+      "Payment Tracking",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "End-to-end vendor management from empanelment to payment."
+  },
+  {
+    "question": "Section 197 allows:",
+    "options": [
+      "TDS Exemption",
+      "Lower TDS Certificate",
+      "TDS Refund",
+      "TDS Carry Forward"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Certificate for deduction of TDS at lower rates in special cases."
+  },
+  {
+    "question": "Autonomous bodies must get audit committee approval for:",
+    "options": [
+      "Annual Budget",
+      "Related Party Transactions",
+      "Staff Appointments",
+      "Grant Applications"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandatory for all material related party transactions."
+  },
+  {
+    "question": "GFR Rule 220 sets limits for:",
+    "options": [
+      "Cash Payments",
+      "Digital Payments",
+      "Cheque Payments",
+      "DD Payments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "₹25,000 limit for single cash transaction (₹2 lakh for special cases)."
+  },
+  {
+    "question": "GPF accounts can be opened by:",
+    "options": [
+      "Permanent Employees",
+      "Contractual Staff",
+      "Daily Wage Workers",
+      "All Government Staff"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Only permanent government employees are eligible for GPF."
+  },
+  {
+    "question": "PFMS's 'G2B' module facilitates:",
+    "options": [
+      "Government to Business Payments",
+      "Business to Government Payments",
+      "Inter-Government Transfers",
+      "Bank Reconciliation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Handles business payments to government agencies."
+  },
+  {
+    "question": "Section 80GGC provides deduction for:",
+    "options": [
+      "Corporate Donations",
+      "Political Contributions",
+      "Charitable Donations",
+      "Research Funding"
+    ],
+    "correctAnswer": 1,
+    "explanation": "100% deduction for contributions to political parties."
+  },
+  {
+    "question": "Autonomous bodies prepare financial statements under:",
+    "options": [
+      "Companies Act",
+      "Societies Act",
+      "GFR Guidelines",
+      "C&AG Directions"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Follow formats prescribed by Comptroller and Auditor General."
+  },
+  {
+    "question": "GFR Rule 185 requires:",
+    "options": [
+      "Quality Assurance",
+      "Third-Party Inspection",
+      "Supplier Audits",
+      "Performance Guarantees"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandatory for works contracts above ₹5 crore."
+  },
+  {
+    "question": "NPS partial withdrawal is permitted for:",
+    "options": [
+      "Medical Emergency",
+      "Business Startup",
+      "Wedding Expenses",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Permitted for specified purposes after 3 years of contributions."
+  },
+  {
+    "question": "PFMS's 'Non-Tax Receipt Portal' handles:",
+    "options": [
+      "GST Collections",
+      "User Charge Payments",
+      "Penalty Collections",
+      "Donations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Processing of non-tax government receipts."
+  },
+  {
+    "question": "Section 56(2)(x) taxes:",
+    "options": [
+      "Salary Arrears",
+      "Gifts",
+      "Interest Income",
+      "Capital Gains"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Taxes gifts exceeding ₹50,000 in a year."
+  },
+  {
+    "question": "Autonomous bodies must maintain records for:",
+    "options": [
+      "5 years",
+      "7 years",
+      "8 years",
+      "Permanently"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Minimum 8-year retention period for financial records."
+  },
+  {
+    "question": "GFR Rule 240 covers:",
+    "options": [
+      "Bank Guarantees",
+      "Performance Bonds",
+      "Security Deposits",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rules for financial securities in contracts."
+  },
+  {
+    "question": "GPF loans can be taken for:",
+    "options": [
+      "Vehicle Purchase",
+      "House Construction",
+      "Education",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Permitted for various purposes as per GPF Rules."
+  },
+  {
+    "question": "PFMS's 'GeoTagging' feature tracks:",
+    "options": [
+      "Beneficiary Locations",
+      "Project Sites",
+      "Asset Installations",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Geographical mapping of scheme implementation."
+  },
+  {
+    "question": "Section 80U provides deduction for:",
+    "options": [
+      "Senior Citizens",
+      "Disabled Persons",
+      "Women Entrepreneurs",
+      "Farmers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "₹75,000-₹1,25,000 deduction for differently-abled individuals."
+  },
+  {
+    "question": "Autonomous bodies require prior approval for:",
+    "options": [
+      "Internal Transfers",
+      "Budget Re-appropriation",
+      "Staff Training",
+      "Office Renovation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Re-appropriation beyond 10% requires administrative ministry approval."
+  },
+  {
+    "question": "GFR Rule 210 mandates:",
+    "options": [
+      "E-Payment",
+      "Cheque Payments",
+      "Cash Payments",
+      "DD Payments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mandatory for all payments above ₹25,000."
+  },
+  {
+    "question": "NPS Tier-I accounts allow:",
+    "options": [
+      "Unlimited Withdrawals",
+      "No Withdrawals",
+      "Partial Withdrawals",
+      "Only Final Withdrawal"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Restricted partial withdrawals under specific conditions."
+  },
+  {
+    "question": "PFMS's 'Aadhaar Seeding' ensures:",
+    "options": [
+      "Faster Payments",
+      "Beneficiary Verification",
+      "Reduced Duplicates",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Links Aadhaar to beneficiary accounts for efficient DBT."
+  },
+  {
+    "question": "Section 80GG provides deduction for:",
+    "options": [
+      "Home Loan Interest",
+      "Rent Paid",
+      "House Repair",
+      "Property Tax"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For individuals not receiving HRA (₹60,000 limit)."
+  },
+  {
+    "question": "Autonomous bodies must report foreign contributions to:",
+    "options": [
+      "RBI",
+      "FCRA",
+      "MHA",
+      "Ministry of Finance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandatory reporting to Foreign Contribution Regulation Act authorities."
+  },
+  {
+    "question": "GFR Rule 255 covers:",
+    "options": [
+      "Asset Write-off",
+      "Inventory Management",
+      "Loss Reporting",
+      "Disposal Auctions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Procedure for reporting financial losses."
+  },
+  {
+    "question": "GPF final settlement must be paid within:",
+    "options": [
+      "15 days",
+      "30 days",
+      "3 months",
+      "6 months"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Within 30 days of application submission."
+  },
+  {
+    "question": "PFMS's 'API Gateway' enables:",
+    "options": [
+      "Third-Party Integration",
+      "Mobile Banking",
+      "Real-time Analytics",
+      "Blockchain Security"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Seamless integration with external systems via APIs."
+  },
+  {
+    "question": "Section 10(38) exempts:",
+    "options": [
+      "Dividend Income",
+      "Long-Term Capital Gains",
+      "Agricultural Income",
+      "Interest Income"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Exempted LTCG on equity shares before April 2018."
+  },
+  {
+    "question": "Autonomous bodies must constitute:",
+    "options": [
+      "Vigilance Committee",
+      "Internal Complaint Committee",
+      "Ethics Committee",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Mandatory committees as per government guidelines."
+  },
+  {
+    "question": "GFR Rule 135 governs:",
+    "options": [
+      "Office Maintenance",
+      "Staff Welfare",
+      "Training Programs",
+      "Publicity Expenditure"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rules for expenditure on advertisements and publicity."
+  },
+  {
+    "question": "NPS subscribers can switch pension funds:",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annually"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Allowed once per quarter."
+  },
+  {
+    "question": "PFMS's 'Bharkhatree' feature handles:",
+    "options": [
+      "Loan Disbursement",
+      "Scholarship Payments",
+      "Subsidy Distribution",
+      "Salary Advances"
+    ],
+    "correctAnswer": 1,
+    "explanation": "End-to-end scholarship management system."
+  },
+  {
+    "question": "Section 194R mandates TDS for:",
+    "options": [
+      "Free Samples",
+      "Commission",
+      "Professional Fees",
+      "Interest"
+    ],
+    "correctAnswer": 0,
+    "explanation": "10% TDS on benefits/perquisites above ₹20,000 annually."
+  },
+  {
+    "question": "Autonomous bodies' borrowing limits are set by:",
+    "options": [
+      "Governing Body",
+      "Administrative Ministry",
+      "RBI",
+      "Finance Commission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Approved by administrative ministry as per charter."
+  },
+  {
+    "question": "GFR Rule 115 covers:",
+    "options": [
+      "Library Management",
+      "IT Infrastructure",
+      "Laboratory Equipment",
+      "Research Grants"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rules for library books and periodicals procurement."
+  },
+  {
+    "question": "GPF interest rate is notified by:",
+    "options": [
+      "RBI",
+      "Finance Ministry",
+      "CGA",
+      "PFRDA"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ministry of Finance notifies rates quarterly."
+  },
+  {
+    "question": "PFMS's 'NTRP' module is for:",
+    "options": [
+      "Tax Refunds",
+      "Non-Tax Receipts",
+      "New Taxpayers",
+      "National Transactions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Non-Tax Receipt Portal for government receipts."
+  },
+  {
+    "question": "Section 206AB imposes higher TDS for:",
+    "options": [
+      "Non-Filers",
+      "Foreign Companies",
+      "Startups",
+      "Charities"
+    ],
+    "correctAnswer": 0,
+    "explanation": "5% higher TDS for non-filers of income tax returns."
+  },
+  {
+    "question": "Autonomous bodies' budget format follows:",
+    "options": [
+      "Commercial Accounting",
+      "Government Budgeting",
+      "IFRS Standards",
+      "GAAP Principles"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Aligned with government budget classification structure."
+  },
+  {
+    "question": "GFR Rule 230 mandates:",
+    "options": [
+      "Internal Audits",
+      "External Audits",
+      "Concurrent Audits",
+      "Special Audits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mandatory quarterly internal audits."
+  },
+  {
+    "question": "NPS Tier-I accounts are:",
+    "options": [
+      "Withdrawable",
+      "Non-Withdrawable",
+      "Partially Withdrawable",
+      "Closed at Retirement"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Allow partial withdrawals under specific conditions."
+  },
+  {
+    "question": "PFMS's 'e-Samiksha' module enables:",
+    "options": [
+      "Online Meetings",
+      "Project Monitoring",
+      "Grievance Resolution",
+      "Performance Review"
+    ],
+    "correctAnswer": 3,
+    "explanation": "High-level review of scheme implementation by senior officials."
+  },
+  {
+    "question": "Section 80IAC provides tax holiday for:",
+    "options": [
+      "Startups",
+      "Exporters",
+      "Manufacturers",
+      "Farmers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "100% deduction for 3 years for eligible startups."
+  },
+  {
+    "question": "Autonomous bodies must submit utilization certificates in:",
+    "options": [
+      "Form GFR 12A",
+      "Form 26AS",
+      "Form 16",
+      "Form 3CD"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As prescribed in GFR Rule 237."
+  },
+  {
+    "question": "GFR Rule 140 requires:",
+    "options": [
+      "Energy Audits",
+      "IT Security Audits",
+      "Financial Audits",
+      "Environmental Audits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mandatory for buildings consuming >500 kW power."
+  },
+  {
+    "question": "GPF contributions are deducted from:",
+    "options": [
+      "Basic Pay",
+      "Basic Pay + DA",
+      "Gross Salary",
+      "Take-home Salary"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Calculated on basic pay plus dearness allowance."
+  },
+  {
+    "question": "PFMS's 'Central Plan Scheme Monitoring System' tracks:",
+    "options": [
+      "CSS Funds",
+      "State Schemes",
+      "Central Sector Schemes",
+      "Externally Aided Projects"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Monitoring of 100% centrally funded schemes."
+  },
+  {
+    "question": "Section 80JJAA provides deduction for:",
+    "options": [
+      "Employee Salaries",
+      "New Hires",
+      "Staff Training",
+      "EPF Contributions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Deduction for new regular employee hiring."
+  },
+  {
+    "question": "Autonomous bodies' audit committees comprise:",
+    "options": [
+      "Only Directors",
+      "External Experts",
+      "Finance Staff",
+      "Government Nominees"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Must include external financial experts and independent members."
+  },
+  {
+    "question": "GFR Rule 152 governs:",
+    "options": [
+      "Consultancy Hiring",
+      "Architect Selection",
+      "Technical Services",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Selection procedures for consultancy services."
+  },
+  {
+    "question": "NPS default investment option is:",
+    "options": [
+      "Aggressive Growth",
+      "Conservative",
+      "Auto Choice",
+      "Balanced"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Auto Choice adjusts asset allocation based on age."
+  },
+  {
+    "question": "PFMS's 'Project Financial Management' covers:",
+    "options": [
+      "Startups",
+      "Infrastructure Projects",
+      "R&D Initiatives",
+      "All of the above"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Specialized module for large infrastructure projects."
+  },
+  {
+    "question": "Section 194S mandates TDS for:",
+    "options": [
+      "Stock Dividends",
+      "Crypto Transactions",
+      "Online Sales",
+      "Export Payments"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1% TDS on cryptocurrency transfers above ₹10,000."
+  },
+  {
+    "question": "Autonomous bodies must maintain asset registers in:",
+    "options": [
+      "Physical Format",
+      "Digital Format",
+      "Hybrid Format",
+      "Blockchain"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandatory digital asset register as per GFR."
+  },
+  {
+    "question": "GFR Rule 260 covers:",
+    "options": [
+      "Inventory Control",
+      "Asset Verification",
+      "Loss Prevention",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rules for safeguarding government assets."
+  },
+  {
+    "question": "GPF advance for wedding requires:",
+    "options": [
+      "1-year service",
+      "3-year service",
+      "5-year service",
+      "7-year service"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Eligible after 1 year of service."
+  },
+  {
+    "question": "PFMS's 'Sankalan' is:",
+    "options": [
+      "Consolidation Report",
+      "Reconciliation Tool",
+      "Beneficiary Index",
+      "Payment Gateway"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consolidated report of all government transactions."
+  },
+  {
+    "question": "Section 80C deduction limit is:",
+    "options": [
+      "₹1.0 lakh",
+      "₹1.5 lakh",
+      "₹2.0 lakh",
+      "₹2.5 lakh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Maximum deduction under Section 80C is ₹1,50,000."
+  },
+  {
+    "question": "Autonomous bodies' annual reports must include:",
+    "options": [
+      "Financial Statements",
+      "Performance Review",
+      "Audit Observations",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Comprehensive annual reporting requirement."
+  },
+  {
+    "question": "GFR Rule 105 governs:",
+    "options": [
+      "Furniture Purchase",
+      "IT Equipment",
+      "Lab Supplies",
+      "Library Books"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Specific rules for office furniture procurement."
+  },
+  {
+    "question": "NPS minimum annuity purchase age is:",
+    "options": [
+      "50 years",
+      "60 years",
+      "65 years",
+      "70 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Minimum age for mandatory annuity purchase is 60."
+  },
+  {
+    "question": "PFMS's 'PAO Module' handles:",
+    "options": [
+      "Payroll Processing",
+      "Pension Payments",
+      "Vendor Payments",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Pay and Accounts Office functionality integration."
+  },
+  {
+    "question": "Section 194K mandates TDS for:",
+    "options": [
+      "Dividends",
+      "Mutual Funds",
+      "Stock Options",
+      "Interest"
+    ],
+    "correctAnswer": 1,
+    "explanation": "10% TDS on mutual fund income above ₹5,000."
+  },
+  {
+    "question": "Autonomous bodies' foreign travel requires approval from:",
+    "options": [
+      "Governing Body",
+      "Administrative Ministry",
+      "Finance Ministry",
+      "External Affairs"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Prior clearance from administrative ministry."
+  },
+  {
+    "question": "GFR Rule 245 covers:",
+    "options": [
+      "Asset Transfer",
+      "Inter-Departmental Transactions",
+      "Asset Leasing",
+      "Asset Sharing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rules for leasing government assets."
+  },
+  {
+    "question": "GPF account becomes inactive after:",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "7 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After 3 years of no subscription."
+  },
+  {
+    "question": "PFMS's 'Direct Payment' feature allows:",
+    "options": [
+      "Vendor Payments",
+      "Beneficiary Payments",
+      "Tax Payments",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Direct payment to end recipients without intermediaries."
+  },
+  {
+    "question": "Section 87A rebate is available for taxable income up to:",
+    "options": [
+      "₹3 lakh",
+      "₹5 lakh",
+      "₹7 lakh",
+      "₹10 lakh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rebate up to ₹12,500 for income ≤ ₹5 lakh."
+  },
+  {
+    "question": "Autonomous bodies' depreciation follows:",
+    "options": [
+      "Companies Act Rates",
+      "Income Tax Rates",
+      "C&AG Prescribed Rates",
+      "Management Decision"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As per rates notified by Comptroller and Auditor General."
+  },
+  {
+    "question": "GFR Rule 195 requires:",
+    "options": [
+      "Escrow Accounts",
+      "Project Bank Accounts",
+      "Joint Accounts",
+      "Trust Accounts"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mandatory for large projects to ensure payment discipline."
+  },
+  {
+    "question": "NPS PRAN remains valid for:",
+    "options": [
+      "5 years",
+      "10 years",
+      "Lifetime",
+      "Till Retirement"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Permanent Retirement Account Number is lifelong identifier."
+  },
+  {
+    "question": "PFMS's 'NACH Integration' enables:",
+    "options": [
+      "Direct Debits",
+      "Recurring Payments",
+      "One-time Payments",
+      "All of the above"
+    ],
+    "explanation": "Integration with National Automated Clearing House.",
+    "correctAnswer": 3
+  },
+  {
+    "question": "Section 80DDB provides deduction for:",
+    "options": [
+      "Preventive Health Checkup",
+      "Medical Treatment",
+      "Critical Illness",
+      "Health Insurance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treatment of specified diseases (₹40,000-₹1,00,000)."
+  },
+  {
+    "question": "Autonomous bodies' service regulations are approved by:",
+    "options": [
+      "Board of Directors",
+      "Administrative Ministry",
+      "Finance Ministry",
+      "UPSC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Service conditions require ministry sanction."
+  },
+  {
+    "question": "GFR Rule 110 governs:",
+    "options": [
+      "Software Acquisition",
+      "Hardware Purchase",
+      "IT Services",
+      "All IT Procurement"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Comprehensive rules for information technology procurement."
+  },
+  {
+    "question": "GPF nomination becomes invalid upon:",
+    "options": [
+      "Marriage",
+      "Child Birth",
+      "Nominee Death",
+      "All of the above"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Requires fresh nomination after nominee's death."
+  },
+  {
+    "question": "PFMS's 'e-Kuber Integration' connects with:",
+    "options": [
+      "State Treasuries",
+      "RBI",
+      "Commercial Banks",
+      "Payment Gateways"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Integration with RBI's core banking solution."
+  },
+  {
+    "question": "Section 194N imposes TDS for:",
+    "options": [
+      "Digital Payments",
+      "Cash Withdrawals",
+      "Foreign Remittances",
+      "Stock Sales"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cash withdrawals >₹20 lakh (2%) and >₹1 crore (5%)."
+  },
+  {
+    "question": "Autonomous bodies must follow accounting standards issued by:",
+    "options": [
+      "ICAI",
+      "NFRA",
+      "C&AG",
+      "Ministry of Corporate Affairs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Comptroller and Auditor General's Government Accounting Standards."
+  },
+  {
+    "question": "GFR Rule 155 covers:",
+    "options": [
+      "Research Grants",
+      "Conference Sponsorship",
+      "Fellowships",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rules for grants-in-aid to institutions."
+  },
+  {
+    "question": "NPS minimum annual contribution for Tier-II is:",
+    "options": [
+      "₹250",
+      "₹500",
+      "₹1,000",
+      "No minimum"
+    ],
+    "correctAnswer": 3,
+    "explanation": "No minimum contribution requirement."
+  },
+  {
+    "question": "PFMS's 'Mobile App' provides:",
+    "options": [
+      "Payment Tracking",
+      "Beneficiary Registration",
+      "Fund Release",
+      "All of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Real-time payment status tracking for stakeholders."
+  },
+  {
+    "question": "Section 80G allows deduction for:",
+    "options": [
+      "Political Donations",
+      "Charitable Donations",
+      "Educational Donations",
+      "Religious Donations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "50-100% deduction for approved charitable institutions."
+  },
+  {
+    "question": "Autonomous bodies' budget revisions require approval from:",
+    "options": [
+      "Director",
+      "Governing Body",
+      "Administrative Ministry",
+      "Finance Ministry"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Governing body approval for substantial revisions."
+  },
+  {
+    "question": "GFR Rule 168 mandates:",
+    "options": [
+      "E-Procurement",
+      "Green Procurement",
+      "Local Sourcing",
+      "MSME Preference"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Preference for environmentally friendly products."
+  },
+  {
+    "question": "GPF can be retained after retirement for:",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "Not permitted"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Must be closed within 30 days of retirement."
+  },
+  {
+    "question": "PFMS's 'Single Nodal Agency' model ensures:",
+    "options": [
+      "Direct Transfers",
+      "Timely Releases",
+      "Fund Pooling",
+      "Accountability"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Designated agency responsible for fund management."
+  },
+  {
+    "question": "Section 80TTA provides deduction for:",
+    "options": [
+      "FD Interest",
+      "Savings Account Interest",
+      "RD Interest",
+      "Bond Interest"
+    ],
+    "correctAnswer": 1,
+    "explanation": "₹10,000 deduction on savings bank interest."
+  },
+  {
+    "question": "Autonomous bodies' internal audits are conducted:",
+    "options": [
+      "Monthly",
+      "Quarterly",
+      "Half-yearly",
+      "Annually"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quarterly internal audits mandated."
+  },
+  {
+    "question": "GFR Rule 198 covers:",
+    "options": [
+      "Price Preference",
+      "Quality Preference",
+      "Make in India",
+      "Domestic Content"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Preference for domestically manufactured goods."
+  },
+  {
+    "question": "NPS exit processing time is:",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "60 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Within 30 days of complete documentation."
+  },
+  {
+    "question": "PFMS's 'Adhaar Vault' ensures:",
+    "options": [
+      "Data Security",
+      "Authentication",
+      "e-KYC",
+      "Consent Management"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Secure storage of Aadhaar numbers."
+  },
+  {
+    "question": "Section 80CCD(2) exemption is available for:",
+    "options": [
+      "Employees",
+      "Employers",
+      "Self-Employed",
+      "All Taxpayers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For employees on employer's NPS contribution."
+  },
+  {
+    "question": "Autonomous bodies' performance audits focus on:",
+    "options": [
+      "Financial Compliance",
+      "Efficiency Metrics",
+      "Outcome Delivery",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Three E's: Economy, Efficiency, Effectiveness."
+  },
+  {
+    "question": "GFR Rule 250 governs:",
+    "options": [
+      "Asset Auction",
+      "Asset Disposal",
+      "Asset Transfer",
+      "Asset Condemnation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Condemnation procedure for unserviceable assets."
+  }
+]

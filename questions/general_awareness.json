@@ -1,0 +1,2124 @@
+[
+  {
+    "question": "Who is the current Prime Minister of India (as of July 2025)?",
+    "options": ["Narendra Modi", "Amit Shah", "Rajnath Singh", "Nitin Gadkari"],
+    "correctAnswer": 0,
+    "explanation": "Narendra Modi has been the Prime Minister of India since 2014 and continues to hold the position as of the latest updates."
+  },
+  {
+    "question": "What is the capital city of France?",
+    "options": ["London", "Paris", "Berlin", "Madrid"],
+    "correctAnswer": 1,
+    "explanation": "Paris is the capital city of France."
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+    "correctAnswer": 1,
+    "explanation": "Mars is called the Red Planet due to its reddish appearance caused by iron oxide (rust) on its surface."
+  },
+  {
+    "question": "What does CPU stand for in computer terminology?",
+    "options": ["Central Processing Unit", "Computer Processing Unit", "Central Program Unit", "Control Processing Unit"],
+    "correctAnswer": 0,
+    "explanation": "CPU stands for Central Processing Unit, the main processor of a computer."
+  },
+  {
+    "question": "Which country hosted the 2024 Summer Olympics?",
+    "options": ["Japan", "France", "Brazil", "China"],
+    "correctAnswer": 1,
+    "explanation": "The 2024 Summer Olympics were held in Paris, France."
+  },
+  {
+    "question": "What is the full form of RAM in computers?",
+    "options": ["Read Access Memory", "Random Access Memory", "Run Access Memory", "Rapid Access Memory"],
+    "correctAnswer": 1,
+    "explanation": "RAM stands for Random Access Memory, a type of computer memory that can be accessed randomly."
+  },
+  {
+    "question": "Which river is the longest in India?",
+    "options": ["Ganga", "Yamuna", "Brahmaputra", "Indus"],
+    "correctAnswer": 0,
+    "explanation": "The Ganga is the longest river in India, approximately 2,525 km long."
+  },
+  {
+    "question": "What is the primary function of an operating system?",
+    "options": ["Run applications", "Manage hardware and software resources", "Store data", "Connect to the internet"],
+    "correctAnswer": 1,
+    "explanation": "An operating system manages a computer's hardware and software resources and provides services for applications."
+  },
+  {
+    "question": "Who discovered the theory of relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+    "correctAnswer": 1,
+    "explanation": "Albert Einstein developed the theory of relativity, including E=mc²."
+  },
+  {
+    "question": "What does HTTP stand for?",
+    "options": ["HyperText Transfer Protocol", "High Transfer Text Protocol", "Hyper Transfer Text Protocol", "Host Text Transfer Protocol"],
+    "correctAnswer": 0,
+    "explanation": "HTTP stands for HyperText Transfer Protocol, used for transferring web pages on the internet."
+  },
+  {
+    "question": "Which country is the largest by land area?",
+    "options": ["China", "Russia", "Canada", "United States"],
+    "correctAnswer": 1,
+    "explanation": "Russia is the largest country by land area, covering approximately 17.1 million square kilometers."
+  },
+  {
+    "question": "What is the main source of energy for Earth’s climate system?",
+    "options": ["The Sun", "The Moon", "Geothermal Energy", "Fossil Fuels"],
+    "correctAnswer": 0,
+    "explanation": "The Sun provides the primary energy for Earth's climate system through solar radiation."
+  },
+  {
+    "question": "Which programming language is known for its use in web development?",
+    "options": ["Python", "JavaScript", "C++", "Java"],
+    "correctAnswer": 1,
+    "explanation": "JavaScript is widely used for creating interactive web pages and web applications."
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+    "correctAnswer": 1,
+    "explanation": "George Washington was the first President of the United States, serving from 1789 to 1797."
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Fe", "Cu"],
+    "correctAnswer": 0,
+    "explanation": "Au is the chemical symbol for gold on the periodic table."
+  },
+  {
+    "question": "Which software is used for creating spreadsheets?",
+    "options": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Access"],
+    "correctAnswer": 1,
+    "explanation": "Microsoft Excel is a spreadsheet application used for data analysis and calculations."
+  },
+  {
+    "question": "Which country won the FIFA World Cup in 2022?",
+    "options": ["Brazil", "France", "Argentina", "Germany"],
+    "correctAnswer": 2,
+    "explanation": "Argentina won the FIFA World Cup in 2022, defeating France in the final."
+  },
+  {
+    "question": "What is the capital city of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "correctAnswer": 2,
+    "explanation": "Canberra is the capital city of Australia."
+  },
+  {
+    "question": "What does USB stand for in computer terminology?",
+    "options": ["Universal Serial Bus", "United Serial Bus", "Universal System Bus", "Unit Serial Bus"],
+    "correctAnswer": 0,
+    "explanation": "USB stands for Universal Serial Bus, a standard for connecting devices to computers."
+  },
+  {
+    "question": "Which mountain is the highest in the world?",
+    "options": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+    "correctAnswer": 2,
+    "explanation": "Mount Everest is the highest mountain in the world, standing at 8,848 meters."
+  },
+  {
+    "question": "Which article of the Indian Constitution deals with the Fundamental Right to Equality?",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 14 guarantees equality before law and equal protection of laws to all persons within India."
+  },
+  {
+    "question": "The National Education Policy 2020 aims to achieve 100% Gross Enrollment Ratio (GER) in school education by which year?",
+    "options": [
+      "2025",
+      "2030",
+      "2035",
+      "2040"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NEP 2020 targets universalization of education from preschool to secondary level with 100% GER by 2030."
+  },
+  {
+    "question": "Which key combination creates a new slide in PowerPoint?",
+    "options": [
+      "Ctrl+M",
+      "Ctrl+N",
+      "Ctrl+S",
+      "Ctrl+P"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ctrl+M inserts a new slide in Microsoft PowerPoint."
+  },
+  {
+    "question": "The 'Make in India' initiative was launched in which year?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Prime Minister Narendra Modi launched Make in India on September 25, 2014."
+  },
+  {
+    "question": "Which function in Excel counts cells containing numbers?",
+    "options": [
+      "COUNT()",
+      "SUM()",
+      "COUNTA()",
+      "COUNTBLANK()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The COUNT() function tallies cells with numerical values in a specified range."
+  },
+  {
+    "question": "The National Institutional Ranking Framework (NIRF) evaluates institutions based on how many parameters?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NIRF uses five parameters: Teaching, Research, Graduation Outcomes, Outreach, and Perception."
+  },
+  {
+    "question": "Which protocol secures email communication?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SSL/TLS",
+      "POP3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SSL/TLS protocols encrypt email transmissions to protect sensitive data."
+  },
+  {
+    "question": "The Kesavananda Bharati case established the doctrine of:",
+    "options": [
+      "Basic Structure",
+      "Judicial Review",
+      "Public Interest Litigation",
+      "Fundamental Rights"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 1973 Supreme Court verdict held that Parliament cannot alter the Constitution's basic structure."
+  },
+  {
+    "question": "India's first digital university will be established in which state?",
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Maharashtra",
+      "Tamil Nadu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Digital University Kerala (DUK) is India's first institution dedicated to digital education."
+  },
+  {
+    "question": "Which feature prevents unauthorized access to a Windows user account?",
+    "options": [
+      "Firewall",
+      "BitLocker",
+      "Password Policy",
+      "Defender"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Password policies enforce complexity requirements and lockout durations to secure accounts."
+  },
+  {
+    "question": "The National Institutional Ranking Framework was launched in:",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NIRF was introduced by the Ministry of Education in September 2015."
+  },
+  {
+    "question": "Which constitutional amendment introduced the Goods and Services Tax (GST)?",
+    "options": [
+      "100th",
+      "101st",
+      "102nd",
+      "103rd"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 101st Constitutional Amendment Act, 2016 paved the way for GST implementation."
+  },
+  {
+    "question": "In Excel, what does the VLOOKUP function do?",
+    "options": [
+      "Vertical data alignment",
+      "Value-based cell formatting",
+      "Table lookup by row",
+      "Variable calculation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "VLOOKUP searches for a value in the first column of a table and returns a corresponding value from another column."
+  },
+  {
+    "question": "The 'Study in India' program is administered by:",
+    "options": [
+      "UGC",
+      "AICTE",
+      "Ministry of External Affairs",
+      "Ministry of Education"
+    ],
+    "correctAnswer": 3,
+    "explanation": "This initiative by the Education Ministry attracts international students to Indian higher education institutions."
+  },
+  {
+    "question": "Which cybersecurity threat encrypts files and demands ransom?",
+    "options": [
+      "Phishing",
+      "Ransomware",
+      "Spyware",
+      "Adware"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ransomware blocks access to systems/data until payment is made to attackers."
+  },
+  {
+    "question": "The National Education Policy 2020 replaces which earlier policy?",
+    "options": [
+      "NPE 1968",
+      "NPE 1986",
+      "NCF 2005",
+      "RTE 2009"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NEP 2020 supersedes the National Policy on Education 1986 and its 1992 modification."
+  },
+  {
+    "question": "Which shortcut key opens the 'Find and Replace' dialog in Word?",
+    "options": [
+      "Ctrl+F",
+      "Ctrl+H",
+      "Ctrl+G",
+      "Ctrl+R"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ctrl+H directly opens the Replace tab in the Find and Replace dialog box."
+  },
+  {
+    "question": "The 'Paris Agreement' primarily addresses:",
+    "options": [
+      "Global trade",
+      "Climate change",
+      "Nuclear disarmament",
+      "Refugee crisis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This international treaty aims to limit global warming to well below 2°C above pre-industrial levels."
+  },
+  {
+    "question": "Which article defines the Fundamental Duties of citizens?",
+    "options": [
+      "Article 32",
+      "Article 51A",
+      "Article 368",
+      "Article 14"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 51A, added by the 42nd Amendment, lists 11 Fundamental Duties."
+  },
+  {
+    "question": "The SWAYAM portal provides:",
+    "options": [
+      "Scholarship management",
+      "Online courses",
+      "Faculty recruitment",
+      "Campus connectivity"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SWAYAM (Study Webs of Active Learning for Young Aspiring Minds) offers free MOOCs from school to university level."
+  },
+  {
+    "question": "Which Excel feature visualizes data trends?",
+    "options": [
+      "PivotTables",
+      "Conditional Formatting",
+      "Sparklines",
+      "Data Validation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sparklines are miniature charts embedded in cells for quick trend analysis."
+  },
+  {
+    "question": "India's first National Sports University is located in:",
+    "options": [
+      "Patiala, Punjab",
+      "Imphal, Manipur",
+      "Thiruvananthapuram, Kerala",
+      "Bhopal, Madhya Pradesh"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The National Sports University was established in Imphal under the National Sports University Act, 2018."
+  },
+  {
+    "question": "Which firewall setting blocks all incoming connections?",
+    "options": [
+      "Public network",
+      "Private network",
+      "Domain network",
+      "Guest network"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Public network profile in Windows Firewall provides the strictest security by default."
+  },
+  {
+    "question": "The 'Collegium System' relates to:",
+    "options": [
+      "University administration",
+      "Judicial appointments",
+      "Corporate governance",
+      "Military promotions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It's the system where Supreme Court judges appoint other judges through internal consultation."
+  },
+  {
+    "question": "NEP 2020 proposes a new curricular structure called:",
+    "options": [
+      "10+2+3",
+      "5+3+3+4",
+      "8+4+2",
+      "6+4+2+2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 5+3+3+4 model covers ages 3-18: Foundational (5), Preparatory (3), Middle (3), Secondary (4)."
+  },
+  {
+    "question": "Which email header field prevents recipients from seeing others' addresses?",
+    "options": [
+      "To",
+      "Cc",
+      "Bcc",
+      "Subject"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Blind Carbon Copy (Bcc) hides recipient addresses from other receivers."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was approved by:",
+    "options": [
+      "UGC",
+      "MHRD",
+      "Cabinet",
+      "President"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Union Cabinet approved NIRF on September 24, 2015."
+  },
+  {
+    "question": "Which constitutional body conducts elections in India?",
+    "options": [
+      "Finance Commission",
+      "UPSC",
+      "Election Commission",
+      "CAG"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Article 324 vests superintendence of elections in the Election Commission."
+  },
+  {
+    "question": "The 'Global Partnership on Artificial Intelligence' was founded in:",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "explanation": "GPAI was launched in June 2020 with 15 founding members including India."
+  },
+  {
+    "question": "Which tool creates interactive dashboards in Excel?",
+    "options": [
+      "Data Form",
+      "PivotChart",
+      "Power Pivot",
+      "Solver"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Power Pivot handles large datasets and creates advanced analytical models."
+  },
+  {
+    "question": "The Atal Ranking of Institutions on Innovation Achievements (ARIIA) is managed by:",
+    "options": [
+      "AICTE",
+      "DST",
+      "Ministry of Education",
+      "NITI Aayog"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All India Council for Technical Education coordinates the ARIIA rankings."
+  },
+  {
+    "question": "Two-factor authentication typically requires:",
+    "options": [
+      "Password and PIN",
+      "Biometric and password",
+      "Two passwords",
+      "Security question and PIN"
+    ],
+    "correctAnswer": 1,
+    "explanation": "2FA combines knowledge (password) with possession (phone) or inherence (fingerprint)."
+  },
+  {
+    "question": "The 'Lokpal and Lokayuktas Act' was passed in:",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The anti-corruption ombudsman legislation received presidential assent on January 1, 2014."
+  },
+  {
+    "question": "India's National Quantum Mission was announced in:",
+    "options": [
+      "Union Budget 2020",
+      "Union Budget 2021",
+      "Union Budget 2022",
+      "Union Budget 2023"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Finance Minister Nirmala Sitharaman announced the ₹6,000 crore mission in February 2023."
+  },
+  {
+    "question": "Which PowerPoint view shows thumbnails of all slides?",
+    "options": [
+      "Normal View",
+      "Slide Sorter",
+      "Notes Page",
+      "Reading View"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Slide Sorter displays miniature versions of all slides for rearrangement."
+  },
+  {
+    "question": "The 'Institutions of Eminence' scheme provides autonomy to:",
+    "options": [
+      "Central universities",
+      "Private colleges",
+      "Deemed universities",
+      "Technical institutes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Selected institutions receive greater academic, administrative, and financial freedom."
+  },
+  {
+    "question": "Which protocol is used for secure web browsing?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "SMTP"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HTTPS encrypts data between browser and server using SSL/TLS."
+  },
+  {
+    "question": "The Fundamental Right to Education is guaranteed under:",
+    "options": [
+      "Article 21",
+      "Article 21A",
+      "Article 45",
+      "Article 51A"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 21A mandates free and compulsory education for children aged 6-14 years."
+  },
+  {
+    "question": "India's first National Rail University is located in:",
+    "options": [
+      "Vadodara",
+      "Chennai",
+      "Secunderabad",
+      "Lucknow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The National Rail and Transportation Institute (NRTI) was established in Vadodara, Gujarat."
+  },
+  {
+    "question": "Which function capitalizes text in Excel?",
+    "options": [
+      "UPPER()",
+      "CAPITAL()",
+      "PROPER()",
+      "TEXT()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The UPPER() function converts all letters in a text string to uppercase."
+  },
+  {
+    "question": "The 'CHAMPIONS' portal supports:",
+    "options": [
+      "Startups",
+      "MSMEs",
+      "Farmers",
+      "Exporters"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This Ministry of MSME platform helps micro, small, and medium enterprises during COVID-19."
+  },
+  {
+    "question": "A VPN enhances security by:",
+    "options": [
+      "Blocking ads",
+      "Encrypting connections",
+      "Filtering spam",
+      "Managing passwords"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Virtual Private Networks create encrypted tunnels for secure remote access."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' includes which category?",
+    "options": [
+      "Agriculture",
+      "Medical",
+      "Management",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NIRF ranks institutions in multiple domains including engineering, management, pharmacy, etc."
+  },
+  {
+    "question": "Which article allows the President to promulgate ordinances?",
+    "options": [
+      "Article 123",
+      "Article 143",
+      "Article 356",
+      "Article 360"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 123 empowers the President to issue ordinances when Parliament is not in session."
+  },
+  {
+    "question": "The 'Global Innovation Index 2023' ranked India at:",
+    "options": [
+      "40th",
+      "48th",
+      "57th",
+      "66th"
+    ],
+    "correctAnswer": 0,
+    "explanation": "India climbed to 40th position in 2023 from 81st in 2015, as per WIPO data."
+  },
+  {
+    "question": "Which feature tracks changes in a Word document?",
+    "options": [
+      "Comments",
+      "Version History",
+      "Track Changes",
+      "Compare Documents"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Track Changes records all edits made to the document for review."
+  },
+  {
+    "question": "The National Research Foundation was proposed by:",
+    "options": [
+      "NEP 2020",
+      "NISP 2018",
+      "NIRF 2015",
+      "STARTUP INDIA"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NEP 2020 recommended establishing NRF to strengthen research across disciplines."
+  },
+  {
+    "question": "Which authentication method uses physical characteristics?",
+    "options": [
+      "Password",
+      "PIN",
+      "Biometric",
+      "Security Token"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Biometrics verify identity using fingerprints, facial recognition, or iris scans."
+  },
+  {
+    "question": "The 'Right to Information Act' was passed in:",
+    "options": [
+      "2002",
+      "2005",
+      "2010",
+      "2012"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RTI Act received presidential assent on June 15, 2005, becoming operational October 12, 2005."
+  },
+  {
+    "question": "India's first digital university started operations in:",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Digital University Kerala admitted its first batch of students in November 2022."
+  },
+  {
+    "question": "Which Excel tool forecasts future values?",
+    "options": [
+      "Solver",
+      "What-If Analysis",
+      "Data Table",
+      "Forecast Sheet"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Forecast Sheet creates visual predictions based on historical time-based data."
+  },
+  {
+    "question": "The 'Academic Bank of Credits' allows students to:",
+    "options": [
+      "Secure education loans",
+      "Transfer credits between institutions",
+      "Access online resources",
+      "Store academic certificates"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ABC enables accumulation and transfer of credits across higher education institutions."
+  },
+  {
+    "question": "Which Windows tool removes temporary files?",
+    "options": [
+      "Defragmenter",
+      "Disk Cleanup",
+      "System Restore",
+      "Task Manager"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Disk Cleanup deletes unnecessary files like temporary internet files and recycle bin contents."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was first released in:",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "explanation": "First India Rankings under NIRF were announced on April 4, 2016."
+  },
+  {
+    "question": "Which part of the Constitution deals with Directive Principles?",
+    "options": [
+      "Part I",
+      "Part III",
+      "Part IV",
+      "Part V"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Part IV (Articles 36-51) contains Directive Principles of State Policy."
+  },
+  {
+    "question": "India's National Education Policy 2020 was approved by the Cabinet on:",
+    "options": [
+      "July 29, 2020",
+      "August 5, 2020",
+      "September 1, 2020",
+      "October 2, 2020"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Union Cabinet approved NEP 2020 on July 29, replacing the 34-year-old policy."
+  },
+  {
+    "question": "Which function counts non-empty cells in Excel?",
+    "options": [
+      "COUNT()",
+      "COUNTIF()",
+      "COUNTA()",
+      "COUNTBLANK()"
+    ],
+    "correctAnswer": 2,
+    "explanation": "COUNTA() tallies cells containing any data type (text, numbers, errors)."
+  },
+  {
+    "question": "The 'One Nation One Subscription' initiative aims to:",
+    "options": [
+      "Unify school syllabus",
+      "Provide universal journal access",
+      "Standardize examination",
+      "Centralize admission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "ONOS will provide nationwide access to paid scholarly journals through central negotiation."
+  },
+  {
+    "question": "Which cybersecurity practice protects against phishing?",
+    "options": [
+      "Regular backups",
+      "Email filtering",
+      "Antivirus updates",
+      "Firewall configuration"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Email filters detect and block suspicious messages before they reach users."
+  },
+  {
+    "question": "Which constitutional article defines India as a 'Union of States'?",
+    "options": [
+      "Article 1",
+      "Article 21",
+      "Article 51",
+      "Article 370"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 1(1) states: 'India, that is Bharat, shall be a Union of States.'"
+  },
+  {
+    "question": "The 'Digital India Land Records Modernisation Programme' aims to:",
+    "options": [
+      "Digitize property titles",
+      "Create land banks for industries",
+      "Implement blockchain for agriculture",
+      "Survey forest lands"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This initiative creates computerized land records with conclusive titles."
+  },
+  {
+    "question": "In Excel, what does the F4 key do when editing a formula?",
+    "options": [
+      "Opens function library",
+      "Toggles cell references",
+      "Recalculates workbook",
+      "Inserts new function"
+    ],
+    "correctAnswer": 1,
+    "explanation": "F4 cycles through absolute/relative reference combinations (e.g., A1→$A$1→A$1→$A1)."
+  },
+  {
+    "question": "The National Institutional Ranking Framework (NIRF) was developed based on recommendations from:",
+    "options": [
+      "Kothari Commission",
+      "Narayana Murthy Committee",
+      "Sam Pitroda Committee",
+      "Yash Pal Committee"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The 2009 report by Narayana Murthy proposed a national ranking system."
+  },
+  {
+    "question": "Which encryption method uses public and private keys?",
+    "options": [
+      "AES",
+      "RSA",
+      "DES",
+      "SSL"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RSA (Rivest-Shamir-Adleman) is an asymmetric cryptography system."
+  },
+  {
+    "question": "The 73rd and 74th Constitutional Amendments established:",
+    "options": [
+      "Fundamental Duties",
+      "Panchayati Raj Institutions",
+      "National Commission for Minorities",
+      "Right to Information"
+    ],
+    "correctAnswer": 1,
+    "explanation": "These 1992 amendments gave constitutional status to rural and urban local governments."
+  },
+  {
+    "question": "India's National Quantum Mission has a budget allocation of:",
+    "options": [
+      "₹1,000 crore",
+      "₹3,600 crore",
+      "₹6,000 crore",
+      "₹10,000 crore"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The ₹6,000 crore mission targets quantum computing development over 2023-2031."
+  },
+  {
+    "question": "Which PowerPoint feature creates a flowchart?",
+    "options": [
+      "Animations",
+      "SmartArt",
+      "Slide Master",
+      "Action Buttons"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SmartArt offers predefined diagram templates including process flows."
+  },
+  {
+    "question": "The 'Swayam Prabha' initiative provides:",
+    "options": [
+      "Online degree programs",
+      "TV-based educational channels",
+      "Faculty development",
+      "Virtual labs"
+    ],
+    "correctAnswer": 1,
+    "explanation": "32 DTH channels broadcast curriculum-based educational content."
+  },
+  {
+    "question": "What is the purpose of a BIOS password?",
+    "options": [
+      "Encrypt files",
+      "Prevent OS booting",
+      "Secure WiFi",
+      "Block USB access"
+    ],
+    "correctAnswer": 1,
+    "explanation": "BIOS-level authentication stops unauthorized system startup."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions in how many categories?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Categories include Overall, University, Engineering, Management, Pharmacy, etc."
+  },
+  {
+    "question": "Which article provides constitutional protection against double jeopardy?",
+    "options": [
+      "Article 19",
+      "Article 21",
+      "Article 22",
+      "Article 20"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Article 20(2) states: 'No person shall be prosecuted and punished for the same offence more than once.'"
+  },
+  {
+    "question": "The 'Global Biofuels Alliance' was launched at:",
+    "options": [
+      "COP26",
+      "G20 Summit 2023",
+      "COP28",
+      "UNGA 2023"
+    ],
+    "correctAnswer": 1,
+    "explanation": "India launched this alliance during Delhi G20 Summit to promote biofuel adoption."
+  },
+  {
+    "question": "Which Excel function joins text strings?",
+    "options": [
+      "MERGE()",
+      "JOIN()",
+      "CONCAT()",
+      "COMBINE()"
+    ],
+    "correctAnswer": 2,
+    "explanation": "CONCAT() replaces CONCATENATE() to merge multiple text strings."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' parameter 'Graduation Outcome' includes:",
+    "options": [
+      "Placement rate",
+      "Median salary",
+      "Higher education enrollment",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Measures student success through placements, further studies, and entrepreneurship."
+  },
+  {
+    "question": "Which security measure prevents 'shoulder surfing'?",
+    "options": [
+      "Firewalls",
+      "Privacy screens",
+      "Antivirus",
+      "VPN"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Privacy filters limit screen visibility to narrow angles."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was first implemented by:",
+    "options": [
+      "IISc Bangalore",
+      "IIT Madras",
+      "JNU",
+      "BHU"
+    ],
+    "correctAnswer": 1,
+    "explanation": "IIT Madras topped the first NIRF rankings in 2016."
+  },
+  {
+    "question": "The 'Right to Privacy' was recognized as a fundamental right under:",
+    "options": [
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Supreme Court's 2017 Puttaswamy judgment held privacy is intrinsic to life and liberty."
+  },
+  {
+    "question": "India's 'PM Schools for Rising India' (PM SHRI) scheme upgrades:",
+    "options": [
+      "Medical colleges",
+      "Kendriya Vidyalayas",
+      "State government schools",
+      "Navodaya Vidyalayas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "14,500 schools will become model institutions showcasing NEP implementation."
+  },
+  {
+    "question": "Which PowerPoint view is best for rehearsing timings?",
+    "options": [
+      "Normal",
+      "Presenter",
+      "Reading",
+      "Slide Show"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Slide Show mode records presentation duration per slide."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' parameter 'Perception' carries what weight?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Perception accounts for 10% through employer, academic, and public reputation surveys."
+  },
+  {
+    "question": "Which protocol resolves domain names to IP addresses?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Domain Name System translates human-readable names to machine IPs."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' evaluates research using:",
+    "options": [
+      "Publication count",
+      "Citation impact",
+      "Patent filings",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Research metrics include quality, quantity, IP, and collaborative output."
+  },
+  {
+    "question": "The 'Doctrine of Eclipse' applies to:",
+    "options": [
+      "Fundamental Rights",
+      "Directive Principles",
+      "State Legislatures",
+      "Constitutional Amendments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "It holds that pre-constitutional laws inconsistent with FRs aren't void but dormant."
+  },
+  {
+    "question": "India's 'National Credit Framework' integrates:",
+    "options": [
+      "School, higher, vocational education",
+      "Banking and education sectors",
+      "Academic and co-curricular credits",
+      "Skill development programs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NCrF creates unified credit accumulation across all education levels."
+  },
+  {
+    "question": "Which Excel tool identifies optimal solutions?",
+    "options": [
+      "Goal Seek",
+      "Scenario Manager",
+      "Solver",
+      "Data Analysis"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Solver finds optimal values for formulas with constraints."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' outreach metric includes:",
+    "options": [
+      "Rural enrollment",
+      "Women participation",
+      "Economically disadvantaged",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Inclusion and diversity indicators measure equitable access."
+  },
+  {
+    "question": "What does 'https://' indicate in a URL?",
+    "options": [
+      "High traffic site",
+      "Hypertext transfer",
+      "Secure connection",
+      "Historical archive"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The 's' denotes SSL/TLS encryption for secure data transfer."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' teaching metric evaluates:",
+    "options": [
+      "Faculty-student ratio",
+      "PhD graduates",
+      "Faculty qualifications",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Teaching quality assessed through resources, outcomes, and faculty profile."
+  },
+  {
+    "question": "Which constitutional amendment reduced voting age to 18?",
+    "options": [
+      "42nd",
+      "61st",
+      "73rd",
+      "86th"
+    ],
+    "correctAnswer": 1,
+    "explanation": "61st Amendment Act, 1988 changed voting age from 21 to 18."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was developed by:",
+    "options": [
+      "UGC",
+      "AICTE",
+      "Ministry of Education",
+      "NITI Aayog"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MHRD (now Education Ministry) designed NIRF methodology."
+  },
+  {
+    "question": "Which firewall type monitors active connections?",
+    "options": [
+      "Packet-filtering",
+      "Stateful inspection",
+      "Proxy",
+      "Next-generation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Stateful firewalls track connection states for context-aware filtering."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' data is submitted through:",
+    "options": [
+      "NIRF Portal",
+      "UMANG App",
+      "DigiLocker",
+      "e-Tendering"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Institutions upload validated data to nirfindia.org portal."
+  },
+  {
+    "question": "Article 30 guarantees minorities the right to:",
+    "options": [
+      "Freedom of religion",
+      "Establish educational institutions",
+      "Conserve culture",
+      "Political representation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 30(1) provides rights to establish/administer educational institutions."
+  },
+  {
+    "question": "India's 'YUVA Prime Minister's Scheme' mentors:",
+    "options": [
+      "Young athletes",
+      "Startup founders",
+      "Student innovators",
+      "Young authors"
+    ],
+    "correctAnswer": 3,
+    "explanation": "This National Book Trust scheme mentors authors under 30."
+  },
+  {
+    "question": "Which PowerPoint animation controls entry sequence?",
+    "options": [
+      "Transition",
+      "Animation Pane",
+      "Slide Master",
+      "Trigger"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Animation Pane sequences object animations on a slide."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks how many institutions annually?",
+    "options": [
+      "Top 50",
+      "Top 100",
+      "Top 500",
+      "All participating"
+    ],
+    "correctAnswer": 3,
+    "explanation": "All participating institutions receive ranks in their categories."
+  },
+  {
+    "question": "What is 'spear phishing'?",
+    "options": [
+      "Mass spam campaign",
+      "CEO fraud attack",
+      "Voice-based scam",
+      "Targeted email attack"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Personalized emails targeting specific individuals/organizations."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' validation includes:",
+    "options": [
+      "Third-party audit",
+      "Data verification",
+      "Peer review",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Multi-stage verification ensures ranking credibility."
+  },
+  {
+    "question": "The 'Doctrine of Basic Structure' was established in:",
+    "options": [
+      "Golaknath case",
+      "Kesavananda Bharati case",
+      "Minerva Mills case",
+      "Waman Rao case"
+    ],
+    "correctAnswer": 1,
+    "explanation": "1973 Supreme Court judgment limited Parliament's amending power."
+  },
+  {
+    "question": "India's 'Study Webs of Active Learning' platform hosts courses from:",
+    "options": [
+      "IITs only",
+      "Central universities",
+      "Premier institutions",
+      "Foreign universities"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SWAYAM features courses from IITs, IIMs, CEC, IGNOU, etc."
+  },
+  {
+    "question": "Which Excel function returns current date?",
+    "options": [
+      "TODAY()",
+      "NOW()",
+      "DATE()",
+      "CURRENT()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "TODAY() inserts current date without time component."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was inspired by:",
+    "options": [
+      "QS Rankings",
+      "THE Rankings",
+      "Shanghai Rankings",
+      "All global systems"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NIRF incorporates best practices from major international ranking systems."
+  },
+  {
+    "question": "What is 'whaling' in cybersecurity?",
+    "options": [
+      "CEO fraud",
+      "Data exfiltration",
+      "Password cracking",
+      "Ransomware attack"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Phishing attacks targeting high-level executives."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' data collection period is:",
+    "options": [
+      "Previous academic year",
+      "Last 3 years",
+      "Last 5 years",
+      "Since inception"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Most metrics consider institutional performance over three years."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was launched under which government scheme?",
+    "options": [
+      "Rashtriya Uchchatar Shiksha Abhiyan",
+      "Institutions of Eminence",
+      "IMPacting Research INnovation and Technology",
+      "None of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NIRF is a standalone framework not tied to specific schemes."
+  },
+  {
+    "question": "Which constitutional article establishes the Supreme Court?",
+    "options": [
+      "Article 124",
+      "Article 131",
+      "Article 143",
+      "Article 226"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Article 124 establishes the Supreme Court and outlines its composition."
+  },
+  {
+    "question": "The 'Global Skill Gap Index' ranked India's skill development system at:",
+    "options": [
+      "35th",
+      "48th",
+      "59th",
+      "72nd"
+    ],
+    "correctAnswer": 2,
+    "explanation": "World Economic Forum's 2023 report placed India 59th globally."
+  },
+  {
+    "question": "Which Excel feature prevents invalid data entry?",
+    "options": [
+      "Data Validation",
+      "Conditional Formatting",
+      "What-If Analysis",
+      "PivotTables"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Data Validation restricts input to predefined criteria."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' considers which accreditation?",
+    "options": [
+      "NAAC",
+      "NBA",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Accreditation scores from NAAC (universities) and NBA (programs) contribute to rankings."
+  },
+  {
+    "question": "Which cybersecurity term describes fake security software?",
+    "options": [
+      "Spyware",
+      "Ransomware",
+      "Scareware",
+      "Adware"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Scareware tricks users into installing malware disguised as antivirus."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions primarily for:",
+    "options": [
+      "Funding allocation",
+      "Student choice",
+      "Regulatory oversight",
+      "Global benchmarking"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NIRF helps students identify quality institutions during admissions."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was made mandatory for:",
+    "options": [
+      "Central universities",
+      "All universities",
+      "Government colleges",
+      "No mandatory participation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Participation remains voluntary though strongly encouraged."
+  },
+  {
+    "question": "Article 243D reserves seats for women in:",
+    "options": [
+      "Parliament",
+      "State legislatures",
+      "Panchayats",
+      "Municipalities"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mandates 33% reservation for women in Panchayati Raj institutions."
+  },
+  {
+    "question": "India's 'Digital University' model will operate through:",
+    "options": [
+      "Centralized campus",
+      "Hub-and-spoke centers",
+      "Existing universities",
+      "Online-only platform"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Network of physical centers across states for blended learning."
+  },
+  {
+    "question": "Which shortcut creates a new folder in Windows?",
+    "options": [
+      "Ctrl+N",
+      "Ctrl+Shift+N",
+      "Alt+F4",
+      "Win+N"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ctrl+Shift+N creates new folders in File Explorer."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' 2023 included how many institutions?",
+    "options": [
+      "3,500",
+      "5,800",
+      "7,200",
+      "8,600"
+    ],
+    "correctAnswer": 1,
+    "explanation": "5,806 institutions participated across categories in India Rankings 2023."
+  },
+  {
+    "question": "Which constitutional article allows Parliament to amend the Constitution?",
+    "options": [
+      "Article 32",
+      "Article 368",
+      "Article 370",
+      "Article 395"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 368 outlines the power and procedure for constitutional amendments."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions based on:",
+    "options": [
+      "Objective data",
+      "Subjective perception",
+      "Both",
+      "Government nomination"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Combines verifiable data (80%) with perception surveys (20%)."
+  },
+  {
+    "question": "Which protocol secures file transfers?",
+    "options": [
+      "HTTP",
+      "FTPS",
+      "SMTP",
+      "POP3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FTPS adds SSL/TLS encryption to standard FTP."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was criticized for:",
+    "options": [
+      "Ignoring humanities",
+      "Overweighting research",
+      "Data inaccuracies",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Common critiques include STEM bias and self-reported data issues."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' 2023 top-ranked university was:",
+    "options": [
+      "JNU",
+      "BHU",
+      "Jamia Millia",
+      "DU"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Jawaharlal Nehru University retained its #1 position in 'University' category."
+  },
+  {
+    "question": "Article 324-329 deal with:",
+    "options": [
+      "Elections",
+      "Emergency",
+      "Finance Commission",
+      "Public Services"
+    ],
+    "correctAnswer": 0,
+    "explanation": "These articles establish Election Commission and electoral procedures."
+  },
+  {
+    "question": "India's 'Academic Bank of Credits' stores data in:",
+    "options": [
+      "Blockchain",
+      "DigiLocker",
+      "National Academic Depository",
+      "SWAYAM"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NAD provides secure digital storage for academic awards."
+  },
+  {
+    "question": "Which Excel function calculates loan payments?",
+    "options": [
+      "FV()",
+      "PV()",
+      "PMT()",
+      "RATE()"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PMT() computes periodic loan payments given interest rate and term."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions at what level?",
+    "options": [
+      "Departmental",
+      "Institutional",
+      "Both",
+      "Programmatic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NIRF evaluates whole institutions, not individual departments."
+  },
+  {
+    "question": "What is 'salting' in password security?",
+    "options": [
+      "Adding random data",
+      "Increasing length",
+      "Using special characters",
+      "Frequency analysis"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Unique random data added to each password before hashing."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' weight for 'Teaching, Learning & Resources' is:",
+    "options": [
+      "30%",
+      "40%",
+      "50%",
+      "60%"
+    ],
+    "correctAnswer": 0,
+    "explanation": "TLR carries 30% weight in NIRF 2023 methodology."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was reviewed by:",
+    "options": [
+      "Core Committee",
+      "Parliamentary Committee",
+      "Supreme Court",
+      "NITI Aayog"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A Core Committee periodically refines methodology."
+  },
+  {
+    "question": "Article 280 establishes:",
+    "options": [
+      "Election Commission",
+      "Finance Commission",
+      "UPSC",
+      "Planning Commission"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Constitutional body for center-state financial relations."
+  },
+  {
+    "question": "India's 'National Research Foundation' will be governed by:",
+    "options": [
+      "Prime Minister",
+      "Cabinet Secretary",
+      "Principal Scientific Advisor",
+      "Education Minister"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NRF Governing Board chaired by PSA oversees research funding."
+  },
+  {
+    "question": "Which PowerPoint feature links to external content?",
+    "options": [
+      "Action Button",
+      "Hyperlink",
+      "Slide Transition",
+      "Animation Trigger"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hyperlinks connect to webpages, documents, or email addresses."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' 'Research and Professional Practice' weight is:",
+    "options": [
+      "20%",
+      "30%",
+      "40%",
+      "50%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RPC contributes 30% to overall NIRF score."
+  },
+  {
+    "question": "Which cybersecurity standard applies to payment systems?",
+    "options": [
+      "ISO 27001",
+      "PCI DSS",
+      "HIPAA",
+      "GDPR"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Payment Card Industry Data Security Standard protects cardholder data."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' considers which international database?",
+    "options": [
+      "Web of Science",
+      "Scopus",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Research publications indexed in WoS and Scopus contribute to scores."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions by:",
+    "options": [
+      "Category only",
+      "Overall and category",
+      "Region only",
+      "Size only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Institutions receive both overall and discipline-specific ranks."
+  },
+  {
+    "question": "Which constitutional article defines 'Money Bill'?",
+    "options": [
+      "Article 109",
+      "Article 110",
+      "Article 111",
+      "Article 112"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 110 specifies matters classified as Money Bills."
+  },
+  {
+    "question": "Which constitutional article allows states to impose reasonable restrictions on fundamental rights?",
+    "options": [
+      "Article 13",
+      "Article 19",
+      "Article 21",
+      "Article 32"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Article 19(2-6) permits state-imposed restrictions for security, public order, morality, etc."
+  },
+  {
+    "question": "India's 'Vidya Pravesh' program focuses on:",
+    "options": [
+      "Teacher training",
+      "School readiness for Grade 1",
+      "Digital literacy",
+      "Vocational skills"
+    ],
+    "correctAnswer": 1,
+    "explanation": "3-month play-based preparation module for children entering formal schooling under NEP 2020."
+  },
+  {
+    "question": "Which Excel feature identifies data patterns?",
+    "options": [
+      "Flash Fill",
+      "Quick Analysis",
+      "Data Bars",
+      "Slicers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flash Fill (Ctrl+E) recognizes patterns and auto-fills data without formulas."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was first proposed in:",
+    "options": [
+      "2010",
+      "2013",
+      "2015",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MHRD constituted the Core Committee in December 2013 to develop the framework."
+  },
+  {
+    "question": "What is 'zero-day exploit'?",
+    "options": [
+      "Password cracking",
+      "Unknown software vulnerability",
+      "Phishing attack",
+      "Data breach notification"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Attacks targeting undisclosed vulnerabilities before developers can patch them."
+  },
+  {
+    "question": "Article 35A was related to:",
+    "options": [
+      "Kashmir's special status",
+      "Linguistic minorities",
+      "Scheduled Areas",
+      "Union territories"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Allowed J&K legislature to define permanent residents (abrogated in 2019)."
+  },
+  {
+    "question": "The 'National Credit Framework' credit value is based on:",
+    "options": [
+      "Learning hours",
+      "Exam scores",
+      "Teacher assessment",
+      "Peer review"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1 credit = 30 hours of learning (classroom, labs, projects, etc.)."
+  },
+  {
+    "question": "Which PowerPoint view allows notes editing?",
+    "options": [
+      "Normal",
+      "Outline",
+      "Notes Page",
+      "Reading"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Notes Page displays a slide with its associated speaker notes."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' considers patents:",
+    "options": [
+      "Filed",
+      "Granted",
+      "Commercialized",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "IP metrics include filed, granted, and licensed patents."
+  },
+  {
+    "question": "Which protocol authenticates email senders?",
+    "options": [
+      "SPF",
+      "POP3",
+      "IMAP",
+      "SMTP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sender Policy Framework prevents email spoofing by verifying sender IPs."
+  },
+  {
+    "question": "The 'Doctrine of Harmonious Construction' resolves:",
+    "options": [
+      "Center-state conflicts",
+      "Fundamental rights conflicts",
+      "Statutory interpretation",
+      "International treaties"
+    ],
+    "correctAnswer": 2,
+    "explanation": "When laws conflict, courts interpret them to give effect to both."
+  },
+  {
+    "question": "India's 'Pradhan Mantri e-Vidya' integrates how many educational channels?",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "correctAnswer": 0,
+    "explanation": "12 PM e-Vidya DTH channels cover school and higher education."
+  },
+  {
+    "question": "Which function finds smallest value in Excel?",
+    "options": [
+      "MIN()",
+      "SMALL()",
+      "BOTTOM()",
+      "LEAST()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "MIN() returns the smallest number in a range."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions:",
+    "options": [
+      "Annually",
+      "Biennially",
+      "Triennially",
+      "As requested"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rankings published every April since 2016."
+  },
+  {
+    "question": "What is 'tailgating' in physical security?",
+    "options": [
+      "Password sharing",
+      "Unauthorized entry",
+      "Data interception",
+      "Vehicle tracking"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gaining access by following authorized personnel."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' 2023 introduced:",
+    "options": [
+      "Innovation category",
+      "Agriculture ranking",
+      "Architecture category",
+      "Medical ranking"
+    ],
+    "correctAnswer": 2,
+    "explanation": "New 'Architecture' category for institutions offering B.Arch/M.Arch."
+  },
+  {
+    "question": "Article 51A(k) was added for:",
+    "options": [
+      "Environmental duty",
+      "Parental responsibility",
+      "Voting duty",
+      "Tax payment"
+    ],
+    "correctAnswer": 1,
+    "explanation": "86th Amendment (2002) made parents duty-bound to educate children aged 6-14."
+  },
+  {
+    "question": "The 'National Digital Education Architecture' aims to:",
+    "options": [
+      "Digitize textbooks",
+      "Create federated tech ecosystem",
+      "Train teachers",
+      "Provide devices"
+    ],
+    "correctAnswer": 1,
+    "explanation": "NDEAR establishes interoperable education technology framework."
+  },
+  {
+    "question": "Which Windows tool creates system backups?",
+    "options": [
+      "System Restore",
+      "Backup and Restore",
+      "Disk Cleanup",
+      "Defragmenter"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Creates full system images or file backups on schedule."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' outreach metric emphasizes:",
+    "options": [
+      "International students",
+      "Rural/regional diversity",
+      "Industry partnerships",
+      "Alumni networks"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Measures inclusion of students from local/regional backgrounds."
+  },
+  {
+    "question": "Which cybersecurity framework is ISO 27001 based on?",
+    "options": [
+      "NIST",
+      "COBIT",
+      "PCI DSS",
+      "GDPR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "International standard derived from NIST guidelines."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' perception survey targets:",
+    "options": [
+      "Academics only",
+      "Employers only",
+      "Both academics and employers",
+      "General public"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Peer academic institutions and recruiters provide perception scores."
+  },
+  {
+    "question": "Article 131 deals with Supreme Court's:",
+    "options": [
+      "Advisory jurisdiction",
+      "Original jurisdiction",
+      "Appellate jurisdiction",
+      "Writ jurisdiction"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Original jurisdiction in disputes between Centre-States or States inter se."
+  },
+  {
+    "question": "India's 'NISHTHA' program trains:",
+    "options": [
+      "University professors",
+      "School teachers",
+      "Technical instructors",
+      "Anganwadi workers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "National Initiative for School Heads' and Teachers' Holistic Advancement."
+  },
+  {
+    "question": "Which PowerPoint shortcut starts slideshow?",
+    "options": [
+      "F5",
+      "F7",
+      "F9",
+      "F12"
+    ],
+    "correctAnswer": 0,
+    "explanation": "F5 begins presentation from first slide; Shift+F5 from current slide."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks private institutions:",
+    "options": [
+      "Separately",
+      "With government institutions",
+      "Only if funded by UGC",
+      "Not ranked"
+    ],
+    "correctAnswer": 1,
+    "explanation": "All institutions ranked together in common categories."
+  },
+  {
+    "question": "What is 'pharming'?",
+    "options": [
+      "Email scam",
+      "DNS redirection",
+      "Password theft",
+      "Data encryption"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Redirecting users to fake sites by compromising DNS systems."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' weight for 'Graduation Outcome' is:",
+    "options": [
+      "10%",
+      "20%",
+      "30%",
+      "40%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GO contributes 20% to overall score in NIRF 2023."
+  },
+  {
+    "question": "Article 243Q mandates constitution of:",
+    "options": [
+      "Panchayats",
+      "Municipalities",
+      "Tribunals",
+      "Development Councils"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Requires formation of municipalities for urban areas."
+  },
+  {
+    "question": "The 'National Assessment and Accreditation Council' evaluates:",
+    "options": [
+      "Universities",
+      "Colleges",
+      "Both",
+      "Schools"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NAAC accredits higher education institutions through peer review."
+  },
+  {
+    "question": "Which Excel tool creates data subsets?",
+    "options": [
+      "PivotTables",
+      "Filters",
+      "Data Validation",
+      "What-If Analysis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Filters (Ctrl+Shift+L) display only rows meeting specified criteria."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' considers faculty qualifications based on:",
+    "options": [
+      "PhD percentage",
+      "NET/SET qualification",
+      "Industry experience",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Faculty metrics include qualifications, experience, and diversity."
+  },
+  {
+    "question": "Which encryption standard uses 256-bit keys?",
+    "options": [
+      "AES-128",
+      "AES-192",
+      "AES-256",
+      "DES"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Advanced Encryption Standard with 256-bit key length."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was recognized by:",
+    "options": [
+      "QS Rankings",
+      "THE Rankings",
+      "IREG Observatory",
+      "UNESCO"
+    ],
+    "correctAnswer": 2,
+    "explanation": "IREG approved NIRF as India's official ranking system in 2019."
+  },
+  {
+    "question": "Article 338 establishes:",
+    "options": [
+      "Finance Commission",
+      "National Commission for SCs",
+      "Election Commission",
+      "UPSC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Constitutional body safeguarding Scheduled Castes' interests."
+  },
+  {
+    "question": "India's 'DIKSHA' portal provides:",
+    "options": [
+      "Online degrees",
+      "Teacher training resources",
+      "Student scholarships",
+      "Research grants"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Digital Infrastructure for Knowledge Sharing hosts teaching materials."
+  },
+  {
+    "question": "Which Windows feature recovers deleted files?",
+    "options": [
+      "Recycle Bin",
+      "System Restore",
+      "File History",
+      "Backup"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Temporarily stores deleted files until emptied."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' ranks institutions based on:",
+    "options": [
+      "Self-reported data",
+      "Third-party audits",
+      "Government records",
+      "Student feedback"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Primary data source is institution-submitted information."
+  },
+  {
+    "question": "What is 'smishing'?",
+    "options": [
+      "Email phishing",
+      "SMS phishing",
+      "Voice phishing",
+      "Social media phishing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Phishing attacks via SMS/text messages."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' 2023 included how many categories?",
+    "options": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "correctAnswer": 2,
+    "explanation": "13 categories including new 'Architecture' and 'Innovation' rankings."
+  },
+  {
+    "question": "Article 356 deals with:",
+    "options": [
+      "Financial emergency",
+      "President's rule",
+      "Constitutional amendments",
+      "Judicial appointments"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Imposition of President's Rule in states during constitutional breakdown."
+  },
+  {
+    "question": "The 'National Education Policy' recommends establishing:",
+    "options": [
+      "Higher Education Commission",
+      "National Testing Agency",
+      "National Research Foundation",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NEP 2020 proposes major structural reforms."
+  },
+  {
+    "question": "Which function calculates future value in Excel?",
+    "options": [
+      "PV()",
+      "FV()",
+      "NPV()",
+      "IRR()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FV() computes future value of investment based on periodic payments."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' considers which industry engagement metric?",
+    "options": [
+      "Sponsored research",
+      "Consultancy projects",
+      "Patents commercialized",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Industry interaction measures under Research and Professional Practice."
+  },
+  {
+    "question": "Which protocol prevents email tampering?",
+    "options": [
+      "SPF",
+      "DKIM",
+      "DMARC",
+      "SSL"
+    ],
+    "correctAnswer": 1,
+    "explanation": "DomainKeys Identified Mail uses digital signatures to verify message integrity."
+  },
+  {
+    "question": "The 'National Institutional Ranking Framework' was developed to:",
+    "options": [
+      "Replace NAAC",
+      "Create global rankings",
+      "Promote competition",
+      "Standardize accreditation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Encourage institutions to improve quality through transparent benchmarking."
+  }
+]

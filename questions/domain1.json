@@ -1,4 +1,539 @@
 [
+ {
+    "question": "Under FR 56(d), leave on medical certificate is granted by?",
+    "options": ["Competent Authority", "Head of Department", "Appointing Authority", "Controlling Officer"],
+    "correctAnswer": 0,
+    "explanation": "FR 56(d) empowers the Competent Authority to sanction leave on medical grounds."
+  },
+  {
+    "question": "TA Rules: journey by AC first class is allowed if?",
+    "options": ["Distance over 500 km", "Govt meets cost", "Journey over 8 hrs", "Officials of HAG+"],
+    "correctAnswer": 1,
+    "explanation": "AC First Class travel is permitted if authorized by Government and cost is reimbursed."
+  },
+  {
+    "question": "LTC: Amount refunded if sibling dies before travel?",
+    "options": ["Full LTC", "Half LTC", "No refund", "Provided coupon used"],
+    "correctAnswer": 0,
+    "explanation": "Full LTC amount is refunded if family member dies before journey begins."
+  },
+  {
+    "question": "SR 9 mandates acceptance of joining after break up to?",
+    "options": ["6 months", "12 months", "1 month", "3 months"],
+    "correctAnswer": 3,
+    "explanation": "SR 9 allows acceptance of joining after leaving service within 3 months without further formalities."
+  },
+  {
+    "question": "MACP third increment is after how many years?",
+    "options": ["10, 20, 30", "8, 16, 24", "10, 20, 25", "12, 24, 36"],
+    "correctAnswer": 0,
+    "explanation": "MACP allows benefits after 10, 20, and 30 years of service."
+  },
+  {
+    "question": "Foreign Service: cost to government is borne by?",
+    "options": ["Sending Ministry", "Officers", "Receiving country", "External agency"],
+    "correctAnswer": 0,
+    "explanation": "Expenses for foreign service are borne by the sending ministry under CCS deputation rules."
+  },
+  {
+    "question": "Deputation: maximum total period allowed",
+    "options": ["5 years", "4 years", "6 years", "3 years"],
+    "correctAnswer": 2,
+    "explanation": "Total deputation, including extensions, cannot exceed 5 years—initial 3 + 1 + 1."
+  },
+  {
+    "question": "Lien on a post means the officer is?",
+    "options": ["Holder in abeyance", "On unauthorized leave", "Dismissed", "On foreign training"],
+    "correctAnswer": 0,
+    "explanation": "The officer holds the lien and can return to the post after deputation or training."
+  },
+  {
+    "question": "Under CCS(TA) Rules, DA is calculated on?",
+    "options": ["Basic + DA", "Basic only", "Gross salary", "Basic + Allowances"],
+    "correctAnswer": 0,
+    "explanation": "Dearness Allowance for TA is calculated on Basic Pay + DA component."
+  },
+  {
+    "question": "Leave salary during Earned Leave is?",
+    "options": ["Basic + DA", "Basic only", "Gross salary", "Basic + house rent"],
+    "correctAnswer": 0,
+    "explanation": "Leave salary during Earned Leave comprises Basic Pay plus DA."
+  },
+  {
+    "question": "Under CCS (Conduct) Rules, acceptance of gifts worth less than?",
+    "options": ["₹200", "₹100", "₹500", "₹50"],
+    "correctAnswer": 1,
+    "explanation": "Gifts under ₹100 in value may be accepted under the Conduct Rules."
+  },
+  {
+    "question": "Foreign Service: matrimonial benefits include?",
+    "options": ["Air passage for spouse", "Security allowance", "Separate accommodation", "All of above"],
+    "correctAnswer": 0,
+    "explanation": "Government provides air passage for spouse under foreign service entitlements."
+  },
+  {
+    "question": "Under DFPR, powers to sanction tour advances up to?",
+    "options": ["₹50,000", "₹1 lakh", "₹10 lakh", "₹5 lakh"],
+    "correctAnswer": 2,
+    "explanation": "Joint Secretary may sanction tour advances up to ₹10 lakh."
+  },
+  {
+    "question": "Pension is drawn for minimum qualifying service of?",
+    "options": ["10 years", "15 years", "20 years", "5 years"],
+    "correctAnswer": 0,
+    "explanation": "Minimum qualifying service for pension under CCS (Pension) Rules is 10 years."
+  },
+  {
+    "question": "LTC Block consists of?",
+    "options": ["4 years", "3 years", "2 years", "5 years"],
+    "correctAnswer": 0,
+    "explanation": "LTC entitlement is in a 4-year block under CCS Leave Rules."
+  },
+  {
+    "question": "Under CCS (Leave) Rules, PL cannot exceed?",
+    "options": ["60 days", "120 days", "90 days", "180 days"],
+    "correctAnswer": 2,
+    "explanation": "Privilege Leave (PL) cannot exceed 120 days in certain specified conditions."
+  },
+  {
+    "question": "DFPR: Purchase of stationery up to ₹10,000 can be delegated to?",
+    "options": ["SO/Accountant", "AO", "Head of Office", "Dept Secretary"],
+    "correctAnswer": 0,
+    "explanation": "Section Officer/Accountant can sanction stationery purchases up to ₹10,000."
+  },
+  {
+    "question": "CCS (Pension) Rules: Gratuity is payable after how many years of service?",
+    "options": ["5 years", "10 years", "7 years", "2 years"],
+    "correctAnswer": 1,
+    "explanation": "Gratuity is payable to government servants after 5 years qualifying service."
+  },
+  {
+    "question": "CCS(TA) Rules: Interim TA allowed up to?",
+    "options": ["75%", "100%", "50%", "60%"],
+    "correctAnswer": 2,
+    "explanation": "Interim travel advances can be sanctioned up to 75% of the estimated entitlement."
+  },
+  {
+    "question": "Under NEP 2020, UG programmes should be?",
+    "options": ["Multidisciplinary", "Single skill-focused", "Engineering only", "Specialisation only"],
+    "correctAnswer": 0,
+    "explanation": "NEP 2020 encourages multidisciplinary undergraduate programs."
+  },
+  {
+    "question": "Reservation: horizontal quota of 10% for EWS started from?",
+    "options": ["2019", "2020", "2018", "2021"],
+    "correctAnswer": 0,
+    "explanation": "10% reservation for EWS was introduced in 2019 by the Cent Govt."
+  },
+  {
+    "question": "Foreign Service: medical facilities abroad are?",
+    "options": ["Hospitals empanelled", "Full Govt cover", "Only emergencies", "Self-arranged"],
+    "correctAnswer": 0,
+    "explanation": "Government employees on foreign service are covered at empanelled hospitals abroad."
+  },
+  {
+    "question": "MACP: eligibility gap in years between increments?",
+    "options": ["10", "12", "8", "5"],
+    "correctAnswer": 0,
+    "explanation": "MACP benefits are granted at a 10-year interval."
+  },
+  {
+    "question": "LTC fare reimbursement uses the lowest fare available?",
+    "options": ["True", "False", "Depends", "Negotiated fare"],
+    "correctAnswer": 0,
+    "explanation": "Reimbursement is based on the lowest fare available on the date of booking."
+  },
+  {
+    "question": "DFPR: Works up to ₹25 lakh may be sanctioned by?",
+    "options": ["DDO", "Department Secretary", "Director Level", "Head of Office"],
+    "correctAnswer": 2,
+    "explanation": "Director-level officials are delegated powers to sanction works up to ₹25 lakh."
+  },
+  {
+    "question": "CCS(Conduct) Rules: Govt servants barred from participating in elections as?",
+    "options": ["Candidates", "Voters", "Polling agents", "Spectators"],
+    "correctAnswer": 0,
+    "explanation": "Government servants are prohibited from contesting elections as candidates."
+  },
+  {
+    "question": "Under CCS(CCA) Rules, appeal against major penalty goes to?",
+    "options": ["Appellate Authority", "Appointing Authority", "Departmental Authority", "Secretariat"],
+    "correctAnswer": 0,
+    "explanation": "Appeal against major penalty is to Appellate Authority specified in CCA Rules."
+  },
+  {
+    "question": "LTC can be encashed for unutilized leaves upto?",
+    "options": ["15 days", "10 days", "20 days", "5 days"],
+    "correctAnswer": 1,
+    "explanation": "Employees can encash up to 10 days of unutilized Earned Leave instead of LTC."
+  },
+  {
+    "question": "Foreign Service: Spouse joining cost is borne by?",
+    "options": ["Officer", "Govt", "Sending Ministry", "Private sponsor"],
+    "correctAnswer": 2,
+    "explanation": "Cost for spouse joining foreign assignment is borne by the sending ministry."
+  },
+  {
+    "question": "Leave half pay leave accrual per year?",
+    "options": ["20 days", "30 days", "15 days", "25 days"],
+    "correctAnswer": 0,
+    "explanation": "Half Pay Leave accrues at 20 days a year under CCS Leave Rules."
+  },
+  {
+    "question": "SR 44(b) deals with grant of leave on medical certificate to?",
+    "options": ["Pregnant women", "Chronic illness", "Sabbatical", "Adoption leave"],
+    "correctAnswer": 1,
+    "explanation": "SR 44(b) allows extended medical leave for chronic illness cases."
+  },
+  {
+    "question": "TA receipts must be retained by the official for?",
+    "options": ["6 months", "3 years", "1 year", "Until ADJ audit"],
+    "correctAnswer": 1,
+    "explanation": "TA claim receipts should be retained for three years for audit purposes."
+  },
+  {
+    "question": "DFPR: Contract for purchase > ₹10 lakh approved by?",
+    "options": ["Tender Committee", "JS", "Section Officer", "AO"],
+    "correctAnswer": 0,
+    "explanation": "Purchases above ₹10 lakh require approval from Tender Committee under DFPR."
+  },
+  {
+    "question": "CCS(Pension)Rules: Widowed daughter gets family pension if death happens before?",
+    "options": ["Marriage", "30 years", "Remarriage", "Both A & C"],
+    "correctAnswer": 3,
+    "explanation": "Remarriage or passing age of 25 causes cessation of family pension."
+  },
+  {
+    "question": "India-NEP 2020 recommends teaching in mother tongue till?",
+    "options": ["Class V", "Class VIII", "Higher Secondary", "UG Level"],
+    "correctAnswer": 1,
+    "explanation": "NEP advises mother tongue/regional language instruction up to Class VIII."
+  },
+  {
+    "question": "Reservation: Persons with 40% disability get horizontal reservation of?",
+    "options": ["4%", "3%", "5%", "6%"],
+    "correctAnswer": 2,
+    "explanation": "PWD horizontal reservation of 5% is available across vertical categories."
+  },
+  {
+    "question": "LTC entitles travel by air to?",
+    "options": ["Anywhere in India", "Abroad for NE specific", "Remote hilly areas", "Only journey home"],
+    "correctAnswer": 0,
+    "explanation": "LTC applies across India, including air travel to any location in India for official duty."
+  },
+  {
+    "question": "MACP cannot be denied if officer?",
+    "options": ["Geographical disparity", "No vacancies", "Off probation", "Under inquiry"],
+    "correctAnswer": 2,
+    "explanation": "MACP is automatic upon completion of stipulated years, even if under inquiry."
+  },
+  {
+    "question": "CCS (Conduct) Rules: govt servants must report acceptance of gifts valued over?",
+    "options": ["₹100", "₹200", "₹50", "₹500"],
+    "correctAnswer": 1,
+    "explanation": "Gifts over ₹200 must be reported to the Competent Authority."
+  },
+  {
+    "question": "Foreign service: officer's pay is?",
+    "options": ["Pay + OA + OHA", "Only pay", "Pay + HRA", "Foreign pay scale"],
+    "correctAnswer": 0,
+    "explanation": "Pay package includes basic pay + Overseas Allowance + Overseas House Rent."
+  },
+  {
+    "question": "DFPR: Minor Works up to ₹5 lakh can be sanctioned by?",
+    "options": ["Head of Office", "AO", "JS", "Director"],
+    "correctAnswer": 0,
+    "explanation": "Minor works up to ₹5 lakh can be sanctioned by Head of Office."
+  },
+  {
+    "question": "CCS (Pension) Rules: Pension starts from?",
+    "options": ["Next day after retirement", "Month of retirement", "After final sanction", "After 3 months"],
+    "correctAnswer": 0,
+    "explanation": "Pension is payable from the day following retirement."
+  },
+  {
+    "question": "LTC block leave may be split across?",
+    "options": ["2 years", "4 years", "1 year", "3 years"],
+    "correctAnswer": 0,
+    "explanation": "LTC travel can be availed in two parts but within the 4‑year block period."
+  },
+  {
+    "question": "Reservation: OBC creamy layer ceiling?",
+    "options": ["₹8 lakh", "₹5 lakh", "₹10 lakh", "₹6 lakh"],
+    "correctAnswer": 0,
+    "explanation": "Creamy layer ceiling for OBC reservation is ₹8 lakh per annum."
+  },
+
+  {
+    "question": "The Fundamental Rules (FR) came into force w.e.f.?",
+    "options": ["1 Jan 1920", "1 Apr 1922", "1 Jan 1921", "1 Apr 1921"],
+    "correctAnswer": 2,
+    "explanation": "FR were adopted starting 1 January 1921 under Civil Service Regulations." 
+  },
+  {
+    "question": "Under FR/SR, who can condone unauthorized absence (FR 17-A)?",
+    "options": ["Controlling Officer", "Head of Office", "Appointing Authority", "Head of Department"],
+    "correctAnswer": 0,
+    "explanation": "The Controlling Officer has power to condone unauthorized absence under FR 17‑A." 
+  },
+  {
+    "question": "Which rule covers pay fixation on promotion to higher responsibility?",
+    "options": ["FR 21", "FR 22(I)(a)(1)", "SR 30", "FR 19"],
+    "correctAnswer": 1,
+    "explanation": "Pay fixation for promotion to higher responsibility is governed by FR 22(I)(a)(1)." 
+  },
+  {
+    "question": "In joining time, is an employee eligible for LTC?",
+    "options": ["Yes", "No", "Only if inter-state", "Depends on posting"],
+    "correctAnswer": 0,
+    "explanation": "Joining time granted on transfer qualifies as duty for Leave Travel Concession." :contentReference[oaicite:2]{index=2}
+  },
+  {
+    "question": "LTC Rules 1988: Who is included in 'family' for LTC?",
+    "options": ["Spouse", "Dependent unmarried children", "Married daughters divorced", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "LTC covers spouse, dependent children (even married daughters once divorced) under family definition." :contentReference[oaicite:3]{index=3}
+  },
+  {
+    "question": "LTC is not allowed during which leave?",
+    "options": ["Study Leave", "Maternity Leave", "Casual Leave", "Child Care Leave"],
+    "correctAnswer": 0,
+    "explanation": "LTC cannot be availed during study leave under the rules." :contentReference[oaicite:4]{index=4}
+  },
+  {
+    "question": "Who defines service include in 'duty' for pension and increment?",
+    "options": ["Training only", "Probation", "Joining time", "None"],
+    "correctAnswer": 2,
+    "explanation": "FR defines duty to include joining time, which counts towards service and increments." :contentReference[oaicite:5]{index=5}
+  },
+  {
+    "question": "Advance increment is granted under which FR?",
+    "options": ["FR 10", "FR 11", "FR 27", "SR 52"],
+    "correctAnswer": 2,
+    "explanation": "FR 27 allows grant of advance increments under special or hardship cases." 
+  },
+  {
+    "question": "Joining time on transfer: True or False?",
+    "options": ["True", "False", "Only inter-state", "Depends on grade"],
+    "correctAnswer": 0,
+    "explanation": "Joining time is admissible based on actual transit time, not limited by status." :contentReference[oaicite:6]{index=6}
+  },
+  {
+    "question": "MACP stands for?",
+    "options": ["Modified Assured Career Promotion", "Merit Annual Career Progression", "Modified Annual Career Proposal", "Merit Assured Career Plan"],
+    "correctAnswer": 0,
+    "explanation": "MACP is Modified Assured Career Promotion scheme under CCS Rules since 2008." 
+  },
+  {
+    "question": "Under MACP, promotions are granted after?",
+    "options": ["10 years", "20 years", "8 years", "5 years"],
+    "correctAnswer": 0,
+    "explanation": "MACP awards one promotion benefit after completion of 10, 20 and 30 years." 
+  },
+  {
+    "question": "What is deployed on deputation?",
+    "options": ["Temporary transfer to another service", "Permanent posting change", "Short leave", "Foreign assignment"],
+    "correctAnswer": 0,
+    "explanation": "Deputation is temporary assignment to another department/service for a defined period." 
+  },
+  {
+    "question": "Lien means?",
+    "options": ["Right to return to original post", "Debt security", "Asset charge", "Salary hold"],
+    "correctAnswer": 0,
+    "explanation": "Lien is retained right of an officer to return to their substantive post." 
+  },
+  {
+    "question": "Under CCS Leave Rules, EL stands for?",
+    "options": ["Earned Leave", "Extra Leave", "Education Leave", "Expected Leave"],
+    "correctAnswer": 0,
+    "explanation": "EL is Earned Leave available accumulation up to 300 days." 
+  },
+  {
+    "question": "CCS (Pension) Rules came into force in?",
+    "options": ["1972", "1985", "1964", "1990"],
+    "correctAnswer": 0,
+    "explanation": "CCS (Pension) Rules, 1972 govern pension, gratuity and related benefits." :contentReference[oaicite:7]{index=7}
+  },
+  {
+    "question": "What is GP Fund subscription rate?",
+    "options": ["Min 10%", "Min 6%", "Min 8%", "Min 12%"],
+    "correctAnswer": 1,
+    "explanation": "Central Govt servants subscribe min 6% of emoluments to GPF." :contentReference[oaicite:8]{index=8}
+  },
+  {
+    "question": "Pensionable service excludes?",
+    "options": ["Probation", "Apprenticeship", "Contract service", "All of above"],
+    "correctAnswer": 2,
+    "explanation": "Contract service does not count as qualifying service for pension under CCS Rules." :contentReference[oaicite:9]{index=9}
+  },
+  {
+    "question": "Rate of interest on delayed gratuity payment?",
+    "options": ["Govt reset rate", "Fixed 6%", "Depends on delay reason", "None"],
+    "correctAnswer": 0,
+    "explanation": "Gratuity delayed due to administrative lapse attracts interest at bank rate." :contentReference[oaicite:10]{index=10}
+  },
+  {
+    "question": "Foreign service means?",
+    "options": ["Posting abroad", "Study leave overseas", "Deputation in international body", "None"],
+    "correctAnswer": 2,
+    "explanation": "Foreign Service in CCS rules implies deputation to international organizations." 
+  },
+  {
+    "question": "CCA in CCS (CCA) Rules refers to?",
+    "options": ["Conduct and Character", "Classification & Conduct", "Code of Conduct & Appeal", "Character & Appeal"],
+    "correctAnswer": 0,
+    "explanation": "CCA covers Conduct and Character Assessment for central government servants." 
+  },
+  {
+    "question": "Which rule regulates TA reimbursement limits?",
+    "options": ["CCS(TA) Rules 1999", "FR 18", "SR 65", "DFPR"],
+    "correctAnswer": 0,
+    "explanation": "CCS (TA) Rules, 1999 specify entitlements and ceilings for travel." 
+  },
+  {
+    "question": "CCS (Conduct) Rules applicable to?",
+    "options": ["Govt servants under CCS", "All India", "PSUs only", "All employees"],
+    "correctAnswer": 0,
+    "explanation": "Conduct Rules govern behavior of employees governed under CCS." 
+  },
+  {
+    "question": "What does DFPR stand for?",
+    "options": ["Delegation of Financial Powers Rules", "Departmental Finance Procedure Regulations", "Direct Finance Pricing Rules", "Delegated Fines Policy Regulations"],
+    "correctAnswer": 0,
+    "explanation": "DFPR sets out delegation limits for financial approvals in government bodies." 
+  },
+  {
+    "question": "NEP 2020 emphasizes on?",
+    "options": ["Integrative multi-disciplinary courses", "Only tech education", "More exams", "None"],
+    "correctAnswer": 0,
+    "explanation": "NEP 2020 encourages interdisciplinary education and skill-based learning." 
+  },
+  {
+    "question": "Reservation rules include vertical and horizontal quotas. Vertical quotas cover?",
+    "options": ["SC, ST, OBC", "Women", "PWD", "Meritorious sports persons"],
+    "correctAnswer": 0,
+    "explanation": "Vertical reservations pertain to SC, ST and OBC categories under central norms." 
+  },
+  {
+    "question": "Deputation tenure typically?",
+    "options": ["3 years + 1", "5 years fixed", "2 years only", "Unlimited"],
+    "correctAnswer": 0,
+    "explanation": "Deputation is usually for three years extendable by one year under CCS rules." 
+  },
+  {
+    "question": "Under DFPR, powers up to ₹1 lakh delegated to?",
+    "options": ["Head of Office", "Dept Finance Officer", "JS", "Secretary"],
+    "correctAnswer": 0,
+    "explanation": "Heads of Office can approve contingent expenses up to ₹1 lakh under DFPR." 
+  },
+  {
+    "question": "TA for private vehicle use is at?",
+    "options": ["₹2.00/km", "₹4.50/km", "₹3.00/km", "₹6.00/km"],
+    "correctAnswer": 1,
+    "explanation": "Reimbursement for personal car travel is allowed at ₹4.50 per km under TA rules." 
+  },
+  {
+    "question": "LTC entitlement period is?",
+    "options": ["Block of 4 years", "Every year", "Block of 2 years", "Block of 5 years"],
+    "correctAnswer": 0,
+    "explanation": "LTC is availed in a block of four years under CCS rules." 
+  },
+  {
+    "question": "Leave accrues at 2.5 days per month means?",
+    "options": ["30 days/year", "25 days/year", "28 days/year", "24 days/year"],
+    "correctAnswer": 0,
+    "explanation": "CCS Leave Rules allow Earned Leave at 2.5 days per month (~30 days per year)." 
+  },
+  {
+    "question": "LP rules define 'half pay leave' rate as?",
+    "options": ["50% pay", "Full pay", "25% pay", "75% pay"],
+    "correctAnswer": 0,
+    "explanation": "Half pay leave qualifies at 50% of basic pay under CCS leave rules." 
+  },
+  {
+    "question": "MACP benefit granted at year 10 changes pay level by?",
+    "options": ["One increment", "TWO increments", "Two grades", "One grade up"],
+    "correctAnswer": 2,
+    "explanation": "MACP allows movement up one grade/pay level after 10 years." 
+  },
+  {
+    "question": "Foreign Service assignment period is counted as?",
+    "options": ["Pensionable service", "Non-pensionable", "Half pensionable", "Depends"],
+    "correctAnswer": 0,
+    "explanation": "Service outside India on deputation counts toward pensionable service." 
+  },
+  {
+    "question": "Under CCS (Pension) Rules, commutation is allowed up to?",
+    "options": ["1/3 pension", "1/2 pension", "1/4 pension", "No limit"],
+    "correctAnswer": 1,
+    "explanation": "Pension can be commuted up to half its amount under CCS rules." 
+  },
+  {
+    "question": "Under CCA rules, employee’s integrity is assessed at time of?",
+    "options": ["Annual appraisal", "Leave application", "Retirement", "Joining"],
+    "correctAnswer": 0,
+    "explanation": "CCA Rules link conduct and character assessment in performance appraisals." 
+  },
+  {
+    "question": "Deputation: foreign service or central government counts as?",
+    "options": ["Qualifying service", "Non-qualifying", "Half-qualifying", "Only leave purpose"],
+    "correctAnswer": 0,
+    "explanation": "Deputation service | including to govt/foreign bodies | counts as qualifying for pension." 
+  },
+  {
+    "question": "TA advance must be drawn at least ___ days before journey?",
+    "options": ["5 days", "10 days", "3 days", "7 days"],
+    "correctAnswer": 0,
+    "explanation": "TA advance should be drawn minimum 5 days prior to journey commencement." 
+  },
+  {
+    "question": "DFPR: Rs 10 lakh may be delegated to?",
+    "options": ["Head of Dept.", "JS level", "Section Officer", "Section Head"],
+    "correctAnswer": 1,
+    "explanation": "JS (Joint Secretary) has financial delegation under DFPR up to ₹10 lakh." 
+  },
+  {
+    "question": "NEP 2020 mandates assessment in any language but?",
+    "options": ["Mother tongue", "English", "Regional", "Foreign"],
+    "correctAnswer": 3,
+    "explanation": "NEP promotes assessment in mother tongue, regional, or English—not foreign languages." 
+  },
+  {
+    "question": "Reservation Rule: Horizontal reservation applies across vertical categories?",
+    "options": ["True", "False", "Only in teaching", "Only in admin"],
+    "correctAnswer": 0,
+    "explanation": "Horizontal reservation (e.g. PWD, women) cuts across vertical categories (SC/ST/OBC)." 
+  },
+  {
+    "question": "LTC special scheme allows visits to?",
+    "options": ["Remote places", "Abroad", "Only hometown", "Anywhere"],
+    "correctAnswer": 0,
+    "explanation": "Special LTC block allows visits to designated remote areas per guidelines." 
+  },
+  {
+    "question": "Under CCS (CCA) Rules, appeal against minor penalty is to?",
+    "options": ["Appointing Authority", "Head of Dept.", "AGM", "HC"],
+    "correctAnswer": 1,
+    "explanation": "Appeal against minor penalties lies with Head of Department under CCA Rules." 
+  },
+  {
+    "question": "CCS Conduct Rules cover prohibited?",
+    "options": ["Partisan political activity", "Appreciation of govt", "Charity", "Reading newspapers"],
+    "correctAnswer": 0,
+    "explanation": "CCS Conduct Rules prohibit political activities by government servants." 
+  },
+  {
+    "question": "Pension commutation reduces future pension by?",
+    "options": ["Equal amount leaving half", "Only 1/3", "1/4 only", "Depends"],
+    "correctAnswer": 0,
+    "explanation": "Commuting half pension leaves half payable in future per CCS rules." 
+  },
+  {
+    "question": "GPF interest credited annually on?",
+    "options": ["31 March", "31 Dec", "30 Sep", "30 Jun"],
+    "correctAnswer": 0,
+    "explanation": "GPF interest is credited annually on 31 March under Government Accounting rules." 
+  },
   {
     "question": "A recurring or non-recurring payment granted to a Govt. Servant from the Consolidated Fund of India as remuneration for special work of an occasional or intermittent character is called?",
     "options": ["Fee", "Special Pay", "Personal Pay", "Honorarium"],

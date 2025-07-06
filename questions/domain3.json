@@ -1,5 +1,485 @@
 [
   {
+    "question": "Which authority approves institute annual calendar under NIT statutes?",
+    "options": ["Board of Governors", "Senate", "Director", "Registrar"],
+    "correctAnswer": 1,
+    "explanation": "The Senate approves the academic calendar and major academic activities."
+  },
+  {
+    "question": "Who presides over the Senate meetings in NITs?",
+    "options": ["Director", "Registrar", "Dean Academic", "Chairperson BOG"],
+    "correctAnswer": 0,
+    "explanation": "The Director typically chairs the Senate meetings as per the statutes."
+  },
+  {
+    "question": "Finance Committee meets how many times a year at minimum?",
+    "options": ["One", "Two", "Three", "Four"],
+    "correctAnswer": 1,
+    "explanation": "Statutes require the Finance Committee to meet at least twice yearly."
+  },
+  {
+    "question": "BWC reports primarily go to:",
+    "options": ["Finance Committee", "Board of Governors", "Senate", "Registrar"],
+    "correctAnswer": 0,
+    "explanation": "Building Works Committee reports technical and financial approvals to Finance Committee."
+  },
+  {
+    "question": "Quorum for Finance Committee is:",
+    "options": ["Half members", "One-third members", "Majority", "Two-thirds"],
+    "correctAnswer": 1,
+    "explanation": "Quorum is fixed at one-third of its total strength."
+  },
+  {
+    "question": "Under NIT rules, the Registrar is appointed by:",
+    "options": ["Board of Governors", "Director", "NIT Council", "Government of India"],
+    "correctAnswer": 0,
+    "explanation": "The BOG appoints the Registrar on the recommendation of the Director."
+  },
+  {
+    "question": "What is the tenure of external experts in Senate?",
+    "options": ["Three years", "Two years", "Four years", "Five years"],
+    "correctAnswer": 0,
+    "explanation": "External academic experts serve for a period of three years as per statutes."
+  },
+  {
+    "question": "Under RTI, information must be provided within __ days for regular requests?",
+    "options": ["30 days", "45 days", "60 days", "15 days"],
+    "correctAnswer": 0,
+    "explanation": "PIO must furnish information within 30 days of request receipt."
+  },
+  {
+    "question": "In POSH inquiries, ICC must complete inquiry within __ days?",
+    "options": ["90 days", "60 days", "30 days", "120 days"],
+    "correctAnswer": 1,
+    "explanation": "ICC should complete inquiry within 60 days of complaint receipt."
+  },
+  {
+    "question": "Which document initiates a formal note upon policy drafting?",
+    "options": ["Office memorandum", "Circular", "Draft note", "Agenda note"],
+    "correctAnswer": 2,
+    "explanation": "Drafting typically begins with a clear draft note outlining objectives."
+  },
+  {
+    "question": "Board Standing Committees are constituted by:",
+    "options": ["Senate", "Board of Governors", "Director", "NIT Council"],
+    "correctAnswer": 1,
+    "explanation": "The BOG sets up Standing Committees like BSC under its own authority."
+  },
+  {
+    "question": "Notice period for BOG meetings is __ days:",
+    "options": ["21 days", "14 days", "7 days", "10 days"],
+    "correctAnswer": 1,
+    "explanation": "Statutes typically require 14 days notice for BOG meetings."
+  },
+  {
+    "question": "Minutes of Finance Committee are signed by:",
+    "options": ["Finance Committee Chairperson", "Director", "Registrar", "Board Secretary"],
+    "correctAnswer": 0,
+    "explanation": "The Chairperson of the Finance Committee approves its minutes."
+  },
+  {
+    "question": "Academic ordinances are reviewed every:",
+    "options": ["5 years", "3 years", "2 years", "Annually"],
+    "correctAnswer": 2,
+    "explanation": "Ordinarily, academic rules are reviewed biennially by the Senate."
+  },
+  {
+    "question": "RTI fee for electronic request is:",
+    "options": ["₹10", "Nil", "₹20", "₹5"],
+    "correctAnswer": 2,
+    "explanation": "Electronic requests typically incur ₹20 as per fee structure."
+  },
+  {
+    "question": "RTI fee must be paid within __ days by the applicant?",
+    "options": ["30 days", "7 days", "15 days", "21 days"],
+    "correctAnswer": 0,
+    "explanation": "The fee must be paid within 30 days or the request is rejected."
+  },
+  {
+    "question": "ICC must have __ members minimum:",
+    "options": ["4", "5", "6", "3"],
+    "correctAnswer": 0,
+    "explanation": "The ICC should consist of at least four members per POSH Act."
+  },
+  {
+    "question": "ICC must include an external member from:",
+    "options": ["Local NGO", "Lawyer", "Psychologist", "External academic"],
+    "correctAnswer": 0,
+    "explanation": "The law requires an external NGO representative on the ICC."
+  },
+  {
+    "question": "Background notes in an agenda should be:",
+    "options": ["Concise", "Lengthy", "Casual", "Verbose"],
+    "correctAnswer": 0,
+    "explanation": "Background notes must be brief and to the point for clarity."
+  },
+  {
+    "question": "Noting should avoid:",
+    "options": ["Colloquialisms", "Abbreviations", "Passive voice", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "Professional notes avoid colloquial and ambiguous language."
+  },
+  {
+    "question": "Statutes are amended by:",
+    "options": ["Parliament", "NIT Council", "Board of Governors", "Senate"],
+    "correctAnswer": 1,
+    "explanation": "Changes to NIT statutes require approval by the NIT Council."
+  },
+  {
+    "question": "Board must approve major building projects via:",
+    "options": ["Request to BWC", "Senate recommendation", "Finance Committee report", "Signal from BOG"],
+    "correctAnswer": 2,
+    "explanation": "Finance Committee reviews and recommends projects to the Board."
+  },
+  {
+    "question": "Under POSH, a complaint must be made within __ days:",
+    "options": ["90 days", "60 days", "30 days", "120 days"],
+    "correctAnswer": 0,
+    "explanation": "Complaints must be filed within 90 days of the incident."
+  },
+  {
+    "question": "Drafting policy communication should always be:",
+    "options": ["Logical", "Emotive", "Persuasive", "Creative"],
+    "correctAnswer": 0,
+    "explanation": "Effective policy notes are logical and clearly structured."
+  },
+  {
+    "question": "First appeal against PIO decision lies with:",
+    "options": ["Appellate Authority", "CIC","PIO","Information Officer"],
+    "correctAnswer": 0,
+    "explanation": "First appeal must be filed with the designated Appellate Authority."
+  },
+  {
+    "question": "Quorum for ICC meetings is __ members:",
+    "options": ["3", "4", "5", "All"],
+    "correctAnswer": 0,
+    "explanation": "ICC meetings require at least three members present to proceed."
+  },
+  {
+    "question": "RTC Act violations by employer result in:",
+    "options": ["Fines", "Imprisonment", "Both", "Only internal action"],
+    "correctAnswer": 2,
+    "explanation": "Non-compliance results in both fines and possible prosecution."
+  },
+  {
+    "question": "Noting for expenditure approval should include:",
+    "options": ["Budget head", "Purpose", "Justification", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "Complete notings include budgetary classification, purpose and reasoning."
+  },
+  {
+    "question": "BWC includes which official by default?",
+    "options": ["Engineer", "Registrar", "Finance Officer", "Senate member"],
+    "correctAnswer": 0,
+    "explanation": "The BWC includes a senior engineer/officer in charge of works."
+  },
+  {
+    "question": "Under RTI, if PIO fails, you appeal to:",
+    "options": ["First Appellate", "Second Appellate", "CIC", "Secretary"], 
+    "correctAnswer": 0,
+    "explanation": "Appeals go first to the designated Appellate Authority in the institution."
+  },
+  {
+    "question": "ICC report is submitted to:",
+    "options": ["Management", "Police", "CIC", "Joint Director"],
+    "correctAnswer": 0,
+    "explanation": "ICC submits its findings to the institution’s top management (Director/Registrar)."
+  },
+  {
+    "question": "Agenda items for BOG are circulated by:",
+    "options": ["Registrar", "Director", "Finance Officer", "Senate Secretary"],
+    "correctAnswer": 0,
+    "explanation": "The Registrar issues the official agenda in consultation with the Director."
+  },
+  {
+    "question": "Under POSH, trust committee members are appointed by:",
+    "options": ["Employer", "Director", "Registrar", "Senate"],
+    "correctAnswer": 0,
+    "explanation": "Employers appoint the ICC/Trust Committee per legal mandate."
+  },
+  {
+    "question": "Call for Senate agenda is issued by:",
+    "options": ["Registrar", "Senate Chairperson", "Director", "Academic Dean"],
+    "correctAnswer": 1,
+    "explanation": "The Senate Chair or Director issues the formal call for meetings."
+  },
+  {
+    "question": "Under POSH, interim relief may include:",
+    "options": ["Transfer of victim", "Leave for complainant", "Duties reassignment", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "Interim measures include various administrative actions to protect the complainant."
+  },
+  {
+    "question": "Drafting a note requires inclusion of _____ at the top:",
+    "options": ["Subject", "Conclusion", "Background", "Signature"],
+    "correctAnswer": 0,
+    "explanation": "An official note must begin with a clear subject line."
+  },
+  {
+    "question": "Finance Committee reports to Board before:",
+    "options": ["Annual Plan Approval", "Senate meeting", "Staff council", "Housekeeping Committee"],
+    "correctAnswer": 0,
+    "explanation": "Budget proposals and approvals are routed through the Finance Committee to the BOG."
+  },
+  {
+    "question": "An agenda note should specify:",
+    "options": ["Item number", "Background", "Recommendation", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "Agenda notes are structured with item numbering, context, and clear recommendations."
+  },
+  {
+    "question": "Final drafting of Board resolutions is done by:",
+    "options": ["Registrar", "Director", "Finance Officer", "Senate Chair"],
+    "correctAnswer": 0,
+    "explanation": "The Registrar drafts formal resolutions post-BOG meetings."
+  },
+  {
+    "question": "POSH Act applies to institutes with ___ staff:",
+    "options": ["10 or more", "20 or more", "50 or more", "All staff"],
+    "correctAnswer": 0,
+    "explanation": "Institutions with 10 or more employees are covered under the Act."
+  },
+  {
+    "question": "Which body approves new academic ordinances at an NIT?",
+    "options": ["Board of Governors", "Senate", "Finance Committee", "Director"],
+    "correctAnswer": 1,
+    "explanation": "The Senate is responsible for academic matters, including approval of ordinances for academic and research programs."
+  },
+  {
+    "question": "Under NIT Act, who is the chief academic officer of the Institute?",
+    "options": ["Director", "Registrar", "Senate Chairperson", "Dean (Academic)"],
+    "correctAnswer": 0,
+    "explanation": "The Director is the chief academic officer under the NIT Act and statutes."
+  },
+  {
+    "question": "How often must the Board of Governors meet at minimum per year?",
+    "options": ["Two", "Three", "Four", "One"],
+    "correctAnswer": 0,
+    "explanation": "Statutes require at least two meetings of the Board of Governors each year."
+  },
+  {
+    "question": "Which body examines budget proposals before Board approval?",
+    "options": ["Finance Committee", "Senate", "BWC", "Academic Council"],
+    "correctAnswer": 0,
+    "explanation": "The Finance Committee scrutinises budget proposals before they go to the Board of Governors."
+  },
+  {
+    "question": "Under RTI Act, which authority is established at every public authority?",
+    "options": ["Public Information Officer", "Appellate Authority", "Both PIO & Appellate Authority", "CIC"],
+    "correctAnswer": 2,
+    "explanation": "Every public authority must designate both a Public Information Officer and an Appellate Authority."
+  },
+  {
+    "question": "Which section constitutes the Central Information Commission under RTI Act?",
+    "options": ["Section 12", "Section 14", "Section 15", "Section 19"],
+    "correctAnswer": 0,
+    "explanation": "Section 12 provides for the constitution of the Central Information Commission.":contentReference[oaicite:6]{index=6}
+  },
+  {
+    "question": "Under RTI, trade secrets may be disclosed if?",
+    "options": ["Trade secret always exempt", "Public interest overrides", "PIO discretion", "CIC decides"],
+    "correctAnswer": 1,
+    "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants.":contentReference[oaicite:7]{index=7}
+  },
+  {
+    "question": "File notings fall under definition of 'information' in RTI Act?",
+    "options": ["Yes", "No", "Only if finalized", "PIO discretion"],
+    "correctAnswer": 1,
+    "explanation": "File notings are not 'information' under RTI Act, so they are exempt.":contentReference[oaicite:8]{index=8}
+  },
+  {
+    "question": "When did RTI Act come into force?",
+    "options": ["12 Oct 2005", "13 Oct 2005", "1 Jan 2006", "15 Nov 2005"],
+    "correctAnswer": 0,
+    "explanation": "The Act came into force on 12 October 2005.":contentReference[oaicite:9]{index=9}
+  },
+  {
+    "question": "Under RTI, how soon must PIO respond to life/death information requests?",
+    "options": ["48 hours", "30 days", "7 days", "72 hours"],
+    "correctAnswer": 0,
+    "explanation": "Information affecting life or liberty must be provided within 48 hours.":contentReference[oaicite:10]{index=10}
+  },
+  {
+    "question": "What does POSH Act empower institutions to do?",
+    "options": ["Constitute Internal Complaints Committee (ICC)", "Train HR only", "Refer to police", "Appoint PIO"],
+    "correctAnswer": 0,
+    "explanation": "The Act mandates setting up an ICC to address complaints.":contentReference[oaicite:11]{index=11}
+  },
+  {
+    "question": "When did the POSH Act receive presidential assent?",
+    "options": ["22 Apr 2013", "8 Mar 2013", "9 Dec 2013", "1 Jun 2013"],
+    "correctAnswer": 0,
+    "explanation": "The Act, Act No. 14 of 2013, received assent on 22 April 2013.":contentReference[oaicite:12]{index=12}
+  },
+  {
+    "question": "POSH Act defines 'sexual harassment' to include?",
+    "options": ["Physical contact advances", "Demand for sexual favours", "Showing pornography", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "All of these are defined as sexual harassment under the Act.":contentReference[oaicite:13]{index=13}
+  },
+  {
+    "question": "Which of the following falls under 'workplace' per POSH Act?",
+    "options": ["Transport provided by employer", "Interview venue", "All of the above", "Neither"],
+    "correctAnswer": 2,
+    "explanation": "Workplace includes employer‑transport and interview venues under the Act.":contentReference[oaicite:14]{index=14}
+  },
+  {
+    "question": "POSH Act requires employer to display?",
+    "options": ["Penalties for offences", "ICC members list", "Both", "Nothing"],
+    "correctAnswer": 2,
+    "explanation": "Employers must display both penal consequences and ICC details prominently.":contentReference[oaicite:15]{index=15}
+  },
+  {
+    "question": "Under POSH, inquiry leave is:",
+    "options": ["Concurrent", "In addition", "Not allowed", "Decided by ICC"],
+    "correctAnswer": 0,
+    "explanation": "Leave during inquiry is concurrent with other leave entitlement.":contentReference[oaicite:16]{index=16}
+  },
+  {
+    "question": "Holding Board of Governors meeting requires quorum of:",
+    "options": ["Half members", "Any 5", "Two-thirds", "Majority present"],
+    "correctAnswer": 0,
+    "explanation": "Statutes require at least half the BOG members to constitute quorum."
+  },
+  {
+    "question": "Finance Committee features in NIT governance how?",
+    "options": ["Advisory to BOG on finances", "Academic oversight", "Disciplinary body", "RTI appeals"],
+    "correctAnswer": 0,
+    "explanation": "It advises the BOG on budgetary and financial matters."
+  },
+  {
+    "question": "Senate includes how many external experts at minimum?",
+    "options": ["Three", "Five", "Seven", "Ten"],
+    "correctAnswer": 0,
+    "explanation": "NIT statutes mandate at least three external academic experts on the Senate."
+  },
+  {
+    "question": "BWC stands for:",
+    "options": ["Building Works Committee", "Budget Works Committee", "Board Works Council", "Blind Workers Council"],
+    "correctAnswer": 0,
+    "explanation": "BWC is the Building Works Committee overseeing campus construction."
+  },
+  {
+    "question": "In drafting official notes, tone should be:",
+    "options": ["Concise & formal", "Verbose & casual", "Colloquial", "Critical and harsh"],
+    "correctAnswer": 0,
+    "explanation": "Effective notes are concise, formal, and neutral."
+  },
+  {
+    "question": "Minutes of meetings are approved by:",
+    "options": ["Chairperson", "Registrar", "Finance Officer", "PIO"],
+    "correctAnswer": 0,
+    "explanation": "Draft minutes are presented to the Chair for confirmation."
+  },
+  {
+    "question": "Under RTI, PIO must transfer application within how many days if held elsewhere?",
+    "options": ["5 days", "7 days", "30 days", "48 hours"],
+    "correctAnswer": 0,
+    "explanation": "The PIO must transfer the application within five days.":contentReference[oaicite:17]{index=17}
+  },
+  {
+    "question": "Appeal to CIC must be made within ___ days of order?",
+    "options": ["30 days", "60 days", "45 days", "90 days"],
+    "correctAnswer": 0,
+    "explanation": "First appeal takes place within 30 days under RTI procedures."
+  },
+  {
+    "question": "Under POSH Act, fines up to ___ for not constituting ICC?",
+    "options": ["₹50,000", "₹1 lakh", "₹25,000", "None"],
+    "correctAnswer": 2,
+    "explanation": "Penalties include a fine up to ₹25,000.":contentReference[oaicite:18]{index=18}
+  },
+  {
+    "question": "In POSH, repeat offence penalty is:",
+    "options": ["Double fine", "Higher fine", "Imprisonment", "ICC decision"],
+    "correctAnswer": 0,
+    "explanation": "Repeat offences can result in double the earlier fine.":contentReference[oaicite:19]{index=19}
+  },
+  {
+    "question": "Notice for Senate meeting must be issued ___ days prior?",
+    "options": ["14 days", "7 days", "21 days", "1 month"],
+    "correctAnswer": 1,
+    "explanation": "Statutes normally specify a 7‑day notice period for Senate meetings."
+  },
+  {
+    "question": "Ordinances are effective upon:",
+    "options": ["Senate approval", "BOG approval", "Director’s sanction", "Finance Comm review"],
+    "correctAnswer": 0,
+    "explanation": "Academic ordinances take effect upon Senate approval."
+  },
+  {
+    "question": "Drafting official memos requires clarity and:",
+    "options": ["Precision", "Humor", "Metaphors", "Acronyms"],
+    "correctAnswer": 0,
+    "explanation": "Drafting must prioritize clarity and precision."
+  },
+  {
+    "question": "RTI: Section 4 covers:",
+    "options": ["Proactive disclosure", "Exemptions", "Penalties", "Appeal process"],
+    "correctAnswer": 0,
+    "explanation": "Section 4 obligates proactive publication of information.":contentReference[oaicite:20]{index=20}
+  },
+  {
+    "question": "Section 8 deals with?",
+    "options": ["Exemptions", "PIO duties", "Penalties", "Appeals"],
+    "correctAnswer": 0,
+    "explanation": "Section 8 lists information exempt from disclosure.":contentReference[oaicite:21]{index=21}
+  },
+  {
+    "question": "RTI third appeal is to?",
+    "options": ["Central Information Commission", "Supreme Court", "PIO", "Governor"],
+    "correctAnswer": 0,
+    "explanation": "Third‑level appeal goes to the Central Information Commission."
+  },
+  {
+    "question": "Under POSH, employers must conduct awareness training every ___?",
+    "options": ["1 year", "2 years", "6 months", "3 years"],
+    "correctAnswer": 0,
+    "explanation": "Employers are required to conduct annual awareness training."
+  },
+  {
+    "question": "Panel drafting requires tone being:",
+    "options": ["Neutral", "Assertive", "Humorous", "Condescending"],
+    "correctAnswer": 0,
+    "explanation": "Noting and drafting must be neutral and objective."
+  },
+  {
+    "question": "Under NIT Act, statutes are approved by:",
+    "options": ["Parliament", "Board of Governors", "NIT Council", "Senate"],
+    "correctAnswer": 2,
+    "explanation": "Statutes are approved by the NIT Council per NIT Act."
+  },
+  {
+    "question": "Board minutes are kept by:",
+    "options": ["Registrar", "Director", "Finance Officer", "Senate Chair"],
+    "correctAnswer": 0,
+    "explanation": "Registrar is responsible for maintaining board meeting minutes."
+  },
+  {
+    "question": "Board has powers to all EXCEPT:",
+    "options": ["Approve ordinances", "Appoint Director", "Amend statutes", "Change NIT Act"],
+    "correctAnswer": 3,
+    "explanation": "Only Parliament can amend the NIT Act; the Board cannot."
+  },
+  {
+    "question": "Senate may form BSCs; BSC stands for?",
+    "options": ["Board Sub-Committee", "Building Standards Committee", "Budget Standing Committee", "Board Standing Committee"],
+    "correctAnswer": 3,
+    "explanation": "BSCs are Board Standing Committees constituted by the Senate."
+  },
+  {
+    "question": "In administrative drafting, which comes first?",
+    "options": ["Background", "Subject", "Recommendation", "Signature block"],
+    "correctAnswer": 1,
+    "explanation": "Subject line appears before the background section."
+  },
+  {
+    "question": "A good official note avoids:",
+    "options": ["Ambiguity", "Redundancy", "Informality", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "Effective notes eschew ambiguity, redundancy, and informality."
+  },
+  {
     "question": "The Central Information Commission is constituted under which section of the RTI Act, 2005?",
     "options": ["Section 14", "Section 15", "Section 12", "Section 19"],
     "correctAnswer": 2,

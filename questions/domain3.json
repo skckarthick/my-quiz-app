@@ -19,7 +19,12 @@
   },
   {
     "question": "BWC reports primarily go to:",
-    "options": ["Finance Committee", "Board of Governors", "Senate", "Registrar"],
+    "options": [
+      "Finance Committee",
+      "Board of Governors",
+      "Senate",
+      "Registrar"
+    ],
     "correctAnswer": 0,
     "explanation": "Building Works Committee reports technical and financial approvals to Finance Committee."
   },
@@ -31,7 +36,12 @@
   },
   {
     "question": "Under NIT rules, the Registrar is appointed by:",
-    "options": ["Board of Governors", "Director", "NIT Council", "Government of India"],
+    "options": [
+      "Board of Governors",
+      "Director",
+      "NIT Council",
+      "Government of India"
+    ],
     "correctAnswer": 0,
     "explanation": "The BOG appoints the Registrar on the recommendation of the Director."
   },
@@ -73,7 +83,12 @@
   },
   {
     "question": "Minutes of Finance Committee are signed by:",
-    "options": ["Finance Committee Chairperson", "Director", "Registrar", "Board Secretary"],
+    "options": [
+      "Finance Committee Chairperson",
+      "Director",
+      "Registrar",
+      "Board Secretary"
+    ],
     "correctAnswer": 0,
     "explanation": "The Chairperson of the Finance Committee approves its minutes."
   },
@@ -115,7 +130,12 @@
   },
   {
     "question": "Noting should avoid:",
-    "options": ["Colloquialisms", "Abbreviations", "Passive voice", "All of the above"],
+    "options": [
+      "Colloquialisms",
+      "Abbreviations",
+      "Passive voice",
+      "All of the above"
+    ],
     "correctAnswer": 3,
     "explanation": "Professional notes avoid colloquial and ambiguous language."
   },
@@ -127,7 +147,12 @@
   },
   {
     "question": "Board must approve major building projects via:",
-    "options": ["Request to BWC", "Senate recommendation", "Finance Committee report", "Signal from BOG"],
+    "options": [
+      "Request to BWC",
+      "Senate recommendation",
+      "Finance Committee report",
+      "Signal from BOG"
+    ],
     "correctAnswer": 2,
     "explanation": "Finance Committee reviews and recommends projects to the Board."
   },
@@ -145,7 +170,7 @@
   },
   {
     "question": "First appeal against PIO decision lies with:",
-    "options": ["Appellate Authority", "CIC","PIO","Information Officer"],
+    "options": ["Appellate Authority", "CIC", "PIO", "Information Officer"],
     "correctAnswer": 0,
     "explanation": "First appeal must be filed with the designated Appellate Authority."
   },
@@ -175,7 +200,7 @@
   },
   {
     "question": "Under RTI, if PIO fails, you appeal to:",
-    "options": ["First Appellate", "Second Appellate", "CIC", "Secretary"], 
+    "options": ["First Appellate", "Second Appellate", "CIC", "Secretary"],
     "correctAnswer": 0,
     "explanation": "Appeals go first to the designated Appellate Authority in the institution."
   },
@@ -205,7 +230,12 @@
   },
   {
     "question": "Under POSH, interim relief may include:",
-    "options": ["Transfer of victim", "Leave for complainant", "Duties reassignment", "All of the above"],
+    "options": [
+      "Transfer of victim",
+      "Leave for complainant",
+      "Duties reassignment",
+      "All of the above"
+    ],
     "correctAnswer": 3,
     "explanation": "Interim measures include various administrative actions to protect the complainant."
   },
@@ -217,13 +247,23 @@
   },
   {
     "question": "Finance Committee reports to Board before:",
-    "options": ["Annual Plan Approval", "Senate meeting", "Staff council", "Housekeeping Committee"],
+    "options": [
+      "Annual Plan Approval",
+      "Senate meeting",
+      "Staff council",
+      "Housekeeping Committee"
+    ],
     "correctAnswer": 0,
     "explanation": "Budget proposals and approvals are routed through the Finance Committee to the BOG."
   },
   {
     "question": "An agenda note should specify:",
-    "options": ["Item number", "Background", "Recommendation", "All of the above"],
+    "options": [
+      "Item number",
+      "Background",
+      "Recommendation",
+      "All of the above"
+    ],
     "correctAnswer": 3,
     "explanation": "Agenda notes are structured with item numbering, context, and clear recommendations."
   },
@@ -241,13 +281,23 @@
   },
   {
     "question": "Which body approves new academic ordinances at an NIT?",
-    "options": ["Board of Governors", "Senate", "Finance Committee", "Director"],
+    "options": [
+      "Board of Governors",
+      "Senate",
+      "Finance Committee",
+      "Director"
+    ],
     "correctAnswer": 1,
     "explanation": "The Senate is responsible for academic matters, including approval of ordinances for academic and research programs."
   },
   {
     "question": "Under NIT Act, who is the chief academic officer of the Institute?",
-    "options": ["Director", "Registrar", "Senate Chairperson", "Dean (Academic)"],
+    "options": [
+      "Director",
+      "Registrar",
+      "Senate Chairperson",
+      "Dean (Academic)"
+    ],
     "correctAnswer": 0,
     "explanation": "The Director is the chief academic officer under the NIT Act and statutes."
   },
@@ -265,7 +315,12 @@
   },
   {
     "question": "Under RTI Act, which authority is established at every public authority?",
-    "options": ["Public Information Officer", "Appellate Authority", "Both PIO & Appellate Authority", "CIC"],
+    "options": [
+      "Public Information Officer",
+      "Appellate Authority",
+      "Both PIO & Appellate Authority",
+      "CIC"
+    ],
     "correctAnswer": 2,
     "explanation": "Every public authority must designate both a Public Information Officer and an Appellate Authority."
   },
@@ -277,7 +332,12 @@
   },
   {
     "question": "Under RTI, trade secrets may be disclosed if?",
-    "options": ["Trade secret always exempt", "Public interest overrides", "PIO discretion", "CIC decides"],
+    "options": [
+      "Trade secret always exempt",
+      "Public interest overrides",
+      "PIO discretion",
+      "CIC decides"
+    ],
     "correctAnswer": 1,
     "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants."
   },
@@ -301,7 +361,12 @@
   },
   {
     "question": "What does POSH Act empower institutions to do?",
-    "options": ["Constitute Internal Complaints Committee (ICC)", "Train HR only", "Refer to police", "Appoint PIO"],
+    "options": [
+      "Constitute Internal Complaints Committee (ICC)",
+      "Train HR only",
+      "Refer to police",
+      "Appoint PIO"
+    ],
     "correctAnswer": 0,
     "explanation": "The Act mandates setting up an ICC to address complaints."
   },
@@ -313,19 +378,34 @@
   },
   {
     "question": "POSH Act defines 'sexual harassment' to include?",
-    "options": ["Physical contact advances", "Demand for sexual favours", "Showing pornography", "All of the above"],
+    "options": [
+      "Physical contact advances",
+      "Demand for sexual favours",
+      "Showing pornography",
+      "All of the above"
+    ],
     "correctAnswer": 3,
     "explanation": "All of these are defined as sexual harassment under the Act."
   },
   {
     "question": "Which of the following falls under 'workplace' per POSH Act?",
-    "options": ["Transport provided by employer", "Interview venue", "All of the above", "Neither"],
+    "options": [
+      "Transport provided by employer",
+      "Interview venue",
+      "All of the above",
+      "Neither"
+    ],
     "correctAnswer": 2,
     "explanation": "Workplace includes employer‑transport and interview venues under the Act."
   },
   {
     "question": "POSH Act requires employer to display?",
-    "options": ["Penalties for offences", "ICC members list", "Both", "Nothing"],
+    "options": [
+      "Penalties for offences",
+      "ICC members list",
+      "Both",
+      "Nothing"
+    ],
     "correctAnswer": 2,
     "explanation": "Employers must display both penal consequences and ICC details prominently."
   },
@@ -343,7 +423,12 @@
   },
   {
     "question": "Finance Committee features in NIT governance how?",
-    "options": ["Advisory to BOG on finances", "Academic oversight", "Disciplinary body", "RTI appeals"],
+    "options": [
+      "Advisory to BOG on finances",
+      "Academic oversight",
+      "Disciplinary body",
+      "RTI appeals"
+    ],
     "correctAnswer": 0,
     "explanation": "It advises the BOG on budgetary and financial matters."
   },
@@ -355,13 +440,23 @@
   },
   {
     "question": "BWC stands for:",
-    "options": ["Building Works Committee", "Budget Works Committee", "Board Works Council", "Blind Workers Council"],
+    "options": [
+      "Building Works Committee",
+      "Budget Works Committee",
+      "Board Works Council",
+      "Blind Workers Council"
+    ],
     "correctAnswer": 0,
     "explanation": "BWC is the Building Works Committee overseeing campus construction."
   },
   {
     "question": "In drafting official notes, tone should be:",
-    "options": ["Concise & formal", "Verbose & casual", "Colloquial", "Critical and harsh"],
+    "options": [
+      "Concise & formal",
+      "Verbose & casual",
+      "Colloquial",
+      "Critical and harsh"
+    ],
     "correctAnswer": 0,
     "explanation": "Effective notes are concise, formal, and neutral."
   },
@@ -403,7 +498,12 @@
   },
   {
     "question": "Ordinances are effective upon:",
-    "options": ["Senate approval", "BOG approval", "Director’s sanction", "Finance Comm review"],
+    "options": [
+      "Senate approval",
+      "BOG approval",
+      "Director’s sanction",
+      "Finance Comm review"
+    ],
     "correctAnswer": 0,
     "explanation": "Academic ordinances take effect upon Senate approval."
   },
@@ -415,7 +515,12 @@
   },
   {
     "question": "RTI: Section 4 covers:",
-    "options": ["Proactive disclosure", "Exemptions", "Penalties", "Appeal process"],
+    "options": [
+      "Proactive disclosure",
+      "Exemptions",
+      "Penalties",
+      "Appeal process"
+    ],
     "correctAnswer": 0,
     "explanation": "Section 4 obligates proactive publication of information."
   },
@@ -427,7 +532,12 @@
   },
   {
     "question": "RTI third appeal is to?",
-    "options": ["Central Information Commission", "Supreme Court", "PIO", "Governor"],
+    "options": [
+      "Central Information Commission",
+      "Supreme Court",
+      "PIO",
+      "Governor"
+    ],
     "correctAnswer": 0,
     "explanation": "Third‑level appeal goes to the Central Information Commission."
   },
@@ -457,13 +567,23 @@
   },
   {
     "question": "Board has powers to all EXCEPT:",
-    "options": ["Approve ordinances", "Appoint Director", "Amend statutes", "Change NIT Act"],
+    "options": [
+      "Approve ordinances",
+      "Appoint Director",
+      "Amend statutes",
+      "Change NIT Act"
+    ],
     "correctAnswer": 3,
     "explanation": "Only Parliament can amend the NIT Act; the Board cannot."
   },
   {
     "question": "Senate may form BSCs; BSC stands for?",
-    "options": ["Board Sub-Committee", "Building Standards Committee", "Budget Standing Committee", "Board Standing Committee"],
+    "options": [
+      "Board Sub-Committee",
+      "Building Standards Committee",
+      "Budget Standing Committee",
+      "Board Standing Committee"
+    ],
     "correctAnswer": 3,
     "explanation": "BSCs are Board Standing Committees constituted by the Senate."
   },
@@ -499,13 +619,23 @@
   },
   {
     "question": "The Sexual Harassment of Women at Workplace Act, 2013 was enacted on?",
-    "options": ["22nd April, 2013", "9th December, 2013", "15th August, 2013", "1st January, 2014"],
+    "options": [
+      "22nd April, 2013",
+      "9th December, 2013",
+      "15th August, 2013",
+      "1st January, 2014"
+    ],
     "correctAnswer": 1,
     "explanation": "The Act was enacted on 9th December, 2013 to prevent and address workplace sexual harassment."
   },
   {
     "question": "Who can be a member of the Internal Complaints Committee under the Sexual Harassment Act?",
-    "options": ["Only male employees", "Only female employees", "Both male and female employees", "Only external experts"],
+    "options": [
+      "Only male employees",
+      "Only female employees",
+      "Both male and female employees",
+      "Only external experts"
+    ],
     "correctAnswer": 2,
     "explanation": "The Internal Complaints Committee must include both male and female members, with a senior woman as the presiding officer."
   },
@@ -555,12 +685,7 @@
   },
   {
     "question": "What is the time limit for RTI responses at NITK?",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "60 days"
-    ],
+    "options": ["15 days", "30 days", "45 days", "60 days"],
     "correctAnswer": 1,
     "explanation": "Section 7(1) of RTI Act 2005 mandates responses within 30 days from receipt of application."
   },
@@ -577,23 +702,13 @@
   },
   {
     "question": "Which of these is NOT a standard part of government noting?",
-    "options": [
-      "Precis",
-      "Recommendation",
-      "Draft resolution",
-      "Endorsement"
-    ],
+    "options": ["Precis", "Recommendation", "Draft resolution", "Endorsement"],
     "correctAnswer": 2,
     "explanation": "Standard noting contains Precis, Analysis, and Recommendation - draft resolution comes after decision."
   },
   {
     "question": "What is the maximum tenure for NITK Director?",
-    "options": [
-      "3 years",
-      "5 years",
-      "6 years",
-      "No fixed tenure"
-    ],
+    "options": ["3 years", "5 years", "6 years", "No fixed tenure"],
     "correctAnswer": 1,
     "explanation": "NIT Statutes specify Director's tenure as 5 years, extendable by another 5 years based on performance."
   },
@@ -621,12 +736,7 @@
   },
   {
     "question": "What is the time limit for ICC complaint at NITK?",
-    "options": [
-      "3 months",
-      "6 months",
-      "1 year",
-      "3 years"
-    ],
+    "options": ["3 months", "6 months", "1 year", "3 years"],
     "correctAnswer": 0,
     "explanation": "POSH Act 2013 requires complaints to be filed within 3 months of incident (extendable to 6 months)."
   },
@@ -709,12 +819,7 @@
   },
   {
     "question": "Minimum BoG meetings required annually at NITK:",
-    "options": [
-      "One",
-      "Two",
-      "Three",
-      "Four"
-    ],
+    "options": ["One", "Two", "Three", "Four"],
     "correctAnswer": 1,
     "explanation": "NIT Statute 5(3) requires Board of Governors to meet at least twice a year."
   },
@@ -731,12 +836,7 @@
   },
   {
     "question": "RTI applications to NITK must be addressed to:",
-    "options": [
-      "Director",
-      "Registrar",
-      "Public Information Officer",
-      "APIO"
-    ],
+    "options": ["Director", "Registrar", "Public Information Officer", "APIO"],
     "correctAnswer": 2,
     "explanation": "Section 5(1) designates PIO as the official recipient for RTI applications."
   },
@@ -764,12 +864,7 @@
   },
   {
     "question": "NITK's academic ordinances are approved by:",
-    "options": [
-      "Director",
-      "Senate",
-      "BoG",
-      "Ministry of Education"
-    ],
+    "options": ["Director", "Senate", "BoG", "Ministry of Education"],
     "correctAnswer": 2,
     "explanation": "Final approval authority for all ordinances rests with Board of Governors per Statute 13(3)."
   },
@@ -819,34 +914,19 @@
   },
   {
     "question": "Minimum credits for NITK B.Tech degree:",
-    "options": [
-      "160 credits",
-      "180 credits",
-      "200 credits",
-      "220 credits"
-    ],
+    "options": ["160 credits", "180 credits", "200 credits", "220 credits"],
     "correctAnswer": 1,
     "explanation": "As per NITK Ordinance 7.2, B.Tech requires minimum 180 credits across 8 semesters."
   },
   {
     "question": "BoG member tenure at NITK:",
-    "options": [
-      "2 years",
-      "3 years",
-      "5 years",
-      "No fixed term"
-    ],
+    "options": ["2 years", "3 years", "5 years", "No fixed term"],
     "correctAnswer": 1,
     "explanation": "Statute 4(3) specifies 3-year term for nominated BoG members, extendable by one term."
   },
   {
     "question": "FC considers expenditure above:",
-    "options": [
-      "₹5 lakh",
-      "₹25 lakh",
-      "₹1 crore",
-      "₹5 crore"
-    ],
+    "options": ["₹5 lakh", "₹25 lakh", "₹1 crore", "₹5 crore"],
     "correctAnswer": 2,
     "explanation": "NITK Financial Delegation mandates FC approval for expenditures exceeding ₹1 crore."
   },
@@ -863,12 +943,7 @@
   },
   {
     "question": "POSH inquiry completion timeframe:",
-    "options": [
-      "30 days",
-      "60 days",
-      "90 days",
-      "120 days"
-    ],
+    "options": ["30 days", "60 days", "90 days", "120 days"],
     "correctAnswer": 2,
     "explanation": "Section 11(4) mandates ICC to complete inquiry within 90 days of complaint."
   },
@@ -907,12 +982,7 @@
   },
   {
     "question": "RTI application fee for NITK:",
-    "options": [
-      "₹10",
-      "₹20",
-      "₹50",
-      "No fee"
-    ],
+    "options": ["₹10", "₹20", "₹50", "No fee"],
     "correctAnswer": 0,
     "explanation": "As per RTI Rules 2012, ₹10 fee via IPO/DD/cash receipt is mandatory."
   },
@@ -962,12 +1032,7 @@
   },
   {
     "question": "FC must meet at least:",
-    "options": [
-      "Quarterly",
-      "Half-yearly",
-      "Annually",
-      "No fixed frequency"
-    ],
+    "options": ["Quarterly", "Half-yearly", "Annually", "No fixed frequency"],
     "correctAnswer": 0,
     "explanation": "Financial prudence requires quarterly FC meetings for expenditure monitoring."
   },
@@ -995,23 +1060,13 @@
   },
   {
     "question": "Final decision on file is recorded as:",
-    "options": [
-      "Resolution",
-      "Order",
-      "Endorsement",
-      "Disposal"
-    ],
+    "options": ["Resolution", "Order", "Endorsement", "Disposal"],
     "correctAnswer": 1,
     "explanation": "Approved decisions are converted into formal orders for implementation."
   },
   {
     "question": "NITK's maximum course withdrawal limit:",
-    "options": [
-      "2 courses",
-      "4 courses",
-      "6 courses",
-      "No limit"
-    ],
+    "options": ["2 courses", "4 courses", "6 courses", "No limit"],
     "correctAnswer": 1,
     "explanation": "Ordinance 7.5 permits withdrawal from maximum 4 courses during entire B.Tech program."
   },
@@ -1028,12 +1083,7 @@
   },
   {
     "question": "BWC oversees projects above:",
-    "options": [
-      "₹10 lakh",
-      "₹25 lakh",
-      "₹50 lakh",
-      "₹1 crore"
-    ],
+    "options": ["₹10 lakh", "₹25 lakh", "₹50 lakh", "₹1 crore"],
     "correctAnswer": 2,
     "explanation": "NITK administrative manual assigns BWC responsibility for works exceeding ₹50 lakh."
   },
@@ -1072,23 +1122,13 @@
   },
   {
     "question": "Minimum CGPA for NITK B.Tech degree:",
-    "options": [
-      "4.0/10",
-      "5.0/10",
-      "6.0/10",
-      "7.0/10"
-    ],
+    "options": ["4.0/10", "5.0/10", "6.0/10", "7.0/10"],
     "correctAnswer": 1,
     "explanation": "Ordinance 7.2.1 mandates minimum cumulative GPA of 5.0 for degree award."
   },
   {
     "question": "Emergency BoG meetings require notice:",
-    "options": [
-      "24 hours",
-      "48 hours",
-      "72 hours",
-      "One week"
-    ],
+    "options": ["24 hours", "48 hours", "72 hours", "One week"],
     "correctAnswer": 0,
     "explanation": "Statute 5(5) allows emergency meetings with 24-hour notice to members."
   },
@@ -1149,12 +1189,7 @@
   },
   {
     "question": "Faculty disciplinary authority at NITK:",
-    "options": [
-      "Director",
-      "Registrar",
-      "Board of Governors",
-      "Senate"
-    ],
+    "options": ["Director", "Registrar", "Board of Governors", "Senate"],
     "correctAnswer": 2,
     "explanation": "Statute 11(4) vests disciplinary powers with BoG for faculty members."
   },
@@ -1270,23 +1305,13 @@
   },
   {
     "question": "NITK's maximum backlog courses allowed:",
-    "options": [
-      "3 courses",
-      "5 courses",
-      "8 courses",
-      "No limit"
-    ],
+    "options": ["3 courses", "5 courses", "8 courses", "No limit"],
     "correctAnswer": 1,
     "explanation": "Ordinance 7.3.2 permits registration with maximum 5 backlog courses."
   },
   {
     "question": "BoG member removal authority:",
-    "options": [
-      "Director",
-      "Chairperson",
-      "Visitor",
-      "Ministry of Education"
-    ],
+    "options": ["Director", "Chairperson", "Visitor", "Ministry of Education"],
     "correctAnswer": 2,
     "explanation": "Statute 4(5) empowers Visitor to remove members after inquiry for misconduct."
   },
@@ -1303,12 +1328,7 @@
   },
   {
     "question": "RTI information fee per page:",
-    "options": [
-      "₹2",
-      "₹5",
-      "₹10",
-      "Free"
-    ],
+    "options": ["₹2", "₹5", "₹10", "Free"],
     "correctAnswer": 0,
     "explanation": "RTI Rules 2012 prescribe ₹2 per A4 page for photocopies."
   },
@@ -1325,23 +1345,13 @@
   },
   {
     "question": "Urgent files use which color flag?",
-    "options": [
-      "Red",
-      "Green",
-      "Yellow",
-      "Blue"
-    ],
+    "options": ["Red", "Green", "Yellow", "Blue"],
     "correctAnswer": 0,
     "explanation": "Standard file tracking uses red flags/bands for urgent matters requiring priority."
   },
   {
     "question": "NITK's academic calendar is approved by:",
-    "options": [
-      "Director",
-      "Senate",
-      "Academic Registrar",
-      "All HODs"
-    ],
+    "options": ["Director", "Senate", "Academic Registrar", "All HODs"],
     "correctAnswer": 1,
     "explanation": "Senate approves academic calendar annually as per Statute 14(2)(a)."
   },
@@ -1391,12 +1401,7 @@
   },
   {
     "question": "Minimum attendance at NITK:",
-    "options": [
-      "65%",
-      "75%",
-      "85%",
-      "90%"
-    ],
+    "options": ["65%", "75%", "85%", "90%"],
     "correctAnswer": 1,
     "explanation": "Ordinance 7.4.1 mandates minimum 75% attendance for course eligibility."
   },
@@ -1424,12 +1429,7 @@
   },
   {
     "question": "RTI appeal decision timeframe:",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "60 days"
-    ],
+    "options": ["15 days", "30 days", "45 days", "60 days"],
     "correctAnswer": 2,
     "explanation": "Section 19(6) mandates first appellate decision within 45 days."
   },
@@ -1457,12 +1457,7 @@
   },
   {
     "question": "NITK's highest academic body:",
-    "options": [
-      "Board of Governors",
-      "Senate",
-      "Academic Council",
-      "Director"
-    ],
+    "options": ["Board of Governors", "Senate", "Academic Council", "Director"],
     "correctAnswer": 1,
     "explanation": "Statute 14 establishes Senate as supreme academic authority."
   },
@@ -1479,12 +1474,7 @@
   },
   {
     "question": "BWC approves technical sanctions up to:",
-    "options": [
-      "₹1 crore",
-      "₹5 crore",
-      "₹10 crore",
-      "No limit"
-    ],
+    "options": ["₹1 crore", "₹5 crore", "₹10 crore", "No limit"],
     "correctAnswer": 2,
     "explanation": "NITK's financial delegation empowers BWC for sanctions up to ₹10 crore."
   },
@@ -1523,12 +1513,7 @@
   },
   {
     "question": "NITK's grade point scale:",
-    "options": [
-      "0-5",
-      "0-10",
-      "0-8",
-      "0-4"
-    ],
+    "options": ["0-5", "0-10", "0-8", "0-4"],
     "correctAnswer": 1,
     "explanation": "Ordinance 6.3 follows 10-point grading system: 10 (Excl) to 0 (Fail)."
   },
@@ -1545,12 +1530,7 @@
   },
   {
     "question": "FC review frequency for accounts:",
-    "options": [
-      "Monthly",
-      "Quarterly",
-      "Half-yearly",
-      "Annually"
-    ],
+    "options": ["Monthly", "Quarterly", "Half-yearly", "Annually"],
     "correctAnswer": 1,
     "explanation": "Financial prudence requires quarterly account scrutiny by FC."
   },
@@ -1611,12 +1591,7 @@
   },
   {
     "question": "BWC technical member tenure:",
-    "options": [
-      "1 year",
-      "2 years",
-      "3 years",
-      "Project duration"
-    ],
+    "options": ["1 year", "2 years", "3 years", "Project duration"],
     "correctAnswer": 3,
     "explanation": "External technical experts serve for specific project duration."
   },
@@ -1644,34 +1619,19 @@
   },
   {
     "question": "Inter-departmental references use:",
-    "options": [
-      "Office Memorandum",
-      "D.O. Letter",
-      "U.O. Note",
-      "Endorsement"
-    ],
+    "options": ["Office Memorandum", "D.O. Letter", "U.O. Note", "Endorsement"],
     "correctAnswer": 2,
     "explanation": "U.O. Note (Unfficial Reference) facilitates inter-departmental consultations."
   },
   {
     "question": "NITK's PhD coursework credits:",
-    "options": [
-      "0 credits",
-      "8 credits",
-      "12 credits",
-      "16 credits"
-    ],
+    "options": ["0 credits", "8 credits", "12 credits", "16 credits"],
     "correctAnswer": 2,
     "explanation": "Ordinance 9.4 mandates minimum 12 credits of coursework for PhD students."
   },
   {
     "question": "BoG vacancy filling period:",
-    "options": [
-      "30 days",
-      "60 days",
-      "90 days",
-      "120 days"
-    ],
+    "options": ["30 days", "60 days", "90 days", "120 days"],
     "correctAnswer": 2,
     "explanation": "Statute 4(6) requires filling casual vacancies within 90 days."
   },
@@ -1798,12 +1758,7 @@
   },
   {
     "question": "BoG meeting notice period:",
-    "options": [
-      "7 days",
-      "15 days",
-      "21 days",
-      "30 days"
-    ],
+    "options": ["7 days", "15 days", "21 days", "30 days"],
     "correctAnswer": 1,
     "explanation": "Statute 5(4) mandates 15-day notice for regular meetings."
   },
@@ -1820,12 +1775,7 @@
   },
   {
     "question": "RTI application transfer period:",
-    "options": [
-      "3 days",
-      "5 days",
-      "7 days",
-      "15 days"
-    ],
+    "options": ["3 days", "5 days", "7 days", "15 days"],
     "correctAnswer": 1,
     "explanation": "Section 6(3) requires PIO to transfer misdirected applications within 5 days."
   },
@@ -1842,23 +1792,13 @@
   },
   {
     "question": "Government letter closure phrase:",
-    "options": [
-      "Sincerely",
-      "Faithfully",
-      "Yours truly",
-      "Yours obediently"
-    ],
+    "options": ["Sincerely", "Faithfully", "Yours truly", "Yours obediently"],
     "correctAnswer": 1,
     "explanation": "Standard closure for official letters is 'Yours faithfully'."
   },
   {
     "question": "NITK's maximum PhD duration:",
-    "options": [
-      "3 years",
-      "5 years",
-      "6 years",
-      "8 years"
-    ],
+    "options": ["3 years", "5 years", "6 years", "8 years"],
     "correctAnswer": 2,
     "explanation": "Ordinance 9.5 permits maximum 6 years for PhD completion."
   },
@@ -1919,12 +1859,7 @@
   },
   {
     "question": "NITK's M.Tech credit requirement:",
-    "options": [
-      "60 credits",
-      "72 credits",
-      "80 credits",
-      "90 credits"
-    ],
+    "options": ["60 credits", "72 credits", "80 credits", "90 credits"],
     "correctAnswer": 1,
     "explanation": "Ordinance 8.2 mandates minimum 72 credits for M.Tech degree."
   },
@@ -1974,23 +1909,13 @@
   },
   {
     "question": "Government letter subject line:",
-    "options": [
-      "Underlined",
-      "Bold and centered",
-      "All capitals",
-      "Italics"
-    ],
+    "options": ["Underlined", "Bold and centered", "All capitals", "Italics"],
     "correctAnswer": 2,
     "explanation": "Standard format uses ALL CAPS for subject line in official letters."
   },
   {
     "question": "NITK's academic suspension period:",
-    "options": [
-      "One semester",
-      "Two semesters",
-      "One year",
-      "Case-specific"
-    ],
+    "options": ["One semester", "Two semesters", "One year", "Case-specific"],
     "correctAnswer": 3,
     "explanation": "Ordinance 12.4 allows Senate to determine suspension period based on misconduct severity."
   },
@@ -2062,12 +1987,7 @@
   },
   {
     "question": "Minimum external members required in NITK Senate:",
-    "options": [
-      "Two",
-      "Three",
-      "Four",
-      "Six"
-    ],
+    "options": ["Two", "Three", "Four", "Six"],
     "correctAnswer": 0,
     "explanation": "Statute 14(1)(vi) mandates at least two external academic experts in Senate composition."
   },
@@ -2117,12 +2037,7 @@
   },
   {
     "question": "BoG approval required for land acquisition above:",
-    "options": [
-      "1 acre",
-      "2 acres",
-      "5 acres",
-      "10 acres"
-    ],
+    "options": ["1 acre", "2 acres", "5 acres", "10 acres"],
     "correctAnswer": 2,
     "explanation": "NITK's administrative manual mandates BoG approval for land transactions exceeding 5 acres."
   },
@@ -2150,12 +2065,7 @@
   },
   {
     "question": "ICC must submit annual report to NITK Director by:",
-    "options": [
-      "December 31",
-      "January 31",
-      "March 31",
-      "April 30"
-    ],
+    "options": ["December 31", "January 31", "March 31", "April 30"],
     "correctAnswer": 1,
     "explanation": "POSH Rules require annual report submission by January 31 for preceding calendar year."
   },
@@ -2172,12 +2082,7 @@
   },
   {
     "question": "NITK's minimum CGPA for M.Tech degree:",
-    "options": [
-      "5.0",
-      "5.5",
-      "6.0",
-      "6.5"
-    ],
+    "options": ["5.0", "5.5", "6.0", "6.5"],
     "correctAnswer": 0,
     "explanation": "Ordinance 8.2 requires minimum 5.0 CGPA for M.Tech degree award."
   },
@@ -2194,23 +2099,13 @@
   },
   {
     "question": "BWC technical sanction validity period:",
-    "options": [
-      "3 months",
-      "6 months",
-      "1 year",
-      "Project duration"
-    ],
+    "options": ["3 months", "6 months", "1 year", "Project duration"],
     "correctAnswer": 1,
     "explanation": "Technical sanctions lapse after 6 months if work hasn't commenced per CPWD norms."
   },
   {
     "question": "First Appellate Authority for RTI at NITK is:",
-    "options": [
-      "Registrar",
-      "Director",
-      "Dean Academics",
-      "Finance Officer"
-    ],
+    "options": ["Registrar", "Director", "Dean Academics", "Finance Officer"],
     "correctAnswer": 0,
     "explanation": "Registrar is designated as FAA as per NITK's RTI implementation guidelines."
   },
@@ -2238,56 +2133,31 @@
   },
   {
     "question": "NITK's maximum course withdrawal per semester:",
-    "options": [
-      "One course",
-      "Two courses",
-      "Three courses",
-      "No limit"
-    ],
+    "options": ["One course", "Two courses", "Three courses", "No limit"],
     "correctAnswer": 0,
     "explanation": "Ordinance 7.5.1 restricts withdrawal to one course per semester."
   },
   {
     "question": "Student ombudsman at NITK reports to:",
-    "options": [
-      "Director",
-      "Registrar",
-      "Senate",
-      "BoG"
-    ],
+    "options": ["Director", "Registrar", "Senate", "BoG"],
     "correctAnswer": 0,
     "explanation": "Ombudsman submits reports directly to Director as per BoG resolution 2018."
   },
   {
     "question": "FC approval threshold for equipment purchase:",
-    "options": [
-      "₹10 lakh",
-      "₹25 lakh",
-      "₹50 lakh",
-      "₹1 crore"
-    ],
+    "options": ["₹10 lakh", "₹25 lakh", "₹50 lakh", "₹1 crore"],
     "correctAnswer": 2,
     "explanation": "Financial delegation requires FC approval for capital equipment above ₹50 lakh."
   },
   {
     "question": "RTI information fee waiver for:",
-    "options": [
-      "Senior citizens",
-      "Alumni",
-      "No provision",
-      "BPL applicants"
-    ],
+    "options": ["Senior citizens", "Alumni", "No provision", "BPL applicants"],
     "correctAnswer": 2,
     "explanation": "RTI Act provides no fee waiver except application fee exemption for BPL cardholders."
   },
   {
     "question": "POSH interim measures can be challenged before:",
-    "options": [
-      "ICC",
-      "Director",
-      "Court",
-      "No provision"
-    ],
+    "options": ["ICC", "Director", "Court", "No provision"],
     "correctAnswer": 2,
     "explanation": "Interim orders can be challenged in appropriate court as per POSH Rules."
   },
@@ -2304,12 +2174,7 @@
   },
   {
     "question": "NITK's minimum credits for PhD coursework:",
-    "options": [
-      "6 credits",
-      "12 credits",
-      "18 credits",
-      "No coursework"
-    ],
+    "options": ["6 credits", "12 credits", "18 credits", "No coursework"],
     "correctAnswer": 1,
     "explanation": "Ordinance 9.4 mandates minimum 12 credits of coursework for PhD scholars."
   },
@@ -2326,12 +2191,7 @@
   },
   {
     "question": "BWC estimates approval timeline:",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "60 days"
-    ],
+    "options": ["15 days", "30 days", "45 days", "60 days"],
     "correctAnswer": 1,
     "explanation": "NITK works manual requires technical sanction within 30 days of submission."
   },
@@ -2359,23 +2219,13 @@
   },
   {
     "question": "Government letter salutation:",
-    "options": [
-      "Dear Sir/Madam",
-      "Respected Sir/Madam",
-      "Sir/Madam",
-      "To"
-    ],
+    "options": ["Dear Sir/Madam", "Respected Sir/Madam", "Sir/Madam", "To"],
     "correctAnswer": 2,
     "explanation": "Standard salutation: 'Sir' or 'Madam' without 'Dear' or 'Respected'."
   },
   {
     "question": "NITK's maximum PhD extension period:",
-    "options": [
-      "6 months",
-      "1 year",
-      "2 years",
-      "No extension"
-    ],
+    "options": ["6 months", "1 year", "2 years", "No extension"],
     "correctAnswer": 1,
     "explanation": "Ordinance 9.5 permits maximum one-year extension beyond six years."
   },
@@ -2392,12 +2242,7 @@
   },
   {
     "question": "FC financial report submission to BoG:",
-    "options": [
-      "Monthly",
-      "Quarterly",
-      "Half-yearly",
-      "Annually"
-    ],
+    "options": ["Monthly", "Quarterly", "Half-yearly", "Annually"],
     "correctAnswer": 1,
     "explanation": "Statute 9(3) requires quarterly financial reports to BoG through FC."
   },
@@ -2414,12 +2259,7 @@
   },
   {
     "question": "POSH conciliation process duration:",
-    "options": [
-      "7 days",
-      "15 days",
-      "30 days",
-      "90 days"
-    ],
+    "options": ["7 days", "15 days", "30 days", "90 days"],
     "correctAnswer": 1,
     "explanation": "Section 10(1) requires conciliation completion within 15 days."
   },
@@ -2458,23 +2298,13 @@
   },
   {
     "question": "BWC site inspection frequency:",
-    "options": [
-      "Monthly",
-      "Quarterly",
-      "Project milestones",
-      "Annually"
-    ],
+    "options": ["Monthly", "Quarterly", "Project milestones", "Annually"],
     "correctAnswer": 2,
     "explanation": "BWC conducts site visits at critical construction milestones."
   },
   {
     "question": "RTI information denial appeal fee:",
-    "options": [
-      "₹10",
-      "₹20",
-      "₹50",
-      "No fee"
-    ],
+    "options": ["₹10", "₹20", "₹50", "No fee"],
     "correctAnswer": 3,
     "explanation": "First appeal to FAA requires no fee under RTI Rules."
   },
@@ -2535,12 +2365,7 @@
   },
   {
     "question": "RTI application format for NITK:",
-    "options": [
-      "Form A",
-      "Form B",
-      "No prescribed form",
-      "Online form only"
-    ],
+    "options": ["Form A", "Form B", "No prescribed form", "Online form only"],
     "correctAnswer": 2,
     "explanation": "RTI Act allows applications in any written format including plain paper."
   },
@@ -2557,23 +2382,13 @@
   },
   {
     "question": "Urgent file marking:",
-    "options": [
-      "Red cross",
-      "Urgent stamp",
-      "Yellow sticker",
-      "All of above"
-    ],
+    "options": ["Red cross", "Urgent stamp", "Yellow sticker", "All of above"],
     "correctAnswer": 3,
     "explanation": "Multiple indicators used: red ink, stamps, stickers for priority handling."
   },
   {
     "question": "NITK's maximum credits per course:",
-    "options": [
-      "2 credits",
-      "4 credits",
-      "6 credits",
-      "8 credits"
-    ],
+    "options": ["2 credits", "4 credits", "6 credits", "8 credits"],
     "correctAnswer": 1,
     "explanation": "Ordinance 6.2 restricts course credits to maximum 4 per theory course."
   },
@@ -2601,12 +2416,7 @@
   },
   {
     "question": "RTI response format:",
-    "options": [
-      "Formal letter",
-      "Plain paper",
-      "Email",
-      "Any means"
-    ],
+    "options": ["Formal letter", "Plain paper", "Email", "Any means"],
     "correctAnswer": 3,
     "explanation": "Section 7(9) requires information in requested format if feasible."
   },
@@ -2656,12 +2466,7 @@
   },
   {
     "question": "FC reviews budget variance:",
-    "options": [
-      "Monthly",
-      "Quarterly",
-      "Half-yearly",
-      "Annually"
-    ],
+    "options": ["Monthly", "Quarterly", "Half-yearly", "Annually"],
     "correctAnswer": 0,
     "explanation": "Monthly variance analysis required for effective financial control."
   },
@@ -2700,12 +2505,7 @@
   },
   {
     "question": "NITK's academic calendar duration:",
-    "options": [
-      "30 weeks",
-      "36 weeks",
-      "40 weeks",
-      "48 weeks"
-    ],
+    "options": ["30 weeks", "36 weeks", "40 weeks", "48 weeks"],
     "correctAnswer": 1,
     "explanation": "Ordinance 4.3 mandates minimum 36 instructional weeks annually."
   },
@@ -2722,12 +2522,7 @@
   },
   {
     "question": "BWC quality control responsibility:",
-    "options": [
-      "Contractor",
-      "Consultant",
-      "BWC members",
-      "All stakeholders"
-    ],
+    "options": ["Contractor", "Consultant", "BWC members", "All stakeholders"],
     "correctAnswer": 2,
     "explanation": "BWC conducts random quality checks and material testing during execution."
   },
@@ -2766,12 +2561,7 @@
   },
   {
     "question": "NITK's minimum grade for course pass:",
-    "options": [
-      "D (4.0)",
-      "C (5.0)",
-      "B (6.0)",
-      "A (8.0)"
-    ],
+    "options": ["D (4.0)", "C (5.0)", "B (6.0)", "A (8.0)"],
     "correctAnswer": 0,
     "explanation": "Ordinance 6.4 requires minimum 'D' grade (4.0) for course completion."
   },
@@ -2799,12 +2589,7 @@
   },
   {
     "question": "RTI information rejection appeal timeline:",
-    "options": [
-      "15 days",
-      "30 days",
-      "45 days",
-      "90 days"
-    ],
+    "options": ["15 days", "30 days", "45 days", "90 days"],
     "correctAnswer": 1,
     "explanation": "Section 19(1) allows 30 days for first appeal from rejection date."
   },
@@ -2832,12 +2617,7 @@
   },
   {
     "question": "NITK's academic probation criteria:",
-    "options": [
-      "CGPA < 5.0",
-      "CGPA < 4.5",
-      "CGPA < 4.0",
-      "Two backlogs"
-    ],
+    "options": ["CGPA < 5.0", "CGPA < 4.5", "CGPA < 4.0", "Two backlogs"],
     "correctAnswer": 2,
     "explanation": "Ordinance 7.3.1 places students on probation if CGPA falls below 4.0."
   },

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Quiz Pro - Enhanced Edition</title>
     
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
     <!-- Preconnect to Google Fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +22,55 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
     
     <!-- Meta tags for better SEO and social sharing -->
-    <meta name="description" content="Advanced quiz application for Assistant Registrar exam preparation with smart learning features">
-    <meta name="keywords" content="quiz, exam preparation, assistant registrar, learning, education">
+    <meta name="description" content="Advanced quiz application for Assistant Registrar exam preparation with smart learning features, enhanced security, and beautiful animations">
+    <meta name="keywords" content="quiz, exam preparation, assistant registrar, learning, education, secure, interactive">
     <meta name="author" content="SKc">
+    <meta name="robots" content="index, follow">
     
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Smart Quiz Pro - Enhanced Edition">
-    <meta property="og:description" content="Advanced quiz application for exam preparation">
+    <meta property="og:description" content="Advanced quiz application for exam preparation with enhanced security and UX">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
     
-    <!-- Link to enhanced CSS file -->
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    
+    <!-- Link to enhanced CSS files -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/enhanced-styles.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading Quiz Pro...</h2>
+            <p>Preparing your secure learning experience</p>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Enhanced Header -->
         <header>
-            <h1>ARES Prep Pro</h1>
+            <h1>Asst. Res. Prep Pro</h1>
             <p class="smart-info">Questions are randomized. Incorrect answers will be re-tested to improve memory.</p>
         </header>
         
         <!-- Enhanced Tabs -->
         <div class="tabs">
-            <button class="tab-btn active" data-section="quantitative">Quantitative</button>
-            <button class="tab-btn" data-section="verbal">Verbal</button>
-            <button class="tab-btn" data-section="logical">Logical</button>
-            <button class="tab-btn" data-section="general_awareness">Awareness</button>
-            <button class="tab-btn" data-section="current_affairs">Current Affairs</button>
-            <button class="tab-btn" data-section="domain1">Domain 1</button>
-            <button class="tab-btn" data-section="domain2">Domain 2</button>
-            <button class="tab-btn" data-section="domain3">Domain 3</button>
+            <button class="tab-btn active" data-section="quantitative">📊 Quantitative</button>
+            <button class="tab-btn" data-section="verbal">📝 Verbal</button>
+            <button class="tab-btn" data-section="logical">🧩 Logical</button>
+            <button class="tab-btn" data-section="general_awareness">🌍 Awareness</button>
+            <button class="tab-btn" data-section="current_affairs">📰 Current Affairs</button>
+            <button class="tab-btn" data-section="domain1">🎯 Domain 1</button>
+            <button class="tab-btn" data-section="domain2">⚡ Domain 2</button>
+            <button class="tab-btn" data-section="domain3">🚀 Domain 3</button>
         </div>
         
         <!-- Enhanced Quiz Container -->
@@ -55,21 +80,33 @@
             </div>
             
             <div id="question-area">
-                <div class="loader">
-                    <p>Preparing your questions...</p>
+                <div class="enhanced-loader">
+                    <div class="loader-spinner"></div>
+                    <div class="loader-text">Preparing your questions...</div>
+                    <div class="loader-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <!-- Enhanced Navigation -->
             <div class="navigation">
-                <button class="nav-btn" id="prev-btn" disabled>Previous</button>
+                <button class="nav-btn secondary" id="prev-btn" disabled>
+                    ← Previous
+                </button>
                 
                 <div class="nav-center-group">
                     <span id="progress-text">Remaining: 0</span>
-                    <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Session</button>
+                    <button class="nav-btn reset-btn" id="reset-btn" disabled>
+                        🔄 Reset Session
+                    </button>
                 </div>
                 
-                <button class="nav-btn" id="next-btn" disabled>Next</button>
+                <button class="nav-btn primary" id="next-btn" disabled>
+                    Next →
+                </button>
             </div>
         </div>
 
@@ -105,7 +142,30 @@
         </footer>
     </div>
 
-    <!-- Enhanced JavaScript -->
-    <script src="./js/script.js"></script>
+    <!-- Enhanced JavaScript with Security -->
+    <script src="./js/security.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/enhanced-script.js"></script>
+    
+    <!-- Performance and Analytics -->
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', () => {
+            if ('performance' in window) {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log(`⚡ Page loaded in ${Math.round(perfData.loadEventEnd - perfData.fetchStart)}ms`);
+            }
+        });
+        
+        // Error tracking
+        window.addEventListener('error', (e) => {
+            console.error('🚨 JavaScript Error:', e.error);
+        });
+        
+        // Unhandled promise rejection tracking
+        window.addEventListener('unhandledrejection', (e) => {
+            console.error('🚨 Unhandled Promise Rejection:', e.reason);
+        });
+    </script>
 </body>
 </html>

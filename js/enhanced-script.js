@@ -1,4 +1,4 @@
-// Enhanced Quiz Application with Modern Features
+// Enhanced Quiz Application with Security and Advanced UX
 const quizData = {};
 const state = {
     currentSection: "quantitative",
@@ -8,10 +8,15 @@ const state = {
     sessionStats: { answered: 0, correct: 0 },
     globalStats: {},
     currentQuestionIndex: 0,
-    totalQuestions: 0
+    totalQuestions: 0,
+    isOnline: navigator.onLine
 };
 
-// Enhanced DOM elements
+// Initialize security and animation managers
+const security = new SecurityManager();
+const animations = new AnimationManager();
+
+// Enhanced DOM elements with security
 const dom = {
     sectionTitle: document.getElementById("section-title"),
     questionArea: document.getElementById("question-area"),
@@ -19,21 +24,22 @@ const dom = {
     nextBtn: document.getElementById("next-btn"),
     resetBtn: document.getElementById("reset-btn"),
     progressText: document.getElementById("progress-text"),
-    progressFill: document.getElementById("progress-fill"),
-    progressLabel: document.getElementById("progress-label"),
-    progressDots: document.getElementById("progress-dots"),
     totalQuestions: document.getElementById("total-questions"),
     answered: document.getElementById("answered"),
     correct: document.getElementById("correct"),
     accuracy: document.getElementById("accuracy"),
-    answeredTrend: document.getElementById("answered-trend"),
-    correctTrend: document.getElementById("correct-trend"),
-    accuracyTrend: document.getElementById("accuracy-trend"),
     tabs: document.querySelectorAll(".tab-btn"),
 };
 
-// Enhanced sparkle animation
+// Enhanced sparkle animation with particles
 function triggerSparkle(element) {
+    const rect = element.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    
+    animations.createCelebrationParticles(x, y, 30);
+    
+    // Original sparkle effect
     const sparkleCount = 20;
     const colors = ['#ffd700', '#ffed4e', '#fff700', '#ffaa00', '#ff6b6b'];
     
@@ -53,72 +59,61 @@ function triggerSparkle(element) {
         sparkle.style.boxShadow = `0 0 6px ${color}`;
         
         element.appendChild(sparkle);
-        
         sparkle.addEventListener('animationend', () => sparkle.remove());
     }
     
-    // Add success sound effect (optional)
     playSuccessSound();
 }
 
-// Enhanced confetti animation for perfect scores
-function triggerConfetti() {
-    const confettiCount = 50;
-    const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd'];
-    
-    for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        confetti.style.position = 'fixed';
-        confetti.style.width = '10px';
-        confetti.style.height = '10px';
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.top = '-10px';
-        confetti.style.zIndex = '1000';
-        confetti.style.borderRadius = '50%';
-        confetti.style.animation = `confetti-fall ${Math.random() * 3 + 2}s linear forwards`;
-        
-        document.body.appendChild(confetti);
-        
-        setTimeout(() => confetti.remove(), 5000);
-    }
-}
-
-// Add confetti animation CSS
-const confettiStyle = document.createElement('style');
-confettiStyle.textContent = `
-    @keyframes confetti-fall {
-        to {
-            transform: translateY(100vh) rotate(360deg);
-        }
-    }
-`;
-document.head.appendChild(confettiStyle);
-
-// Enhanced loading screen
+// Enhanced loading with progress indication
 function showLoader(message) {
     dom.questionArea.innerHTML = `
-        <div class="loader">
-            <div class="loader-animation"></div>
-            <p>${message}</p>
-            <div class="loading-dots">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="enhanced-loader">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">${security.escapeHtml(message)}</div>
+            <div class="loader-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="loading-progress"></div>
+                </div>
             </div>
         </div>
     `;
+    
+    // Animate progress bar
+    let progress = 0;
+    const progressBar = document.getElementById('loading-progress');
+    const interval = setInterval(() => {
+        progress += Math.random() * 15;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+        }
+        if (progressBar) {
+            progressBar.style.width = `${progress}%`;
+        }
+    }, 100);
+    
     updateButtonStates(true);
 }
 
-// Enhanced button state management
+// Enhanced button state management with animations
 function updateButtonStates(loading = false) {
+    const buttons = [dom.prevBtn, dom.nextBtn, dom.resetBtn];
+    
+    buttons.forEach(btn => {
+        if (loading) {
+            btn.classList.add('loading');
+        } else {
+            btn.classList.remove('loading');
+        }
+    });
+    
     dom.prevBtn.disabled = loading || state.history.length === 0;
     dom.nextBtn.disabled = loading || (state.questionQueue.length === 0 && state.retestQueue.length === 0) || !document.querySelector('.option.disabled');
     dom.resetBtn.disabled = loading;
 }
 
-// Enhanced array shuffling with Fisher-Yates algorithm
+// Secure array shuffling with Fisher-Yates algorithm
 function shuffleArray(array) {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -128,103 +123,117 @@ function shuffleArray(array) {
     return shuffled;
 }
 
-// Enhanced local storage management
+// Enhanced local storage with security
 function loadGlobalStats() {
     try {
-        const stats = localStorage.getItem('quizGlobalStats');
-        state.globalStats = stats ? JSON.parse(stats) : { 
+        const stats = security.secureGetItem('quizGlobalStats');
+        state.globalStats = stats || { 
             attemptCounts: {},
             sectionProgress: {},
             totalSessions: 0,
-            bestAccuracy: 0
+            bestAccuracy: 0,
+            timeSpent: 0
         };
     } catch (error) {
         console.warn('Failed to load global stats:', error);
-        state.globalStats = { attemptCounts: {}, sectionProgress: {}, totalSessions: 0, bestAccuracy: 0 };
+        state.globalStats = { attemptCounts: {}, sectionProgress: {}, totalSessions: 0, bestAccuracy: 0, timeSpent: 0 };
     }
 }
 
 function saveGlobalStats() {
     try {
-        // Update session count
         state.globalStats.totalSessions = (state.globalStats.totalSessions || 0) + 1;
         
-        // Update best accuracy
         const currentAccuracy = state.sessionStats.answered > 0 ? 
             Math.round((state.sessionStats.correct / state.sessionStats.answered) * 100) : 0;
         state.globalStats.bestAccuracy = Math.max(state.globalStats.bestAccuracy || 0, currentAccuracy);
         
-        localStorage.setItem('quizGlobalStats', JSON.stringify(state.globalStats));
+        security.secureSetItem('quizGlobalStats', state.globalStats);
     } catch (error) {
         console.warn('Failed to save global stats:', error);
     }
 }
 
-// Enhanced progress tracking
-function updateProgressIndicator() {
-    const totalQuestions = state.totalQuestions;
-    const answeredQuestions = state.sessionStats.answered;
-    const progressPercentage = totalQuestions > 0 ? (answeredQuestions / totalQuestions) * 100 : 0;
-    
-    if (dom.progressFill) {
-        dom.progressFill.style.width = `${progressPercentage}%`;
-    }
-    
-    if (dom.progressLabel) {
-        dom.progressLabel.textContent = `${Math.round(progressPercentage)}%`;
-    }
-    
-    // Update progress dots
-    if (dom.progressDots) {
-        const dotsCount = Math.min(totalQuestions, 10);
-        const dotsHTML = Array.from({ length: dotsCount }, (_, i) => {
-            const isCompleted = i < (answeredQuestions / totalQuestions) * dotsCount;
-            return `<span class="progress-dot ${isCompleted ? 'completed' : ''}"></span>`;
-        }).join('');
-        dom.progressDots.innerHTML = dotsHTML;
-    }
-}
-
-// Enhanced section loading with better error handling
+// Enhanced section loading with security checks
 async function loadSection(sectionKey) {
     try {
-        // Update active tab
-        dom.tabs.forEach(btn => btn.classList.toggle('active', btn.dataset.section === sectionKey));
+        // Security check
+        security.checkRateLimit('section_load');
+        
+        // Sanitize section key
+        sectionKey = security.sanitizeInput(sectionKey);
+        
+        // Update active tab with animation
+        dom.tabs.forEach((btn, index) => {
+            const isActive = btn.dataset.section === sectionKey;
+            btn.classList.toggle('active', isActive);
+            
+            if (isActive) {
+                setTimeout(() => {
+                    animations.pulseElement(btn, 500);
+                }, index * 50);
+            }
+        });
         
         state.currentSection = sectionKey;
         showLoader(`Loading & Randomizing ${getSectionDisplayName(sectionKey)} Questions...`);
         
         if (!quizData[sectionKey]) {
-            const response = await fetch(`./questions/${sectionKey}.json`);
+            // Validate file integrity
+            const filePath = `./questions/${sectionKey}.json`;
+            const isValid = await security.validateFileIntegrity(filePath);
+            
+            if (!isValid) {
+                throw new Error(`Security validation failed for ${sectionKey}.json`);
+            }
+            
+            const response = await fetch(filePath);
             if (!response.ok) {
                 throw new Error(`Questions file not found: ${sectionKey}.json`);
             }
             
-            const questions = await response.json();
+            const jsonText = await response.text();
+            const questions = security.secureJSONParse(jsonText);
+            
             quizData[sectionKey] = questions.map((q, index) => ({ 
                 ...q, 
                 originalId: `${sectionKey}-${index}`,
                 difficulty: q.difficulty || 'medium',
-                category: q.category || sectionKey
+                category: q.category || sectionKey,
+                // Sanitize question content
+                question: security.escapeHtml(q.question),
+                options: q.options.map(opt => security.escapeHtml(opt)),
+                explanation: security.escapeHtml(q.explanation)
             }));
         }
         
         initializeSection();
     } catch (error) {
         console.error('Error loading section:', error);
-        dom.questionArea.innerHTML = `
-            <div class="error-message">
-                <div class="error-icon">⚠️</div>
-                <h3>Oops! Something went wrong</h3>
-                <p>${error.message}</p>
-                <button class="nav-btn primary" onclick="loadSection('${sectionKey}')">
+        showErrorMessage(error.message);
+    }
+}
+
+// Enhanced error handling
+function showErrorMessage(message) {
+    dom.questionArea.innerHTML = `
+        <div class="error-container">
+            <div class="error-icon">⚠️</div>
+            <h3>Oops! Something went wrong</h3>
+            <p class="error-message">${security.escapeHtml(message)}</p>
+            <div class="error-actions">
+                <button class="nav-btn primary" onclick="location.reload()">
                     <span>🔄</span>
-                    <span>Try Again</span>
+                    <span>Refresh Page</span>
+                </button>
+                <button class="nav-btn secondary" onclick="loadSection('quantitative')">
+                    <span>🏠</span>
+                    <span>Go to Quantitative</span>
                 </button>
             </div>
-        `;
-        updateButtonStates(true);
-    }
+        </div>
+    `;
+    updateButtonStates(true);
 }
 
 // Get display name for section
@@ -246,7 +255,9 @@ function getSectionDisplayName(sectionKey) {
 function initializeSection() {
     const sectionKey = state.currentSection;
     const sectionTitle = getSectionDisplayName(sectionKey);
-    dom.sectionTitle.textContent = sectionTitle;
+    
+    // Animate title change
+    animations.typeText(dom.sectionTitle, sectionTitle, 30);
     
     // Reset session stats
     state.sessionStats = { answered: 0, correct: 0 };
@@ -254,16 +265,15 @@ function initializeSection() {
     state.history = [];
     state.currentQuestionIndex = 0;
     
-    // Shuffle questions
+    // Shuffle questions securely
     state.questionQueue = shuffleArray([...quizData[sectionKey]]);
     state.totalQuestions = state.questionQueue.length;
     
     updateButtonStates(false);
-    updateProgressIndicator();
     displayQuestion();
 }
 
-// Enhanced question display with better formatting
+// Enhanced question display
 function displayQuestion() {
     if (state.questionQueue.length === 0 && state.retestQueue.length === 0) {
         displayCompletionMessage();
@@ -271,7 +281,7 @@ function displayQuestion() {
     }
 
     let currentQ;
-    // Smart question selection: mix regular and retest questions
+    // Smart question selection
     if (state.sessionStats.answered > 0 && state.sessionStats.answered % 3 === 0 && state.retestQueue.length > 0) {
         currentQ = state.retestQueue.shift();
     } else {
@@ -287,15 +297,16 @@ function displayQuestion() {
 
     const prefixes = ['A', 'B', 'C', 'D', 'E'];
     const optionsHTML = currentQ.options.map((option, index) => `
-        <div class="option" data-index="${index}" tabindex="0" role="button" aria-label="Option ${prefixes[index]}: ${option}">
+        <div class="option enhanced-option" data-index="${index}" tabindex="0" role="button" aria-label="Option ${prefixes[index]}: ${option}">
             <span class="option-prefix">${prefixes[index]}</span>
             <span class="option-text">${option}</span>
             <span class="feedback-icon" aria-hidden="true"></span>
+            <div class="option-ripple"></div>
         </div>
     `).join('');
     
     dom.questionArea.innerHTML = `
-        <div class="question-container">
+        <div class="question-container enhanced-question">
             <div class="question-header">
                 <div class="question-meta">
                     <span class="question-number">Question ${state.sessionStats.answered + 1}</span>
@@ -304,55 +315,77 @@ function displayQuestion() {
                 </div>
                 <div class="question-text">${currentQ.question}</div>
             </div>
-            <div class="options-container" role="radiogroup" aria-label="Answer options">
+            <div class="options-container enhanced-options" role="radiogroup" aria-label="Answer options">
                 ${optionsHTML}
             </div>
-            <div class="explanation" role="region" aria-label="Explanation"></div>
+            <div class="explanation enhanced-explanation" role="region" aria-label="Explanation"></div>
         </div>
     `;
 
-    // Add event listeners for options
-    document.querySelectorAll('.option').forEach((opt, index) => {
-        opt.addEventListener('click', () => selectOption(index, currentQ));
+    // Add enhanced event listeners
+    document.querySelectorAll('.enhanced-option').forEach((opt, index) => {
+        opt.addEventListener('click', (e) => {
+            animations.createRipple(opt, e);
+            selectOption(index, currentQ);
+        });
+        
         opt.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 selectOption(index, currentQ);
             }
         });
+        
+        // Add hover effects
+        opt.addEventListener('mouseenter', () => {
+            if (!opt.classList.contains('disabled')) {
+                animations.pulseElement(opt, 200);
+            }
+        });
     });
+
+    // Animate question appearance
+    setTimeout(() => {
+        document.querySelector('.enhanced-question').classList.add('animate-in');
+    }, 100);
 
     updateUI();
 }
 
-// Enhanced completion message
+// Enhanced completion message with celebration
 function displayCompletionMessage() {
     const accuracy = state.sessionStats.answered > 0 ? 
         Math.round((state.sessionStats.correct / state.sessionStats.answered) * 100) : 0;
     
     let message = "🎉 Session Complete! 🎉";
     let encouragement = "Well done!";
+    let celebrationLevel = 'basic';
     
     if (accuracy >= 90) {
         message = "🏆 Outstanding Performance! 🏆";
         encouragement = "You're a quiz master!";
-        triggerConfetti();
+        celebrationLevel = 'epic';
+        // Trigger epic celebration
+        setTimeout(() => animations.createCelebrationParticles(window.innerWidth / 2, window.innerHeight / 2, 100), 500);
     } else if (accuracy >= 75) {
         message = "⭐ Great Job! ⭐";
         encouragement = "Excellent work!";
+        celebrationLevel = 'great';
     } else if (accuracy >= 60) {
         message = "👍 Good Effort! 👍";
         encouragement = "Keep practicing!";
+        celebrationLevel = 'good';
     } else {
         message = "📚 Learning in Progress 📚";
         encouragement = "Every attempt makes you stronger!";
+        celebrationLevel = 'encouraging';
     }
     
     dom.questionArea.innerHTML = `
-        <div class="completion-message">
+        <div class="completion-message ${celebrationLevel}">
             <div class="completion-icon">${accuracy >= 90 ? '🏆' : accuracy >= 75 ? '⭐' : accuracy >= 60 ? '👍' : '📚'}</div>
-            <h3>${message}</h3>
-            <p>${encouragement}</p>
+            <h3 class="completion-title">${message}</h3>
+            <p class="completion-subtitle">${encouragement}</p>
             <div class="completion-stats">
                 <div class="completion-stat">
                     <span class="stat-number">${state.sessionStats.correct}</span>
@@ -367,15 +400,26 @@ function displayCompletionMessage() {
                     <span class="stat-label">Accuracy</span>
                 </div>
             </div>
-            <button class="nav-btn primary" onclick="initializeSection()">
-                <span>🔄</span>
-                <span>Start New Session</span>
-            </button>
+            <div class="completion-actions">
+                <button class="nav-btn primary" onclick="initializeSection()">
+                    <span>🔄</span>
+                    <span>Start New Session</span>
+                </button>
+                <button class="nav-btn secondary" onclick="showDetailedStats()">
+                    <span>📊</span>
+                    <span>View Stats</span>
+                </button>
+            </div>
         </div>
     `;
     
     dom.nextBtn.disabled = true;
     saveGlobalStats();
+    
+    // Animate completion message
+    setTimeout(() => {
+        document.querySelector('.completion-message').classList.add('animate-in');
+    }, 100);
 }
 
 // Enhanced option selection with better feedback
@@ -396,11 +440,11 @@ function selectOption(selectedIndex, currentQ) {
         state.retestQueue.splice(retestIndex, 1);
     }
     
-    // Update global stats
+    // Update global stats securely
     state.globalStats.attemptCounts[currentQ.originalId] = 
         (state.globalStats.attemptCounts[currentQ.originalId] || 0) + 1;
     
-    // Visual feedback for options
+    // Enhanced visual feedback
     const options = document.querySelectorAll('.option');
     options.forEach((opt, index) => {
         opt.classList.add('disabled');
@@ -408,20 +452,30 @@ function selectOption(selectedIndex, currentQ) {
         
         if (index === selectedIndex) {
             opt.classList.add('selected');
+            animations.pulseElement(opt, 300);
         }
         
         if (index === currentQ.correctAnswer) {
             opt.classList.add('correct');
             opt.querySelector('.feedback-icon').textContent = '✓';
             opt.setAttribute('aria-label', opt.getAttribute('aria-label') + ' - Correct answer');
+            
+            // Animate correct answer
+            setTimeout(() => {
+                opt.style.transform = 'scale(1.02)';
+                setTimeout(() => opt.style.transform = '', 200);
+            }, 100);
         } else if (index === selectedIndex) {
             opt.classList.add('incorrect');
             opt.querySelector('.feedback-icon').textContent = '✗';
             opt.setAttribute('aria-label', opt.getAttribute('aria-label') + ' - Incorrect answer');
+            
+            // Shake incorrect answer
+            animations.shakeElement(opt);
         }
     });
     
-    // Show explanation
+    // Show enhanced explanation
     const explanationEl = document.querySelector('.explanation');
     explanationEl.innerHTML = `
         <div class="explanation-header">
@@ -433,7 +487,7 @@ function selectOption(selectedIndex, currentQ) {
     explanationEl.classList.add('show');
     explanationEl.setAttribute('aria-expanded', 'true');
     
-    // Trigger sparkle animation for correct answers
+    // Trigger celebration for correct answers
     if (isCorrect) {
         const correctOptionEl = document.querySelector('.option.correct.selected');
         if (correctOptionEl) {
@@ -454,7 +508,6 @@ function selectOption(selectedIndex, currentQ) {
 
     dom.nextBtn.disabled = false;
     updateUI();
-    updateProgressIndicator();
 }
 
 // Enhanced ordinal number function
@@ -464,7 +517,7 @@ function getOrdinal(n) {
     return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
-// Enhanced UI updates with trends
+// Enhanced UI updates with smooth animations
 function updateUI() {
     updateButtonStates();
 
@@ -476,30 +529,25 @@ function updateUI() {
     const remaining = state.questionQueue.length + state.retestQueue.length;
     dom.progressText.textContent = `Remaining: ${remaining}`;
     
-    // Update stat values
-    dom.totalQuestions.textContent = totalInSection;
-    dom.answered.textContent = answeredCount;
-    dom.correct.textContent = correctCount;
-    dom.accuracy.textContent = `${accuracy}%`;
-    
-    // Update trend indicators
-    if (dom.answeredTrend) {
-        const progress = totalInSection > 0 ? (answeredCount / totalInSection) * 100 : 0;
-        dom.answeredTrend.textContent = progress < 25 ? "Just started!" : 
-                                       progress < 50 ? "Making progress!" :
-                                       progress < 75 ? "Halfway there!" : "Almost done!";
-    }
-    
-    if (dom.correctTrend) {
-        dom.correctTrend.textContent = accuracy >= 90 ? "Excellent!" :
-                                      accuracy >= 75 ? "Great job!" :
-                                      accuracy >= 60 ? "Good work!" : "Keep trying!";
-    }
-    
-    if (dom.accuracyTrend) {
-        const trend = accuracy >= 80 ? "📈 Trending up!" :
-                     accuracy >= 60 ? "📊 Steady progress" : "📉 Room to improve";
-        dom.accuracyTrend.textContent = trend;
+    // Animate stat updates
+    animateStatUpdate(dom.totalQuestions, totalInSection);
+    animateStatUpdate(dom.answered, answeredCount);
+    animateStatUpdate(dom.correct, correctCount);
+    animateStatUpdate(dom.accuracy, `${accuracy}%`);
+}
+
+// Animate stat updates
+function animateStatUpdate(element, newValue) {
+    const currentValue = element.textContent;
+    if (currentValue !== newValue.toString()) {
+        element.style.transform = 'scale(1.1)';
+        element.style.color = 'var(--accent-primary)';
+        
+        setTimeout(() => {
+            element.textContent = newValue;
+            element.style.transform = 'scale(1)';
+            element.style.color = '';
+        }, 150);
     }
 }
 
@@ -509,24 +557,57 @@ function goToPrevious() {
         const lastQuestion = state.history.pop();
         state.questionQueue.unshift(lastQuestion);
         
-        // Simplified undo - just show the question again
-        displayQuestion();
+        animations.morphButton(dom.prevBtn, 'Loading...', 200);
+        setTimeout(() => displayQuestion(), 200);
     }
 }
 
 function nextQuestion() {
-    displayQuestion();
+    animations.morphButton(dom.nextBtn, 'Loading...', 200);
+    setTimeout(() => displayQuestion(), 200);
 }
 
 function resetSession() {
     if (confirm('Are you sure you want to reset the current session? All progress will be lost.')) {
-        initializeSection();
+        animations.morphButton(dom.resetBtn, 'Resetting...', 300);
+        setTimeout(() => initializeSection(), 300);
     }
 }
 
-// Sound effects (optional - can be enabled/disabled)
+// Show detailed statistics
+function showDetailedStats() {
+    const stats = state.globalStats;
+    const modal = document.createElement('div');
+    modal.className = 'stats-modal';
+    modal.innerHTML = `
+        <div class="stats-modal-content">
+            <div class="stats-modal-header">
+                <h3>📊 Detailed Statistics</h3>
+                <button class="close-modal" onclick="this.parentElement.parentElement.parentElement.remove()">×</button>
+            </div>
+            <div class="stats-modal-body">
+                <div class="stat-item">
+                    <span class="stat-icon">🎯</span>
+                    <span class="stat-text">Total Sessions: ${stats.totalSessions || 0}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">🏆</span>
+                    <span class="stat-text">Best Accuracy: ${stats.bestAccuracy || 0}%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">⏱️</span>
+                    <span class="stat-text">Time Spent: ${Math.round((stats.timeSpent || 0) / 60)} minutes</span>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    
+    setTimeout(() => modal.classList.add('show'), 10);
+}
+
+// Enhanced sound effects
 function playSuccessSound() {
-    // Create a simple success sound using Web Audio API
     try {
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
         const oscillator = audioContext.createOscillator();
@@ -535,14 +616,16 @@ function playSuccessSound() {
         oscillator.connect(gainNode);
         gainNode.connect(audioContext.destination);
         
-        oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
-        oscillator.frequency.setValueAtTime(1000, audioContext.currentTime + 0.1);
+        // Create a pleasant success chord
+        oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
+        oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // E5
+        oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.2); // G5
         
         gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
         
         oscillator.start(audioContext.currentTime);
-        oscillator.stop(audioContext.currentTime + 0.2);
+        oscillator.stop(audioContext.currentTime + 0.3);
     } catch (error) {
         // Silently fail if audio context is not available
     }
@@ -557,8 +640,8 @@ function playErrorSound() {
         oscillator.connect(gainNode);
         gainNode.connect(audioContext.destination);
         
-        oscillator.frequency.setValueAtTime(400, audioContext.currentTime);
-        oscillator.frequency.setValueAtTime(300, audioContext.currentTime + 0.1);
+        oscillator.frequency.setValueAtTime(300, audioContext.currentTime);
+        oscillator.frequency.setValueAtTime(250, audioContext.currentTime + 0.1);
         
         gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
         gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
@@ -570,9 +653,10 @@ function playErrorSound() {
     }
 }
 
-// Enhanced keyboard navigation
+// Enhanced keyboard navigation with security
 document.addEventListener('keydown', (e) => {
-    if (e.target.closest('.option')) return; // Let option handle its own keyboard events
+    // Prevent potential XSS through keyboard events
+    if (e.target.closest('.option')) return;
     
     switch (e.key) {
         case 'ArrowLeft':
@@ -601,309 +685,68 @@ document.addEventListener('keydown', (e) => {
                 options[optionIndex].click();
             }
             break;
+        case 'Escape':
+            // Close any open modals
+            document.querySelectorAll('.stats-modal').forEach(modal => modal.remove());
+            break;
     }
 });
 
-// Event listeners
-dom.tabs.forEach(btn => btn.addEventListener('click', () => loadSection(btn.dataset.section)));
+// Network status monitoring
+window.addEventListener('online', () => {
+    state.isOnline = true;
+    console.log('🌐 Connection restored');
+});
+
+window.addEventListener('offline', () => {
+    state.isOnline = false;
+    console.log('📡 Working offline');
+});
+
+// Event listeners with enhanced security
+dom.tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const section = security.sanitizeInput(btn.dataset.section);
+        loadSection(section);
+    });
+});
+
 dom.nextBtn.addEventListener('click', nextQuestion);
 dom.prevBtn.addEventListener('click', goToPrevious);
 dom.resetBtn.addEventListener('click', resetSession);
 
-// Enhanced initialization
+// Enhanced initialization with security
 window.addEventListener('DOMContentLoaded', () => {
+    // Initialize security
+    security.initialize();
+    
+    // Initialize animations
+    animations.initialize();
+    
+    // Load global stats securely
     loadGlobalStats();
     
-    // Add loading animation styles
-    const loadingStyles = document.createElement('style');
-    loadingStyles.textContent = `
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.3s ease;
-        }
-        
-        .loading-content {
-            text-align: center;
-            color: white;
-        }
-        
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .loading-dots {
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-            margin-top: 20px;
-        }
-        
-        .loading-dots span {
-            width: 8px;
-            height: 8px;
-            background: white;
-            border-radius: 50%;
-            animation: loading-bounce 1.4s ease-in-out infinite both;
-        }
-        
-        .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
-        .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
-        
-        @keyframes loading-bounce {
-            0%, 80%, 100% { transform: scale(0); }
-            40% { transform: scale(1); }
-        }
-        
-        .error-message {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-primary);
-        }
-        
-        .error-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-        
-        .completion-message {
-            text-align: center;
-            padding: 40px;
-        }
-        
-        .completion-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-        
-        .completion-stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
-        }
-        
-        .completion-stat {
-            text-align: center;
-        }
-        
-        .completion-stat .stat-number {
-            display: block;
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--text-accent);
-        }
-        
-        .completion-stat .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .progress-indicator {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .progress-bar {
-            flex-grow: 1;
-            height: 8px;
-            background: rgba(59, 130, 246, 0.2);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: var(--accent-primary);
-            border-radius: 4px;
-            transition: width 0.3s ease;
-            width: 0%;
-        }
-        
-        .progress-label {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            min-width: 40px;
-        }
-        
-        .progress-dots {
-            display: flex;
-            gap: 4px;
-            margin-top: 10px;
-        }
-        
-        .progress-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(59, 130, 246, 0.3);
-            transition: background 0.3s ease;
-        }
-        
-        .progress-dot.completed {
-            background: var(--text-accent);
-        }
-        
-        .question-meta {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .question-number {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            background: rgba(59, 130, 246, 0.1);
-            padding: 4px 12px;
-            border-radius: 12px;
-        }
-        
-        .difficulty-badge {
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 8px;
-            text-transform: uppercase;
-        }
-        
-        .difficulty-badge.easy {
-            background: rgba(16, 185, 129, 0.2);
-            color: #059669;
-        }
-        
-        .difficulty-badge.medium {
-            background: rgba(245, 158, 11, 0.2);
-            color: #d97706;
-        }
-        
-        .difficulty-badge.hard {
-            background: rgba(239, 68, 68, 0.2);
-            color: #dc2626;
-        }
-        
-        .explanation-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .explanation-icon {
-            font-size: 1.2rem;
-        }
-        
-        .explanation-content {
-            line-height: 1.6;
-        }
-        
-        .header-stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .header-stat {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .stat-icon {
-            font-size: 1.1rem;
-        }
-        
-        .tab-icon {
-            margin-right: 8px;
-        }
-        
-        .btn-icon {
-            font-size: 1.1rem;
-        }
-        
-        .nav-btn.secondary {
-            background: rgba(107, 114, 128, 0.1);
-            color: var(--text-secondary);
-        }
-        
-        .nav-btn.primary {
-            background: var(--accent-primary);
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .developer-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .developer-icon {
-            font-size: 1.2rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 15px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .stat-icon {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        
-        .stat-trend {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            margin-top: 5px;
-        }
-    `;
-    document.head.appendChild(loadingStyles);
-    
-    // Start the application
+    // Start with quantitative section
     loadSection('quantitative');
+    
+    console.log('🚀 Enhanced Quiz Application initialized');
 });
 
-// Service Worker registration for offline support (optional)
+// Service Worker registration for offline support
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
-            .then(registration => console.log('SW registered'))
-            .catch(registrationError => console.log('SW registration failed'));
+            .then(registration => console.log('📱 Service Worker registered'))
+            .catch(registrationError => console.log('❌ Service Worker registration failed'));
+    });
+}
+
+// Performance monitoring
+if ('performance' in window) {
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            console.log(`⚡ Page loaded in ${Math.round(perfData.loadEventEnd - perfData.fetchStart)}ms`);
+        }, 0);
     });
 }

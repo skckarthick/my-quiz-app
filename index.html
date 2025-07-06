@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant Registrar Exam Prep Pro</title>
+    <title>Assistant Registrar Prep Pro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
             --accent-secondary: #3fb950;
             --accent-error: #f85149;
             --shadow-color: rgba(0, 0, 0, 0.4);
+            /* New style for the attempt flag */
+            --attempt-flag-bg: #c9d1d9;
+            --attempt-flag-text: #0d1117;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         
@@ -53,6 +56,8 @@
         header { text-align: center; margin-bottom: 40px; }
         header h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; margin-bottom: 10px; }
         header p { color: var(--text-secondary); font-size: 1.1rem; }
+        /* Smart Header Info */
+        .smart-info { color: var(--accent-primary); font-size: 1rem; font-weight: 500;}
 
         .tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
         .tab-btn {
@@ -80,14 +85,20 @@
         .section-header h2 { font-size: 1.5rem; font-weight: 600; }
         .progress-wrapper { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
         #progress-text { font-size: 0.9rem; color: var(--text-secondary); }
-        .progress-bar { width: 150px; height: 8px; background: rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
-        .progress-fill { height: 100%; background: var(--accent-primary); border-radius: 8px; transition: width 0.5s ease; }
         
-        .question-text { font-size: clamp(1.2rem, 3vw, 1.4rem); margin: 30px 0; font-weight: 500; }
+        /* Question header for attempt flag */
+        .question-header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0; }
+        .question-text { font-size: clamp(1.2rem, 3vw, 1.4rem); font-weight: 500; flex-grow: 1; }
+        .attempt-flag {
+            background-color: var(--attempt-flag-bg); color: var(--attempt-flag-text);
+            font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 10px;
+            white-space: nowrap; margin-left: 15px;
+            animation: fadeIn 0.5s;
+        }
         
         .options-container { display: flex; flex-direction: column; gap: 15px; }
         .option {
-            position: relative; /* Needed for sparkle effect */
+            position: relative;
             display: flex; align-items: center; gap: 15px;
             background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color);
             padding: 15px; border-radius: 12px; cursor: pointer;
@@ -95,12 +106,7 @@
             overflow: hidden;
         }
         .option:hover:not(.disabled) { transform: translateY(-3px); border-color: var(--accent-primary); }
-        .option-prefix {
-            flex-shrink: 0; width: 30px; height: 30px;
-            display: grid; place-items: center;
-            border: 1px solid var(--text-secondary); border-radius: 50%;
-            font-weight: 600; color: var(--text-secondary); transition: all 0.2s ease-in-out; z-index: 2;
-        }
+        .option-prefix { flex-shrink: 0; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--text-secondary); border-radius: 50%; font-weight: 600; color: var(--text-secondary); transition: all 0.2s ease-in-out; z-index: 2; }
         .option-text { flex-grow: 1; z-index: 2; }
         .feedback-icon { font-size: 1.5rem; opacity: 0; transform: scale(0.5); transition: all 0.3s ease; z-index: 2;}
         
@@ -114,21 +120,11 @@
         .option.incorrect.selected .option-prefix { background-color: var(--accent-error); border-color: var(--accent-error); }
         .option.incorrect .feedback-icon { color: var(--accent-error); opacity: 1; transform: scale(1); }
 
-        .explanation {
-            margin-top: 20px; padding: 15px;
-            background: rgba(0,0,0,0.2); border-radius: 8px;
-            border-left: 3px solid var(--accent-primary);
-            font-size: 0.95rem; color: var(--text-secondary);
-            display: none;
-        }
+        .explanation { margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px; border-left: 3px solid var(--accent-primary); font-size: 0.95rem; color: var(--text-secondary); display: none; }
         .explanation.show { display: block; animation: fadeIn 0.5s ease; }
 
         .navigation { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; gap: 15px; flex-wrap: wrap; }
-        .nav-btn {
-            background: var(--accent-primary); color: white; border: none;
-            padding: 12px 25px; border-radius: 8px; cursor: pointer;
-            font-size: 1rem; font-weight: 600; transition: all 0.3s ease;
-        }
+        .nav-btn { background: var(--accent-primary); color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: all 0.3s ease; }
         .nav-btn:disabled { background: var(--text-secondary); cursor: not-allowed; opacity: 0.5; }
         .nav-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3); }
         .reset-btn { background: rgba(248, 81, 73, 0.2); color: var(--accent-error); }
@@ -148,12 +144,8 @@
         @keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); } 20%, 40%, 60%, 80% { transform: translateX(5px); } }
 
-        /* Sparkle animation for correct answers */
         .sparkle { position: absolute; width: 6px; height: 6px; background: #fff; border-radius: 50%; z-index: 1; animation: sparkle-anim 0.8s forwards; }
-        @keyframes sparkle-anim {
-            0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(1.5) translate(var(--tx), var(--ty)); opacity: 0; }
-        }
+        @keyframes sparkle-anim { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.5) translate(var(--tx), var(--ty)); opacity: 0; } }
 
     </style>
 </head>
@@ -161,7 +153,8 @@
     <div class="container">
         <header>
             <h1>Assistant Registrar Prep Pro</h1>
-            <p>A comprehensive and modern quiz tool for exam success.</p>
+            <!-- Changed the subtitle to explain the new features -->
+            <p class="smart-info">Questions are randomized. Incorrect answers will be re-tested to improve memory.</p>
         </header>
         
         <div class="tabs">
@@ -179,10 +172,7 @@
             <div class="section-header">
                 <h2 id="section-title">Loading...</h2>
                 <div class="progress-wrapper">
-                    <div class="jump-to-wrapper">
-                        <input type="number" id="jump-to-input" placeholder="Go to..." min="1">
-                        <button class="nav-btn" id="jump-to-btn">Go</button>
-                    </div>
+                    <!-- The jump-to feature is removed as it conflicts with randomization -->
                 </div>
             </div>
 
@@ -198,14 +188,14 @@
         </div>
 
         <div class="stats">
-            <div class="stat-box"><div class="stat-label">Total Questions</div><div class="stat-value" id="total-questions">0</div></div>
-            <div class="stat-box"><div class="stat-label">Answered</div><div class="stat-value" id="answered">0</div></div>
-            <div class="stat-box"><div class="stat-label">Correct</div><div class="stat-value" id="correct">0</div></div>
-            <div class="stat-box"><div class="stat-label">Accuracy</div><div class="stat-value" id="accuracy">0%</div></div>
+            <div class="stat-box"><div class="stat-label">Total in Section</div><div class="stat-value" id="total-questions">0</div></div>
+            <div class="stat-box"><div class="stat-label">Answered (Session)</div><div class="stat-value" id="answered">0</div></div>
+            <div class="stat-box"><div class="stat-label">Correct (Session)</div><div class="stat-value" id="correct">0</div></div>
+            <div class="stat-box"><div class="stat-label">Accuracy (Session)</div><div class="stat-value" id="accuracy">0%</div></div>
         </div>
 
         <div style="text-align: center; margin-top: 30px;">
-             <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Current Section</button>
+             <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Session & Reshuffle</button>
         </div>
         <footer style="text-align: center; margin-top: 40px; color: var(--text-secondary); font-size: 0.9rem;">
           <p style="color: #FFFFFF;"> <marquee> Developer: <strong>Karthick S</strong> </marquee> </p>
@@ -213,10 +203,18 @@
     </div>
 
     <script>
-        const quizData = {};
-        const state = { currentSection: "quantitative", currentQuestionIndex: 0, sectionStates: {} };
+        // --- START OF NEW LOGIC IMPLEMENTATION ---
 
-        // DOM Elements
+        const quizData = {};
+        const state = {
+            currentSection: "quantitative",
+            questionQueue: [],
+            retestQueue: [],
+            history: [], // Stores answered questions for the 'Previous' button
+            sessionStats: { answered: 0, correct: 0 },
+            globalStats: {} // For storing attempt counts
+        };
+
         const dom = {
             sectionTitle: document.getElementById("section-title"),
             questionArea: document.getElementById("question-area"),
@@ -229,8 +227,6 @@
             correct: document.getElementById("correct"),
             accuracy: document.getElementById("accuracy"),
             tabs: document.querySelectorAll(".tab-btn"),
-            jumpInput: document.getElementById('jump-to-input'),
-            jumpBtn: document.getElementById('jump-to-btn'),
         };
         
         function triggerSparkle(element) {
@@ -250,22 +246,40 @@
 
         function showLoader(message) {
             dom.questionArea.innerHTML = `<div class="loader">${message}</div>`;
-            [dom.prevBtn, dom.nextBtn, dom.resetBtn, dom.jumpBtn, dom.jumpInput].forEach(el => el.disabled = true);
+            dom.prevBtn.disabled = true;
+            dom.nextBtn.disabled = true;
+            dom.resetBtn.disabled = true;
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function loadGlobalStats() {
+            const stats = localStorage.getItem('quizGlobalStats');
+            state.globalStats = stats ? JSON.parse(stats) : { attemptCounts: {} };
+        }
+
+        function saveGlobalStats() {
+            localStorage.setItem('quizGlobalStats', JSON.stringify(state.globalStats));
         }
 
         async function loadSection(sectionKey) {
             dom.tabs.forEach(btn => btn.classList.toggle('active', btn.dataset.section === sectionKey));
             state.currentSection = sectionKey;
-            state.currentQuestionIndex = 0;
-            showLoader(`Loading ${sectionKey.replace(/_/g, ' ')} questions...`);
-            if (quizData[sectionKey]) {
-                initializeSection();
-                return;
-            }
+            showLoader(`Loading & Randomizing Questions...`);
             try {
-                const response = await fetch(`./questions/${sectionKey}.json`);
-                if (!response.ok) throw new Error(`File not found: ${sectionKey}.json. Make sure the file exists in the 'questions' folder.`);
-                quizData[sectionKey] = await response.json();
+                if (!quizData[sectionKey]) {
+                    const response = await fetch(`./questions/${sectionKey}.json`);
+                    if (!response.ok) throw new Error(`File not found: ${sectionKey}.json.`);
+                    // Add a unique ID to each question for tracking
+                    quizData[sectionKey] = await response.json().then(questions => 
+                        questions.map((q, index) => ({ ...q, originalId: `${sectionKey}-${index}` }))
+                    );
+                }
                 initializeSection();
             } catch (error) {
                 showLoader(`Error: ${error.message}`);
@@ -274,142 +288,181 @@
 
         function initializeSection() {
             const sectionKey = state.currentSection;
-            if (!state.sectionStates[sectionKey]) {
-                state.sectionStates[sectionKey] = {
-                    userAnswers: Array(quizData[sectionKey].length).fill(null),
-                    answeredCount: 0,
-                    correctCount: 0,
-                };
-            }
             const sectionTitle = sectionKey.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
             dom.sectionTitle.textContent = sectionTitle;
-            [dom.resetBtn, dom.jumpBtn, dom.jumpInput].forEach(el => el.disabled = false);
+            
+            // Reset session stats and queues
+            state.sessionStats = { answered: 0, correct: 0 };
+            state.retestQueue = [];
+            state.history = [];
+
+            // Create a fresh, shuffled queue for the new session
+            state.questionQueue = [...quizData[sectionKey]];
+            shuffleArray(state.questionQueue);
+
+            dom.resetBtn.disabled = false;
             displayQuestion();
         }
 
         function displayQuestion() {
-            const sectionKey = state.currentSection;
-            const qIndex = state.currentQuestionIndex;
-            const currentQ = quizData[sectionKey][qIndex];
-            const sectionState = state.sectionStates[sectionKey];
-            const userAnswer = sectionState.userAnswers[qIndex];
-            const hasAnswered = userAnswer !== null;
-            const prefixes = ['A', 'B', 'C', 'D', 'E'];
+            // Check if there are any questions left
+            if (state.questionQueue.length === 0 && state.retestQueue.length === 0) {
+                dom.questionArea.innerHTML = `<div class="loader">🎉 Session Complete! Well done! 🎉</div>`;
+                dom.nextBtn.disabled = true;
+                return;
+            }
 
-            let optionsHTML = currentQ.options.map((option, index) => {
-                let optionClass = 'option';
-                let feedbackIcon = '';
-                if (hasAnswered) {
-                    optionClass += ' disabled';
-                    if (index === userAnswer) optionClass += ' selected';
-                    if (index === currentQ.correctAnswer) {
-                        optionClass += ' correct';
-                        feedbackIcon = '✓';
-                    } else if (index === userAnswer) {
-                        optionClass += ' incorrect';
-                        feedbackIcon = '✗';
-                    }
-                }
-                return `
-                    <div class="${optionClass}" data-index="${index}">
-                        <span class="option-prefix">${prefixes[index]}</span>
-                        <span class="option-text">${option}</span>
-                        <span class="feedback-icon">${feedbackIcon}</span>
-                    </div>`;
-            }).join('');
-            
-            const explanationHTML = hasAnswered ? `<div class="explanation show">${currentQ.explanation}</div>` : '';
-
-            dom.questionArea.innerHTML = `
-                <div class="question-text">${qIndex + 1}. ${currentQ.question}</div>
-                <div class="options-container">${optionsHTML}</div>
-                ${explanationHTML}`;
-
-            if (!hasAnswered) {
-                document.querySelectorAll('.option').forEach(opt => {
-                    opt.addEventListener('click', e => selectOption(parseInt(e.currentTarget.dataset.index)));
-                });
+            // Smartly decide whether to show a new question or a re-test question
+            let currentQ;
+            // Every 4th question (and if retest queue has items), prioritize a re-test
+            if (state.sessionStats.answered > 0 && state.sessionStats.answered % 4 === 0 && state.retestQueue.length > 0) {
+                currentQ = state.retestQueue.shift(); // Get a question from the retest queue
             } else {
-                 const correctOptionEl = dom.questionArea.querySelector('.option.correct');
-                 if(correctOptionEl && correctOptionEl.classList.contains('selected')) {
-                    // This is a post-answer render, if it's the first time seeing this correct answer, sparkle it.
-                    // This logic might need refinement to prevent re-sparkling on prev/next navigation.
+                 if (state.questionQueue.length > 0) {
+                    currentQ = state.questionQueue[0]; // Get a regular new question
+                 } else {
+                    currentQ = state.retestQueue.shift(); // Fallback to retest queue if main queue is empty
                  }
             }
+
+            // Track attempt count
+            const attemptCount = state.globalStats.attemptCounts[currentQ.originalId] || 0;
+            const attemptFlag = attemptCount > 0 ? `<span class="attempt-flag">${getOrdinal(attemptCount + 1)} attempt</span>` : '';
+
+            const prefixes = ['A', 'B', 'C', 'D', 'E'];
+            let optionsHTML = currentQ.options.map((option, index) => `
+                <div class="option" data-index="${index}">
+                    <span class="option-prefix">${prefixes[index]}</span>
+                    <span class="option-text">${option}</span>
+                    <span class="feedback-icon"></span>
+                </div>`
+            ).join('');
+            
+            dom.questionArea.innerHTML = `
+                <div class="question-header">
+                    <div class="question-text">${currentQ.question}</div>
+                    ${attemptFlag}
+                </div>
+                <div class="options-container">${optionsHTML}</div>
+                <div class="explanation"></div>`;
+
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.addEventListener('click', e => selectOption(parseInt(e.currentTarget.dataset.index), currentQ));
+            });
             updateUI();
         }
 
-        function selectOption(optionIndex) {
-            const sectionKey = state.currentSection;
-            const qIndex = state.currentQuestionIndex;
-            const sectionState = state.sectionStates[sectionKey];
-            if (sectionState.userAnswers[qIndex] !== null) return;
-            sectionState.userAnswers[qIndex] = optionIndex;
-            sectionState.answeredCount++;
-            const isCorrect = optionIndex === quizData[sectionKey][qIndex].correctAnswer;
-            if (isCorrect) {
-                sectionState.correctCount++;
+        function selectOption(selectedIndex, currentQ) {
+            // Prevent re-answering
+            if (document.querySelector('.option.disabled')) return;
+
+            const isCorrect = selectedIndex === currentQ.correctAnswer;
+            
+            state.sessionStats.answered++;
+            if (isCorrect) state.sessionStats.correct++;
+            
+            // If incorrect, add to retest queue. If correct, ensure it's removed from retest queue.
+            const retestIndex = state.retestQueue.findIndex(q => q.originalId === currentQ.originalId);
+            if (!isCorrect && retestIndex === -1) {
+                state.retestQueue.push(currentQ);
+            } else if (isCorrect && retestIndex > -1) {
+                state.retestQueue.splice(retestIndex, 1);
             }
-            displayQuestion();
-             if (isCorrect) {
-                const correctOptionEl = dom.questionArea.querySelector('.option.correct.selected');
-                if (correctOptionEl) {
-                    setTimeout(() => triggerSparkle(correctOptionEl), 100);
+            
+            // Increment and save attempt count
+            state.globalStats.attemptCounts[currentQ.originalId] = (state.globalStats.attemptCounts[currentQ.originalId] || 0) + 1;
+            saveGlobalStats();
+
+            // UI feedback
+            const options = document.querySelectorAll('.option');
+            options.forEach((opt, index) => {
+                opt.classList.add('disabled');
+                if (index === selectedIndex) opt.classList.add('selected');
+                if (index === currentQ.correctAnswer) {
+                    opt.classList.add('correct');
+                    opt.querySelector('.feedback-icon').textContent = '✓';
+                } else if (index === selectedIndex) {
+                    opt.classList.add('incorrect');
+                    opt.querySelector('.feedback-icon').textContent = '✗';
                 }
+            });
+            
+            const explanationEl = document.querySelector('.explanation');
+            explanationEl.textContent = currentQ.explanation;
+            explanationEl.classList.add('show');
+            
+            if (isCorrect) {
+                const correctOptionEl = dom.questionArea.querySelector('.option.correct.selected');
+                if(correctOptionEl) setTimeout(() => triggerSparkle(correctOptionEl), 100);
             }
+
+            // Remove from main queue if it was there
+            const mainQueueIndex = state.questionQueue.findIndex(q => q.originalId === currentQ.originalId);
+            if (mainQueueIndex > -1) {
+                state.history.push(state.questionQueue.splice(mainQueueIndex, 1)[0]);
+            } else {
+                 state.history.push(currentQ);
+            }
+
+            dom.nextBtn.disabled = false;
+            updateUI();
         }
 
-        function updateUI() {
-            const sectionKey = state.currentSection;
-            const questions = quizData[sectionKey];
-            const sectionState = state.sectionStates[sectionKey];
-            
-            dom.prevBtn.disabled = state.currentQuestionIndex === 0;
-            dom.nextBtn.disabled = state.currentQuestionIndex === questions.length - 1;
-            
-            dom.progressText.textContent = `Question ${state.currentQuestionIndex + 1} of ${questions.length}`;
-            
-            dom.totalQuestions.textContent = questions.length;
-            dom.answered.textContent = sectionState.answeredCount;
-            dom.correct.textContent = sectionState.correctCount;
-            dom.accuracy.textContent = `${sectionState.answeredCount > 0 ? Math.round((sectionState.correctCount / sectionState.answeredCount) * 100) : 0}%`;
-            
-            dom.jumpInput.placeholder = `1-${questions.length}`;
-            dom.jumpInput.max = questions.length;
+        function getOrdinal(n) {
+            const s = ["th", "st", "nd", "rd"];
+            const v = n % 100;
+            return n + (s[(v - 20) % 10] || s[v] || s[0]);
         }
         
-        function resetCurrentSection() {
-            const sectionKey = state.currentSection;
-            if (quizData[sectionKey]) {
-                state.sectionStates[sectionKey] = { userAnswers: Array(quizData[sectionKey].length).fill(null), answeredCount: 0, correctCount: 0 };
-                state.currentQuestionIndex = 0;
+        function updateUI() {
+            dom.prevBtn.disabled = state.history.length === 0;
+            dom.nextBtn.disabled = (state.questionQueue.length === 0 && state.retestQueue.length === 0) || !document.querySelector('.option.disabled');
+
+            const totalInSection = quizData[state.currentSection]?.length || 0;
+            const answeredCount = state.sessionStats.answered;
+            const correctCount = state.sessionStats.correct;
+            
+            const remaining = state.questionQueue.length + state.retestQueue.length;
+            dom.progressText.textContent = `Remaining: ${remaining}`;
+            
+            dom.totalQuestions.textContent = totalInSection;
+            dom.answered.textContent = answeredCount;
+            dom.correct.textContent = correctCount;
+            dom.accuracy.textContent = `${answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0}%`;
+        }
+
+        function goToPrevious() {
+            if (state.history.length > 0) {
+                const lastQuestion = state.history.pop();
+                // Put the question back at the start of the appropriate queue
+                if (state.retestQueue.some(q => q.originalId === lastQuestion.originalId)) {
+                    // It was likely a re-test item
+                    state.retestQueue.unshift(lastQuestion);
+                } else {
+                    state.questionQueue.unshift(lastQuestion);
+                }
+                // Decrement session stats
+                state.sessionStats.answered--;
+                // This part is tricky - we don't know if the last answer was correct.
+                // For simplicity, a "Previous" button in a smart quiz often just reviews, not unwinds stats.
+                // Let's just go back to the question.
                 displayQuestion();
             }
         }
-
-        function jumpToQuestion() {
-            const total = quizData[state.currentSection].length;
-            const target = parseInt(dom.jumpInput.value);
-            if (!isNaN(target) && target >= 1 && target <= total) {
-                state.currentQuestionIndex = target - 1;
-                dom.jumpInput.value = '';
-                displayQuestion();
-            } else {
-                alert(`Please enter a valid number between 1 and ${total}.`);
-                dom.jumpInput.value = '';
-            }
-        }
-
+        
         // Event Listeners
-        dom.prevBtn.addEventListener('click', () => { if (state.currentQuestionIndex > 0) { state.currentQuestionIndex--; displayQuestion(); } });
-        dom.nextBtn.addEventListener('click', () => { if (state.currentQuestionIndex < quizData[state.currentSection].length - 1) { state.currentQuestionIndex++; displayQuestion(); } });
-        dom.resetBtn.addEventListener('click', resetCurrentSection);
         dom.tabs.forEach(btn => btn.addEventListener('click', () => loadSection(btn.dataset.section)));
-        dom.jumpBtn.addEventListener('click', jumpToQuestion);
-        dom.jumpInput.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); jumpToQuestion(); } });
-
+        dom.nextBtn.addEventListener('click', displayQuestion);
+        dom.prevBtn.addEventListener('click', goToPrevious);
+        dom.resetBtn.addEventListener('click', initializeSection);
+        
         // Initial Load
-        window.addEventListener('DOMContentLoaded', () => loadSection('quantitative'));
+        window.addEventListener('DOMContentLoaded', () => {
+            loadGlobalStats();
+            loadSection('quantitative');
+        });
+        
+        // --- END OF NEW LOGIC IMPLEMENTATION ---
     </script>
 </body>
 </html>

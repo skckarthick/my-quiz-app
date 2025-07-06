@@ -781,6 +781,6 @@ document.addEventListener('selectionchange', () => {
     clearTimeout(selectionTimeout);
     selectionTimeout = setTimeout(() => {
         handleStableSelection();
-    }, 500); // Adjust delay here (500ms is ideal)
+    }, 2000); // Adjust delay here (2000ms is ideal)
 });
 

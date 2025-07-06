@@ -1,0 +1,161 @@
+:root {
+    --bg-color: #0d1117;
+    --card-bg: rgba(22, 27, 34, 0.6);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #e6edf3;
+    --text-secondary: #7d8590;
+    --accent-primary: #58a6ff;
+    --accent-secondary: #3fb950;
+    --accent-error: #f85149;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --attempt-flag-bg: #c9d1d9;
+    --attempt-flag-text: #0d1117;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 15% 25%, rgba(88, 166, 255, 0.15), transparent 40%),
+                radial-gradient(circle at 85% 75%, rgba(63, 185, 80, 0.15), transparent 40%);
+    animation: background-glow 15s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes background-glow {
+    0% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+    50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+}
+
+.container { max-width: 900px; margin: 20px auto; }
+
+header { text-align: center; margin-bottom: 40px; }
+header h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; margin-bottom: 10px; }
+header p { color: var(--text-secondary); font-size: 1.1rem; }
+.smart-info { color: var(--accent-primary); font-size: 1rem; font-weight: 500;}
+
+.tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+.tab-btn {
+    background: none; border: 1px solid var(--border-color); color: var(--text-secondary);
+    padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9rem;
+    font-weight: 600; transition: all 0.3s ease;
+}
+.tab-btn:hover { color: var(--text-primary); border-color: var(--accent-primary); }
+.tab-btn.active { color: var(--text-primary); background-color: var(--accent-primary); border-color: var(--accent-primary); }
+
+.quiz-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 var(--shadow-color);
+    margin-bottom: 30px;
+}
+
+.section-header {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); gap: 20px;
+}
+.section-header h2 { font-size: 1.5rem; font-weight: 600; }
+.progress-wrapper { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+#progress-text { font-size: 0.9rem; color: var(--text-secondary); }
+
+/* Question header for attempt flag */
+.question-header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0; }
+.question-text { font-size: clamp(1.2rem, 3vw, 1.4rem); font-weight: 500; flex-grow: 1; }
+.attempt-flag {
+    background-color: var(--attempt-flag-bg); color: var(--attempt-flag-text);
+    font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 10px;
+    white-space: nowrap; margin-left: 15px;
+    animation: fadeIn 0.5s;
+}
+
+.options-container { display: flex; flex-direction: column; gap: 15px; }
+.option { position: relative; display: flex; align-items: center; gap: 15px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 15px; border-radius: 12px; cursor: pointer; transition: all 0.2s ease-in-out; overflow: hidden; }
+.option:hover:not(.disabled) { transform: translateY(-3px); border-color: var(--accent-primary); }
+.option-prefix { flex-shrink: 0; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--text-secondary); border-radius: 50%; font-weight: 600; color: var(--text-secondary); transition: all 0.2s ease-in-out; z-index: 2; }
+.option-text { flex-grow: 1; z-index: 2; }
+.feedback-icon { font-size: 1.5rem; opacity: 0; transform: scale(0.5); transition: all 0.3s ease; z-index: 2;}
+.option.disabled { cursor: not-allowed; }
+.option.selected { border-color: var(--accent-primary); }
+.option.selected .option-prefix { border-color: var(--accent-primary); color: var(--text-primary); background-color: var(--accent-primary); }
+.option.correct.selected { border-color: var(--accent-secondary); animation: pop 0.3s ease-out; }
+.option.correct.selected .option-prefix { background-color: var(--accent-secondary); border-color: var(--accent-secondary); }
+.option.correct .feedback-icon { color: var(--accent-secondary); opacity: 1; transform: scale(1); }
+.option.incorrect.selected { border-color: var(--accent-error); animation: shake 0.5s ease; }
+.option.incorrect.selected .option-prefix { background-color: var(--accent-error); border-color: var(--accent-error); }
+.option.incorrect .feedback-icon { color: var(--accent-error); opacity: 1; transform: scale(1); }
+
+.explanation { margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px; border-left: 3px solid var(--accent-primary); font-size: 0.95rem; color: var(--text-secondary); display: none; }
+.explanation.show { display: block; animation: fadeIn 0.5s ease; }
+
+/* --- CSS FOR NAVIGATION AND MOBILE LAYOUT FIX --- */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+.nav-center-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* This will make it take up space and allow prev/next to be on sides */
+    flex-grow: 1;
+    order: 2; /* Default order */
+}
+#prev-btn { order: 1; }
+#next-btn { order: 3; }
+
+/* On mobile screens, change the layout */
+@media (max-width: 600px) {
+    .navigation {
+        justify-content: center; /* Center all items when they wrap */
+    }
+    .nav-center-group {
+        /* Take up the full width and sit below the other buttons */
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+    }
+    #prev-btn { order: 1; flex-grow: 1; } /* Make buttons take up available space */
+    #next-btn { order: 2; flex-grow: 1; }
+}
+
+
+.nav-btn { background: var(--accent-primary); color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: all 0.3s ease; }
+.nav-btn:disabled { background: var(--text-secondary); cursor: not-allowed; opacity: 0.5; }
+.nav-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3); }
+.reset-btn { background: rgba(248, 81, 73, 0.2); color: var(--accent-error); font-size: 0.9rem; padding: 10px 20px;}
+.reset-btn:hover:not(:disabled) { background: rgba(248, 81, 73, 0.4); box-shadow: none; }
+#progress-text { font-size: 1rem; color: var(--text-secondary); font-weight: 500;}
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; margin-top: 40px; }
+.stat-box { background: var(--card-bg); backdrop-filter: blur(10px); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; }
+.stat-label { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 10px; }
+.stat-value { font-size: 2rem; font-weight: 700; color: var(--text-primary); }
+.loader { font-size: 1.2rem; text-align: center; padding: 40px; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); } 20%, 40%, 60%, 80% { transform: translateX(5px); } }
+
+.sparkle { position: absolute; width: 6px; height: 6px; background: #fff; border-radius: 50%; z-index: 1; animation: sparkle-anim 0.8s forwards; }
+@keyframes sparkle-anim { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.5) translate(var(--tx), var(--ty)); opacity: 0; } }

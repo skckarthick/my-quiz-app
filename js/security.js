@@ -2,7 +2,7 @@
 class SecurityManager {
     constructor() {
         this.initializeCSP();
-        this.setupInputSanitization();
+        // Removed this.setupInputSanitization(); — it doesn't exist
         this.enableSecureStorage();
         this.setupRateLimiting();
         this.initializeIntegrityChecks();
@@ -64,18 +64,18 @@ class SecurityManager {
     checkRateLimit(identifier = 'default') {
         const now = Date.now();
         const windowStart = now - this.rateLimitWindow;
-        
+
         if (!this.requestCounts.has(identifier)) {
             this.requestCounts.set(identifier, []);
         }
-        
+
         const requests = this.requestCounts.get(identifier);
         const recentRequests = requests.filter(time => time > windowStart);
-        
+
         if (recentRequests.length >= this.maxRequests) {
             throw new Error('Rate limit exceeded. Please try again later.');
         }
-        
+
         recentRequests.push(now);
         this.requestCounts.set(identifier, recentRequests);
         return true;
@@ -164,11 +164,11 @@ class SecurityManager {
     initialize() {
         this.preventClickjacking();
         this.initializeSession();
-        
+
         // Set up activity monitoring
         document.addEventListener('click', () => this.updateSessionActivity());
         document.addEventListener('keypress', () => this.updateSessionActivity());
-        
+
         console.log('🔒 Security measures initialized');
     }
 }

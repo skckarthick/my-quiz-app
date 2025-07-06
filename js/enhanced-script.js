@@ -784,3 +784,18 @@ document.addEventListener('selectionchange', () => {
     }, 2000); // Adjust delay here (2000ms is ideal)
 });
 
+// ✅ Enter Key triggers "Next Question" — Mac/Windows/Linux compatible
+document.addEventListener('keydown', function (e) {
+    // Ignore if focus is on input, textarea, or option is being selected
+    const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+    const isOptionFocused = document.activeElement.closest('.option');
+    if (isTyping || isOptionFocused) return;
+
+    if (e.key === 'Enter') {
+        const nextBtn = document.getElementById('next-btn');
+        if (nextBtn && !nextBtn.disabled) {
+            nextBtn.click(); // Triggers your existing next question logic
+            e.preventDefault();
+        }
+    }
+});

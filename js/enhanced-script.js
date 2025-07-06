@@ -750,3 +750,35 @@ if ('performance' in window) {
         }, 0);
     });
 }
+
+// Smart Google Search Trigger on Text Selection (Desktop & Mobile)
+let lastSelectedText = "";
+
+function handleSearchOnSelection() {
+    const selection = window.getSelection().toString().trim();
+
+    if (
+        selection.length > 2 &&
+        selection !== lastSelectedText // prevent repeated triggers
+    ) {
+        const selectionAnchor = window.getSelection().anchorNode;
+        if (!selectionAnchor) return;
+
+        const container = selectionAnchor.parentElement.closest('.question-container, .options-container, .explanation');
+
+        if (container) {
+            lastSelectedText = selection;
+
+            const searchQuery = encodeURIComponent(selection);
+            const searchURL = `https://www.google.com/search?q=${searchQuery}`;
+
+            // Open search in a new tab
+            window.open(searchURL, '_blank');
+        }
+    }
+}
+
+// Listen for selection changes across all devices
+document.addEventListener('selectionchange', () => {
+    setTimeout(handleSearchOnSelection, 100); // slight delay to stabilize selection
+});

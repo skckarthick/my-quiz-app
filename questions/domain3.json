@@ -26,7 +26,7 @@
       "Registrar"
     ],
     "correctAnswer": 0,
-    "explanation": "Building Works Committee reports technical and financial approvals to Finance Committee."
+    "explanation": "Building Works Committee reports technical and financial approvals to the Finance Committee."
   },
   {
     "question": "Quorum for Finance Committee is:",
@@ -55,13 +55,13 @@
     "question": "Under RTI, information must be provided within __ days for regular requests?",
     "options": ["30 days", "45 days", "60 days", "15 days"],
     "correctAnswer": 0,
-    "explanation": "PIO must furnish information within 30 days of request receipt."
+    "explanation": "The PIO must furnish information within 30 days of request receipt."
   },
   {
     "question": "In POSH inquiries, ICC must complete inquiry within __ days?",
     "options": ["90 days", "60 days", "30 days", "120 days"],
     "correctAnswer": 1,
-    "explanation": "ICC should complete inquiry within 60 days of complaint receipt."
+    "explanation": "The ICC should complete the inquiry within 60 days of complaint receipt."
   },
   {
     "question": "Which document initiates a formal note upon policy drafting?",
@@ -154,7 +154,7 @@
       "Signal from BOG"
     ],
     "correctAnswer": 2,
-    "explanation": "Finance Committee reviews and recommends projects to the Board."
+    "explanation": "The Finance Committee reviews and recommends projects to the Board."
   },
   {
     "question": "Under POSH, a complaint must be made within __ days:",
@@ -172,7 +172,7 @@
     "question": "First appeal against PIO decision lies with:",
     "options": ["Appellate Authority", "CIC", "PIO", "Information Officer"],
     "correctAnswer": 0,
-    "explanation": "First appeal must be filed with the designated Appellate Authority."
+    "explanation": "The first appeal must be filed with the designated Appellate Authority."
   },
   {
     "question": "Quorum for ICC meetings is __ members:",
@@ -190,13 +190,13 @@
     "question": "Noting for expenditure approval should include:",
     "options": ["Budget head", "Purpose", "Justification", "All of the above"],
     "correctAnswer": 3,
-    "explanation": "Complete notings include budgetary classification, purpose and reasoning."
+    "explanation": "Complete notings include budgetary classification, purpose, and reasoning."
   },
   {
     "question": "BWC includes which official by default?",
     "options": ["Engineer", "Registrar", "Finance Officer", "Senate member"],
     "correctAnswer": 0,
-    "explanation": "The BWC includes a senior engineer/officer in charge of works."
+    "explanation": "The BWC includes a senior engineer or officer in charge of works."
   },
   {
     "question": "Under RTI, if PIO fails, you appeal to:",
@@ -208,7 +208,7 @@
     "question": "ICC report is submitted to:",
     "options": ["Management", "Police", "CIC", "Joint Director"],
     "correctAnswer": 0,
-    "explanation": "ICC submits its findings to the institution’s top management (Director/Registrar)."
+    "explanation": "The ICC submits its findings to the institution’s top management (Director/Registrar)."
   },
   {
     "question": "Agenda items for BOG are circulated by:",
@@ -339,7 +339,7 @@
       "CIC decides"
     ],
     "correctAnswer": 1,
-    "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants."
+    "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants."
   },
   {
     "question": "File notings fall under definition of 'information' in RTI Act?",
@@ -351,13 +351,13 @@
     "question": "When did RTI Act come into force?",
     "options": ["12 Oct 2005", "13 Oct 2005", "1 Jan 2006", "15 Nov 2005"],
     "correctAnswer": 0,
-    "explanation": "The Act came into force on 12 October 2005."
+    "explanation": "The Act came into force on 12 October 2005."
   },
   {
     "question": "Under RTI, how soon must PIO respond to life/death information requests?",
     "options": ["48 hours", "30 days", "7 days", "72 hours"],
     "correctAnswer": 0,
-    "explanation": "Information affecting life or liberty must be provided within 48 hours."
+    "explanation": "Information affecting life or liberty must be provided within 48 hours."
   },
   {
     "question": "What does POSH Act empower institutions to do?",
@@ -374,7 +374,7 @@
     "question": "When did the POSH Act receive presidential assent?",
     "options": ["22 Apr 2013", "8 Mar 2013", "9 Dec 2013", "1 Jun 2013"],
     "correctAnswer": 0,
-    "explanation": "The Act, Act No. 14 of 2013, received assent on 22 April 2013."
+    "explanation": "The Act, Act No. 14 of 2013, received assent on 22 April 2013."
   },
   {
     "question": "POSH Act defines 'sexual harassment' to include?",
@@ -396,7 +396,7 @@
       "Neither"
     ],
     "correctAnswer": 2,
-    "explanation": "Workplace includes employer‑transport and interview venues under the Act."
+    "explanation": "Workplace includes employer-transport and interview venues under the Act."
   },
   {
     "question": "POSH Act requires employer to display?",

@@ -751,34 +751,36 @@ if ('performance' in window) {
     });
 }
 
-// Smart Google Search Trigger on Text Selection (Desktop & Mobile)
+// Smart Google Search Trigger after Stable Selection
 let lastSelectedText = "";
+let selectionTimeout = null;
 
-function handleSearchOnSelection() {
+function handleStableSelection() {
     const selection = window.getSelection().toString().trim();
 
     if (
         selection.length > 2 &&
-        selection !== lastSelectedText // prevent repeated triggers
+        selection !== lastSelectedText
     ) {
         const selectionAnchor = window.getSelection().anchorNode;
         if (!selectionAnchor) return;
 
         const container = selectionAnchor.parentElement.closest('.question-container, .options-container, .explanation');
-
         if (container) {
             lastSelectedText = selection;
 
             const searchQuery = encodeURIComponent(selection);
             const searchURL = `https://www.google.com/search?q=${searchQuery}`;
-
-            // Open search in a new tab
             window.open(searchURL, '_blank');
         }
     }
 }
 
-// Listen for selection changes across all devices
+// Debounced selection change listener (waits for user to stop selecting)
 document.addEventListener('selectionchange', () => {
-    setTimeout(handleSearchOnSelection, 100); // slight delay to stabilize selection
+    clearTimeout(selectionTimeout);
+    selectionTimeout = setTimeout(() => {
+        handleStableSelection();
+    }, 500); // Adjust delay here (500ms is ideal)
 });
+

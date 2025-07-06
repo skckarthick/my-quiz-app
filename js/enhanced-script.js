@@ -786,17 +786,17 @@ document.addEventListener('selectionchange', () => {
 
 // ✅ Enter key triggers next question when ready (after answering)
 document.addEventListener('keydown', function (e) {
-    // Ignore if focus is in a text input or textarea
+    // Allow Enter key even when an option is focused
     const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
     if (isTyping) return;
 
     // Check if Enter is pressed
     if (e.key === 'Enter') {
         const nextBtn = document.getElementById('next-btn');
-        const optionsDisabled = document.querySelector('.option.disabled');
+        const anyOptionDisabled = document.querySelector('.option.disabled');
 
-        // Proceed only if next button is enabled AND an option was selected
-        if (nextBtn && !nextBtn.disabled && optionsDisabled) {
+        // Only go to next if button is enabled AND answer was selected
+        if (nextBtn && !nextBtn.disabled && anyOptionDisabled) {
             nextBtn.click();
             e.preventDefault();
         }

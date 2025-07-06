@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Quiz Pro - Enhanced Edition</title>
+    
+    <!-- Preconnect to Google Fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Enhanced Google Fonts with multiple weights -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    
+    <!-- Meta tags for better SEO and social sharing -->
+    <meta name="description" content="Advanced quiz application for Assistant Registrar exam preparation with smart learning features">
+    <meta name="keywords" content="quiz, exam preparation, assistant registrar, learning, education">
+    <meta name="author" content="SKc">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Smart Quiz Pro - Enhanced Edition">
+    <meta property="og:description" content="Advanced quiz application for exam preparation">
+    <meta property="og:type" content="website">
+    
+    <!-- Link to enhanced CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Enhanced Header -->
+        <header>
+            <h1>ARES Prep Pro</h1>
+            <p class="smart-info">Questions are randomized. Incorrect answers will be re-tested to improve memory.</p>
+        </header>
+        
+        <!-- Enhanced Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" data-section="quantitative">Quantitative</button>
+            <button class="tab-btn" data-section="verbal">Verbal</button>
+            <button class="tab-btn" data-section="logical">Logical</button>
+            <button class="tab-btn" data-section="general_awareness">Awareness</button>
+            <button class="tab-btn" data-section="current_affairs">Current Affairs</button>
+            <button class="tab-btn" data-section="domain1">Domain 1</button>
+            <button class="tab-btn" data-section="domain2">Domain 2</button>
+            <button class="tab-btn" data-section="domain3">Domain 3</button>
+        </div>
+        
+        <!-- Enhanced Quiz Container -->
+        <div class="quiz-container">
+            <div class="section-header">
+                <h2 id="section-title">Loading...</h2>
+            </div>
+            
+            <div id="question-area">
+                <div class="loader">
+                    <p>Preparing your questions...</p>
+                </div>
+            </div>
+            
+            <!-- Enhanced Navigation -->
+            <div class="navigation">
+                <button class="nav-btn" id="prev-btn" disabled>Previous</button>
+                
+                <div class="nav-center-group">
+                    <span id="progress-text">Remaining: 0</span>
+                    <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Session</button>
+                </div>
+                
+                <button class="nav-btn" id="next-btn" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Enhanced Statistics Cards -->
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Total in Section</div>
+                <div class="stat-value" id="total-questions">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Answered (Session)</div>
+                <div class="stat-value" id="answered">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Correct (Session)</div>
+                <div class="stat-value" id="correct">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Accuracy (Session)</div>
+                <div class="stat-value" id="accuracy">0%</div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Footer - Centered -->
+        <footer>
+            <div class="footer-content">
+                <span class="developer-icon">👨‍💻</span>
+                <span>Crafted with</span>
+                <span class="heart">❤️</span>
+                <span>by</span>
+                <span class="developer-name">SKc</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Enhanced JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

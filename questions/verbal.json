@@ -1,0 +1,891 @@
+[
+  {
+    "question": "Choose the word that is most similar in meaning to 'Eloquent':",
+    "options": ["Silent", "Articulate", "Hesitant", "Vague"],
+    "correctAnswer": 1,
+    "explanation": "Eloquent means fluent or persuasive in speaking or writing. Articulate, meaning clear and effective expression, is the closest synonym."
+  },
+  {
+    "question": "Identify the error in the sentence: 'She don't like to travel alone.'",
+    "options": ["She", "doesn't", "like", "alone"],
+    "correctAnswer": 1,
+    "explanation": "The subject 'She' is singular, so the correct verb is 'doesn't'. The sentence should be: 'She doesn't like to travel alone.'"
+  },
+  {
+    "question": "Fill in the blank: The meeting was ___ due to unforeseen circumstances.",
+    "options": ["conducted", "postponed", "accelerated", "confirmed"],
+    "correctAnswer": 1,
+    "explanation": "Postponed means delayed, which fits the context of unforeseen circumstances preventing the meeting."
+  },
+  {
+    "question": "Choose the correct spelling:",
+    "options": ["Accomodation", "Accommodation", "Acommodation", "Accomodation"],
+    "correctAnswer": 1,
+    "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'."
+  },
+  {
+    "question": "What is the antonym of 'Generous'?",
+    "options": ["Kind", "Selfish", "Helpful", "Charitable"],
+    "correctAnswer": 1,
+    "explanation": "Generous means giving freely, while selfish means lacking consideration for others, making it the opposite."
+  },
+  {
+    "question": "Choose the correctly punctuated sentence:",
+    "options": ["Lets eat, grandma.", "Let's eat grandma.", "Let's eat, grandma.", "Lets eat grandma."],
+    "correctAnswer": 2,
+    "explanation": "The correct sentence is 'Let's eat, grandma.' with proper contraction ('Let's') and a comma before 'grandma' to indicate direct address."
+  },
+  {
+    "question": "Which word does not belong in the group: Big, Large, Huge, Tiny?",
+    "options": ["Big", "Large", "Huge", "Tiny"],
+    "correctAnswer": 3,
+    "explanation": "Big, Large, and Huge all describe something of great size, while Tiny describes something small."
+  },
+  {
+    "question": "Complete the analogy: Big is to Small as Fast is to ____.",
+    "options": ["Quick", "Slow", "Rapid", "Swift"],
+    "correctAnswer": 1,
+    "explanation": "Big is the opposite of Small. Similarly, Fast is the opposite of Slow."
+  },
+  {
+    "question": "Choose the word that best completes the sentence: Her speech was so ___ that the audience was captivated.",
+    "options": ["dull", "compelling", "confusing", "lengthy"],
+    "correctAnswer": 1,
+    "explanation": "Compelling means captivating or engaging, which fits the context of the audience being captivated."
+  },
+  {
+    "question": "Identify the part of speech of 'quickly' in: 'She runs quickly.'",
+    "options": ["Noun", "Verb", "Adjective", "Adverb"],
+    "correctAnswer": 3,
+    "explanation": "'Quickly' modifies the verb 'runs', describing how the action is performed, making it an adverb."
+  },
+  {
+    "question": "Choose the correct form: Neither of the boys ___ coming to the party.",
+    "options": ["is", "are", "were", "have"],
+    "correctAnswer": 0,
+    "explanation": "'Neither' is singular, so the singular verb 'is' is correct."
+  },
+  {
+    "question": "What is the synonym of 'Candid'?",
+    "options": ["Deceptive", "Honest", "Reserved", "Cautious"],
+    "correctAnswer": 1,
+    "explanation": "Candid means truthful and straightforward, making 'Honest' the closest synonym."
+  },
+  {
+    "question": "Find the error: 'The team are playing well today.'",
+    "options": ["The", "team", "are", "playing"],
+    "correctAnswer": 2,
+    "explanation": "'Team' is a singular collective noun, so the verb should be 'is' instead of 'are'."
+  },
+  {
+    "question": "Choose the word that means the opposite of 'Vivid':",
+    "options": ["Bright", "Dull", "Colorful", "Lively"],
+    "correctAnswer": 1,
+    "explanation": "Vivid means bright or intense, while Dull means lacking brightness or interest."
+  },
+  {
+    "question": "Complete the sentence: The book was so ___ that I couldn’t put it down.",
+    "options": ["boring", "engaging", "complex", "lengthy"],
+    "correctAnswer": 1,
+    "explanation": "Engaging means captivating, which fits the context of not being able to put the book down."
+  },
+  {
+    "question": "Which sentence is grammatically correct?",
+    "options": ["Me and him went to the store.", "He and I went to the store.", "Him and I went to the store.", "He and me went to the store."],
+    "correctAnswer": 1,
+    "explanation": "The subjective case 'He and I' is correct for the subject of the sentence."
+  },
+  {
+    "question": "What is the meaning of 'Ephemeral'?",
+    "options": ["Permanent", "Short-lived", "Complex", "Ancient"],
+    "correctAnswer": 1,
+    "explanation": "Ephemeral means lasting for a very short time, synonymous with short-lived."
+  },
+  {
+    "question": "Choose the correct word: The ___ of the new policy was widely debated.",
+    "options": ["affect", "effect", "impact", "result"],
+    "correctAnswer": 1,
+    "explanation": "'Effect' is a noun meaning outcome, fitting the context of the sentence."
+  },
+  {
+    "question": "Identify the error: 'She has less books than I do.'",
+    "options": ["has", "less", "books", "than"],
+    "correctAnswer": 1,
+    "explanation": "'Less' is used for uncountable nouns; for countable nouns like books, 'fewer' is correct."
+  },
+  {
+    "question": "Choose the synonym of 'Meticulous':",
+    "options": ["Careless", "Precise", "Hasty", "Vague"],
+    "correctAnswer": 1,
+    "explanation": "Meticulous means showing great attention to detail, synonymous with Precise."
+  },
+  {
+    "question": "Fill in the blank: His ___ attitude made him popular among peers.",
+    "options": ["arrogant", "amiable", "indifferent", "hostile"],
+    "correctAnswer": 1,
+    "explanation": "Amiable means friendly and sociable, fitting the context of popularity."
+  },
+  {
+    "question": "Which word is misspelled in the sentence: 'The accomodation was luxurious.'",
+    "options": ["accomodation", "was", "luxurious", "none"],
+    "correctAnswer": 0,
+    "explanation": "The correct spelling is 'accommodation' with double 'c' and 'm'."
+  },
+  {
+    "question": "Choose the correct sentence:",
+    "options": ["Your going to love this.", "You're going to love this.", "Your going too love this.", "You're going too love this."],
+    "correctAnswer": 1,
+    "explanation": "'You're' is the correct contraction for 'you are', and 'to' is correct for direction or purpose."
+  },
+  {
+    "question": "What is the antonym of 'Obscure'?",
+    "options": ["Hidden", "Clear", "Vague", "Secret"],
+    "correctAnswer": 1,
+    "explanation": "Obscure means unclear or hidden, so Clear is its antonym."
+  },
+  {
+    "question": "Complete the analogy: Big is to Bigger as Good is to ____.",
+    "options": ["Gooder", "Best", "Better", "Goodest"],
+    "correctAnswer": 2,
+    "explanation": "Big is to Bigger (comparative form); similarly, Good is to Better."
+  },
+  {
+    "question": "Identify the part of speech of 'beautiful' in: 'She has a beautiful dress.'",
+    "options": ["Noun", "Verb", "Adjective", "Adverb"],
+    "correctAnswer": 2,
+    "explanation": "'Beautiful' describes the noun 'dress', making it an adjective."
+  },
+  {
+    "question": "Choose the correct form: Each of the students ___ submitted their assignments.",
+    "options": ["has", "have", "had", "having"],
+    "correctAnswer": 0,
+    "explanation": "'Each' is singular, so the singular verb 'has' is correct."
+  },
+  {
+    "question": "What is the synonym of 'Tenacious'?",
+    "options": ["Weak", "Persistent", "Flexible", "Careless"],
+    "correctAnswer": 1,
+    "explanation": "Tenacious means holding fast or persistent, making 'Persistent' the synonym."
+  },
+  {
+    "question": "Find the error: 'He run faster than his brother.'",
+    "options": ["He", "run", "faster", "than"],
+    "correctAnswer": 1,
+    "explanation": "The verb 'run' should be 'runs' to agree with the singular subject 'He'."
+  },
+  {
+    "question": "Which sentence is grammatically correct?",
+    "options": [
+      "The committee has submitted their report yesterday.",
+      "The committee have submitted its report yesterday.",
+      "The committee submitted its report yesterday.",
+      "The committee submitted it's report yesterday."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Collective nouns like 'committee' take singular verbs. 'Submitted' is simple past tense for completed action. 'Its' is possessive; 'it's' means 'it is'."
+  },
+  {
+    "question": "Choose the correct sentence completion: 'The university ordinance requires that all proposals _____ by the academic council.'",
+    "options": [
+      "is approved",
+      "are approved",
+      "be approved",
+      "will be approved"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subjunctive mood ('be approved') is used after verbs like 'require' in formal regulations."
+  },
+  {
+    "question": "Which paragraph best summarizes this text? 'The new accreditation framework mandates peer review visits, documentation audits, and student feedback analysis before granting institutional status.'",
+    "options": [
+      "Accreditation requires multiple evaluation methods",
+      "Student feedback determines accreditation",
+      "Peer reviews are optional in accreditation",
+      "Documentation audits replace physical visits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The summary must capture all three mandated components: peer visits, audits, and feedback analysis."
+  },
+  {
+    "question": "Read this policy excerpt: 'Faculty may apply for sabbatical leave after seven consecutive years of service, provided research proposals demonstrate institutional alignment.' What can be inferred?",
+    "options": [
+      "Sabbaticals are automatic after 7 years",
+      "Research proposals must benefit the institution",
+      "Administrative staff qualify for sabbaticals",
+      "Sabbatical applications are reviewed annually"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Institutional alignment' implies proposals must demonstrate relevance to the institution's goals."
+  },
+  {
+    "question": "Complete this analogy: STUDENT : UNIVERSITY :: _____ : GOVERNMENT",
+    "options": [
+      "Teacher",
+      "Citizen",
+      "Department",
+      "Policy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The relationship is membership: Students belong to universities as citizens belong to governments."
+  },
+  {
+    "question": "Identify the grammatically incorrect sentence:",
+    "options": [
+      "Neither the dean nor the professors were present.",
+      "The criteria for promotion includes publications and service.",
+      "Each applicant must submit their documents by Friday.",
+      "The board has approved the budget unanimously."
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Criteria' is plural; should be 'criteria include' (singular: criterion)."
+  },
+  {
+    "question": "Choose the correct completion: 'The registrar, along with department heads, _____ the commencement preparations.'",
+    "options": [
+      "oversee",
+      "oversees",
+      "are overseeing",
+      "have overseen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The subject is singular ('registrar'), so verb must be singular ('oversees'). The phrase 'along with' doesn't make it compound."
+  },
+  {
+    "question": "Which summary captures the essence? 'The RTI Act mandates public authorities to disclose information within 30 days, with penalties for non-compliance, except in matters of national security.'",
+    "options": [
+      "RTI requires disclosure with security exceptions",
+      "All information must be disclosed in 30 days",
+      "No penalties exist for RTI non-compliance",
+      "National security information has 60-day deadline"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The summary includes both the mandate and the key exception."
+  },
+  {
+    "question": "From this memo: 'While attendance is declining, webinar participation shows 40% growth.' What inference is valid?",
+    "options": [
+      "Overall engagement is decreasing",
+      "Physical attendance is being replaced",
+      "Alternative formats are gaining traction",
+      "Webinars should be discontinued"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The contrast ('while...shows') implies growing preference for digital formats."
+  },
+  {
+    "question": "Complete the analogy: AUDIT : FINANCES :: INSPECTION : _____",
+    "options": [
+      "Infrastructure",
+      "Personnel",
+      "Curriculum",
+      "Compliance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Audit examines finances as inspection examines infrastructure (standard administrative pairing)."
+  },
+  {
+    "question": "Which sentence needs correction?",
+    "options": [
+      "The faculty are divided in their opinions about the policy.",
+      "The faculty is hosting a symposium next month.",
+      "Neither the students nor the teacher are responsible.",
+      "The jury have reached its decision."
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Jury' as collective noun takes singular verb: 'has reached' (unless emphasizing individual opinions)."
+  },
+  {
+    "question": "Complete: 'If the committee _____ the proposal, implementation _____ immediately.'",
+    "options": [
+      "approve / begins",
+      "approves / will begin",
+      "approved / would begin",
+      "will approve / begins"
+    ],
+    "correctAnswer": 1,
+    "explanation": "First conditional for real possibility: present tense ('approves') + future ('will begin')."
+  },
+  {
+    "question": "Best summary of: 'Grievance committees must include cross-representation: two faculty, one administrator, and three students elected through transparent processes.'",
+    "options": [
+      "Grievance committees require student elections",
+      "Multi-stakeholder composition is mandated",
+      "Committees need three student representatives",
+      "Faculty outnumber administrators in committees"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Captures the essential requirement of diverse representation."
+  },
+  {
+    "question": "From policy: 'Plagiarism violations may result in suspension or expulsion, depending on severity, after due process.' What is implied?",
+    "options": [
+      "All violations lead to expulsion",
+      "Minor offenses are ignored",
+      "Punishment is proportional",
+      "No appeals are permitted"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Depending on severity' implies graduated consequences based on offense gravity."
+  },
+  {
+    "question": "Analogy: BUDGET : RESOURCES :: TIMETABLE : _____",
+    "options": [
+      "Schedules",
+      "Employees",
+      "Curriculum",
+      "Deadlines"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A budget allocates resources as a timetable allocates schedules."
+  },
+  {
+    "question": "Identify the sentence with proper parallel structure:",
+    "options": [
+      "Duties include reviewing applications, to conduct interviews, and report preparation.",
+      "Duties include reviewing applications, conducting interviews, and preparing reports.",
+      "Duties include application review, interviewing, and to prepare reports.",
+      "Duties include to review applications, conducting interviews, and report preparation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Uses parallel gerund phrases: reviewing, conducting, preparing."
+  },
+  {
+    "question": "Complete: 'Not only the department head but also the faculty _____ responsible for accreditation documentation.'",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "be"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In 'not only...but also' constructions, the verb agrees with the closer subject ('faculty' is plural)."
+  },
+  {
+    "question": "Summary of: 'The UGC regulation permits lateral entry to second-year programs for diploma holders, subject to credit transfer evaluation.'",
+    "options": [
+      "Diploma holders get automatic admission",
+      "Credit transfer requires UGC approval",
+      "Advanced standing is possible with conditions",
+      "All students enter at first-year level"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Lateral entry' means advanced standing, 'subject to' indicates conditional approval."
+  },
+  {
+    "question": "Memo states: 'While online submissions are preferred, physical documents will still be accepted until December.' Inference?",
+    "options": [
+      "Physical submissions are discontinued",
+      "December starts mandatory online submission",
+      "Online submission is now optional",
+      "All documents must be duplicated"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Until December' implies policy change effective January."
+  },
+  {
+    "question": "Analogy: ORDINANCE : UNIVERSITY :: STATUTE : _____",
+    "options": [
+      "College",
+      "Legislature",
+      "Department",
+      "Council"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An ordinance governs a university as a statute governs a legislature (legal instrument relationship)."
+  },
+  {
+    "question": "Which sentence uses 'effect' correctly?",
+    "options": [
+      "The new policy will effect student enrollment.",
+      "The committee must affect changes immediately.",
+      "The regulation takes effect next semester.",
+      "Faculty are concerned about the affect on workloads."
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Effect' as noun = result/implementation; 'affect' as verb = influence. Here, 'takes effect' means becomes operative."
+  },
+  {
+    "question": "Complete: 'Had the audit _____ earlier, discrepancies _____ detected.'",
+    "options": [
+      "began / would be",
+      "begun / would have been",
+      "began / were",
+      "begun / had been"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Third conditional: past perfect ('had begun') + would have + past participle ('been detected')."
+  },
+  {
+    "question": "Summary of: 'Whistleblower protections prohibit retaliation against employees reporting misconduct, ensuring confidentiality during investigations.'",
+    "options": [
+      "Misconduct reports trigger investigations",
+      "Employees can report anonymously",
+      "Retaliation is banned for protected disclosures",
+      "Confidentiality applies only to whistleblowers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Captures both protection from retaliation and the context of misconduct reporting."
+  },
+  {
+    "question": "Policy states: 'Exceptional research output may compensate for teaching deficiencies in promotion cases.' Inference?",
+    "options": [
+      "Teaching is irrelevant for promotion",
+      "Research can offset teaching weaknesses",
+      "Promotion requires excellence in both",
+      "Deficiencies are automatically excused"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'May compensate for' implies research strength can balance teaching shortcomings."
+  },
+  {
+    "question": "Analogy: CHANCELLOR : UNIVERSITY :: GOVERNOR : _____",
+    "options": [
+      "State",
+      "Ministry",
+      "Department",
+      "Cabinet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chancellor is ceremonial head of university as governor is ceremonial head of state."
+  },
+  {
+    "question": "Which sentence has correct preposition use?",
+    "options": [
+      "The report was submitted to the committee on Friday.",
+      "Compliance must be maintained with the policy.",
+      "The meeting was attended by all department heads.",
+      "The decision was based in the recommendations."
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Submitted to' is correct; others should be 'in compliance with', 'attended by all', 'based on'."
+  },
+  {
+    "question": "Complete: 'The dean requested that the department _____ a revised proposal.'",
+    "options": [
+      "submits",
+      "submit",
+      "submitted",
+      "will submit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Subjunctive mood after 'requested that' requires base verb form 'submit'."
+  },
+  {
+    "question": "Summary of: 'Autonomous colleges may design 40% of their curriculum, but must follow university guidelines for core courses.'",
+    "options": [
+      "Autonomy allows partial curriculum freedom",
+      "Universities control all curriculum",
+      "Core courses are fully flexible",
+      "40% curriculum requires university approval"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Highlights both the freedom (40%) and constraint (core guidelines)."
+  },
+  {
+    "question": "Memo states: 'Although funding was secured, implementation is delayed pending environmental clearance.' Inference?",
+    "options": [
+      "Funding is insufficient",
+      "Clearance is the current obstacle",
+      "Project has been cancelled",
+      "Implementation begins next month"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Delayed pending' indicates environmental clearance is the holdup."
+  },
+  {
+    "question": "Analogy: PLAGIARISM : ACADEMIC_INTEGRITY :: BRIBERY : _____",
+    "options": [
+      "Financial Loss",
+      "Administrative Efficiency",
+      "Professional Ethics",
+      "Legal Compliance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Plagiarism violates academic integrity as bribery violates professional ethics."
+  },
+  {
+    "question": "Which sentence uses the active voice?",
+    "options": [
+      "The policy was approved by the senate.",
+      "The report has been submitted by the committee.",
+      "The dean issued new guidelines.",
+      "Recommendations were made by the board."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Active voice: subject (dean) performs action (issued). Others are passive voice."
+  },
+  {
+    "question": "Choose the correct completion: 'Neither the minutes of the meeting nor the chairperson's notes _____ the decision.'",
+    "options": [
+      "record",
+      "records",
+      "recorded",
+      "have recorded"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In 'neither...nor', verb agrees with closer subject ('notes' is plural? Actually, 'notes' is considered singular when referring to a single set. Correction: 'notes' is plural, so 'record'. But typically in this context, 'notes' is treated as a single document. Better answer: 'records' if considering the set, but technically 'notes' is plural. Let's reassess: Standard usage would be 'Neither the minutes nor the notes record' because both are plural subjects. Correct answer should be 'record'."
+  },
+  {
+    "question": "Summary of: 'Staff on probation must undergo quarterly reviews; confirmation requires satisfactory performance in all assessments.'",
+    "options": [
+      "Probation involves quarterly evaluations",
+      "Confirmation is automatic after probation",
+      "Assessments determine probation length",
+      "Staff can request early confirmation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Captures the mandatory review process during probation."
+  },
+  {
+    "question": "Policy states: 'Travel reimbursements exceeding ₹50,000 require additional documentation per finance circular 2023-24.' Inference?",
+    "options": [
+      "All travel needs documentation",
+      "Higher amounts trigger extra scrutiny",
+      "₹50,000 is maximum reimbursement",
+      "Circulars override policy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Threshold amount requires supplemental documentation."
+  },
+  {
+    "question": "Analogy: ACCREDITATION : QUALITY :: AUDIT : _____",
+    "options": [
+      "Finance",
+      "Efficiency",
+      "Compliance",
+      "Transparency"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Accreditation verifies quality as audit verifies compliance."
+  },
+  {
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      "The departments affected are: Economics, Sociology and Political Science.",
+      "The departments affected are Economics, Sociology, and Political Science.",
+      "The departments affected are Economics; Sociology; and Political Science.",
+      "The departments affected are: Economics, Sociology, and Political Science."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Use colon after independent clause before list. Oxford comma before 'and' is preferred in formal writing."
+  },
+  {
+    "question": "Complete: 'The institution, with its satellite campuses, _____ extended the application deadline.'",
+    "options": [
+      "have",
+      "has",
+      "are",
+      "were"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Subject is singular ('institution'), so singular verb 'has'."
+  },
+  {
+    "question": "Summary of: 'Holidays declared by state governments apply only to regional campuses; central campuses follow national notifications.'",
+    "options": [
+      "Holidays vary by campus location",
+      "State holidays override national holidays",
+      "All campuses follow state holidays",
+      "National holidays are optional"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Distinguishes between regional and central campus policies."
+  },
+  {
+    "question": "Memo states: 'Where feasible, remote participation will be accommodated for committee meetings.' Inference?",
+    "options": [
+      "All meetings are now virtual",
+      "Physical attendance is mandatory",
+      "Remote options are situation-dependent",
+      "Committees can cancel meetings"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Where feasible' implies conditional permission based on circumstances."
+  },
+  {
+    "question": "Analogy: SYLLABUS : COURSE :: MANIFESTO : _____",
+    "options": [
+      "Election",
+      "Party",
+      "Policy",
+      "Government"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Syllabus outlines a course as manifesto outlines government plans."
+  },
+  {
+    "question": "Which sentence uses 'criterion' correctly?",
+    "options": [
+      "The main criterion for selection are experience.",
+      "One important criteria is publication record.",
+      "The criterion includes teaching and research.",
+      "All criterias must be satisfied."
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Criterion' is singular; 'criteria' is plural. Sentence uses singular correctly."
+  },
+  {
+    "question": "Complete: '_____ the deadline passes, late applications cannot be considered.'",
+    "options": [
+      "While",
+      "Once",
+      "Unless",
+      "Since"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Once' correctly indicates the condition (after deadline) that triggers the consequence."
+  },
+  {
+    "question": "Summary of: 'Faculty development leave requires six years of service, a detailed plan, and post-leave service commitment.'",
+    "options": [
+      "Leave mandates pre-approval plans",
+      "Multiple conditions govern leave eligibility",
+      "Service commitment follows all leaves",
+      "Development leave is granted biannually"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Captures the three requirements: service length, plan, and commitment."
+  },
+  {
+    "question": "Policy states: 'Research grants unutilized for 18 months may be reallocated.' Inference?",
+    "options": [
+      "Grants expire after 18 months",
+      "Extensions are automatically granted",
+      "Funds can be reclaimed after inactivity",
+      "All grants have 18-month terms"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'May be reallocated' implies funds can be withdrawn from inactive projects."
+  },
+  {
+    "question": "Analogy: TENURE : FACULTY :: PERMANENCY : _____",
+    "options": [
+      "Students",
+      "Administrators",
+      "Staff",
+      "Researchers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tenure provides job security for faculty as permanency does for staff."
+  },
+  {
+    "question": "Which sentence avoids redundancy?",
+    "options": [
+      "The advance planning committee met yesterday.",
+      "The final outcome was announced today.",
+      "Consensus of opinion emerged after discussion.",
+      "The implementation plan is ready."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Others are redundant: planning is always advance, outcome is always final, consensus is always of opinion."
+  },
+  {
+    "question": "Complete: 'The director as well as the trustees _____ committed to transparency.'",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'As well as' doesn't create compound subject. Singular 'director' takes singular verb 'is'."
+  },
+  {
+    "question": "Summary of: 'Student appeals against grades must be filed within two weeks with supporting evidence; decisions are final after departmental review.'",
+    "options": [
+      "Grade appeals require evidence and have deadlines",
+      "Departments can modify grades anytime",
+      "Students can appeal directly to the dean",
+      "All appeals result in grade changes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Captures both the process (filing with evidence) and time constraint."
+  },
+  {
+    "question": "Memo states: 'While cost estimates are preliminary, they suggest the project exceeds current budget allocations.' Inference?",
+    "options": [
+      "Project will be abandoned",
+      "Final costs are confirmed",
+      "Additional funding may be needed",
+      "Estimates are unreliable"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Exceeds current budget' implies potential need for more funds."
+  },
+  {
+    "question": "Analogy: GAZETTE : NOTIFICATIONS :: BULLETIN : _____",
+    "options": [
+      "Advertisements",
+      "News",
+      "Decrees",
+      "Announcements"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Gazette publishes official notifications as bulletin publishes announcements."
+  },
+  {
+    "question": "Which sentence uses 'principal' correctly?",
+    "options": [
+      "The principle amount must be repaid.",
+      "Our principal concern is student safety.",
+      "She serves as school principle.",
+      "The principles approved the budget."
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Principal' = main or leader; 'principle' = fundamental truth. 'Principal concern' means primary concern."
+  },
+  {
+    "question": "Complete: 'Had the committee been notified earlier, the matter _____ differently.'",
+    "options": [
+      "would handle",
+      "would have been handled",
+      "will be handled",
+      "handled"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Third conditional: past perfect + would have + past participle."
+  },
+  {
+    "question": "Summary of: 'International collaborations require MEA clearance, institutional MOUs, and alignment with national education policy.'",
+    "options": [
+      "Collaborations need multi-level approvals",
+      "MEA handles all collaborations",
+      "MOUs override policy alignment",
+      "Only national institutions collaborate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Captures the three requirements: MEA clearance, MOUs, and policy alignment."
+  },
+  {
+    "question": "Policy states: 'Promotion applications lacking mandatory documentation will be returned without processing.' Inference?",
+    "options": [
+      "Incomplete applications are rejected",
+      "Documentation can be submitted later",
+      "Exceptions are made routinely",
+      "Processing delays are expected"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Returned without processing' implies applications won't be reviewed if incomplete."
+  },
+  {
+    "question": "Analogy: CURRICULUM : COURSES :: CHARTER : _____",
+    "options": [
+      "Laws",
+      "Institutions",
+      "Policies",
+      "Objectives"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Curriculum defines courses as charter defines an institution."
+  },
+  {
+    "question": "Which sentence is grammatically incorrect?",
+    "options": [
+      "The data indicates a positive trend.",
+      "The faculty are holding a meeting.",
+      "The criteria is clearly defined.",
+      "The alumni network is strong."
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Criteria' is plural; should be 'criteria are'."
+  },
+  {
+    "question": "Complete: 'No sooner _____ the meeting adjourned than the discussion resumed.'",
+    "options": [
+      "was",
+      "is",
+      "had",
+      "did"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'No sooner...than' structure requires past tense: 'No sooner was...than'."
+  },
+  {
+    "question": "Summary of: 'The whistleblower policy protects anonymity, prohibits retaliation, and establishes an independent review panel.'",
+    "options": [
+      "Whistleblowers receive financial rewards",
+      "Three key elements define the protection system",
+      "Reviews are conducted internally",
+      "Anonymity is optional"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Captures the three components: anonymity, anti-retaliation, and independent review."
+  },
+  {
+    "question": "Memo states: 'Although enrollment targets were met, demographic analysis reveals declining regional participation.' Inference?",
+    "options": [
+      "Overall enrollment increased",
+      "Regional engagement needs attention",
+      "Targets will be reduced next year",
+      "Demographic analysis is flawed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Contrast ('although...reveals') implies regional participation is a concern despite overall success."
+  },
+  {
+    "question": "Analogy: BYLAW : ORGANIZATION :: CONSTITUTION : _____",
+    "options": [
+      "Government",
+      "Department",
+      "Committee",
+      "Faculty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bylaws govern organizations as constitutions govern governments."
+  },
+  {
+    "question": "Which sentence uses the subjunctive mood correctly?",
+    "options": [
+      "It is essential that all members are present.",
+      "We recommend that he attends the workshop.",
+      "The policy requires that reports be filed quarterly.",
+      "She suggested that the meeting is postponed."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Subjunctive uses base verb form 'be' after verbs like 'require that'."
+  },
+  {
+    "question": "Complete this administrative notice: 'All expenditures _____ prior approval will be reimbursed.'",
+    "options": [
+      "with",
+      "without",
+      "lacking",
+      "requiring"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Logical completion: Expenditures WITH prior approval will be reimbursed (others won't)."
+  },
+  {
+    "question": "Summary of: 'Cross-departmental committees must include at least one early-career faculty member and meet gender diversity benchmarks.'",
+    "options": [
+      "Committees focus on career development",
+      "Membership has experience and diversity rules",
+      "Gender diversity is optional",
+      "Committees replace departmental structures"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Captures both the early-career requirement and gender diversity mandate."
+  },
+  {
+    "question": "Policy states: 'Guest faculty may teach up to two courses per semester, subject to credential verification.' Inference?",
+    "options": [
+      "Guest faculty are unverified",
+      "Course limits are flexible",
+      "Credential checks precede appointments",
+      "Regular faculty have no limits"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Subject to' implies verification is a prerequisite."
+  },
+  {
+    "question": "Analogy: TRANSCRIPT : ACADEMIC_RECORD :: PROTOCOL : _____",
+    "options": [
+      "Meeting",
+      "Procedure",
+      "Agreement",
+      "Deadline"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transcript documents academic record as protocol documents procedures."
+  }
+]

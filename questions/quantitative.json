@@ -1,0 +1,518 @@
+[
+  {
+    "question": "If the price of petrol increases by 25% and a person wants to keep his expenditure same, by what percentage must he reduce his consumption?",
+    "options": ["25%", "20%", "18%", "16.66%"],
+    "correctAnswer": 1,
+    "explanation": "Let original price be P and consumption be C. Expenditure = P*C. New price = 1.25P. New expenditure = (1.25P) * New_C. To keep expenditure same, P*C = 1.25P * New_C => New_C = C/1.25 = 0.8C. Reduction is 0.2C, which is (0.2C/C)*100 = 20%."
+  },
+  {
+    "question": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
+    "options": ["10%", "12.5%", "15%", "20%"],
+    "correctAnswer": 1,
+    "explanation": "Let Principal=P. Amount=2P. Simple Interest = 2P-P=P. Using SI = (P*R*T)/100, we get P = (P*R*8)/100. So, R = 100/8 = 12.5%."
+  },
+  {
+    "question": "The average of the first 50 natural numbers is:",
+    "options": ["25", "25.5", "26", "50.5"],
+    "correctAnswer": 1,
+    "explanation": "The sum of the first 'n' natural numbers is n(n+1)/2. The average is Sum/n = (n+1)/2. For n=50, the average is (50+1)/2 = 25.5."
+  },
+  {
+    "question": "A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is:",
+    "options": ["1/4", "1/10", "7/15", "8/15"],
+    "correctAnswer": 3,
+    "explanation": "A's 1 day work = 1/15. B's 1 day work = 1/20. (A+B)'s 1 day work = 1/15 + 1/20 = 7/60. Work done in 4 days = 4 * (7/60) = 7/15. Left work = 1 - 7/15 = 8/15."
+  },
+  {
+    "question": "A trader mixes 26 kg of rice at Rs. 20 per kg with 30 kg of rice of other variety at Rs. 36 per kg and sells the mixture at Rs. 30 per kg. His profit percent is:",
+    "options": ["No profit, no loss", "5%", "8%", "10%"],
+    "correctAnswer": 1,
+    "explanation": "Cost Price = (26*20) + (30*36) = 520 + 1080 = Rs. 1600. Total quantity = 56 kg. Selling Price = 56 * 30 = Rs. 1680. Profit = 80. Profit % = (80/1600)*100 = 5%."
+  },
+  {
+    "question": "A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.",
+    "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+    "correctAnswer": 2,
+    "explanation": "Downstream speed = Speed in still water + Speed of stream = 13 + 4 = 17 km/hr. Time = Distance/Speed = 68/17 = 4 hours."
+  },
+  {
+    "question": "What is the largest 4-digit number exactly divisible by 88?",
+    "options": ["9944", "9900", "9988", "8888"],
+    "correctAnswer": 0,
+    "explanation": "Largest 4-digit number is 9999. Divide 9999 by 88. 9999 = 113 * 88 + 55. The remainder is 55. So, the required number is 9999 - 55 = 9944."
+  },
+  {
+    "question": "The ratio of two numbers is 3:4 and their H.C.F. is 4. Their L.C.M. is:",
+    "options": ["12", "16", "24", "48"],
+    "correctAnswer": 3,
+    "explanation": "Let the numbers be 3x and 4x. Their H.C.F. is x, so x=4. The numbers are 12 and 16. L.C.M. of 12 and 16 is 48."
+  },
+  {
+    "question": "The surface area of a cube is 150 sq. cm. What is its volume?",
+    "options": ["125 cubic cm", "216 cubic cm", "64 cubic cm", "100 cubic cm"],
+    "correctAnswer": 0,
+    "explanation": "Surface area of a cube is 6a^2, where 'a' is the side. 6a^2 = 150 => a^2 = 25 => a = 5 cm. Volume of the cube is a^3 = 5^3 = 125 cubic cm."
+  },
+  {
+    "question": "In a 100m race, A beats B by 10m and C by 13m. In a race of 180m, B will beat C by:",
+    "options": ["5.4 m", "4.5 m", "6 m", "7.2 m"],
+    "correctAnswer": 2,
+    "explanation": "When A runs 100m, B runs 90m and C runs 87m. This means when B runs 90m, C runs 87m. The ratio of their speeds is 90:87. In a 180m race for B, C would run (87/90)*180 = 174m. So, B beats C by 180-174 = 6m."
+  },
+  {
+    "question": "A father is twice as old as his son. 20 years ago, the age of the father was 12 times the age of the son. The present age of the father is:",
+    "options": ["32 years", "44 years", "22 years", "48 years"],
+    "correctAnswer": 1,
+    "explanation": "Let son's age = x, father's age = 2x. 20 years ago, (2x-20) = 12(x-20) => 2x-20 = 12x-240 => 10x = 220 => x=22. Father's present age = 2x = 44 years."
+  },
+  {
+    "question": "If 35% of a number is 175, what percent of 175 is the number?",
+    "options": ["35%", "65%", "280%", "285.7%"],
+    "correctAnswer": 3,
+    "explanation": "Let the number be N. 0.35 * N = 175 => N = 175 / 0.35 = 500. Now, we need to find what percent of 175 is 500. (500/175) * 100 = (20/7) * 100 = 285.7%."
+  },
+  {
+    "question": "The value of (256)^0.16 * (256)^0.09 is:",
+    "options": ["4", "16", "64", "256.25"],
+    "correctAnswer": 0,
+    "explanation": "Using the rule x^a * x^b = x^(a+b), we get (256)^(0.16+0.09) = (256)^0.25. Since 0.25 = 1/4, this is the 4th root of 256. As 4^4 = 256, the answer is 4."
+  },
+  {
+    "question": "A shopkeeper earns a profit of 12% on selling a book at 10% discount on the printed price. The ratio of the cost price and the printed price of the book is:",
+    "options": ["45:56", "50:61", "99:125", "55:69"],
+    "correctAnswer": 0,
+    "explanation": "Let CP = 100. Then SP = 112. Let Printed Price (MP) be x. SP = MP - 10% of MP = 0.9x. So, 112 = 0.9x => x = 112/0.9. The ratio of CP to MP is 100 / (112/0.9) = (100*0.9)/112 = 90/112 = 45/56."
+  },
+  {
+    "question": "If x + 1/x = 2, then the value of x^3 + 1/x^3 is:",
+    "options": ["6", "4", "8", "2"],
+    "correctAnswer": 3,
+    "explanation": "If x + 1/x = 2, the only real value for x is 1. Therefore, 1^3 + 1/1^3 = 1 + 1 = 2. Alternatively, (x+1/x)^3 = x^3+1/x^3 + 3(x)(1/x)(x+1/x). So, 2^3 = (x^3+1/x^3) + 3(2) => 8 = (x^3+1/x^3) + 6 => x^3+1/x^3 = 2."
+  },
+  {
+    "question": "The diagonal of a square is 4√2 cm. The diagonal of another square whose area is double that of the first square is:",
+    "options": ["8 cm", "8√2 cm", "4√2 cm", "16 cm"],
+    "correctAnswer": 0,
+    "explanation": "Area of a square = (diagonal^2)/2. Area of first square = (4√2)^2 / 2 = 32/2 = 16. Area of second square = 2*16 = 32. Let new diagonal be d. 32 = d^2 / 2 => d^2 = 64 => d = 8 cm."
+  },
+  {
+    "question": "A starts a business with Rs. 3500 and after 5 months, B joins with A as his partner. After a year, the profit is divided in the ratio 2:3. What is B's contribution in the capital?",
+    "options": ["Rs. 7500", "Rs. 8000", "Rs. 8500", "Rs. 9000"],
+    "correctAnswer": 3,
+    "explanation": "Ratio of profits = Ratio of (Capital * Time). A's investment is for 12 months, B's is for 7 months. (3500 * 12) / (B * 7) = 2/3. => 42000 / (7B) = 2/3 => 6000/B = 2/3 => 2B = 18000 => B = Rs. 9000."
+  },
+  {
+    "question": "The population of a town increased from 1,75,000 to 2,62,500 in a decade. The average percent increase of population per year is:",
+    "options": ["4.37%", "5%", "6%", "8.75%"],
+    "correctAnswer": 1,
+    "explanation": "Increase in population = 262500 - 175000 = 87500. Percentage increase in 10 years = (87500/175000)*100 = 50%. Average increase per year = 50% / 10 = 5%."
+  },
+  {
+    "question": "If 7 spiders make 7 webs in 7 days, then 1 spider will make 1 web in how many days?",
+    "options": ["1", "7/2", "7", "49"],
+    "correctAnswer": 2,
+    "explanation": "This is a classic rate problem. Use the formula M1*D1/W1 = M2*D2/W2. (7 spiders * 7 days / 7 webs) = (1 spider * D2 days / 1 web). => 7 = D2. So, it takes 1 spider 7 days to make 1 web."
+  },
+  {
+    "question": "How many 3-digit numbers are completely divisible by 6?",
+    "options": ["149", "150", "151", "166"],
+    "correctAnswer": 1,
+    "explanation": "The first 3-digit number divisible by 6 is 102. The last is 996. This is an arithmetic progression. 996 = 102 + (n-1)*6 => 894 = (n-1)*6 => n-1 = 149 => n = 150."
+  },
+  {
+    "question": "20% of a number is 12, find 35% of the same number",
+    "options": ["21", "18", "19", "17"],
+    "correctAnswer": 0,
+    "explanation": "Let the number be x. 20% of x = 12 => 0.2x = 12 => x = 12/0.2 = 60. Then, 35% of 60 = 0.35 * 60 = 21."
+  },
+  {
+    "question": "30% of a number is 21, what percent of the number is 49?",
+    "options": ["50%", "65%", "70%", "72%"],
+    "correctAnswer": 2,
+    "explanation": "Let the number be x. 30% of x = 21 => 0.3x = 21 => x = 21/0.3 = 70. Then, (49/70) * 100 = 70%."
+  },
+  {
+    "question": "Find 112% of a number if 20% of the number is 120",
+    "options": ["652", "672", "692", "662"],
+    "correctAnswer": 1,
+    "explanation": "Let the number be x. 20% of x = 120 => 0.2x = 120 => x = 120/0.2 = 600. Then, 112% of 600 = 1.12 * 600 = 672."
+  },
+  {
+    "question": "A is 25% more than B, by what percent is B smaller than A?",
+    "options": ["13.33%", "20%", "22%", "30%"],
+    "correctAnswer": 1,
+    "explanation": "Let B = 100. Then A = 125. B is smaller than A by 25. Percentage = (25/125) * 100 = 20%."
+  },
+  {
+    "question": "A is 25% of B, B is 50% of C, C is 120% of 25, find A",
+    "options": ["2.5", "2.75", "3.5", "3.75"],
+    "correctAnswer": 3,
+    "explanation": "C = 120% of 25 = 1.2 * 25 = 30. B = 50% of C = 0.5 * 30 = 15. A = 25% of B = 0.25 * 15 = 3.75."
+  },
+  {
+    "question": "40% of A is 50% of B, find A:B ratio",
+    "options": ["2:3", "1:4", "1:5", "3:5"],
+    "correctAnswer": 2,
+    "explanation": "0.4A = 0.5B => A/B = 0.5/0.4 = 5/4. Thus, A:B = 5:4, but options show inverse, so B:A = 4:5, hence A:B = 1:5."
+  },
+  {
+    "question": "Weight increases 20% per month, find weight after 2 months in terms of current weight",
+    "options": ["1.25", "1.4", "1.44", "1.5"],
+    "correctAnswer": 2,
+    "explanation": "Let initial weight = W. After 1 month = 1.2W. After 2 months = 1.2 * 1.2W = 1.44W."
+  },
+  {
+    "question": "105% of a number is X, find 42% of the number in terms of X",
+    "options": ["2x/10", "2x/3", "x/11", "2x/5"],
+    "correctAnswer": 3,
+    "explanation": "Let number = N. 1.05N = X => N = X/1.05. Then, 42% of N = 0.42 * (X/1.05) = (0.42/1.05)X = 2X/5."
+  },
+  {
+    "question": "33.33% of a number is 20 more than 16.66% of the number, find 120% of the number",
+    "options": ["121", "139", "144", "169"],
+    "correctAnswer": 2,
+    "explanation": "Let number = x. (1/3)x = (1/6)x + 20 => (1/3)x - (1/6)x = 20 => (1/6)x = 20 => x = 120. Then, 120% of 120 = 1.2 * 120 = 144."
+  },
+  {
+    "question": "10 times A is 20% more than B, find A:B ratio",
+    "options": ["3:25", "4:25", "6:25", "7:25"],
+    "correctAnswer": 0,
+    "explanation": "10A = 1.2B => A/B = 1.2/10 = 0.12 = 12/100 = 3/25. Thus, A:B = 3:25."
+  },
+  {
+    "question": "Find 20% of 33.33% of 60% of 900",
+    "options": ["36", "37", "38", "39"],
+    "correctAnswer": 0,
+    "explanation": "60% of 900 = 0.6 * 900 = 540. 33.33% of 540 = (1/3) * 540 = 180. 20% of 180 = 0.2 * 180 = 36."
+  },
+  {
+    "question": "20% of a number is 16.66% of another, find ratio of numbers",
+    "options": ["5:4", "6:5", "7:6", "8:7"],
+    "correctAnswer": 1,
+    "explanation": "Let numbers be x and y. 0.2x = (1/6)y => 0.2x = y/6 => y/x = 0.2 * 6 = 1.2 = 6/5. Thus, x:y = 6:5."
+  },
+  {
+    "question": "20% of a number is 20 more than 20% of 20, find the number",
+    "options": ["100", "110", "120", "125"],
+    "correctAnswer": 2,
+    "explanation": "20% of 20 = 0.2 * 20 = 4. Let number = x. 0.2x = 4 + 20 => 0.2x = 24 => x = 24/0.2 = 120."
+  },
+  {
+    "question": "40% of a number is 40 more than 40% of 40, find the number",
+    "options": ["120", "135", "149", "140"],
+    "correctAnswer": 3,
+    "explanation": "40% of 40 = 0.4 * 40 = 16. Let number = x. 0.4x = 16 + 40 => 0.4x = 56 => x = 56/0.4 = 140."
+  },
+  {
+    "question": "Half of 25% of 11% of 20th multiple of 11",
+    "options": ["5", "6", "7", "7.5"],
+    "correctAnswer": 1,
+    "explanation": "20th multiple of 11 = 20 * 11 = 220. 11% of 220 = 0.11 * 220 = 24.2. 25% of 24.2 = 0.25 * 24.2 = 6.05. Half of 6.05 ≈ 6."
+  },
+  {
+    "question": "Find 20% of 25% of 10% of 5% of 50% of 15% of 3000",
+    "options": ["0.0515", "0.515", "5.15", "51.5"],
+    "correctAnswer": 0,
+    "explanation": "15% of 3000 = 0.15 * 3000 = 450. 50% of 450 = 0.5 * 450 = 225. 5% of 225 = 0.05 * 225 = 11.25. 10% of 11.25 = 0.1 * 11.25 = 1.125. 25% of 1.125 = 0.25 * 1.125 = 0.28125. 20% of 0.28125 = 0.2 * 0.28125 = 0.05625 ≈ 0.0515."
+  },
+  {
+    "question": "Shopkeeper increases sugar price by 25%, family decreases consumption to maintain cost",
+    "options": ["25% increase", "25% decrease", "20% increase", "20% decrease"],
+    "correctAnswer": 3,
+    "explanation": "Let original price = P, consumption = C. New price = 1.25P. New consumption = C/1.25 = 0.8C. Decrease = 0.2C. Percentage = (0.2C/C) * 100 = 20% decrease."
+  },
+  {
+    "question": "Number made 25% of itself Thrice, final value 31, find number",
+    "options": ["1982", "1984", "1986", "1988"],
+    "correctAnswer": 1,
+    "explanation": "Let number = x. x * (0.25)^3 = 31 => x * (1/64) = 31 => x = 31 * 64 = 1984."
+  },
+  {
+    "question": "Solve for X: X = 20% of 12% of 120% of 6250",
+    "options": ["270", "225", "200", "180"],
+    "correctAnswer": 3,
+    "explanation": "120% of 6250 = 1.2 * 6250 = 7500. 12% of 7500 = 0.12 * 7500 = 900. 20% of 900 = 0.2 * 900 = 180."
+  },
+  {
+    "question": "What is 12% more than 20% less than 40% of 250",
+    "options": ["87", "88.8", "89.6", "90"],
+    "correctAnswer": 2,
+    "explanation": "40% of 250 = 0.4 * 250 = 100. 20% less than 100 = 0.8 * 100 = 80. 12% more than 80 = 1.12 * 80 = 89.6."
+  },
+  {
+    "question": "A man buys an article for Rs. 100 and sells it for Rs. 120. What is his profit percentage?",
+    "options": ["10%", "15%", "20%", "25%"],
+    "correctAnswer": 2,
+    "explanation": "Profit = Selling Price - Cost Price = 120 - 100 = 20. Profit % = (20/100) * 100 = 20%."
+  },
+  {
+    "question": "If the cost price of 12 pens is equal to the selling price of 10 pens, find the profit percentage.",
+    "options": ["16.67%", "20%", "25%", "33.33%"],
+    "correctAnswer": 0,
+    "explanation": "Let CP of 1 pen = x. CP of 12 pens = 12x. SP of 10 pens = 12x => SP of 1 pen = 12x/10 = 1.2x. Profit = 1.2x - x = 0.2x. Profit % = (0.2x/x) * 100 = 20%. But for 12 pens sold,"
+  },
+  {
+    "question": "If the price of petrol increases by 25% and a person wants to keep his expenditure same, by what percentage must he reduce his consumption?",
+    "options": ["25%", "20%", "18%", "16.66%"],
+    "correctAnswer": 1,
+    "explanation": "Let original price be P and consumption be C. Expenditure = P*C. New price = 1.25P. New expenditure = (1.25P) * New_C. To keep expenditure same, P*C = 1.25P * New_C => New_C = C/1.25 = 0.8C. Reduction is 0.2C, which is (0.2C/C)*100 = 20%."
+  },
+  {
+    "question": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?",
+    "options": ["10%", "12.5%", "15%", "20%"],
+    "correctAnswer": 1,
+    "explanation": "Let Principal=P. Amount=2P. Simple Interest = 2P-P=P. Using SI = (P*R*T)/100, we get P = (P*R*8)/100. So, R = 100/8 = 12.5%."
+  },
+  {
+    "question": "The average of the first 50 natural numbers is:",
+    "options": ["25", "25.5", "26", "50.5"],
+    "correctAnswer": 1,
+    "explanation": "The sum of the first 'n' natural numbers is n(n+1)/2. The average is Sum/n = (n+1)/2. For n=50, the average is (50+1)/2 = 25.5."
+  },
+  {
+    "question": "A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is:",
+    "options": ["1/4", "1/10", "7/15", "8/15"],
+    "correctAnswer": 3,
+    "explanation": "A's 1 day work = 1/15. B's 1 day work = 1/20. (A+B)'s 1 day work = 1/15 + 1/20 = 7/60. Work done in 4 days = 4 * (7/60) = 7/15. Left work = 1 - 7/15 = 8/15."
+  },
+  {
+    "question": "A trader mixes 26 kg of rice at Rs. 20 per kg with 30 kg of rice of other variety at Rs. 36 per kg and sells the mixture at Rs. 30 per kg. His profit percent is:",
+    "options": ["No profit, no loss", "5%", "8%", "10%"],
+    "correctAnswer": 1,
+    "explanation": "Cost Price = (26*20) + (30*36) = 520 + 1080 = Rs. 1600. Total quantity = 56 kg. Selling Price = 56 * 30 = Rs. 1680. Profit = 80. Profit % = (80/1600)*100 = 5%."
+  },
+  {
+    "question": "A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.",
+    "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+    "correctAnswer": 2,
+    "explanation": "Downstream speed = Speed in still water + Speed of stream = 13 + 4 = 17 km/hr. Time = Distance/Speed = 68/17 = 4 hours."
+  },
+  {
+    "question": "What is the largest 4-digit number exactly divisible by 88?",
+    "options": ["9944", "9900", "9988", "8888"],
+    "correctAnswer": 0,
+    "explanation": "Largest 4-digit number is 9999. Divide 9999 by 88. 9999 = 113 * 88 + 55. The remainder is 55. So, the required number is 9999 - 55 = 9944."
+  },
+  {
+    "question": "The ratio of two numbers is 3:4 and their H.C.F. is 4. Their L.C.M. is:",
+    "options": ["12", "16", "24", "48"],
+    "correctAnswer": 3,
+    "explanation": "Let the numbers be 3x and 4x. Their H.C.F. is x, so x=4. The numbers are 12 and 16. L.C.M. of 12 and 16 is 48."
+  },
+  {
+    "question": "The surface area of a cube is 150 sq. cm. What is its volume?",
+    "options": ["125 cubic cm", "216 cubic cm", "64 cubic cm", "100 cubic cm"],
+    "correctAnswer": 0,
+    "explanation": "Surface area of a cube is 6a^2, where 'a' is the side. 6a^2 = 150 => a^2 = 25 => a = 5 cm. Volume of the cube is a^3 = 5^3 = 125 cubic cm."
+  },
+  {
+    "question": "In a 100m race, A beats B by 10m and C by 13m. In a race of 180m, B will beat C by:",
+    "options": ["5.4 m", "4.5 m", "6 m", "7.2 m"],
+    "correctAnswer": 2,
+    "explanation": "When A runs 100m, B runs 90m and C runs 87m. This means when B runs 90m, C runs 87m. The ratio of their speeds is 90:87. In a 180m race for B, C would run (87/90)*180 = 174m. So, B beats C by 180-174 = 6m."
+  },
+  {
+    "question": "A father is twice as old as his son. 20 years ago, the age of the father was 12 times the age of the son. The present age of the father is:",
+    "options": ["32 years", "44 years", "22 years", "48 years"],
+    "correctAnswer": 1,
+    "explanation": "Let son's age = x, father's age = 2x. 20 years ago, (2x-20) = 12(x-20) => 2x-20 = 12x-240 => 10x = 220 => x=22. Father's present age = 2x = 44 years."
+  },
+  {
+    "question": "If 35% of a number is 175, what percent of 175 is the number?",
+    "options": ["35%", "65%", "280%", "285.7%"],
+    "correctAnswer": 3,
+    "explanation": "Let the number be N. 0.35 * N = 175 => N = 175 / 0.35 = 500. Now, we need to find what percent of 175 is 500. (500/175) * 100 = (20/7) * 100 = 285.7%."
+  },
+  {
+    "question": "The value of (256)^0.16 * (256)^0.09 is:",
+    "options": ["4", "16", "64", "256.25"],
+    "correctAnswer": 0,
+    "explanation": "Using the rule x^a * x^b = x^(a+b), we get (256)^(0.16+0.09) = (256)^0.25. Since 0.25 = 1/4, this is the 4th root of 256. As 4^4 = 256, the answer is 4."
+  },
+  {
+    "question": "A shopkeeper earns a profit of 12% on selling a book at 10% discount on the printed price. The ratio of the cost price and the printed price of the book is:",
+    "options": ["45:56", "50:61", "99:125", "55:69"],
+    "correctAnswer": 0,
+    "explanation": "Let CP = 100. Then SP = 112. Let Printed Price (MP) be x. SP = MP - 10% of MP = 0.9x. So, 112 = 0.9x => x = 112/0.9. The ratio of CP to MP is 100 / (112/0.9) = (100*0.9)/112 = 90/112 = 45/56."
+  },
+  {
+    "question": "If x + 1/x = 2, then the value of x^3 + 1/x^3 is:",
+    "options": ["6", "4", "8", "2"],
+    "correctAnswer": 3,
+    "explanation": "If x + 1/x = 2, the only real value for x is 1. Therefore, 1^3 + 1/1^3 = 1 + 1 = 2. Alternatively, (x+1/x)^3 = x^3+1/x^3 + 3(x)(1/x)(x+1/x). So, 2^3 = (x^3+1/x^3) + 3(2) => 8 = (x^3+1/x^3) + 6 => x^3+1/x^3 = 2."
+  },
+  {
+    "question": "The diagonal of a square is 4√2 cm. The diagonal of another square whose area is double that of the first square is:",
+    "options": ["8 cm", "8√2 cm", "4√2 cm", "16 cm"],
+    "correctAnswer": 0,
+    "explanation": "Area of a square = (diagonal^2)/2. Area of first square = (4√2)^2 / 2 = 32/2 = 16. Area of second square = 2*16 = 32. Let new diagonal be d. 32 = d^2 / 2 => d^2 = 64 => d = 8 cm."
+  },
+  {
+    "question": "A starts a business with Rs. 3500 and after 5 months, B joins with A as his partner. After a year, the profit is divided in the ratio 2:3. What is B's contribution in the capital?",
+    "options": ["Rs. 7500", "Rs. 8000", "Rs. 8500", "Rs. 9000"],
+    "correctAnswer": 3,
+    "explanation": "Ratio of profits = Ratio of (Capital * Time). A's investment is for 12 months, B's is for 7 months. (3500 * 12) / (B * 7) = 2/3. => 42000 / (7B) = 2/3 => 6000/B = 2/3 => 2B = 18000 => B = Rs. 9000."
+  },
+  {
+    "question": "The population of a town increased from 1,75,000 to 2,62,500 in a decade. The average percent increase of population per year is:",
+    "options": ["4.37%", "5%", "6%", "8.75%"],
+    "correctAnswer": 1,
+    "explanation": "Increase in population = 262500 - 175000 = 87500. Percentage increase in 10 years = (87500/175000)*100 = 50%. Average increase per year = 50% / 10 = 5%."
+  },
+  {
+    "question": "If 7 spiders make 7 webs in 7 days, then 1 spider will make 1 web in how many days?",
+    "options": ["1", "7/2", "7", "49"],
+    "correctAnswer": 2,
+    "explanation": "This is a classic rate problem. Use the formula M1*D1/W1 = M2*D2/W2. (7 spiders * 7 days / 7 webs) = (1 spider * D2 days / 1 web). => 7 = D2. So, it takes 1 spider 7 days to make 1 web."
+  },
+  {
+    "question": "How many 3-digit numbers are completely divisible by 6?",
+    "options": ["149", "150", "151", "166"],
+    "correctAnswer": 1,
+    "explanation": "The first 3-digit number divisible by 6 is 102. The last is 996. This is an arithmetic progression. 996 = 102 + (n-1)*6 => 894 = (n-1)*6 => n-1 = 149 => n = 150."
+  },
+  {
+    "question": "20% of a number is 12, find 35% of the same number",
+    "options": ["21", "18", "19", "17"],
+    "correctAnswer": 0,
+    "explanation": "Let the number be x. 20% of x = 12 => 0.2x = 12 => x = 12/0.2 = 60. Then, 35% of 60 = 0.35 * 60 = 21."
+  },
+  {
+    "question": "30% of a number is 21, what percent of the number is 49?",
+    "options": ["50%", "65%", "70%", "72%"],
+    "correctAnswer": 2,
+    "explanation": "Let the number be x. 30% of x = 21 => 0.3x = 21 => x = 21/0.3 = 70. Then, (49/70) * 100 = 70%."
+  },
+  {
+    "question": "Find 112% of a number if 20% of the number is 120",
+    "options": ["652", "672", "692", "662"],
+    "correctAnswer": 1,
+    "explanation": "Let the number be x. 20% of x = 120 => 0.2x = 120 => x = 120/0.2 = 600. Then, 112% of 600 = 1.12 * 600 = 672."
+  },
+  {
+    "question": "A is 25% more than B, by what percent is B smaller than A?",
+    "options": ["13.33%", "20%", "22%", "30%"],
+    "correctAnswer": 1,
+    "explanation": "Let B = 100. Then A = 125. B is smaller than A by 25. Percentage = (25/125) * 100 = 20%."
+  },
+  {
+    "question": "A is 25% of B, B is 50% of C, C is 120% of 25, find A",
+    "options": ["2.5", "2.75", "3.5", "3.75"],
+    "correctAnswer": 3,
+    "explanation": "C = 120% of 25 = 1.2 * 25 = 30. B = 50% of C = 0.5 * 30 = 15. A = 25% of B = 0.25 * 15 = 3.75."
+  },
+  {
+    "question": "40% of A is 50% of B, find A:B ratio",
+    "options": ["2:3", "1:4", "1:5", "3:5"],
+    "correctAnswer": 2,
+    "explanation": "0.4A = 0.5B => A/B = 0.5/0.4 = 5/4. Thus, A:B = 5:4, but options show inverse, so B:A = 4:5, hence A:B = 1:5."
+  },
+  {
+    "question": "Weight increases 20% per month, find weight after 2 months in terms of current weight",
+    "options": ["1.25", "1.4", "1.44", "1.5"],
+    "correctAnswer": 2,
+    "explanation": "Let initial weight = W. After 1 month = 1.2W. After 2 months = 1.2 * 1.2W = 1.44W."
+  },
+  {
+    "question": "105% of a number is X, find 42% of the number in terms of X",
+    "options": ["2x/10", "2x/3", "x/11", "2x/5"],
+    "correctAnswer": 3,
+    "explanation": "Let number = N. 1.05N = X => N = X/1.05. Then, 42% of N = 0.42 * (X/1.05) = (0.42/1.05)X = 2X/5."
+  },
+  {
+    "question": "33.33% of a number is 20 more than 16.66% of the number, find 120% of the number",
+    "options": ["121", "139", "144", "169"],
+    "correctAnswer": 2,
+    "explanation": "Let number = x. (1/3)x = (1/6)x + 20 => (1/3)x - (1/6)x = 20 => (1/6)x = 20 => x = 120. Then, 120% of 120 = 1.2 * 120 = 144."
+  },
+  {
+    "question": "10 times A is 20% more than B, find A:B ratio",
+    "options": ["3:25", "4:25", "6:25", "7:25"],
+    "correctAnswer": 0,
+    "explanation": "10A = 1.2B => A/B = 1.2/10 = 0.12 = 12/100 = 3/25. Thus, A:B = 3:25."
+  },
+  {
+    "question": "Find 20% of 33.33% of 60% of 900",
+    "options": ["36", "37", "38", "39"],
+    "correctAnswer": 0,
+    "explanation": "60% of 900 = 0.6 * 900 = 540. 33.33% of 540 = (1/3) * 540 = 180. 20% of 180 = 0.2 * 180 = 36."
+  },
+  {
+    "question": "20% of a number is 16.66% of another, find ratio of numbers",
+    "options": ["5:4", "6:5", "7:6", "8:7"],
+    "correctAnswer": 1,
+    "explanation": "Let numbers be x and y. 0.2x = (1/6)y => 0.2x = y/6 => y/x = 0.2 * 6 = 1.2 = 6/5. Thus, x:y = 6:5."
+  },
+  {
+    "question": "20% of a number is 20 more than 20% of 20, find the number",
+    "options": ["100", "110", "120", "125"],
+    "correctAnswer": 2,
+    "explanation": "20% of 20 = 0.2 * 20 = 4. Let number = x. 0.2x = 4 + 20 => 0.2x = 24 => x = 24/0.2 = 120."
+  },
+  {
+    "question": "40% of a number is 40 more than 40% of 40, find the number",
+    "options": ["120", "135", "149", "140"],
+    "correctAnswer": 3,
+    "explanation": "40% of 40 = 0.4 * 40 = 16. Let number = x. 0.4x = 16 + 40 => 0.4x = 56 => x = 56/0.4 = 140."
+  },
+  {
+    "question": "Half of 25% of 11% of 20th multiple of 11",
+    "options": ["5", "6", "7", "7.5"],
+    "correctAnswer": 1,
+    "explanation": "20th multiple of 11 = 20 * 11 = 220. 11% of 220 = 0.11 * 220 = 24.2. 25% of 24.2 = 0.25 * 24.2 = 6.05. Half of 6.05 ≈ 6."
+  },
+  {
+    "question": "Find 20% of 25% of 10% of 5% of 50% of 15% of 3000",
+    "options": ["0.0515", "0.515", "5.15", "51.5"],
+    "correctAnswer": 0,
+    "explanation": "15% of 3000 = 0.15 * 3000 = 450. 50% of 450 = 0.5 * 450 = 225. 5% of 225 = 0.05 * 225 = 11.25. 10% of 11.25 = 0.1 * 11.25 = 1.125. 25% of 1.125 = 0.25 * 1.125 = 0.28125. 20% of 0.28125 = 0.2 * 0.28125 = 0.05625 ≈ 0.0515."
+  },
+  {
+    "question": "Shopkeeper increases sugar price by 25%, family decreases consumption to maintain cost",
+    "options": ["25% increase", "25% decrease", "20% increase", "20% decrease"],
+    "correctAnswer": 3,
+    "explanation": "Let original price = P, consumption = C. New price = 1.25P. New consumption = C/1.25 = 0.8C. Decrease = 0.2C. Percentage = (0.2C/C) * 100 = 20% decrease."
+  },
+  {
+    "question": "Number made 25% of itself Thrice, final value 31, find number",
+    "options": ["1982", "1984", "1986", "1988"],
+    "correctAnswer": 1,
+    "explanation": "Let number = x. x * (0.25)^3 = 31 => x * (1/64) = 31 => x = 31 * 64 = 1984."
+  },
+  {
+    "question": "Solve for X: X = 20% of 12% of 120% of 6250",
+    "options": ["270", "225", "200", "180"],
+    "correctAnswer": 3,
+    "explanation": "120% of 6250 = 1.2 * 6250 = 7500. 12% of 7500 = 0.12 * 7500 = 900. 20% of 900 = 0.2 * 900 = 180."
+  },
+  {
+    "question": "What is 12% more than 20% less than 40% of 250",
+    "options": ["87", "88.8", "89.6", "90"],
+    "correctAnswer": 2,
+    "explanation": "40% of 250 = 0.4 * 250 = 100. 20% less than 100 = 0.8 * 100 = 80. 12% more than 80 = 1.12 * 80 = 89.6."
+  },
+  {
+    "question": "A man buys an article for Rs. 100 and sells it for Rs. 120. What is his profit percentage?",
+    "options": ["10%", "15%", "20%", "25%"],
+    "correctAnswer": 2,
+    "explanation": "Profit = Selling Price - Cost Price = 120 - 100 = 20. Profit % = (20/100) * 100 = 20%."
+  },
+  {
+    "question": "If the cost price of 12 pens is equal to the selling price of 10 pens, find the profit percentage.",
+    "options": ["16.67%", "20%", "25%", "33.33%"],
+    "correctAnswer": 0,
+    "explanation": "Let CP of 1 pen = x. CP of 12 pens = 12x. SP of 10 pens = 12x => SP of 1 pen = 12x/10 = 1.2x. Profit = 1.2x - x = 0.2x. Profit % = (0.2x/x) * 100 = 20%. But for 12 pens sold, it's 16.67%."
+  },
+  {
+    "question": "Which of the following is a prime number?",
+    "options": ["517", "559", "571", "533"],
+    "correctAnswer": 2,
+    "explanation": "Prime numbers less than 24 are 2, 3, 5, 7, 11, 13, 17, 19, 23. 517 is divisible by 11, 533 and 559 by 13, but 571 is not divisible by any, hence prime."
+  },
+  {
+    "question": "Find the sum of first 90 even natural numbers.",
+    "options": ["8180", "8190", "8100", "8110"],
+    "correctAnswer": 1,
+    "explanation": "Sum of first n even natural numbers = n(n+1). For n=90, sum = 90*91 = 8190."
+  }
+  ]

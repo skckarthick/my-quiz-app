@@ -3,157 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant Registrar Prep Pro</title>
+    <title>Smart Quiz Pro - Secure Edition</title>
+    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --card-bg: rgba(22, 27, 34, 0.6);
-            --border-color: rgba(255, 255, 255, 0.1);
-            --text-primary: #e6edf3;
-            --text-secondary: #7d8590;
-            --accent-primary: #58a6ff;
-            --accent-secondary: #3fb950;
-            --accent-error: #f85149;
-            --shadow-color: rgba(0, 0, 0, 0.4);
-            /* New style for the attempt flag */
-            --attempt-flag-bg: #c9d1d9;
-            --attempt-flag-text: #0d1117;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            min-height: 100vh;
-            padding: 20px;
-            line-height: 1.6;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: radial-gradient(circle at 15% 25%, rgba(88, 166, 255, 0.15), transparent 40%),
-                        radial-gradient(circle at 85% 75%, rgba(63, 185, 80, 0.15), transparent 40%);
-            animation: background-glow 15s ease-in-out infinite;
-            z-index: -1;
-        }
-
-        @keyframes background-glow {
-            0% { transform: scale(1) rotate(0deg); opacity: 0.8; }
-            50% { transform: scale(1.2) rotate(10deg); opacity: 1; }
-            100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
-        }
-
-        .container { max-width: 900px; margin: 20px auto; }
-
-        header { text-align: center; margin-bottom: 40px; }
-        header h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; margin-bottom: 10px; }
-        header p { color: var(--text-secondary); font-size: 1.1rem; }
-        /* Smart Header Info */
-        .smart-info { color: var(--accent-primary); font-size: 1rem; font-weight: 500;}
-
-        .tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
-        .tab-btn {
-            background: none; border: 1px solid var(--border-color); color: var(--text-secondary);
-            padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 0.9rem;
-            font-weight: 600; transition: all 0.3s ease;
-        }
-        .tab-btn:hover { color: var(--text-primary); border-color: var(--accent-primary); }
-        .tab-btn.active { color: var(--text-primary); background-color: var(--accent-primary); border-color: var(--accent-primary); }
-
-        .quiz-container {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 8px 32px 0 var(--shadow-color);
-            margin-bottom: 30px;
-        }
-
-        .section-header {
-            display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
-            margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); gap: 20px;
-        }
-        .section-header h2 { font-size: 1.5rem; font-weight: 600; }
-        .progress-wrapper { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
-        #progress-text { font-size: 0.9rem; color: var(--text-secondary); }
-        
-        /* Question header for attempt flag */
-        .question-header { display: flex; justify-content: space-between; align-items: center; margin: 30px 0; }
-        .question-text { font-size: clamp(1.2rem, 3vw, 1.4rem); font-weight: 500; flex-grow: 1; }
-        .attempt-flag {
-            background-color: var(--attempt-flag-bg); color: var(--attempt-flag-text);
-            font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 10px;
-            white-space: nowrap; margin-left: 15px;
-            animation: fadeIn 0.5s;
-        }
-        
-        .options-container { display: flex; flex-direction: column; gap: 15px; }
-        .option {
-            position: relative;
-            display: flex; align-items: center; gap: 15px;
-            background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color);
-            padding: 15px; border-radius: 12px; cursor: pointer;
-            transition: all 0.2s ease-in-out;
-            overflow: hidden;
-        }
-        .option:hover:not(.disabled) { transform: translateY(-3px); border-color: var(--accent-primary); }
-        .option-prefix { flex-shrink: 0; width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--text-secondary); border-radius: 50%; font-weight: 600; color: var(--text-secondary); transition: all 0.2s ease-in-out; z-index: 2; }
-        .option-text { flex-grow: 1; z-index: 2; }
-        .feedback-icon { font-size: 1.5rem; opacity: 0; transform: scale(0.5); transition: all 0.3s ease; z-index: 2;}
-        
-        .option.disabled { cursor: not-allowed; }
-        .option.selected { border-color: var(--accent-primary); }
-        .option.selected .option-prefix { border-color: var(--accent-primary); color: var(--text-primary); background-color: var(--accent-primary); }
-        .option.correct.selected { border-color: var(--accent-secondary); animation: pop 0.3s ease-out; }
-        .option.correct.selected .option-prefix { background-color: var(--accent-secondary); border-color: var(--accent-secondary); }
-        .option.correct .feedback-icon { color: var(--accent-secondary); opacity: 1; transform: scale(1); }
-        .option.incorrect.selected { border-color: var(--accent-error); animation: shake 0.5s ease; }
-        .option.incorrect.selected .option-prefix { background-color: var(--accent-error); border-color: var(--accent-error); }
-        .option.incorrect .feedback-icon { color: var(--accent-error); opacity: 1; transform: scale(1); }
-
-        .explanation { margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 8px; border-left: 3px solid var(--accent-primary); font-size: 0.95rem; color: var(--text-secondary); display: none; }
-        .explanation.show { display: block; animation: fadeIn 0.5s ease; }
-
-        .navigation { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; gap: 15px; flex-wrap: wrap; }
-        .nav-btn { background: var(--accent-primary); color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: all 0.3s ease; }
-        .nav-btn:disabled { background: var(--text-secondary); cursor: not-allowed; opacity: 0.5; }
-        .nav-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3); }
-        .reset-btn { background: rgba(248, 81, 73, 0.2); color: var(--accent-error); }
-        .reset-btn:hover:not(:disabled) { background: rgba(248, 81, 73, 0.4); box-shadow: none; }
-        .jump-to-wrapper { display: flex; align-items: center; gap: 10px; }
-        #jump-to-input { width: 70px; padding: 8px; background-color: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 8px; text-align: center; }
-        #jump-to-btn { padding: 8px 15px; font-size: 0.9rem; }
-        
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; margin-top: 40px; }
-        .stat-box { background: var(--card-bg); backdrop-filter: blur(10px); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px; }
-        .stat-label { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 10px; }
-        .stat-value { font-size: 2rem; font-weight: 700; color: var(--text-primary); }
-        
-        .loader { font-size: 1.2rem; text-align: center; padding: 40px; }
-        
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
-        @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); } 20%, 40%, 60%, 80% { transform: translateX(5px); } }
-
-        .sparkle { position: absolute; width: 6px; height: 6px; background: #fff; border-radius: 50%; z-index: 1; animation: sparkle-anim 0.8s forwards; }
-        @keyframes sparkle-anim { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.5) translate(var(--tx), var(--ty)); opacity: 0; } }
-
-    </style>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Assistant Registrar Prep Pro</h1>
-            <!-- Changed the subtitle to explain the new features -->
             <p class="smart-info">Questions are randomized. Incorrect answers will be re-tested to improve memory.</p>
         </header>
         
@@ -171,300 +32,34 @@
         <div class="quiz-container">
             <div class="section-header">
                 <h2 id="section-title">Loading...</h2>
-                <div class="progress-wrapper">
-                    <!-- The jump-to feature is removed as it conflicts with randomization -->
-                </div>
             </div>
-
             <div id="question-area">
                  <!-- Content will be loaded dynamically -->
             </div>
-            <br>
-            <br>
             <div class="navigation">
                 <button class="nav-btn" id="prev-btn" disabled>Previous</button>
-                <span id="progress-text">Question 0 of 0</span>
+                <div class="nav-center-group">
+                    <span id="progress-text">Remaining: 0</span>
+                    <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Session</button>
+                </div>
                 <button class="nav-btn" id="next-btn" disabled>Next</button>
             </div>
         </div>
-         <br>
-            <br>
+
         <div class="stats">
             <div class="stat-box"><div class="stat-label">Total in Section</div><div class="stat-value" id="total-questions">0</div></div>
             <div class="stat-box"><div class="stat-label">Answered (Session)</div><div class="stat-value" id="answered">0</div></div>
             <div class="stat-box"><div class="stat-label">Correct (Session)</div><div class="stat-value" id="correct">0</div></div>
             <div class="stat-box"><div class="stat-label">Accuracy (Session)</div><div class="stat-value" id="accuracy">0%</div></div>
         </div>
-
-        <div style="text-align: center; margin-top: 30px;">
-             <button class="nav-btn reset-btn" id="reset-btn" disabled>Reset Session & Reshuffle</button>
-        </div>
+        
         <footer style="text-align: center; margin-top: 40px; color: var(--text-secondary); font-size: 0.9rem;">
           <p style="color: #FFFFFF;"> <marquee> Developer: <strong>Karthick S</strong> </marquee> </p>
         </footer>
     </div>
 
-    <script>
-        // --- START OF NEW LOGIC IMPLEMENTATION ---
-
-        const quizData = {};
-        const state = {
-            currentSection: "quantitative",
-            questionQueue: [],
-            retestQueue: [],
-            history: [], // Stores answered questions for the 'Previous' button
-            sessionStats: { answered: 0, correct: 0 },
-            globalStats: {} // For storing attempt counts
-        };
-
-        const dom = {
-            sectionTitle: document.getElementById("section-title"),
-            questionArea: document.getElementById("question-area"),
-            prevBtn: document.getElementById("prev-btn"),
-            nextBtn: document.getElementById("next-btn"),
-            resetBtn: document.getElementById("reset-btn"),
-            progressText: document.getElementById("progress-text"),
-            totalQuestions: document.getElementById("total-questions"),
-            answered: document.getElementById("answered"),
-            correct: document.getElementById("correct"),
-            accuracy: document.getElementById("accuracy"),
-            tabs: document.querySelectorAll(".tab-btn"),
-        };
-        
-        function triggerSparkle(element) {
-            for (let i = 0; i < 15; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.classList.add('sparkle');
-                const angle = Math.random() * 2 * Math.PI;
-                const distance = Math.random() * 40 + 30;
-                sparkle.style.setProperty('--tx', `${Math.cos(angle) * distance}px`);
-                sparkle.style.setProperty('--ty', `${Math.sin(angle) * distance}px`);
-                sparkle.style.top = '50%';
-                sparkle.style.left = '50%';
-                element.appendChild(sparkle);
-                sparkle.addEventListener('animationend', () => sparkle.remove());
-            }
-        }
-
-        function showLoader(message) {
-            dom.questionArea.innerHTML = `<div class="loader">${message}</div>`;
-            dom.prevBtn.disabled = true;
-            dom.nextBtn.disabled = true;
-            dom.resetBtn.disabled = true;
-        }
-
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-
-        function loadGlobalStats() {
-            const stats = localStorage.getItem('quizGlobalStats');
-            state.globalStats = stats ? JSON.parse(stats) : { attemptCounts: {} };
-        }
-
-        function saveGlobalStats() {
-            localStorage.setItem('quizGlobalStats', JSON.stringify(state.globalStats));
-        }
-
-        async function loadSection(sectionKey) {
-            dom.tabs.forEach(btn => btn.classList.toggle('active', btn.dataset.section === sectionKey));
-            state.currentSection = sectionKey;
-            showLoader(`Loading & Randomizing Questions...`);
-            try {
-                if (!quizData[sectionKey]) {
-                    const response = await fetch(`./questions/${sectionKey}.json`);
-                    if (!response.ok) throw new Error(`File not found: ${sectionKey}.json.`);
-                    // Add a unique ID to each question for tracking
-                    quizData[sectionKey] = await response.json().then(questions => 
-                        questions.map((q, index) => ({ ...q, originalId: `${sectionKey}-${index}` }))
-                    );
-                }
-                initializeSection();
-            } catch (error) {
-                showLoader(`Error: ${error.message}`);
-            }
-        }
-
-        function initializeSection() {
-            const sectionKey = state.currentSection;
-            const sectionTitle = sectionKey.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
-            dom.sectionTitle.textContent = sectionTitle;
-            
-            // Reset session stats and queues
-            state.sessionStats = { answered: 0, correct: 0 };
-            state.retestQueue = [];
-            state.history = [];
-
-            // Create a fresh, shuffled queue for the new session
-            state.questionQueue = [...quizData[sectionKey]];
-            shuffleArray(state.questionQueue);
-
-            dom.resetBtn.disabled = false;
-            displayQuestion();
-        }
-
-        function displayQuestion() {
-            // Check if there are any questions left
-            if (state.questionQueue.length === 0 && state.retestQueue.length === 0) {
-                dom.questionArea.innerHTML = `<div class="loader">🎉 Session Complete! Well done! 🎉</div>`;
-                dom.nextBtn.disabled = true;
-                return;
-            }
-
-            // Smartly decide whether to show a new question or a re-test question
-            let currentQ;
-            // Every 4th question (and if retest queue has items), prioritize a re-test
-            if (state.sessionStats.answered > 0 && state.sessionStats.answered % 4 === 0 && state.retestQueue.length > 0) {
-                currentQ = state.retestQueue.shift(); // Get a question from the retest queue
-            } else {
-                 if (state.questionQueue.length > 0) {
-                    currentQ = state.questionQueue[0]; // Get a regular new question
-                 } else {
-                    currentQ = state.retestQueue.shift(); // Fallback to retest queue if main queue is empty
-                 }
-            }
-
-            // Track attempt count
-            const attemptCount = state.globalStats.attemptCounts[currentQ.originalId] || 0;
-            const attemptFlag = attemptCount > 0 ? `<span class="attempt-flag">${getOrdinal(attemptCount + 1)} attempt</span>` : '';
-
-            const prefixes = ['A', 'B', 'C', 'D', 'E'];
-            let optionsHTML = currentQ.options.map((option, index) => `
-                <div class="option" data-index="${index}">
-                    <span class="option-prefix">${prefixes[index]}</span>
-                    <span class="option-text">${option}</span>
-                    <span class="feedback-icon"></span>
-                </div>`
-            ).join('');
-            
-            dom.questionArea.innerHTML = `
-                <div class="question-header">
-                    <div class="question-text">${currentQ.question}</div>
-                    ${attemptFlag}
-                </div>
-                <div class="options-container">${optionsHTML}</div>
-                <div class="explanation"></div>`;
-
-            document.querySelectorAll('.option').forEach(opt => {
-                opt.addEventListener('click', e => selectOption(parseInt(e.currentTarget.dataset.index), currentQ));
-            });
-            updateUI();
-        }
-
-        function selectOption(selectedIndex, currentQ) {
-            // Prevent re-answering
-            if (document.querySelector('.option.disabled')) return;
-
-            const isCorrect = selectedIndex === currentQ.correctAnswer;
-            
-            state.sessionStats.answered++;
-            if (isCorrect) state.sessionStats.correct++;
-            
-            // If incorrect, add to retest queue. If correct, ensure it's removed from retest queue.
-            const retestIndex = state.retestQueue.findIndex(q => q.originalId === currentQ.originalId);
-            if (!isCorrect && retestIndex === -1) {
-                state.retestQueue.push(currentQ);
-            } else if (isCorrect && retestIndex > -1) {
-                state.retestQueue.splice(retestIndex, 1);
-            }
-            
-            // Increment and save attempt count
-            state.globalStats.attemptCounts[currentQ.originalId] = (state.globalStats.attemptCounts[currentQ.originalId] || 0) + 1;
-            saveGlobalStats();
-
-            // UI feedback
-            const options = document.querySelectorAll('.option');
-            options.forEach((opt, index) => {
-                opt.classList.add('disabled');
-                if (index === selectedIndex) opt.classList.add('selected');
-                if (index === currentQ.correctAnswer) {
-                    opt.classList.add('correct');
-                    opt.querySelector('.feedback-icon').textContent = '✓';
-                } else if (index === selectedIndex) {
-                    opt.classList.add('incorrect');
-                    opt.querySelector('.feedback-icon').textContent = '✗';
-                }
-            });
-            
-            const explanationEl = document.querySelector('.explanation');
-            explanationEl.textContent = currentQ.explanation;
-            explanationEl.classList.add('show');
-            
-            if (isCorrect) {
-                const correctOptionEl = dom.questionArea.querySelector('.option.correct.selected');
-                if(correctOptionEl) setTimeout(() => triggerSparkle(correctOptionEl), 100);
-            }
-
-            // Remove from main queue if it was there
-            const mainQueueIndex = state.questionQueue.findIndex(q => q.originalId === currentQ.originalId);
-            if (mainQueueIndex > -1) {
-                state.history.push(state.questionQueue.splice(mainQueueIndex, 1)[0]);
-            } else {
-                 state.history.push(currentQ);
-            }
-
-            dom.nextBtn.disabled = false;
-            updateUI();
-        }
-
-        function getOrdinal(n) {
-            const s = ["th", "st", "nd", "rd"];
-            const v = n % 100;
-            return n + (s[(v - 20) % 10] || s[v] || s[0]);
-        }
-        
-        function updateUI() {
-            dom.prevBtn.disabled = state.history.length === 0;
-            dom.nextBtn.disabled = (state.questionQueue.length === 0 && state.retestQueue.length === 0) || !document.querySelector('.option.disabled');
-
-            const totalInSection = quizData[state.currentSection]?.length || 0;
-            const answeredCount = state.sessionStats.answered;
-            const correctCount = state.sessionStats.correct;
-            
-            const remaining = state.questionQueue.length + state.retestQueue.length;
-            dom.progressText.textContent = `Remaining: ${remaining}`;
-            
-            dom.totalQuestions.textContent = totalInSection;
-            dom.answered.textContent = answeredCount;
-            dom.correct.textContent = correctCount;
-            dom.accuracy.textContent = `${answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0}%`;
-        }
-
-        function goToPrevious() {
-            if (state.history.length > 0) {
-                const lastQuestion = state.history.pop();
-                // Put the question back at the start of the appropriate queue
-                if (state.retestQueue.some(q => q.originalId === lastQuestion.originalId)) {
-                    // It was likely a re-test item
-                    state.retestQueue.unshift(lastQuestion);
-                } else {
-                    state.questionQueue.unshift(lastQuestion);
-                }
-                // Decrement session stats
-                state.sessionStats.answered--;
-                // This part is tricky - we don't know if the last answer was correct.
-                // For simplicity, a "Previous" button in a smart quiz often just reviews, not unwinds stats.
-                // Let's just go back to the question.
-                displayQuestion();
-            }
-        }
-        
-        // Event Listeners
-        dom.tabs.forEach(btn => btn.addEventListener('click', () => loadSection(btn.dataset.section)));
-        dom.nextBtn.addEventListener('click', displayQuestion);
-        dom.prevBtn.addEventListener('click', goToPrevious);
-        dom.resetBtn.addEventListener('click', initializeSection);
-        
-        // Initial Load
-        window.addEventListener('DOMContentLoaded', () => {
-            loadGlobalStats();
-            loadSection('quantitative');
-        });
-        
-        // --- END OF NEW LOGIC IMPLEMENTATION ---
-    </script>
+    <!-- Link to your external JavaScript file -->
+    <!-- Place it at the end of the body for faster perceived page load -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

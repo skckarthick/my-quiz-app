@@ -273,67 +273,67 @@
     "question": "Which section constitutes the Central Information Commission under RTI Act?",
     "options": ["Section 12", "Section 14", "Section 15", "Section 19"],
     "correctAnswer": 0,
-    "explanation": "Section 12 provides for the constitution of the Central Information Commission.":contentReference[oaicite:6]{index=6}
+    "explanation": "Section 12 provides for the constitution of the Central Information Commission."
   },
   {
     "question": "Under RTI, trade secrets may be disclosed if?",
     "options": ["Trade secret always exempt", "Public interest overrides", "PIO discretion", "CIC decides"],
     "correctAnswer": 1,
-    "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants.":contentReference[oaicite:7]{index=7}
+    "explanation": "Under Section 8(1)(d), trade secrets may be disclosed if larger public interest warrants."
   },
   {
     "question": "File notings fall under definition of 'information' in RTI Act?",
     "options": ["Yes", "No", "Only if finalized", "PIO discretion"],
     "correctAnswer": 1,
-    "explanation": "File notings are not 'information' under RTI Act, so they are exempt.":contentReference[oaicite:8]{index=8}
+    "explanation": "File notings are not 'information' under RTI Act, so they are exempt."
   },
   {
     "question": "When did RTI Act come into force?",
     "options": ["12 Oct 2005", "13 Oct 2005", "1 Jan 2006", "15 Nov 2005"],
     "correctAnswer": 0,
-    "explanation": "The Act came into force on 12 October 2005.":contentReference[oaicite:9]{index=9}
+    "explanation": "The Act came into force on 12 October 2005."
   },
   {
     "question": "Under RTI, how soon must PIO respond to life/death information requests?",
     "options": ["48 hours", "30 days", "7 days", "72 hours"],
     "correctAnswer": 0,
-    "explanation": "Information affecting life or liberty must be provided within 48 hours.":contentReference[oaicite:10]{index=10}
+    "explanation": "Information affecting life or liberty must be provided within 48 hours."
   },
   {
     "question": "What does POSH Act empower institutions to do?",
     "options": ["Constitute Internal Complaints Committee (ICC)", "Train HR only", "Refer to police", "Appoint PIO"],
     "correctAnswer": 0,
-    "explanation": "The Act mandates setting up an ICC to address complaints.":contentReference[oaicite:11]{index=11}
+    "explanation": "The Act mandates setting up an ICC to address complaints."
   },
   {
     "question": "When did the POSH Act receive presidential assent?",
     "options": ["22 Apr 2013", "8 Mar 2013", "9 Dec 2013", "1 Jun 2013"],
     "correctAnswer": 0,
-    "explanation": "The Act, Act No. 14 of 2013, received assent on 22 April 2013.":contentReference[oaicite:12]{index=12}
+    "explanation": "The Act, Act No. 14 of 2013, received assent on 22 April 2013."
   },
   {
     "question": "POSH Act defines 'sexual harassment' to include?",
     "options": ["Physical contact advances", "Demand for sexual favours", "Showing pornography", "All of the above"],
     "correctAnswer": 3,
-    "explanation": "All of these are defined as sexual harassment under the Act.":contentReference[oaicite:13]{index=13}
+    "explanation": "All of these are defined as sexual harassment under the Act."
   },
   {
     "question": "Which of the following falls under 'workplace' per POSH Act?",
     "options": ["Transport provided by employer", "Interview venue", "All of the above", "Neither"],
     "correctAnswer": 2,
-    "explanation": "Workplace includes employer‑transport and interview venues under the Act.":contentReference[oaicite:14]{index=14}
+    "explanation": "Workplace includes employer‑transport and interview venues under the Act."
   },
   {
     "question": "POSH Act requires employer to display?",
     "options": ["Penalties for offences", "ICC members list", "Both", "Nothing"],
     "correctAnswer": 2,
-    "explanation": "Employers must display both penal consequences and ICC details prominently.":contentReference[oaicite:15]{index=15}
+    "explanation": "Employers must display both penal consequences and ICC details prominently."
   },
   {
     "question": "Under POSH, inquiry leave is:",
     "options": ["Concurrent", "In addition", "Not allowed", "Decided by ICC"],
     "correctAnswer": 0,
-    "explanation": "Leave during inquiry is concurrent with other leave entitlement.":contentReference[oaicite:16]{index=16}
+    "explanation": "Leave during inquiry is concurrent with other leave entitlement."
   },
   {
     "question": "Holding Board of Governors meeting requires quorum of:",
@@ -375,7 +375,7 @@
     "question": "Under RTI, PIO must transfer application within how many days if held elsewhere?",
     "options": ["5 days", "7 days", "30 days", "48 hours"],
     "correctAnswer": 0,
-    "explanation": "The PIO must transfer the application within five days.":contentReference[oaicite:17]{index=17}
+    "explanation": "The PIO must transfer the application within five days."
   },
   {
     "question": "Appeal to CIC must be made within ___ days of order?",
@@ -387,13 +387,13 @@
     "question": "Under POSH Act, fines up to ___ for not constituting ICC?",
     "options": ["₹50,000", "₹1 lakh", "₹25,000", "None"],
     "correctAnswer": 2,
-    "explanation": "Penalties include a fine up to ₹25,000.":contentReference[oaicite:18]{index=18}
+    "explanation": "Penalties include a fine up to ₹25,000."
   },
   {
     "question": "In POSH, repeat offence penalty is:",
     "options": ["Double fine", "Higher fine", "Imprisonment", "ICC decision"],
     "correctAnswer": 0,
-    "explanation": "Repeat offences can result in double the earlier fine.":contentReference[oaicite:19]{index=19}
+    "explanation": "Repeat offences can result in double the earlier fine."
   },
   {
     "question": "Notice for Senate meeting must be issued ___ days prior?",
@@ -417,13 +417,13 @@
     "question": "RTI: Section 4 covers:",
     "options": ["Proactive disclosure", "Exemptions", "Penalties", "Appeal process"],
     "correctAnswer": 0,
-    "explanation": "Section 4 obligates proactive publication of information.":contentReference[oaicite:20]{index=20}
+    "explanation": "Section 4 obligates proactive publication of information."
   },
   {
     "question": "Section 8 deals with?",
     "options": ["Exemptions", "PIO duties", "Penalties", "Appeals"],
     "correctAnswer": 0,
-    "explanation": "Section 8 lists information exempt from disclosure.":contentReference[oaicite:21]{index=21}
+    "explanation": "Section 8 lists information exempt from disclosure."
   },
   {
     "question": "RTI third appeal is to?",

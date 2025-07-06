@@ -784,18 +784,22 @@ document.addEventListener('selectionchange', () => {
     }, 2000); // Adjust delay here (2000ms is ideal)
 });
 
-// ✅ Enter Key triggers "Next Question" — Mac/Windows/Linux compatible
+// ✅ Enter key triggers next question when ready (after answering)
 document.addEventListener('keydown', function (e) {
-    // Ignore if focus is on input, textarea, or option is being selected
+    // Ignore if focus is in a text input or textarea
     const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
-    const isOptionFocused = document.activeElement.closest('.option');
-    if (isTyping || isOptionFocused) return;
+    if (isTyping) return;
 
+    // Check if Enter is pressed
     if (e.key === 'Enter') {
         const nextBtn = document.getElementById('next-btn');
-        if (nextBtn && !nextBtn.disabled) {
-            nextBtn.click(); // Triggers your existing next question logic
+        const optionsDisabled = document.querySelector('.option.disabled');
+
+        // Proceed only if next button is enabled AND an option was selected
+        if (nextBtn && !nextBtn.disabled && optionsDisabled) {
+            nextBtn.click();
             e.preventDefault();
         }
     }
 });
+

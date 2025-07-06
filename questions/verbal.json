@@ -7,7 +7,7 @@
   },
   {
     "question": "Identify the error in the sentence: 'She don't like to travel alone.'",
-    "options": ["She", "don't", "like", "alone"],
+    "options": ["She", "doesn't", "like", "alone"],
     "correctAnswer": 1,
     "explanation": "The subject 'She' is singular, so the correct verb is 'doesn't'. The sentence should be: 'She doesn't like to travel alone.'"
   },

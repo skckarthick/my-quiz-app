@@ -1,5 +1,16 @@
 // Enhanced Quiz Application with Security and Advanced UX
 const quizData = {};
+const ALL_SECTIONS = [
+    "quantitative",
+    "verbal",
+    "logical",
+    "general_awareness",
+    "current_affairs",
+    "domain1",
+    "domain2",
+    "domain3"
+];
+let masterTimer;
 const state = {
     currentSection: "quantitative",
     questionQueue: [],
@@ -18,17 +29,24 @@ const animations = new AnimationManager();
 
 // Enhanced DOM elements with security
 const dom = {
-    sectionTitle: document.getElementById("section-title"),
-    questionArea: document.getElementById("question-area"),
-    prevBtn: document.getElementById("prev-btn"),
-    nextBtn: document.getElementById("next-btn"),
-    resetBtn: document.getElementById("reset-btn"),
-    progressText: document.getElementById("progress-text"),
-    totalQuestions: document.getElementById("total-questions"),
-    answered: document.getElementById("answered"),
-    correct: document.getElementById("correct"),
-    accuracy: document.getElementById("accuracy"),
-    tabs: document.querySelectorAll(".tab-btn"),
+    timerDisplay: document.getElementById("timer-display"),
+    mockExamModal: document.getElementById("mock-exam-modal"),
+    numQuestionsInput: document.getElementById("num-questions"),
+    timeDurationInput: document.getElementById("time-duration"),
+    startMockBtn: document.getElementById("start-mock-btn"),
+    cancelMockBtn: document.getElementById("cancel-mock-btn"),
+    // --- NEW: Ensure questionArea and other critical DOM elements are defined ---
+    questionArea: document.getElementById("question-area") || document.createElement("div"), // Fallback if not found
+    tabs: document.querySelectorAll(".tab-btn") || [], // Fallback for tabs
+    prevBtn: document.getElementById("prev-btn") || document.createElement("button"), // Fallback
+    nextBtn: document.getElementById("next-btn") || document.createElement("button"), // Fallback
+    resetBtn: document.getElementById("reset-btn") || document.createElement("button"), // Fallback
+    sectionTitle: document.getElementById("section-title") || document.createElement("h2"), // Fallback
+    progressText: document.getElementById("progress-text") || document.createElement("span"), // Fallback
+    totalQuestions: document.getElementById("total-questions") || document.createElement("span"), // Fallback
+    answered: document.getElementById("answered") || document.createElement("span"), // Fallback
+    correct: document.getElementById("correct") || document.createElement("span"), // Fallback
+    accuracy: document.getElementById("accuracy") || document.createElement("span") // Fallback
 };
 
 // Enhanced sparkle animation with particles
@@ -113,6 +131,87 @@ function updateButtonStates(loading = false) {
     dom.resetBtn.disabled = loading;
 }
 
+// --- START: NEW TIMER AND MODAL FUNCTIONS ---
+function startTimer(durationInSeconds) {
+    let timer = durationInSeconds;
+    clearInterval(masterTimer);
+    dom.timerDisplay.style.display = 'block';
+    dom.timerDisplay.classList.remove('low-time');
+    masterTimer = setInterval(() => {
+        let minutes = parseInt(timer / 60, 10);
+        let seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        dom.timerDisplay.textContent = minutes + ":" + seconds;
+        if (--timer < 0) { endQuiz("⏰ Time's Up!"); }
+        if (timer < 60) dom.timerDisplay.classList.add('low-time');
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(masterTimer);
+    dom.timerDisplay.style.display = 'none';
+}
+
+function openMockModal() {
+    dom.mockExamModal.style.display = 'flex';
+    setTimeout(() => dom.mockExamModal.classList.add('show'), 10);
+}
+
+function closeMockModal() {
+    dom.mockExamModal.classList.remove('show');
+    setTimeout(() => dom.mockExamModal.style.display = 'none', 300);
+}
+
+// --- FETCH ALL QUESTIONS FUNCTIONS ---
+async function fetchAllQuestions() {
+    showLoader('Preparing All Question Banks...');
+    try {
+        console.log('Starting to fetch questions for sections:', ALL_SECTIONS);
+        
+        const promises = ALL_SECTIONS.map(sectionKey => 
+            fetch(`./questions/${sectionKey}.json`)
+                .then(async res => {
+                    if (!res.ok) throw new Error(`Failed to load ${sectionKey}.json: ${res.statusText}`);
+                    const jsonText = await res.text();
+                    console.log(`Successfully fetched ${sectionKey}.json`);
+                    return security.secureJSONParse(jsonText);
+                })
+                .then(questions => {
+                    if (!Array.isArray(questions) || questions.length === 0) {
+                        throw new Error(`Invalid or empty questions in ${sectionKey}.json`);
+                    }
+                    quizData[sectionKey] = questions.map((q, index) => ({
+                        ...q,
+                        originalId: `${sectionKey}-${index}`,
+                        section: sectionKey
+                    }));
+                    console.log(`Loaded ${quizData[sectionKey].length} questions for ${sectionKey}`);
+                })
+                .catch(error => {
+                    console.error(`Error fetching ${sectionKey}.json:`, error.message);
+                    throw error;
+                })
+        );
+        await Promise.all(promises);
+        quizData.all_mixed = [].concat(...Object.values(quizData).filter(Array.isArray));
+        if (!quizData.all_mixed || quizData.all_mixed.length === 0) {
+            console.error('Failed to populate all_mixed array');
+            throw new Error('No questions available for mixed mode');
+        }
+        console.log(`Created all_mixed with ${quizData.all_mixed.length} questions`);
+        return true;
+    } catch (error) {
+        console.error('Failed to fetch all questions:', error);
+        showErrorMessage(`Error fetching questions: ${error.message}. Please check your question files or network connection.`);
+        setTimeout(() => {
+            console.log('Attempting to load default quantitative section as fallback');
+            loadSection('quantitative');
+        }, 2000);
+        return false;
+    }
+}
+
 // Secure array shuffling with Fisher-Yates algorithm
 function shuffleArray(array) {
     const shuffled = [...array];
@@ -154,63 +253,73 @@ function saveGlobalStats() {
     }
 }
 
-// Enhanced section loading with security checks
-async function loadSection(sectionKey) {
+// --- UPDATED: Replaced original loadSection with a handler and a loader ---
+function handleTabClick(sectionKey) {
+    security.checkRateLimit('section_load');
+    sectionKey = security.sanitizeInput(sectionKey);
+    dom.tabs.forEach((btn, index) => {
+        const isActive = btn.dataset.section === sectionKey;
+        btn.classList.toggle('active', isActive);
+        if (isActive) setTimeout(() => animations.pulseElement(btn, 500), index * 50);
+    });
+    
+    if (sectionKey === 'timed_mock') {
+        openMockModal();
+    } else {
+        loadSection(sectionKey);
+    }
+}
+
+async function loadSection(sectionKey, mockSettings = null) {
+    state.currentSection = sectionKey;
+    if (sectionKey !== 'timed_mock') stopTimer();
+    showLoader(`Loading & Randomizing ${getSectionDisplayName(sectionKey)} Questions...`);
+    
+    const loadTimeout = setTimeout(() => {
+        console.error(`Loading ${sectionKey} timed out`);
+        showErrorMessage(`Loading ${getSectionDisplayName(sectionKey)} timed out. Please try again.`);
+    }, 10000);
+    
     try {
-        // Security check
-        security.checkRateLimit('section_load');
-        
-        // Sanitize section key
-        sectionKey = security.sanitizeInput(sectionKey);
-        
-        // Update active tab with animation
-        dom.tabs.forEach((btn, index) => {
-            const isActive = btn.dataset.section === sectionKey;
-            btn.classList.toggle('active', isActive);
-            
-            if (isActive) {
-                setTimeout(() => {
-                    animations.pulseElement(btn, 500);
-                }, index * 50);
+        if (!quizData[sectionKey] && sectionKey !== 'all_mixed' && sectionKey !== 'timed_mock') {
+            console.log(`Fetching questions for ${sectionKey}...`);
+            try {
+                const filePath = `./questions/${sectionKey}.json`;
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error(`Questions file not found: ${sectionKey}.json`);
+                const jsonText = await response.text();
+                const questions = security.secureJSONParse(jsonText);
+                if (!Array.isArray(questions) || questions.length === 0) {
+                    throw new Error(`Invalid or empty questions in ${sectionKey}.json`);
+                }
+                quizData[sectionKey] = questions.map((q, index) => ({
+                    ...q,
+                    originalId: `${sectionKey}-${index}`,
+                    section: sectionKey
+                }));
+                console.log(`Loaded ${quizData[sectionKey].length} questions for ${sectionKey}`);
+            } catch (error) {
+                console.error(`Error loading section ${sectionKey}:`, error);
+                showErrorMessage(error.message);
+                clearTimeout(loadTimeout);
+                return;
             }
-        });
-        
-        state.currentSection = sectionKey;
-        showLoader(`Loading & Randomizing ${getSectionDisplayName(sectionKey)} Questions...`);
-        
-        if (!quizData[sectionKey]) {
-            // Validate file integrity
-            const filePath = `./questions/${sectionKey}.json`;
-            const isValid = await security.validateFileIntegrity(filePath);
-            
-            if (!isValid) {
-                throw new Error(`Security validation failed for ${sectionKey}.json`);
-            }
-            
-            const response = await fetch(filePath);
-            if (!response.ok) {
-                throw new Error(`Questions file not found: ${sectionKey}.json`);
-            }
-            
-            const jsonText = await response.text();
-            const questions = security.secureJSONParse(jsonText);
-            
-            quizData[sectionKey] = questions.map((q, index) => ({ 
-                ...q, 
-                originalId: `${sectionKey}-${index}`,
-                difficulty: q.difficulty || 'medium',
-                category: q.category || sectionKey,
-                // Sanitize question content
-                question: security.escapeHtml(q.question),
-                options: q.options.map(opt => security.escapeHtml(opt)),
-                explanation: security.escapeHtml(q.explanation)
-            }));
         }
         
-        initializeSection();
+        // --- NEW: Verify quizData[sectionKey] exists before proceeding ---
+        if ((sectionKey === 'all_mixed' || sectionKey === 'timed_mock') && (!quizData.all_mixed || quizData.all_mixed.length === 0)) {
+            console.error(`No questions available for ${sectionKey}`);
+            showErrorMessage(`No questions available for ${getSectionDisplayName(sectionKey)}. Please ensure all section files are loaded.`);
+            clearTimeout(loadTimeout);
+            return;
+        }
+        
+        clearTimeout(loadTimeout);
+        initializeSection(mockSettings);
     } catch (error) {
-        console.error('Error loading section:', error);
-        showErrorMessage(error.message);
+        console.error(`Unexpected error in loadSection for ${sectionKey}:`, error);
+        showErrorMessage(`Unexpected error loading ${getSectionDisplayName(sectionKey)}: ${error.message}`);
+        clearTimeout(loadTimeout);
     }
 }
 
@@ -252,7 +361,7 @@ function getSectionDisplayName(sectionKey) {
 }
 
 // Enhanced section initialization
-function initializeSection() {
+function initializeSection(mockSettings = null) {
     const sectionKey = state.currentSection;
     const sectionTitle = getSectionDisplayName(sectionKey);
     
@@ -266,7 +375,27 @@ function initializeSection() {
     state.currentQuestionIndex = 0;
     
     // Shuffle questions securely
-    state.questionQueue = shuffleArray([...quizData[sectionKey]]);
+    let baseQueue = [];
+    if (sectionKey === 'all_mixed' || sectionKey === 'timed_mock') {
+        baseQueue = [...quizData.all_mixed];
+    } else {
+        baseQueue = [...quizData[sectionKey]];
+    }
+    
+    // --- NEW: Check if baseQueue is valid ---
+    if (!baseQueue || baseQueue.length === 0) {
+        console.error(`No questions available for ${sectionKey} in initializeSection`);
+        showErrorMessage(`No questions available for ${getSectionDisplayName(sectionKey)}. Please check the question file.`);
+        return;
+    }
+    
+    state.questionQueue = shuffleArray(baseQueue);
+    
+    if (mockSettings) {
+        state.questionQueue = state.questionQueue.slice(0, mockSettings.numQuestions);
+        startTimer(mockSettings.duration * 60);
+    }
+    
     state.totalQuestions = state.questionQueue.length;
     
     updateButtonStates(false);
@@ -281,16 +410,24 @@ function displayQuestion() {
     }
 
     let currentQ;
-    // Smart question selection
     if (state.sessionStats.answered > 0 && state.sessionStats.answered % 3 === 0 && state.retestQueue.length > 0) {
         currentQ = state.retestQueue.shift();
     } else {
         currentQ = state.questionQueue.length > 0 ? state.questionQueue[0] : state.retestQueue.shift();
     }
 
+    // --- NEW: Validate currentQ ---
+    if (!currentQ || !currentQ.question || !currentQ.options || !currentQ.correctAnswer) {
+        console.error('Invalid question data:', currentQ);
+        showErrorMessage('Invalid question data. Please check the question file format.');
+        return;
+    }
+
     const attemptCount = state.globalStats.attemptCounts[currentQ.originalId] || 0;
     const attemptFlag = attemptCount > 0 ? 
         `<span class="attempt-flag">${getOrdinal(attemptCount + 1)} attempt</span>` : '';
+    const sectionTag = state.currentSection.includes('mixed') || state.currentSection.includes('mock') ? 
+        `<span class="difficulty-badge easy">${getSectionDisplayName(currentQ.section)}</span>` : '';
 
     const difficultyBadge = currentQ.difficulty ? 
         `<span class="difficulty-badge ${currentQ.difficulty}">${currentQ.difficulty}</span>` : '';
@@ -311,6 +448,7 @@ function displayQuestion() {
                 <div class="question-meta">
                     <span class="question-number">Question ${state.sessionStats.answered + 1}</span>
                     ${difficultyBadge}
+                    ${sectionTag}
                     ${attemptFlag}
                 </div>
                 <div class="question-text">${currentQ.question}</div>
@@ -521,7 +659,7 @@ function getOrdinal(n) {
 function updateUI() {
     updateButtonStates();
 
-    const totalInSection = quizData[state.currentSection]?.length || 0;
+    const totalInSession = state.currentSection.includes('mock') ? state.totalQuestions : (quizData[state.currentSection]?.length || 0);
     const answeredCount = state.sessionStats.answered;
     const correctCount = state.sessionStats.correct;
     const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
@@ -530,7 +668,7 @@ function updateUI() {
     dom.progressText.textContent = `Remaining: ${remaining}`;
     
     // Animate stat updates
-    animateStatUpdate(dom.totalQuestions, totalInSection);
+    animateStatUpdate(dom.totalQuestions, totalInSession);
     animateStatUpdate(dom.answered, answeredCount);
     animateStatUpdate(dom.correct, correctCount);
     animateStatUpdate(dom.accuracy, `${accuracy}%`);
@@ -706,8 +844,7 @@ window.addEventListener('offline', () => {
 // Event listeners with enhanced security
 dom.tabs.forEach(btn => {
     btn.addEventListener('click', () => {
-        const section = security.sanitizeInput(btn.dataset.section);
-        loadSection(section);
+        handleTabClick(btn.dataset.section);
     });
 });
 
@@ -716,26 +853,42 @@ dom.prevBtn.addEventListener('click', goToPrevious);
 dom.resetBtn.addEventListener('click', resetSession);
 
 // Enhanced initialization with security
-window.addEventListener('DOMContentLoaded', () => {
-    // Initialize security
+window.addEventListener('DOMContentLoaded', async () => {
     security.initialize();
-    
-    // Initialize animations
     animations.initialize();
-    
-    // Load global stats securely
     loadGlobalStats();
     
-    // Start with quantitative section
-    loadSection('quantitative');
+    // Pre-fetch all questions for mixed modes
+    const success = await fetchAllQuestions();
     
-    console.log('🚀 Enhanced Quiz Application initialized');
+    if (success) {
+        // Start with the default quantitative section
+        handleTabClick('quantitative');
+    } else {
+        // --- NEW: Fallback if initial fetch fails ---
+        console.warn('Initial fetch failed, attempting to load quantitative section');
+        loadSection('quantitative');
+    }
+    
+    console.log('🚀 Enhanced Quiz Application initialized with Smart Modes');
+});
+
+// new listeners for the modal buttons
+dom.cancelMockBtn.addEventListener('click', closeMockModal);
+dom.startMockBtn.addEventListener('click', () => {
+    const numQuestions = parseInt(dom.numQuestionsInput.value);
+    const duration = parseInt(dom.timeDurationInput.value);
+    if (isNaN(numQuestions) || numQuestions < 5) { alert("Please enter at least 5 questions."); return; }
+    if (isNaN(duration) || duration < 1) { alert("Please enter at least 1 minute."); return; }
+    if (numQuestions > quizData.all_mixed.length) { alert(`Maximum available questions is ${quizData.all_mixed.length}.`); return; }
+    closeMockModal();
+    loadSection('timed_mock', { numQuestions, duration });
 });
 
 // Service Worker registration for offline support
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('/service-worker.js')
             .then(registration => console.log('📱 Service Worker registered'))
             .catch(registrationError => console.log('❌ Service Worker registration failed'));
     });
@@ -802,4 +955,3 @@ document.addEventListener('keydown', function (e) {
         }
     }
 });
-

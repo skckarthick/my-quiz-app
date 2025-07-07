@@ -10,6 +10,7 @@ const ALL_SECTIONS = [
     "domain2",
     "domain3"
 ];
+
 let masterTimer;
 const state = {
     currentSection: "quantitative",
@@ -20,37 +21,53 @@ const state = {
     globalStats: {},
     currentQuestionIndex: 0,
     totalQuestions: 0,
-    isOnline: navigator.onLine
+    isOnline: navigator.onLine,
+    isMockMode: false,
+    mockSettings: null
 };
 
 // Initialize security and animation managers
-const security = new SecurityManager();
-const animations = new AnimationManager();
+let security, animations;
 
-// Enhanced DOM elements with security
-const dom = {
-    timerDisplay: document.getElementById("timer-display"),
-    mockExamModal: document.getElementById("mock-exam-modal"),
-    numQuestionsInput: document.getElementById("num-questions"),
-    timeDurationInput: document.getElementById("time-duration"),
-    startMockBtn: document.getElementById("start-mock-btn"),
-    cancelMockBtn: document.getElementById("cancel-mock-btn"),
-    // --- NEW: Ensure questionArea and other critical DOM elements are defined ---
-    questionArea: document.getElementById("question-area") || document.createElement("div"), // Fallback if not found
-    tabs: document.querySelectorAll(".tab-btn") || [], // Fallback for tabs
-    prevBtn: document.getElementById("prev-btn") || document.createElement("button"), // Fallback
-    nextBtn: document.getElementById("next-btn") || document.createElement("button"), // Fallback
-    resetBtn: document.getElementById("reset-btn") || document.createElement("button"), // Fallback
-    sectionTitle: document.getElementById("section-title") || document.createElement("h2"), // Fallback
-    progressText: document.getElementById("progress-text") || document.createElement("span"), // Fallback
-    totalQuestions: document.getElementById("total-questions") || document.createElement("span"), // Fallback
-    answered: document.getElementById("answered") || document.createElement("span"), // Fallback
-    correct: document.getElementById("correct") || document.createElement("span"), // Fallback
-    accuracy: document.getElementById("accuracy") || document.createElement("span") // Fallback
-};
+// Wait for DOM to be ready before initializing managers
+function initializeManagers() {
+    if (window.SecurityManager && window.AnimationManager) {
+        security = new SecurityManager();
+        animations = new AnimationManager();
+        return true;
+    }
+    return false;
+}
+
+// Enhanced DOM elements with proper fallbacks
+function getDOMElements() {
+    return {
+        timerDisplay: document.getElementById("timer-display"),
+        mockExamModal: document.getElementById("mock-exam-modal"),
+        numQuestionsInput: document.getElementById("num-questions"),
+        timeDurationInput: document.getElementById("time-duration"),
+        startMockBtn: document.getElementById("start-mock-btn"),
+        cancelMockBtn: document.getElementById("cancel-mock-btn"),
+        questionArea: document.getElementById("question-area"),
+        tabs: document.querySelectorAll(".tab-btn"),
+        prevBtn: document.getElementById("prev-btn"),
+        nextBtn: document.getElementById("next-btn"),
+        resetBtn: document.getElementById("reset-btn"),
+        sectionTitle: document.getElementById("section-title"),
+        progressText: document.getElementById("progress-text"),
+        totalQuestions: document.getElementById("total-questions"),
+        answered: document.getElementById("answered"),
+        correct: document.getElementById("correct"),
+        accuracy: document.getElementById("accuracy")
+    };
+}
+
+let dom = {};
 
 // Enhanced sparkle animation with particles
 function triggerSparkle(element) {
+    if (!animations || !element) return;
+    
     const rect = element.getBoundingClientRect();
     const x = rect.left + rect.width / 2;
     const y = rect.top + rect.height / 2;
@@ -85,10 +102,13 @@ function triggerSparkle(element) {
 
 // Enhanced loading with progress indication
 function showLoader(message) {
+    if (!dom.questionArea) return;
+    
+    const safeMessage = security ? security.escapeHtml(message) : message;
     dom.questionArea.innerHTML = `
         <div class="enhanced-loader">
             <div class="loader-spinner"></div>
-            <div class="loader-text">${security.escapeHtml(message)}</div>
+            <div class="loader-text">${safeMessage}</div>
             <div class="loader-progress">
                 <div class="progress-bar">
                     <div class="progress-fill" id="loading-progress"></div>
@@ -116,7 +136,7 @@ function showLoader(message) {
 
 // Enhanced button state management with animations
 function updateButtonStates(loading = false) {
-    const buttons = [dom.prevBtn, dom.nextBtn, dom.resetBtn];
+    const buttons = [dom.prevBtn, dom.nextBtn, dom.resetBtn].filter(btn => btn);
     
     buttons.forEach(btn => {
         if (loading) {
@@ -126,44 +146,66 @@ function updateButtonStates(loading = false) {
         }
     });
     
-    dom.prevBtn.disabled = loading || state.history.length === 0;
-    dom.nextBtn.disabled = loading || (state.questionQueue.length === 0 && state.retestQueue.length === 0) || !document.querySelector('.option.disabled');
-    dom.resetBtn.disabled = loading;
+    if (dom.prevBtn) dom.prevBtn.disabled = loading || state.history.length === 0;
+    if (dom.nextBtn) dom.nextBtn.disabled = loading || (state.questionQueue.length === 0 && state.retestQueue.length === 0) || !document.querySelector('.option.disabled');
+    if (dom.resetBtn) dom.resetBtn.disabled = loading;
 }
 
-// --- START: NEW TIMER AND MODAL FUNCTIONS ---
+// Timer functions
 function startTimer(durationInSeconds) {
     let timer = durationInSeconds;
     clearInterval(masterTimer);
-    dom.timerDisplay.style.display = 'block';
-    dom.timerDisplay.classList.remove('low-time');
-    masterTimer = setInterval(() => {
-        let minutes = parseInt(timer / 60, 10);
-        let seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        dom.timerDisplay.textContent = minutes + ":" + seconds;
-        if (--timer < 0) { endQuiz("⏰ Time's Up!"); }
-        if (timer < 60) dom.timerDisplay.classList.add('low-time');
-    }, 1000);
+    
+    if (dom.timerDisplay) {
+        dom.timerDisplay.style.display = 'block';
+        dom.timerDisplay.classList.remove('low-time');
+        
+        masterTimer = setInterval(() => {
+            let minutes = parseInt(timer / 60, 10);
+            let seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            dom.timerDisplay.textContent = minutes + ":" + seconds;
+            
+            if (--timer < 0) {
+                endQuiz("⏰ Time's Up!");
+            }
+            if (timer < 60) {
+                dom.timerDisplay.classList.add('low-time');
+            }
+        }, 1000);
+    }
 }
 
 function stopTimer() {
     clearInterval(masterTimer);
-    dom.timerDisplay.style.display = 'none';
+    if (dom.timerDisplay) {
+        dom.timerDisplay.style.display = 'none';
+    }
 }
 
+function endQuiz(message) {
+    stopTimer();
+    state.isMockMode = false;
+    displayCompletionMessage(message);
+}
+
+// Modal functions
 function openMockModal() {
-    dom.mockExamModal.style.display = 'flex';
-    setTimeout(() => dom.mockExamModal.classList.add('show'), 10);
+    if (dom.mockExamModal) {
+        dom.mockExamModal.style.display = 'flex';
+        setTimeout(() => dom.mockExamModal.classList.add('show'), 10);
+    }
 }
 
 function closeMockModal() {
-    dom.mockExamModal.classList.remove('show');
-    setTimeout(() => dom.mockExamModal.style.display = 'none', 300);
+    if (dom.mockExamModal) {
+        dom.mockExamModal.classList.remove('show');
+        setTimeout(() => dom.mockExamModal.style.display = 'none', 300);
+    }
 }
 
-// --- FETCH ALL QUESTIONS FUNCTIONS ---
+// Fetch all questions functions
 async function fetchAllQuestions() {
     showLoader('Preparing All Question Banks...');
     try {
@@ -175,39 +217,66 @@ async function fetchAllQuestions() {
                     if (!res.ok) throw new Error(`Failed to load ${sectionKey}.json: ${res.statusText}`);
                     const jsonText = await res.text();
                     console.log(`Successfully fetched ${sectionKey}.json`);
-                    return security.secureJSONParse(jsonText);
+                    return security ? security.secureJSONParse(jsonText) : JSON.parse(jsonText);
                 })
                 .then(questions => {
                     if (!Array.isArray(questions) || questions.length === 0) {
                         throw new Error(`Invalid or empty questions in ${sectionKey}.json`);
                     }
-                    quizData[sectionKey] = questions.map((q, index) => ({
+                    
+                    // Validate question structure
+                    const validQuestions = questions.filter(q => 
+                        q && 
+                        typeof q.question === 'string' && 
+                        Array.isArray(q.options) && 
+                        q.options.length >= 2 &&
+                        typeof q.correctAnswer === 'number' &&
+                        q.correctAnswer >= 0 &&
+                        q.correctAnswer < q.options.length &&
+                        typeof q.explanation === 'string'
+                    );
+                    
+                    if (validQuestions.length === 0) {
+                        throw new Error(`No valid questions found in ${sectionKey}.json`);
+                    }
+                    
+                    quizData[sectionKey] = validQuestions.map((q, index) => ({
                         ...q,
                         originalId: `${sectionKey}-${index}`,
-                        section: sectionKey
+                        section: sectionKey,
+                        difficulty: q.difficulty || 'medium'
                     }));
-                    console.log(`Loaded ${quizData[sectionKey].length} questions for ${sectionKey}`);
+                    
+                    console.log(`Loaded ${quizData[sectionKey].length} valid questions for ${sectionKey}`);
                 })
                 .catch(error => {
                     console.error(`Error fetching ${sectionKey}.json:`, error.message);
-                    throw error;
+                    // Don't throw here, just log the error and continue with other sections
+                    quizData[sectionKey] = [];
                 })
         );
+        
         await Promise.all(promises);
-        quizData.all_mixed = [].concat(...Object.values(quizData).filter(Array.isArray));
-        if (!quizData.all_mixed || quizData.all_mixed.length === 0) {
-            console.error('Failed to populate all_mixed array');
-            throw new Error('No questions available for mixed mode');
+        
+        // Create mixed array from all loaded questions
+        const allQuestions = [];
+        Object.values(quizData).forEach(sectionQuestions => {
+            if (Array.isArray(sectionQuestions)) {
+                allQuestions.push(...sectionQuestions);
+            }
+        });
+        
+        quizData.all_mixed = allQuestions;
+        
+        if (allQuestions.length === 0) {
+            throw new Error('No questions available from any section');
         }
+        
         console.log(`Created all_mixed with ${quizData.all_mixed.length} questions`);
         return true;
     } catch (error) {
         console.error('Failed to fetch all questions:', error);
         showErrorMessage(`Error fetching questions: ${error.message}. Please check your question files or network connection.`);
-        setTimeout(() => {
-            console.log('Attempting to load default quantitative section as fallback');
-            loadSection('quantitative');
-        }, 2000);
         return false;
     }
 }
@@ -225,7 +294,8 @@ function shuffleArray(array) {
 // Enhanced local storage with security
 function loadGlobalStats() {
     try {
-        const stats = security.secureGetItem('quizGlobalStats');
+        const stats = security ? security.secureGetItem('quizGlobalStats') : 
+                     JSON.parse(localStorage.getItem('quizGlobalStats') || 'null');
         state.globalStats = stats || { 
             attemptCounts: {},
             sectionProgress: {},
@@ -247,20 +317,34 @@ function saveGlobalStats() {
             Math.round((state.sessionStats.correct / state.sessionStats.answered) * 100) : 0;
         state.globalStats.bestAccuracy = Math.max(state.globalStats.bestAccuracy || 0, currentAccuracy);
         
-        security.secureSetItem('quizGlobalStats', state.globalStats);
+        if (security) {
+            security.secureSetItem('quizGlobalStats', state.globalStats);
+        } else {
+            localStorage.setItem('quizGlobalStats', JSON.stringify(state.globalStats));
+        }
     } catch (error) {
         console.warn('Failed to save global stats:', error);
     }
 }
 
-// --- UPDATED: Replaced original loadSection with a handler and a loader ---
+// Tab click handler
 function handleTabClick(sectionKey) {
-    security.checkRateLimit('section_load');
-    sectionKey = security.sanitizeInput(sectionKey);
+    if (security) {
+        try {
+            security.checkRateLimit('section_load');
+            sectionKey = security.sanitizeInput(sectionKey);
+        } catch (error) {
+            console.warn('Security check failed:', error);
+        }
+    }
+    
+    // Update active tab
     dom.tabs.forEach((btn, index) => {
         const isActive = btn.dataset.section === sectionKey;
         btn.classList.toggle('active', isActive);
-        if (isActive) setTimeout(() => animations.pulseElement(btn, 500), index * 50);
+        if (isActive && animations) {
+            setTimeout(() => animations.pulseElement(btn, 500), index * 50);
+        }
     });
     
     if (sectionKey === 'timed_mock') {
@@ -270,9 +354,16 @@ function handleTabClick(sectionKey) {
     }
 }
 
+// Load section function
 async function loadSection(sectionKey, mockSettings = null) {
     state.currentSection = sectionKey;
-    if (sectionKey !== 'timed_mock') stopTimer();
+    state.isMockMode = !!mockSettings;
+    state.mockSettings = mockSettings;
+    
+    if (sectionKey !== 'timed_mock') {
+        stopTimer();
+    }
+    
     showLoader(`Loading & Randomizing ${getSectionDisplayName(sectionKey)} Questions...`);
     
     const loadTimeout = setTimeout(() => {
@@ -281,32 +372,49 @@ async function loadSection(sectionKey, mockSettings = null) {
     }, 10000);
     
     try {
+        // Check if we need to load individual section
         if (!quizData[sectionKey] && sectionKey !== 'all_mixed' && sectionKey !== 'timed_mock') {
             console.log(`Fetching questions for ${sectionKey}...`);
-            try {
-                const filePath = `./questions/${sectionKey}.json`;
-                const response = await fetch(filePath);
-                if (!response.ok) throw new Error(`Questions file not found: ${sectionKey}.json`);
-                const jsonText = await response.text();
-                const questions = security.secureJSONParse(jsonText);
-                if (!Array.isArray(questions) || questions.length === 0) {
-                    throw new Error(`Invalid or empty questions in ${sectionKey}.json`);
-                }
-                quizData[sectionKey] = questions.map((q, index) => ({
-                    ...q,
-                    originalId: `${sectionKey}-${index}`,
-                    section: sectionKey
-                }));
-                console.log(`Loaded ${quizData[sectionKey].length} questions for ${sectionKey}`);
-            } catch (error) {
-                console.error(`Error loading section ${sectionKey}:`, error);
-                showErrorMessage(error.message);
-                clearTimeout(loadTimeout);
-                return;
+            
+            const response = await fetch(`./questions/${sectionKey}.json`);
+            if (!response.ok) {
+                throw new Error(`Questions file not found: ${sectionKey}.json`);
             }
+            
+            const jsonText = await response.text();
+            const questions = security ? security.secureJSONParse(jsonText) : JSON.parse(jsonText);
+            
+            if (!Array.isArray(questions) || questions.length === 0) {
+                throw new Error(`Invalid or empty questions in ${sectionKey}.json`);
+            }
+            
+            // Validate questions
+            const validQuestions = questions.filter(q => 
+                q && 
+                typeof q.question === 'string' && 
+                Array.isArray(q.options) && 
+                q.options.length >= 2 &&
+                typeof q.correctAnswer === 'number' &&
+                q.correctAnswer >= 0 &&
+                q.correctAnswer < q.options.length &&
+                typeof q.explanation === 'string'
+            );
+            
+            if (validQuestions.length === 0) {
+                throw new Error(`No valid questions found in ${sectionKey}.json`);
+            }
+            
+            quizData[sectionKey] = validQuestions.map((q, index) => ({
+                ...q,
+                originalId: `${sectionKey}-${index}`,
+                section: sectionKey,
+                difficulty: q.difficulty || 'medium'
+            }));
+            
+            console.log(`Loaded ${quizData[sectionKey].length} questions for ${sectionKey}`);
         }
         
-        // --- NEW: Verify quizData[sectionKey] exists before proceeding ---
+        // Check if we have questions for mixed modes
         if ((sectionKey === 'all_mixed' || sectionKey === 'timed_mock') && (!quizData.all_mixed || quizData.all_mixed.length === 0)) {
             console.error(`No questions available for ${sectionKey}`);
             showErrorMessage(`No questions available for ${getSectionDisplayName(sectionKey)}. Please ensure all section files are loaded.`);
@@ -317,19 +425,22 @@ async function loadSection(sectionKey, mockSettings = null) {
         clearTimeout(loadTimeout);
         initializeSection(mockSettings);
     } catch (error) {
-        console.error(`Unexpected error in loadSection for ${sectionKey}:`, error);
-        showErrorMessage(`Unexpected error loading ${getSectionDisplayName(sectionKey)}: ${error.message}`);
+        console.error(`Error in loadSection for ${sectionKey}:`, error);
+        showErrorMessage(`Error loading ${getSectionDisplayName(sectionKey)}: ${error.message}`);
         clearTimeout(loadTimeout);
     }
 }
 
 // Enhanced error handling
 function showErrorMessage(message) {
+    if (!dom.questionArea) return;
+    
+    const safeMessage = security ? security.escapeHtml(message) : message;
     dom.questionArea.innerHTML = `
         <div class="error-container">
             <div class="error-icon">⚠️</div>
             <h3>Oops! Something went wrong</h3>
-            <p class="error-message">${security.escapeHtml(message)}</p>
+            <p class="error-message">${safeMessage}</p>
             <div class="error-actions">
                 <button class="nav-btn primary" onclick="location.reload()">
                     <span>🔄</span>
@@ -355,7 +466,9 @@ function getSectionDisplayName(sectionKey) {
         current_affairs: 'Current Affairs',
         domain1: 'Domain 1',
         domain2: 'Domain 2',
-        domain3: 'Domain 3'
+        domain3: 'Domain 3',
+        all_mixed: 'All Mixed',
+        timed_mock: 'Timed Mock'
     };
     return sectionNames[sectionKey] || sectionKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
@@ -366,7 +479,11 @@ function initializeSection(mockSettings = null) {
     const sectionTitle = getSectionDisplayName(sectionKey);
     
     // Animate title change
-    animations.typeText(dom.sectionTitle, sectionTitle, 30);
+    if (animations && dom.sectionTitle) {
+        animations.typeText(dom.sectionTitle, sectionTitle, 30);
+    } else if (dom.sectionTitle) {
+        dom.sectionTitle.textContent = sectionTitle;
+    }
     
     // Reset session stats
     state.sessionStats = { answered: 0, correct: 0 };
@@ -374,15 +491,15 @@ function initializeSection(mockSettings = null) {
     state.history = [];
     state.currentQuestionIndex = 0;
     
-    // Shuffle questions securely
+    // Get base questions
     let baseQueue = [];
     if (sectionKey === 'all_mixed' || sectionKey === 'timed_mock') {
-        baseQueue = [...quizData.all_mixed];
+        baseQueue = [...(quizData.all_mixed || [])];
     } else {
-        baseQueue = [...quizData[sectionKey]];
+        baseQueue = [...(quizData[sectionKey] || [])];
     }
     
-    // --- NEW: Check if baseQueue is valid ---
+    // Check if baseQueue is valid
     if (!baseQueue || baseQueue.length === 0) {
         console.error(`No questions available for ${sectionKey} in initializeSection`);
         showErrorMessage(`No questions available for ${getSectionDisplayName(sectionKey)}. Please check the question file.`);
@@ -391,6 +508,7 @@ function initializeSection(mockSettings = null) {
     
     state.questionQueue = shuffleArray(baseQueue);
     
+    // Handle mock settings
     if (mockSettings) {
         state.questionQueue = state.questionQueue.slice(0, mockSettings.numQuestions);
         startTimer(mockSettings.duration * 60);
@@ -416,8 +534,8 @@ function displayQuestion() {
         currentQ = state.questionQueue.length > 0 ? state.questionQueue[0] : state.retestQueue.shift();
     }
 
-    // --- NEW: Validate currentQ ---
-    if (!currentQ || !currentQ.question || !currentQ.options || !currentQ.correctAnswer) {
+    // Validate currentQ
+    if (!currentQ || !currentQ.question || !currentQ.options || typeof currentQ.correctAnswer !== 'number') {
         console.error('Invalid question data:', currentQ);
         showErrorMessage('Invalid question data. Please check the question file format.');
         return;
@@ -426,7 +544,8 @@ function displayQuestion() {
     const attemptCount = state.globalStats.attemptCounts[currentQ.originalId] || 0;
     const attemptFlag = attemptCount > 0 ? 
         `<span class="attempt-flag">${getOrdinal(attemptCount + 1)} attempt</span>` : '';
-    const sectionTag = state.currentSection.includes('mixed') || state.currentSection.includes('mock') ? 
+    
+    const sectionTag = (state.currentSection.includes('mixed') || state.currentSection.includes('mock')) && currentQ.section ? 
         `<span class="difficulty-badge easy">${getSectionDisplayName(currentQ.section)}</span>` : '';
 
     const difficultyBadge = currentQ.difficulty ? 
@@ -442,121 +561,131 @@ function displayQuestion() {
         </div>
     `).join('');
     
-    dom.questionArea.innerHTML = `
-        <div class="question-container enhanced-question">
-            <div class="question-header">
-                <div class="question-meta">
-                    <span class="question-number">Question ${state.sessionStats.answered + 1}</span>
-                    ${difficultyBadge}
-                    ${sectionTag}
-                    ${attemptFlag}
+    if (dom.questionArea) {
+        dom.questionArea.innerHTML = `
+            <div class="question-container enhanced-question">
+                <div class="question-header">
+                    <div class="question-meta">
+                        <span class="question-number">Question ${state.sessionStats.answered + 1}</span>
+                        ${difficultyBadge}
+                        ${sectionTag}
+                        ${attemptFlag}
+                    </div>
+                    <div class="question-text">${currentQ.question}</div>
                 </div>
-                <div class="question-text">${currentQ.question}</div>
+                <div class="options-container enhanced-options" role="radiogroup" aria-label="Answer options">
+                    ${optionsHTML}
+                </div>
+                <div class="explanation enhanced-explanation" role="region" aria-label="Explanation"></div>
             </div>
-            <div class="options-container enhanced-options" role="radiogroup" aria-label="Answer options">
-                ${optionsHTML}
-            </div>
-            <div class="explanation enhanced-explanation" role="region" aria-label="Explanation"></div>
-        </div>
-    `;
+        `;
 
-    // Add enhanced event listeners
-    document.querySelectorAll('.enhanced-option').forEach((opt, index) => {
-        opt.addEventListener('click', (e) => {
-            animations.createRipple(opt, e);
-            selectOption(index, currentQ);
-        });
-        
-        opt.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
+        // Add enhanced event listeners
+        document.querySelectorAll('.enhanced-option').forEach((opt, index) => {
+            opt.addEventListener('click', (e) => {
+                if (animations) animations.createRipple(opt, e);
                 selectOption(index, currentQ);
-            }
+            });
+            
+            opt.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    selectOption(index, currentQ);
+                }
+            });
+            
+            // Add hover effects
+            opt.addEventListener('mouseenter', () => {
+                if (!opt.classList.contains('disabled') && animations) {
+                    animations.pulseElement(opt, 200);
+                }
+            });
         });
-        
-        // Add hover effects
-        opt.addEventListener('mouseenter', () => {
-            if (!opt.classList.contains('disabled')) {
-                animations.pulseElement(opt, 200);
-            }
-        });
-    });
 
-    // Animate question appearance
-    setTimeout(() => {
-        document.querySelector('.enhanced-question').classList.add('animate-in');
-    }, 100);
+        // Animate question appearance
+        setTimeout(() => {
+            const questionEl = document.querySelector('.enhanced-question');
+            if (questionEl) questionEl.classList.add('animate-in');
+        }, 100);
+    }
 
     updateUI();
 }
 
 // Enhanced completion message with celebration
-function displayCompletionMessage() {
+function displayCompletionMessage(customMessage = null) {
     const accuracy = state.sessionStats.answered > 0 ? 
         Math.round((state.sessionStats.correct / state.sessionStats.answered) * 100) : 0;
     
-    let message = "🎉 Session Complete! 🎉";
+    let message = customMessage || "🎉 Session Complete! 🎉";
     let encouragement = "Well done!";
     let celebrationLevel = 'basic';
     
-    if (accuracy >= 90) {
-        message = "🏆 Outstanding Performance! 🏆";
-        encouragement = "You're a quiz master!";
-        celebrationLevel = 'epic';
-        // Trigger epic celebration
-        setTimeout(() => animations.createCelebrationParticles(window.innerWidth / 2, window.innerHeight / 2, 100), 500);
-    } else if (accuracy >= 75) {
-        message = "⭐ Great Job! ⭐";
-        encouragement = "Excellent work!";
-        celebrationLevel = 'great';
-    } else if (accuracy >= 60) {
-        message = "👍 Good Effort! 👍";
-        encouragement = "Keep practicing!";
-        celebrationLevel = 'good';
-    } else {
-        message = "📚 Learning in Progress 📚";
-        encouragement = "Every attempt makes you stronger!";
-        celebrationLevel = 'encouraging';
+    if (!customMessage) {
+        if (accuracy >= 90) {
+            message = "🏆 Outstanding Performance! 🏆";
+            encouragement = "You're a quiz master!";
+            celebrationLevel = 'epic';
+            // Trigger epic celebration
+            if (animations) {
+                setTimeout(() => animations.createCelebrationParticles(window.innerWidth / 2, window.innerHeight / 2, 100), 500);
+            }
+        } else if (accuracy >= 75) {
+            message = "⭐ Great Job! ⭐";
+            encouragement = "Excellent work!";
+            celebrationLevel = 'great';
+        } else if (accuracy >= 60) {
+            message = "👍 Good Effort! 👍";
+            encouragement = "Keep practicing!";
+            celebrationLevel = 'good';
+        } else {
+            message = "📚 Learning in Progress 📚";
+            encouragement = "Every attempt makes you stronger!";
+            celebrationLevel = 'encouraging';
+        }
     }
     
-    dom.questionArea.innerHTML = `
-        <div class="completion-message ${celebrationLevel}">
-            <div class="completion-icon">${accuracy >= 90 ? '🏆' : accuracy >= 75 ? '⭐' : accuracy >= 60 ? '👍' : '📚'}</div>
-            <h3 class="completion-title">${message}</h3>
-            <p class="completion-subtitle">${encouragement}</p>
-            <div class="completion-stats">
-                <div class="completion-stat">
-                    <span class="stat-number">${state.sessionStats.correct}</span>
-                    <span class="stat-label">Correct</span>
+    if (dom.questionArea) {
+        dom.questionArea.innerHTML = `
+            <div class="completion-message ${celebrationLevel}">
+                <div class="completion-icon">${accuracy >= 90 ? '🏆' : accuracy >= 75 ? '⭐' : accuracy >= 60 ? '👍' : '📚'}</div>
+                <h3 class="completion-title">${message}</h3>
+                <p class="completion-subtitle">${encouragement}</p>
+                <div class="completion-stats">
+                    <div class="completion-stat">
+                        <span class="stat-number">${state.sessionStats.correct}</span>
+                        <span class="stat-label">Correct</span>
+                    </div>
+                    <div class="completion-stat">
+                        <span class="stat-number">${state.sessionStats.answered}</span>
+                        <span class="stat-label">Total</span>
+                    </div>
+                    <div class="completion-stat">
+                        <span class="stat-number">${accuracy}%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
                 </div>
-                <div class="completion-stat">
-                    <span class="stat-number">${state.sessionStats.answered}</span>
-                    <span class="stat-label">Total</span>
-                </div>
-                <div class="completion-stat">
-                    <span class="stat-number">${accuracy}%</span>
-                    <span class="stat-label">Accuracy</span>
+                <div class="completion-actions">
+                    <button class="nav-btn primary" onclick="initializeSection(${state.mockSettings ? JSON.stringify(state.mockSettings) : 'null'})">
+                        <span>🔄</span>
+                        <span>Start New Session</span>
+                    </button>
+                    <button class="nav-btn secondary" onclick="showDetailedStats()">
+                        <span>📊</span>
+                        <span>View Stats</span>
+                    </button>
                 </div>
             </div>
-            <div class="completion-actions">
-                <button class="nav-btn primary" onclick="initializeSection()">
-                    <span>🔄</span>
-                    <span>Start New Session</span>
-                </button>
-                <button class="nav-btn secondary" onclick="showDetailedStats()">
-                    <span>📊</span>
-                    <span>View Stats</span>
-                </button>
-            </div>
-        </div>
-    `;
+        `;
+    }
     
-    dom.nextBtn.disabled = true;
+    if (dom.nextBtn) dom.nextBtn.disabled = true;
     saveGlobalStats();
     
     // Animate completion message
     setTimeout(() => {
-        document.querySelector('.completion-message').classList.add('animate-in');
+        const completionEl = document.querySelector('.completion-message');
+        if (completionEl) completionEl.classList.add('animate-in');
     }, 100);
 }
 
@@ -590,12 +719,13 @@ function selectOption(selectedIndex, currentQ) {
         
         if (index === selectedIndex) {
             opt.classList.add('selected');
-            animations.pulseElement(opt, 300);
+            if (animations) animations.pulseElement(opt, 300);
         }
         
         if (index === currentQ.correctAnswer) {
             opt.classList.add('correct');
-            opt.querySelector('.feedback-icon').textContent = '✓';
+            const feedbackIcon = opt.querySelector('.feedback-icon');
+            if (feedbackIcon) feedbackIcon.textContent = '✓';
             opt.setAttribute('aria-label', opt.getAttribute('aria-label') + ' - Correct answer');
             
             // Animate correct answer
@@ -605,25 +735,28 @@ function selectOption(selectedIndex, currentQ) {
             }, 100);
         } else if (index === selectedIndex) {
             opt.classList.add('incorrect');
-            opt.querySelector('.feedback-icon').textContent = '✗';
+            const feedbackIcon = opt.querySelector('.feedback-icon');
+            if (feedbackIcon) feedbackIcon.textContent = '✗';
             opt.setAttribute('aria-label', opt.getAttribute('aria-label') + ' - Incorrect answer');
             
             // Shake incorrect answer
-            animations.shakeElement(opt);
+            if (animations) animations.shakeElement(opt);
         }
     });
     
     // Show enhanced explanation
     const explanationEl = document.querySelector('.explanation');
-    explanationEl.innerHTML = `
-        <div class="explanation-header">
-            <span class="explanation-icon">💡</span>
-            <span class="explanation-title">Explanation</span>
-        </div>
-        <div class="explanation-content">${currentQ.explanation}</div>
-    `;
-    explanationEl.classList.add('show');
-    explanationEl.setAttribute('aria-expanded', 'true');
+    if (explanationEl) {
+        explanationEl.innerHTML = `
+            <div class="explanation-header">
+                <span class="explanation-icon">💡</span>
+                <span class="explanation-title">Explanation</span>
+            </div>
+            <div class="explanation-content">${currentQ.explanation}</div>
+        `;
+        explanationEl.classList.add('show');
+        explanationEl.setAttribute('aria-expanded', 'true');
+    }
     
     // Trigger celebration for correct answers
     if (isCorrect) {
@@ -644,7 +777,7 @@ function selectOption(selectedIndex, currentQ) {
         state.history.push(currentQ);
     }
 
-    dom.nextBtn.disabled = false;
+    if (dom.nextBtn) dom.nextBtn.disabled = false;
     updateUI();
 }
 
@@ -659,13 +792,13 @@ function getOrdinal(n) {
 function updateUI() {
     updateButtonStates();
 
-    const totalInSession = state.currentSection.includes('mock') ? state.totalQuestions : (quizData[state.currentSection]?.length || 0);
+    const totalInSession = state.isMockMode ? state.totalQuestions : (quizData[state.currentSection]?.length || 0);
     const answeredCount = state.sessionStats.answered;
     const correctCount = state.sessionStats.correct;
     const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
     
     const remaining = state.questionQueue.length + state.retestQueue.length;
-    dom.progressText.textContent = `Remaining: ${remaining}`;
+    if (dom.progressText) dom.progressText.textContent = `Remaining: ${remaining}`;
     
     // Animate stat updates
     animateStatUpdate(dom.totalQuestions, totalInSession);
@@ -676,6 +809,8 @@ function updateUI() {
 
 // Animate stat updates
 function animateStatUpdate(element, newValue) {
+    if (!element) return;
+    
     const currentValue = element.textContent;
     if (currentValue !== newValue.toString()) {
         element.style.transform = 'scale(1.1)';
@@ -695,20 +830,26 @@ function goToPrevious() {
         const lastQuestion = state.history.pop();
         state.questionQueue.unshift(lastQuestion);
         
-        animations.morphButton(dom.prevBtn, 'Loading...', 200);
+        if (animations && dom.prevBtn) {
+            animations.morphButton(dom.prevBtn, 'Loading...', 200);
+        }
         setTimeout(() => displayQuestion(), 200);
     }
 }
 
 function nextQuestion() {
-    animations.morphButton(dom.nextBtn, 'Loading...', 200);
+    if (animations && dom.nextBtn) {
+        animations.morphButton(dom.nextBtn, 'Loading...', 200);
+    }
     setTimeout(() => displayQuestion(), 200);
 }
 
 function resetSession() {
     if (confirm('Are you sure you want to reset the current session? All progress will be lost.')) {
-        animations.morphButton(dom.resetBtn, 'Resetting...', 300);
-        setTimeout(() => initializeSection(), 300);
+        if (animations && dom.resetBtn) {
+            animations.morphButton(dom.resetBtn, 'Resetting...', 300);
+        }
+        setTimeout(() => initializeSection(state.mockSettings), 300);
     }
 }
 
@@ -798,16 +939,16 @@ document.addEventListener('keydown', (e) => {
     
     switch (e.key) {
         case 'ArrowLeft':
-            if (!dom.prevBtn.disabled) goToPrevious();
+            if (dom.prevBtn && !dom.prevBtn.disabled) goToPrevious();
             break;
         case 'ArrowRight':
         case ' ':
-            if (!dom.nextBtn.disabled) nextQuestion();
+            if (dom.nextBtn && !dom.nextBtn.disabled) nextQuestion();
             e.preventDefault();
             break;
         case 'r':
         case 'R':
-            if (e.ctrlKey && !dom.resetBtn.disabled) {
+            if (e.ctrlKey && dom.resetBtn && !dom.resetBtn.disabled) {
                 e.preventDefault();
                 resetSession();
             }
@@ -826,6 +967,15 @@ document.addEventListener('keydown', (e) => {
         case 'Escape':
             // Close any open modals
             document.querySelectorAll('.stats-modal').forEach(modal => modal.remove());
+            closeMockModal();
+            break;
+        case 'Enter':
+            // Allow Enter key to trigger next question when ready
+            const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+            if (!isTyping && dom.nextBtn && !dom.nextBtn.disabled && document.querySelector('.option.disabled')) {
+                dom.nextBtn.click();
+                e.preventDefault();
+            }
             break;
     }
 });
@@ -841,22 +991,63 @@ window.addEventListener('offline', () => {
     console.log('📡 Working offline');
 });
 
-// Event listeners with enhanced security
-dom.tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-        handleTabClick(btn.dataset.section);
-    });
-});
-
-dom.nextBtn.addEventListener('click', nextQuestion);
-dom.prevBtn.addEventListener('click', goToPrevious);
-dom.resetBtn.addEventListener('click', resetSession);
-
 // Enhanced initialization with security
 window.addEventListener('DOMContentLoaded', async () => {
-    security.initialize();
-    animations.initialize();
+    // Initialize DOM elements
+    dom = getDOMElements();
+    
+    // Initialize managers
+    const managersReady = initializeManagers();
+    if (managersReady) {
+        security.initialize();
+        animations.initialize();
+    }
+    
+    // Load global stats
     loadGlobalStats();
+    
+    // Set up event listeners
+    if (dom.tabs) {
+        dom.tabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                handleTabClick(btn.dataset.section);
+            });
+        });
+    }
+
+    if (dom.nextBtn) dom.nextBtn.addEventListener('click', nextQuestion);
+    if (dom.prevBtn) dom.prevBtn.addEventListener('click', goToPrevious);
+    if (dom.resetBtn) dom.resetBtn.addEventListener('click', resetSession);
+    
+    // Modal event listeners
+    if (dom.cancelMockBtn) {
+        dom.cancelMockBtn.addEventListener('click', closeMockModal);
+    }
+    
+    if (dom.startMockBtn) {
+        dom.startMockBtn.addEventListener('click', () => {
+            const numQuestions = parseInt(dom.numQuestionsInput.value);
+            const duration = parseInt(dom.timeDurationInput.value);
+            
+            if (isNaN(numQuestions) || numQuestions < 5) {
+                alert("Please enter at least 5 questions.");
+                return;
+            }
+            if (isNaN(duration) || duration < 1) {
+                alert("Please enter at least 1 minute.");
+                return;
+            }
+            
+            const maxQuestions = quizData.all_mixed ? quizData.all_mixed.length : 0;
+            if (numQuestions > maxQuestions) {
+                alert(`Maximum available questions is ${maxQuestions}.`);
+                return;
+            }
+            
+            closeMockModal();
+            loadSection('timed_mock', { numQuestions, duration });
+        });
+    }
     
     // Pre-fetch all questions for mixed modes
     const success = await fetchAllQuestions();
@@ -865,30 +1056,18 @@ window.addEventListener('DOMContentLoaded', async () => {
         // Start with the default quantitative section
         handleTabClick('quantitative');
     } else {
-        // --- NEW: Fallback if initial fetch fails ---
+        // Fallback if initial fetch fails
         console.warn('Initial fetch failed, attempting to load quantitative section');
         loadSection('quantitative');
     }
     
-    console.log('🚀 Enhanced Quiz Application initialized with Smart Modes');
-});
-
-// new listeners for the modal buttons
-dom.cancelMockBtn.addEventListener('click', closeMockModal);
-dom.startMockBtn.addEventListener('click', () => {
-    const numQuestions = parseInt(dom.numQuestionsInput.value);
-    const duration = parseInt(dom.timeDurationInput.value);
-    if (isNaN(numQuestions) || numQuestions < 5) { alert("Please enter at least 5 questions."); return; }
-    if (isNaN(duration) || duration < 1) { alert("Please enter at least 1 minute."); return; }
-    if (numQuestions > quizData.all_mixed.length) { alert(`Maximum available questions is ${quizData.all_mixed.length}.`); return; }
-    closeMockModal();
-    loadSection('timed_mock', { numQuestions, duration });
+    console.log('🚀 Enhanced Quiz Application initialized');
 });
 
 // Service Worker registration for offline support
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('/sw.js')
             .then(registration => console.log('📱 Service Worker registered'))
             .catch(registrationError => console.log('❌ Service Worker registration failed'));
     });
@@ -937,21 +1116,3 @@ document.addEventListener('selectionchange', () => {
     }, 2000); // Adjust delay here (2000ms is ideal)
 });
 
-// ✅ Enter key triggers next question when ready (after answering)
-document.addEventListener('keydown', function (e) {
-    // Allow Enter key even when an option is focused
-    const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
-    if (isTyping) return;
-
-    // Check if Enter is pressed
-    if (e.key === 'Enter') {
-        const nextBtn = document.getElementById('next-btn');
-        const anyOptionDisabled = document.querySelector('.option.disabled');
-
-        // Only go to next if button is enabled AND answer was selected
-        if (nextBtn && !nextBtn.disabled && anyOptionDisabled) {
-            nextBtn.click();
-            e.preventDefault();
-        }
-    }
-});

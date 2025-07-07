@@ -273,49 +273,49 @@
     "question": "PFMS is designed, developed, owned and implemented by?",
     "options": ["Department of Financial Services","Institute of Govt Accounts & Finance","Controller General of Accounts","NPCI"],
     "correctAnswer": 2,
-    "explanation": "PFMS is implemented by the Controller General of Accounts under the Department of Expenditure :contentReference[oaicite:1]{index=1}."
+    "explanation": "PFMS is implemented by the Controller General of Accounts under the Department of Expenditure"
   },
   {
     "question": "PFMS was earlier known as?",
     "options": ["Plan Financial Monitoring System","Central Plan Schemes Monitoring System","Central Plan Scheme Management System","Core Beneficiary Monitoring System"],
     "correctAnswer": 1,
-    "explanation": "PFMS began in 2009 as the 'Central Plan Schemes Monitoring System' :contentReference[oaicite:2]{index=2}."
+    "explanation": "PFMS began in 2009 as the 'Central Plan Schemes Monitoring System'"
   },
   {
     "question": "PFMS facilitates:",
     "options": ["Real-time fund tracking","Payment automation","Accounting integration","All of the above"],
     "correctAnswer": 3,
-    "explanation": "PFMS is used for fund tracking, payments, accounting and reporting :contentReference[oaicite:3]{index=3}."
+    "explanation": "PFMS is used for fund tracking, payments, accounting and reporting "
   },
   {
     "question": "PFMS integrates with which banking systems?",
     "options": ["Core Banking Systems","NPCI only","RBI systems","State co-op banks only"],
     "correctAnswer": 0,
-    "explanation": "PFMS integrates with Core Banking Systems across banks :contentReference[oaicite:4]{index=4}."
+    "explanation": "PFMS integrates with Core Banking Systems across banks "
   },
   {
     "question": "GPF subscriptions are calculated as a minimum of what percent of emoluments?",
     "options": ["4%","5%","6%","7%"],
     "correctAnswer": 2,
-    "explanation": "Central government servants contribute a minimum of 6% of emoluments to GPF :contentReference[oaicite:5]{index=5}."
+    "explanation": "Central government servants contribute a minimum of 6% of emoluments to GPF."
   },
   {
     "question": "NPS Tier I accounts require a minimum annual contribution of?",
     "options": ["₹2,000","₹6,000","₹12,000","₹1,000"],
     "correctAnswer": 1,
-    "explanation": "Tier I accounts require a minimum annual contribution of ₹6,000, as per PFRDA guidelines :contentReference[oaicite:6]{index=6}."
+    "explanation": "Tier I accounts require a minimum annual contribution of ₹6,000, as per PFRDA guidelines"
   },
   {
     "question": "GPF interest is credited on which date?",
     "options": ["31 Dec","1 Jan","31 Mar","1 Apr"],
     "correctAnswer": 2,
-    "explanation": "Interest on GPF is credited annually on 31 March :contentReference[oaicite:7]{index=7}."
+    "explanation": "Interest on GPF is credited annually on 31 March."
   },
   {
     "question": "Under NPS, funds are managed by whom?",
     "options": ["PFRDA only","Ministry of Finance","Registered Pension Fund Managers","NPCI"],
     "correctAnswer": 2,
-    "explanation": "Subscriber contributions under NPS are managed by PFRDA-registered Pension Fund Managers :contentReference[oaicite:8]{index=8}."
+    "explanation": "Subscriber contributions under NPS are managed by PFRDA-registered Pension Fund Managers"
   },
   {
     "question": "Income Tax Act 1961 was amended annually by?",
@@ -327,49 +327,49 @@
     "question": "Which body approves Union Government Budget documents?",
     "options": ["Finance Commission","Parliament","CAG","PFRDA"],
     "correctAnswer": 1,
-    "explanation": "Budget documents—Annual Financial Statement, Finance Bill, Demands for Grants—are laid before Parliament :contentReference[oaicite:9]{index=9}."
+    "explanation": "Budget documents—Annual Financial Statement, Finance Bill, Demands for Grants—are laid before Parliament."
   },
   {
     "question": "Under GFR 2017, petty losses upto which amount need not be reported?",
     "options": ["₹2,000","₹5,000","₹10,000","₹25,000"],
     "correctAnswer": 2,
-    "explanation": "Losses not exceeding ₹10,000 are classified as petty and need not be reported :contentReference[oaicite:10]{index=10}."
+    "explanation": "Losses not exceeding ₹10,000 are classified as petty and need not be reported "
   },
   {
     "question": "Serious financial irregularities should not be reported to?",
     "options": ["Financial Adviser","Audit Officer","CGA","Chief Accounting Authority"],
     "correctAnswer": 1,
-    "explanation": "Serious irregularities should not be reported to Accounts/Audit Officers but escalated :contentReference[oaicite:11]{index=11}."
+    "explanation": "Serious irregularities should not be reported to Accounts/Audit Officers but escalated"
   },
   {
     "question": "Which Head is NOT part of Government Accounts classification?",
     "options": ["Major Head","Minor Head","Sub Head","Final Head"],
     "correctAnswer": 3,
-    "explanation": "Classification includes Major, Minor and Sub Heads—no 'Final Head' exists :contentReference[oaicite:12]{index=12}."
+    "explanation": "Classification includes Major, Minor and Sub Heads—no 'Final Head' exists."
   },
   {
     "question": "Drawing and Disbursing Officers (DDOs) cannot:",
     "options": ["Prepare bills","Monitor budgets","Certify audit reports","Submit to PAO"],
     "correctAnswer": 2,
-    "explanation": "DDOs prepare bills and monitor budget, but do not certify audit reports :contentReference[oaicite:13]{index=13}."
+    "explanation": "DDOs prepare bills and monitor budget, but do not certify audit reports"
   },
   {
     "question": "Financial Advisor in a Ministry:",
     "options": ["Supervises budget prep","Prepares demand estimates","Issues audit certificates","None"],
     "correctAnswer": 0,
-    "explanation": "Financial Advisors supervise both budget preparation and annual accounts :contentReference[oaicite:14]{index=14}."
+    "explanation": "Financial Advisors supervise both budget preparation and annual accounts."
   },
   {
     "question": "Under GFR, cash received by govt must be deposited:",
     "options": ["Same day","Within 24 hrs","Within 48 hrs","Any time"],
     "correctAnswer": 0,
-    "explanation": "Cash must be deposited into Govt account the same day :contentReference[oaicite:15]{index=15}."
+    "explanation": "Cash must be deposited into Govt account the same day."
   },
   {
     "question": "Under GFR 2017, report of loss should be made at how many stages?",
     "options": ["One","Two","Three","As needed"],
     "correctAnswer": 1,
-    "explanation": "Loss reports must be made in two stages per GFR guidance :contentReference[oaicite:16]{index=16}."
+    "explanation": "Loss reports must be made in two stages per GFR guidance "
   },
   {
     "question": "Works up to ₹5 lakh may be sanctioned by?",
@@ -387,13 +387,13 @@
     "question": "Grants-in-aid accounting and budgeting for Externally Aided Projects are covered in GFR Chapter?",
     "options": ["3","9","10","11"],
     "correctAnswer": 10,
-    "explanation": "GFR Chapter 10 deals with budgeting & accounting of externally aided projects :contentReference[oaicite:17]{index=17}."
+    "explanation": "GFR Chapter 10 deals with budgeting & accounting of externally aided projects"
   },
   {
     "question": "Institutional audit of autonomous bodies is governed by?",
     "options": ["CAG Manual","PFMS Manual","Income Tax Manual","None"],
     "correctAnswer": 0,
-    "explanation": "CAG issues manuals for audit/accounting of autonomous bodies :contentReference[oaicite:18]{index=18}."
+    "explanation": "CAG issues manuals for audit/accounting of autonomous bodies."
   },
   {
     "question": "In Income Tax Act, capital gains tax introduced in year?",
@@ -411,31 +411,31 @@
     "question": "PFMS supports which government initiative?",
     "options": ["DBT","GST","Ayushman Bharat","AAP"],
     "correctAnswer": 0,
-    "explanation": "PFMS supports Direct Benefit Transfer programmes :contentReference[oaicite:19]{index=19}."
+    "explanation": "PFMS supports Direct Benefit Transfer programmes"
   },
   {
     "question": "GFR 2017 mandates procurement via GeM when available?",
     "options": ["Mandatory","Optional","Only >₹10L","Only digital"],
     "correctAnswer": 0,
-    "explanation": "GFR mandates procurement through GeM when goods/services are listed :contentReference[oaicite:20]{index=20}."
+    "explanation": "GFR mandates procurement through GeM when goods/services are listed"
   },
   {
     "question": "Budget Execution: Cannot spend more than ___ in last month?",
     "options": ["25%","33%","50%","75%"],
     "correctAnswer": 1,
-    "explanation": "No more than 33% of BE should be spent in the final month :contentReference[oaicite:21]{index=21}."
+    "explanation": "No more than 33% of BE should be spent in the final month"
   },
   {
     "question": "Public debt transactions recorded in Major Heads __ series?",
     "options": ["2000","4000","6000–7999","8000–8999"],
     "correctAnswer": 2,
-    "explanation": "Public debts are recorded under Major Heads 6001–7999 :contentReference[oaicite:22]{index=22}."
+    "explanation": "Public debts are recorded under Major Heads 6001–7999"
   },
   {
     "question": "PFMS began integration with DBT in which year?",
     "options": ["2009","2013","2017","2020"],
     "correctAnswer": 1,
-    "explanation": "After 2009 launch, DBT coverage was added in 2013 :contentReference[oaicite:23]{index=23}."
+    "explanation": "After 2009 launch, DBT coverage was added in 2013"
   },
   {
     "question": "Finance Act every year includes amendments to:",
@@ -447,19 +447,19 @@
     "question": "Autonomous bodies prepare which financial statement?",
     "options": ["Commercial Accounts","Finance Accounts","Appropriation Accounts","Income & Expenditure Accounts"],
     "correctAnswer": 3,
-    "explanation": "Autonomous bodies typically prepare Income & Expenditure Accounts :contentReference[oaicite:24]{index=24}."
+    "explanation": "Autonomous bodies typically prepare Income & Expenditure Accounts"
   },
   {
     "question": "CGA is principal accounting advisor per Article?",
     "options": ["143","150","123","135"],
     "correctAnswer": 1,
-    "explanation": "Article 150 of the Constitution designates CGA as principal accounting adviser :contentReference[oaicite:25]{index=25}."
+    "explanation": "Article 150 of the Constitution designates CGA as principal accounting adviser "
   },
   {
     "question": "Under GFR, detailed Demand for Grants is entered by?",
     "options": ["PAO","CGA","Principal Accounts Officer","CAG"],
     "correctAnswer": 2,
-    "explanation": "Demand for Grants are entered into PFMS by Principal Accounts Officers :contentReference[oaicite:26]{index=26}."
+    "explanation": "Demand for Grants are entered into PFMS by Principal Accounts Officers"
   },
   {
     "question": "Income Tax: exempt agricultural income under which section?",
@@ -471,13 +471,13 @@
     "question": "Under GFR, tender collusion is prohibited as violation of?",
     "options": ["Financial Rules","Code of Integrity","DFPR","Audit Manual"],
     "correctAnswer": 1,
-    "explanation": "Collusion and bid-rigging are barred under the Code of Integrity :contentReference[oaicite:27]{index=27}."
+    "explanation": "Collusion and bid-rigging are barred under the Code of Integrity"
   },
   {
     "question": "PFMS allows real-time reporting at __________ level.",
     "options": ["Ministry only","Scheme only","All implementation levels","State only"],
     "correctAnswer": 2,
-    "explanation": "PFMS enables real-time reporting at all levels of scheme implementation :contentReference[oaicite:28]{index=28}."
+    "explanation": "PFMS enables real-time reporting at all levels of scheme implementation"
   },
   {
     "question": "Finance Act 2025 raised tax slab to?",
@@ -489,19 +489,19 @@
     "question": "PFMS accounts for both Plan & Non-Plan schemes?",
     "options": ["True","False"],
     "correctAnswer": 0,
-    "explanation": "Post-2013 PFMS includes both Plan and Non-Plan transactions :contentReference[oaicite:29]{index=29}."
+    "explanation": "Post-2013 PFMS includes both Plan and Non-Plan transactions"
   },
   {
     "question": "Loss exceeding ₹10,000 but under ___ must be reported externally.",
     "options": ["₹25,000","₹50,000","₹1 lakh","₹5 lakh"],
     "correctAnswer": 0,
-    "explanation": "Losses above ₹10,000 up to ₹25,000 must be reported externally :contentReference[oaicite:30]{index=30}."
+    "explanation": "Losses above ₹10,000 up to ₹25,000 must be reported externally"
   },
   {
     "question": "PFMS supports integration with which type of accounts?",
     "options": ["Project only","Scheme only","Pay & Accounts Offices","Bankers only"],
     "correctAnswer": 2,
-    "explanation": "PFMS integrates Pay & Accounts Office transactions :contentReference[oaicite:31]{index=31}."
+    "explanation": "PFMS integrates Pay & Accounts Office transactions"
   },
   {
     "question": "Income Tax returns can be revised within?",
@@ -519,7 +519,7 @@
     "question": "Budget documents include which report under FRBM Act?",
     "options": ["Annual Financial Statement","Macro-Economic Framework Statement","Demand for Grants","Finance Bill"],
     "correctAnswer": 1,
-    "explanation": "FRBM mandates inclusion of Macro-Economic Framework Statement :contentReference[oaicite:32]{index=32}."
+    "explanation": "FRBM mandates inclusion of Macro-Economic Framework Statement"
   },
   {
     "question": "Income Tax: Minimum tax on corporate book profits known as?",
@@ -531,13 +531,13 @@
     "question": "GFR: Cash not deposited same day must be?",
     "options": ["Reported","Ignored","Recorded next month","Verified offline"],
     "correctAnswer": 0,
-    "explanation": "Failure to deposit same day must be reported under financial propriety rules :contentReference[oaicite:33]{index=33}."
+    "explanation": "Failure to deposit same day must be reported under financial propriety rules"
   },
   {
     "question": "PFMS integration began during which plan?",
     "options": ["10th Plan","11th Plan","12th Plan","13th Plan"],
     "correctAnswer": 1,
-    "explanation": "PFMS was piloted during the 11th Five Year Plan :contentReference[oaicite:34]{index=34}."
+    "explanation": "PFMS was piloted during the 11th Five Year Plan"
   },
   {
     "question": "Instructional leadership primarily focuses on:",
